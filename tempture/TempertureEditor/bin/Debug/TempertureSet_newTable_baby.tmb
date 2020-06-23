@@ -1,0 +1,197 @@
+<temperture Genid="223">
+  <times>
+    <ClsWriteTimes>04:00,08:00,12:00,16:00,20:00,24:00</ClsWriteTimes>
+  </times>
+  <pens>
+    <ClsPens Id="p1" Tname="blackPen" Pensize="1" Pencolor="0,0,0" />
+    <ClsPens Id="p2" Tname="lightblackPen" Pensize="0.1" Pencolor="150,150,150" />
+    <ClsPens Id="p3" Tname="redPen" Pensize="1" Pencolor="255,0,0" />
+    <ClsPens Id="p4" Tname="bluePen" Pensize="1" Pencolor="0,0,255" />
+    <ClsPens Id="p5" Tname="blackboldpen" Pensize="2" Pencolor="0,0,0" />
+    <ClsPens Id="p113" Tname="greedPen" Pensize="1" Pencolor="0,128,0" />
+    <ClsPens Id="p116" Tname="redBlockpen" Pensize="2" Pencolor="255,0,0" />
+  </pens>
+  <fonts>
+    <ClsFont Id="f1" Tname="nineFont" Fontname="宋体" Fontsize="9" Fontcolor="0,0,0" Isbold="False" Isunderline="False" Isita="False" />
+    <ClsFont Id="f17" Tname="tenFont" Fontname="宋体" Fontsize="10" Fontcolor="0,0,0" Isbold="False" Isunderline="False" Isita="False" />
+    <ClsFont Id="f2" Tname="nineBoldFont" Fontname="宋体" Fontsize="9" Fontcolor="0,0,0" Isbold="True" Isunderline="False" Isita="False" />
+    <ClsFont Id="f3" Tname="nineRedFont" Fontname="宋体" Fontsize="10" Fontcolor="255,0,0" Isbold="False" Isunderline="False" Isita="False" />
+    <ClsFont Id="f4" Tname="eightFont" Fontname="宋体" Fontsize="8" Fontcolor="0,0,0" Isbold="False" Isunderline="False" Isita="False" />
+    <ClsFont Id="f5" Tname="sevenFont" Fontname="宋体" Fontsize="7" Fontcolor="0,0,0" Isbold="False" Isunderline="False" Isita="False" />
+    <ClsFont Id="f6" Tname="eightBlodFont" Fontname="宋体" Fontsize="8" Fontcolor="0,0,0" Isbold="True" Isunderline="False" Isita="False" />
+    <ClsFont Id="f7" Tname="sevenBlodFont" Fontname="宋体" Fontsize="7" Fontcolor="0,0,0" Isbold="True" Isunderline="False" Isita="False" />
+    <ClsFont Id="f8" Tname="sixFont" Fontname="宋体" Fontsize="6.5" Fontcolor="0,0,0" Isbold="False" Isunderline="False" Isita="False" />
+    <ClsFont Id="f9" Tname="nineBlueFont" Fontname="宋体" Fontsize="10" Fontcolor="0,0,255" Isbold="False" Isunderline="False" Isita="False" />
+    <ClsFont Id="f10" Tname="nineRedFont" Fontname="宋体" Fontsize="10" Fontcolor="255,0,0" Isbold="False" Isunderline="False" Isita="False" />
+    <ClsFont Id="f11" Tname="sevenRedFont" Fontname="宋体" Fontsize="7" Fontcolor="255,0,0" Isbold="False" Isunderline="False" Isita="False" />
+    <ClsFont Id="f12" Tname="twleBold" Fontname="宋体" Fontsize="12" Fontcolor="0,0,0" Isbold="True" Isunderline="False" Isita="False" />
+    <ClsFont Id="f13" Tname="elevenFont" Fontname="宋体" Fontsize="11" Fontcolor="0,0,0" Isbold="False" Isunderline="False" Isita="False" />
+    <ClsFont Id="f14" Tname="thirteenBoldFond" Fontname="宋体" Fontsize="13" Fontcolor="0,0,0" Isbold="True" Isunderline="False" Isita="False" />
+    <ClsFont Id="f15" Tname="testFont" Fontname="宋体" Fontsize="12" Fontcolor="0,0,0" Isbold="True" Isunderline="True" Isita="True" />
+    <ClsFont Id="f16" Tname="eightredfont" Fontname="宋体" Fontsize="8" Fontcolor="255,0,0" Isbold="False" Isunderline="False" Isita="False" />
+    <ClsFont Id="f18" Tname="sixteenBoldFond" Fontname="宋体" Fontsize="16" Fontcolor="0,0,0" Isbold="True" Isunderline="False" Isita="False" />
+    <ClsFont Id="f151" Tname="sixRedFont" Fontname="宋体" Fontsize="6" Fontcolor="255,0,0" Isbold="False" Isunderline="False" Isita="False" />
+    <ClsFont Id="f152" Tname="fiveRedFont" Fontname="宋体" Fontsize="5" Fontcolor="255,0,0" Isbold="False" Isunderline="False" Isita="False" />
+    <ClsFont Id="f166" Tname="脉搏" Fontname="宋体" Fontsize="10" Fontcolor="0,0,0" Isbold="False" Isunderline="False" Isita="False" />
+  </fonts>
+  <symbol>
+    <ClsSymbol name="白色底" symbol1="●" symbol2="" symbol3="" color="255,255,255" color2="" fontname="宋体" fontsize="11" blackcolor="False" cx="0" cy="0" cfontsize="0" />
+    <ClsSymbol name="腋温" symbol1="×" symbol2="" symbol3="" color="0,0,255" color2="" fontname="宋体" fontsize="11" blackcolor="False" cx="0" cy="0" cfontsize="0" />
+    <ClsSymbol name="口温" symbol1="●" symbol2="" symbol3="" color="0,0,255" color2="" fontname="宋体" fontsize="11" blackcolor="False" cx="0" cy="0" cfontsize="0" />
+    <ClsSymbol name="肛温" symbol1="⊙" symbol2="" symbol3="" color="0,0,255" color2="" fontname="宋体" fontsize="11" blackcolor="False" cx="0" cy="0" cfontsize="0" />
+    <ClsSymbol name="腋温复测" symbol1="×" symbol2="V" symbol3="" color="0,0,255" color2="255,0,00" fontname="宋体" fontsize="11" blackcolor="False" cx="12" cy="0" cfontsize="0" />
+    <ClsSymbol name="口温复测" symbol1="●" symbol2="V" symbol3="" color="0,0,255" color2="255,0,00" fontname="宋体" fontsize="11" blackcolor="False" cx="12" cy="0" cfontsize="0" />
+    <ClsSymbol name="肛温复测" symbol1="⊙" symbol2="V" symbol3="" color="0,0,255" color2="255,0,00" fontname="宋体" fontsize="11" blackcolor="False" cx="12" cy="0" cfontsize="0" />
+    <ClsSymbol name="物理降温" symbol1="○" symbol2="" symbol3="" color="255,0,0" color2="255,0,00" fontname="宋体" fontsize="11" blackcolor="True" cx="0" cy="0" cfontsize="0" />
+    <ClsSymbol name="脉搏" symbol1="●" symbol2="" symbol3="" color="255,0,0" color2="" fontname="宋体" fontsize="11" blackcolor="False" cx="0" cy="0" cfontsize="0" />
+    <ClsSymbol name="心率" symbol1="○" symbol2="" symbol3="" color="255,0,0" color2="" fontname="宋体" fontsize="11" blackcolor="True" cx="0" cy="0" cfontsize="0" />
+    <ClsSymbol name="呼吸" symbol1="○" symbol2="" symbol3="" color="0,0,255" color2="" fontname="宋体" fontsize="11" blackcolor="True" cx="0" cy="0" cfontsize="0" />
+    <ClsSymbol name="R" symbol1="R" symbol2="" symbol3="" color="0,0,255" color2="" fontname="宋体" fontsize="11" blackcolor="False" cx="0" cy="0" cfontsize="0" />
+    <ClsSymbol name="R2" symbol1="R" symbol2="" symbol3="" color="255,0,0" color2="" fontname="宋体" fontsize="11" blackcolor="False" cx="0" cy="0" cfontsize="0" />
+    <ClsSymbol name="辅助呼吸" symbol1="○" symbol2="R" symbol3="" color="0,0,255" color2="" fontname="宋体" fontsize="11" blackcolor="True" cx="4" cy="0" cfontsize="0" />
+    <ClsSymbol name="疼痛" symbol1="P" symbol2="" symbol3="" color="0,0,255" color2="" fontname="宋体" fontsize="11" blackcolor="False" cx="0" cy="0" cfontsize="0" />
+    <ClsSymbol name="脉搏腋温" symbol1="○" symbol2="×" symbol3="" color="255,0,0" color2="0,0,255" fontname="宋体" fontsize="11" blackcolor="True" cx="1" cy="1" cfontsize="1" />
+    <ClsSymbol name="脉搏口温" symbol1="○" symbol2="●" symbol3="" color="255,0,0" color2="0,0,255" fontname="宋体" fontsize="11" blackcolor="True" cx="4" cy="0" cfontsize="2" />
+    <ClsSymbol name="脉搏肛温" symbol1="○" symbol2="●" symbol3="" color="255,0,0" color2="0,0,255" fontname="宋体" fontsize="11" blackcolor="True" cx="4" cy="0" cfontsize="0" />
+    <ClsSymbol name="起搏心率" symbol1="○" symbol2="H" symbol3="" color="255,0,0" color2="" fontname="宋体" fontsize="11" blackcolor="True" cx="4" cy="0" cfontsize="0" />
+  </symbol>
+  <element>
+    <ClsMainFrame Twidth="2100" Theight="2970" Day_x="125" Day_y="0" Daywidth="84" Timewidth="14" />
+    <ClsRec Id="r2" Penid="p1" X="40" Y="129" Width="714" Height="975" />
+    <ClsLine Id="l4" Penid="blackboldpen" X1="112" Y1="130" X2="112" Y2="1105" Times="8" Spans="84" Direction="右" />
+    <ClsLine Id="l6" Penid="blackPen" X1="111" Y1="222" X2="699" Y2="222" Times="43" Spans="14" Direction="下" />
+    <ClsLine Id="l11" Penid="blackPen" X1="126" Y1="189" X2="126" Y2="840" Times="42" Spans="14" Direction="右" />
+    <ClsText Id="t21" Fontid="nineFont" X="633" Y="113" Times="0" Spans="0" Direction="右" Tdirection="横">病案号
+</ClsText>
+    <ClsText Id="t22" Fontid="nineFont" X="52" Y="137" Times="0" Spans="0" Direction="右" Tdirection="横">日   期</ClsText>
+    <ClsText Id="t24" Fontid="nineFont" X="50" Y="165" Times="0" Spans="0" Direction="右" Tdirection="横">住院日数</ClsText>
+    <ClsText Id="t25" Fontid="nineFont" X="52" Y="193" Times="0" Spans="0" Direction="右" Tdirection="横">时   间</ClsText>
+    <ClsText Id="t30" Fontid="nineFont" X="48" Y="821" Times="0" Spans="0" Direction="右" Tdirection="横">呼   吸</ClsText>
+    <ClsText Id="t32" Fontid="nineFont" X="47" Y="845" Times="0" Spans="0" Direction="右" Tdirection="横">血压(mmHg)</ClsText>
+    <ClsText Id="t33" Fontid="nineFont" X="47" Y="1066" Times="0" Spans="0" Direction="右" Tdirection="横">大便次数</ClsText>
+    <ClsText Id="t215" Fontid="nineFont" X="47" Y="1087" Times="0" Spans="0" Direction="右" Tdirection="横">大便量</ClsText>
+    <ClsText Id="t35" Fontid="nineFont" X="47" Y="889" Times="0" Spans="0" Direction="右" Tdirection="横">身高(cm)</ClsText>
+    <ClsText Id="t36" Fontid="nineFont" X="47" Y="1043" Times="0" Spans="0" Direction="右" Tdirection="横">引流液量</ClsText>
+    <ClsText Id="t213" Fontid="nineFont" X="47" Y="912" Times="0" Spans="0" Direction="右" Tdirection="横">头围</ClsText>
+    <ClsText Id="t37" Fontid="nineFont" X="47" Y="934" Times="0" Spans="0" Direction="右" Tdirection="横">总入量</ClsText>
+    <ClsText Id="t212" Fontid="nineFont" X="47" Y="957" Times="0" Spans="0" Direction="右" Tdirection="横">输入液量</ClsText>
+    <ClsText Id="t211" Fontid="nineFont" X="47" Y="978" Times="0" Spans="0" Direction="右" Tdirection="横">口入量</ClsText>
+    <ClsText Id="t38" Fontid="nineFont" X="47" Y="1000" Times="0" Spans="0" Direction="右" Tdirection="横">总出量</ClsText>
+    <ClsText Id="t210" Fontid="nineFont" X="47" Y="1021" Times="0" Spans="0" Direction="右" Tdirection="横">尿量</ClsText>
+    <ClsText Id="t39" Fontid="nineFont" X="47" Y="867" Times="0" Spans="0" Direction="右" Tdirection="横">体重(kg)</ClsText>
+    <ClsText Id="t42" Fontid="elevenFont" X="364" Y="1120" Times="0" Spans="0" Direction="右" Tdirection="横">第     页</ClsText>
+    <ClsText Id="t43" Fontid="eightFont" X="114" Y="193" Times="7" Spans="84" Direction="右" Tdirection="横">4</ClsText>
+    <ClsText Id="t44" Fontid="eightFont" X="127" Y="193" Times="7" Spans="84" Direction="右" Tdirection="横">8</ClsText>
+    <ClsText Id="t45" Fontid="eightFont" X="139" Y="193" Times="7" Spans="84" Direction="右" Tdirection="横">12</ClsText>
+    <ClsText Id="t46" Fontid="eightredfont" X="153" Y="193" Times="7" Spans="84" Direction="右" Tdirection="横">16</ClsText>
+    <ClsText Id="t47" Fontid="eightredfont" X="167" Y="193" Times="7" Spans="84" Direction="右" Tdirection="横">20</ClsText>
+    <ClsText Id="t48" Fontid="eightredfont" X="181" Y="193" Times="7" Spans="84" Direction="右" Tdirection="横">24</ClsText>
+    <ClsLine Id="l101" Penid="blackPen" X1="40" Y1="840" X2="699" Y2="840" Times="12" Spans="22" Direction="下" />
+    <ClsText Id="t144" Fontid="nineFont" X="388" Y="113" Times="1" Spans="0" Direction="右" Tdirection="横">科别</ClsText>
+    <ClsText Id="t145" Fontid="nineFont" X="42" Y="113" Times="1" Spans="0" Direction="右" Tdirection="横">姓名</ClsText>
+    <ClsText Id="t147" Fontid="nineFont" X="512" Y="113" Times="1" Spans="0" Direction="右" Tdirection="横">床号</ClsText>
+    <ClsImg Id="img153" Imgname="lkjh.jpg" X="209" Y="32" Pwidth="55" Pheight="40" />
+    <ClsImg Id="img129" Imgname="肛表.png" X="709" Y="697" Pwidth="15" Pheight="15" />
+    <ClsImg Id="img130" Imgname="口表.png" X="708" Y="655" Pwidth="15" Pheight="15" />
+    <ClsImg Id="img135" Imgname="腋表.png" X="707" Y="674" Pwidth="15" Pheight="15" />
+    <ClsImg Id="img140" Imgname="脉搏.png" X="709" Y="720" Pwidth="15" Pheight="15" />
+    <ClsImg Id="img141" Imgname="心率.png" X="709" Y="741" Pwidth="14" Pheight="15" />
+    <ClsText Id="t156" Fontid="nineFont" X="267" Y="113" Times="0" Spans="0" Direction="右" Tdirection="横">入院日期</ClsText>
+    <ClsLine Id="l163" Penid="blackPen" X1="41" Y1="155" X2="699" Y2="155" Times="1" Spans="0" Direction="左" />
+    <ClsLine Id="l164" Penid="blackPen" X1="41" Y1="189" X2="699" Y2="189" Times="1" Spans="0" Direction="左" />
+    <ClsLine Id="l165" Penid="blackPen" X1="41" Y1="208" X2="699" Y2="208" Times="1" Spans="0" Direction="左" />
+    <ClsText Id="t168" Fontid="nineFont" X="712" Y="193" Times="1" Spans="0" Direction="右" Tdirection="横">心率</ClsText>
+    <ClsText Id="t169" Fontid="nineFont" X="53" Y="213" Times="1" Spans="0" Direction="左" Tdirection="横">体  温</ClsText>
+    <ClsText Id="t170" Fontid="nineFont" X="57" Y="244" Times="1" Spans="0" Direction="左" Tdirection="横">42℃</ClsText>
+    <ClsLine Id="l173" Penid="blackboldpen" X1="112" Y1="250" X2="699" Y2="250" Times="8" Spans="70" Direction="下" />
+    <ClsText Id="t175" Fontid="nineFont" X="57" Y="314" Times="1" Spans="0" Direction="左" Tdirection="横">41℃</ClsText>
+    <ClsText Id="t177" Fontid="nineFont" X="57" Y="384" Times="1" Spans="0" Direction="左" Tdirection="横">40℃</ClsText>
+    <ClsText Id="t179" Fontid="nineFont" X="57" Y="454" Times="1" Spans="0" Direction="左" Tdirection="横">39℃</ClsText>
+    <ClsText Id="t181" Fontid="nineFont" X="57" Y="524" Times="1" Spans="0" Direction="左" Tdirection="横">38℃</ClsText>
+    <ClsText Id="t183" Fontid="nineFont" X="57" Y="594" Times="1" Spans="0" Direction="左" Tdirection="横">37℃</ClsText>
+    <ClsText Id="t185" Fontid="nineFont" X="57" Y="664" Times="1" Spans="0" Direction="左" Tdirection="横">36℃</ClsText>
+    <ClsText Id="t187" Fontid="nineFont" X="57" Y="734" Times="1" Spans="0" Direction="左" Tdirection="横">35℃</ClsText>
+    <ClsText Id="t190" Fontid="nineFont" X="57" Y="796" Times="1" Spans="0" Direction="左" Tdirection="横">34℃</ClsText>
+    <ClsText Id="t194" Fontid="nineFont" X="712" Y="244" Times="1" Spans="0" Direction="右" Tdirection="横">180</ClsText>
+    <ClsText Id="t195" Fontid="nineFont" X="712" Y="314" Times="1" Spans="0" Direction="右" Tdirection="横">160</ClsText>
+    <ClsText Id="t196" Fontid="nineFont" X="712" Y="384" Times="1" Spans="0" Direction="右" Tdirection="横">140</ClsText>
+    <ClsText Id="t197" Fontid="nineFont" X="712" Y="454" Times="1" Spans="0" Direction="右" Tdirection="横">120</ClsText>
+    <ClsText Id="t198" Fontid="nineFont" X="712" Y="524" Times="1" Spans="0" Direction="右" Tdirection="横">100</ClsText>
+    <ClsText Id="t199" Fontid="nineFont" X="712" Y="594" Times="1" Spans="0" Direction="右" Tdirection="横">80</ClsText>
+    <ClsText Id="t200" Fontid="nineFont" X="712" Y="664" Times="1" Spans="0" Direction="右" Tdirection="横">60</ClsText>
+    <ClsText Id="t201" Fontid="nineFont" X="712" Y="734" Times="1" Spans="0" Direction="右" Tdirection="横">40</ClsText>
+    <ClsText Id="t202" Fontid="nineFont" X="712" Y="804" Times="1" Spans="0" Direction="右" Tdirection="横">20</ClsText>
+    <ClsText Id="t204" Fontid="nineFont" X="132" Y="113" Times="1" Spans="0" Direction="右" Tdirection="横">性别</ClsText>
+    <ClsText Id="t205" Fontid="nineFont" X="189" Y="113" Times="1" Spans="0" Direction="左" Tdirection="横">年龄</ClsText>
+    <ClsText Id="t206" Fontid="sixteenBoldFond" X="258" Y="46" Times="1" Spans="0" Direction="右" Tdirection="横">廊  坊  爱  德  堡  医  院</ClsText>
+    <ClsText Id="t208" Fontid="sixteenBoldFond" X="279" Y="82" Times="1" Spans="0" Direction="左" Tdirection="横">新  生  儿  体  温  单</ClsText>
+    <ClsLine Id="l209" Penid="blackboldpen" X1="40" Y1="810" X2="699" Y2="810" Times="1" Spans="0" Direction="左" />
+    <ClsLine Id="l211" Penid="blackPen" X1="0" Y1="-70" X2="0" Y2="-70" Times="0" Spans="0" Direction="左" />
+    <ClsLine Id="l217" Penid="blackPen" X1="0" Y1="-70" X2="0" Y2="-70" Times="0" Spans="0" Direction="左" />
+  </element>
+  <vdataset>
+    <SymeType name="体温组合">腋温骑线,腋温,口温,口温骑线,腋温复测骑线,肛温,肛温骑线,,腋温复测,口温复测骑线,口温复测,肛温复测骑线,肛温复测</SymeType>
+    <SymeType name="呼吸组合">呼吸,呼吸骑线,人工呼吸,人工呼吸骑线,呼吸R,辅助呼吸,呼吸次数</SymeType>
+    <SymeType name="脉搏组合">脉搏,脉搏骑线</SymeType>
+    <SymeType name="心率组合">心率,心率骑线</SymeType>
+    <SymeType name="血压组合">血压1,血压2</SymeType>
+    <SymeType name="小便组合">小便次数,尿量</SymeType>
+    <SymeType name="大便组合">大便次数,大便量</SymeType>
+	<SymeType name="体重组合">体重</SymeType>
+    <ClsLinedata Name="腋温" X="112" Y="810" Span_x="8" Span_y="0" Symbolname="腋温" Scale="70" Basevalue="34" Penid="bluePen" Broken="事件,不升" />
+    <ClsLinedata Name="腋温骑线" X="112" Y="810" Span_x="8" Span_y="0" Symbolname="腋温" Scale="70" Basevalue="34" Penid="bluePen" Broken="事件,不升" />
+    <ClsLinedata Name="口温" X="112" Y="810" Span_x="8" Span_y="0" Symbolname="口温" Scale="70" Basevalue="34" Penid="bluePen" Broken="事件,不升" />
+    <ClsLinedata Name="口温骑线" X="112" Y="810" Span_x="8" Span_y="0" Symbolname="口温" Scale="70" Basevalue="34" Penid="bluePen" Broken="事件,不升" />
+    <ClsLinedata Name="肛温" X="112" Y="810" Span_x="8" Span_y="0" Symbolname="肛温" Scale="70" Basevalue="34" Penid="bluePen" Broken="事件,不升" />
+    <ClsLinedata Name="肛温骑线" X="112" Y="810" Span_x="8" Span_y="0" Symbolname="肛温" Scale="70" Basevalue="34" Penid="bluePen" Broken="事件,不升" />
+    <ClsLinedata Name="腋温复测" X="112" Y="810" Span_x="8" Span_y="0" Symbolname="腋温复测" Scale="70" Basevalue="34" Penid="bluePen" Broken="事件,不升" />
+    <ClsLinedata Name="口温复测" X="112" Y="810" Span_x="8" Span_y="0" Symbolname="口温复测" Scale="70" Basevalue="34" Penid="bluePen" Broken="事件,不升" />
+    <ClsLinedata Name="肛温复测" X="112" Y="810" Span_x="8" Span_y="0" Symbolname="肛温复测" Scale="70" Basevalue="34" Penid="bluePen" Broken="事件,不升" />
+    <ClsLinedata Name="腋温复测骑线" X="112" Y="810" Span_x="8" Span_y="0" Symbolname="腋温复测" Scale="70" Basevalue="34" Penid="bluePen" Broken="事件,不升" />
+    <ClsLinedata Name="口温复测骑线" X="112" Y="810" Span_x="8" Span_y="0" Symbolname="口温复测" Scale="70" Basevalue="34" Penid="bluePen" Broken="事件,不升" />
+    <ClsLinedata Name="肛温复测骑线" X="112" Y="810" Span_x="8" Span_y="0" Symbolname="肛温复测" Scale="70" Basevalue="34" Penid="bluePen" Broken="事件,不升" />
+    <ClsLinedata Name="体温↓" X="112" Y="810" Span_x="8" Span_y="0" Symbolname="物理降温" Scale="70" Basevalue="34" Penid="redPen" Broken="" />
+    <ClsLinedata Name="脉搏" X="112" Y="810" Span_x="8" Span_y="0" Symbolname="脉搏" Scale="3.5" Basevalue="20" Penid="redPen" Broken="事件" />
+    <ClsLinedata Name="脉搏骑线" X="112" Y="810" Span_x="8" Span_y="0" Symbolname="脉搏" Scale="3.5" Basevalue="20" Penid="redPen" Broken="事件" />
+    <ClsLinedata Name="心率" X="112" Y="810" Span_x="8" Span_y="-2" Symbolname="心率" Scale="3.5" Basevalue="20" Penid="redPen" Broken="事件" />
+    <ClsLinedata Name="起搏心率" X="112" Y="810" Span_x="8" Span_y="0" Symbolname="起搏心率" Scale="3.5" Basevalue="20" Penid="redPen" Broken="事件" />
+    <ClsLinedata Name="心率骑线" X="112" Y="810" Span_x="8" Span_y="0" Symbolname="心率" Scale="3.5" Basevalue="20" Penid="redPen" Broken="事件" />
+    <ClsTextdata Name="操作事件" Fontid="eightredfont" X="112" Y="250" Twidth="0" Theight="0" Texttype="" Tdirection="竖" Align="center" />
+    <ClsTextdata Name="体温不升" Fontid="nineBlueFont" X="112" Y="741" Twidth="100" Theight="10" Texttype="" Tdirection="竖" Align="center" />
+    <ClsLinedata Name="呼吸" X="112" Y="810" Span_x="10" Span_y="8" Symbolname="呼吸" Scale="3.5" Basevalue="20" Penid="bluePen" Broken="事件" />
+    <ClsLinedata Name="辅助呼吸" X="112" Y="810" Span_x="10" Span_y="8" Symbolname="辅助呼吸" Scale="3.5" Basevalue="20" Penid="bluePen" Broken="事件" />
+    <ClsComboData name="脉搏+腋温" combolsymbol="脉搏腋温" blackcolor="True" />
+    <ClsComboData name="脉搏+口温" combolsymbol="脉搏口温" blackcolor="True" />
+    <ClsComboData name="脉搏+肛温" combolsymbol="脉搏肛温" blackcolor="True" />
+    <ClsComboData name="脉搏+起搏心率" combolsymbol="起搏心率" blackcolor="True" />
+    <ClsTextdata Name="病室" Fontid="nineFont" X="388" Y="90" Twidth="100" Theight="10" Texttype="" Tdirection="横" Align="center" Positiontype="位置固定" />
+    <ClsTextdata Name="病案号" Fontid="nineFont" X="670" Y="113" Twidth="0" Theight="0" Texttype="" Tdirection="横" Align="center" Positiontype="位置固定" />
+    <ClsTextdata Name="血压1" Fontid="sixFont" X="113" Y="845" Twidth="40" Theight="20" Texttype="" Tdirection="横" Align="center" Positiontype="按天位移" />
+    <ClsTextdata Name="血压2" Fontid="sixFont" X="154" Y="845" Twidth="40" Theight="20" Texttype="" Tdirection="横" Align="center" Positiontype="按天位移" />
+    <ClsTextdata Name="姓名" X="72" Y="113" Twidth="100" Theight="10" Texttype="" Fontid="nineFont" Tdirection="横" Align="center" Positiontype="位置固定" />
+    <ClsTextdata Name="性别" X="162" Y="113" Twidth="100" Theight="10" Texttype="" Fontid="nineFont" Tdirection="横" Align="center" Positiontype="位置固定" />
+    <ClsTextdata Name="年龄" X="220" Y="113" Twidth="100" Theight="10" Texttype="" Fontid="nineFont" Tdirection="横" Align="center" Positiontype="位置固定" />
+    <ClsTextdata Name="科室" X="416" Y="113" Twidth="100" Theight="10" Texttype="" Fontid="nineFont" Tdirection="横" Align="center" Positiontype="位置固定" />
+    <ClsTextdata Name="床位" X="538" Y="113" Twidth="100" Theight="10" Texttype="" Fontid="nineFont" Tdirection="横" Align="center" Positiontype="位置固定" />
+    <ClsTextdata Name="住院号" X="670" Y="114" Twidth="100" Theight="10" Texttype="" Fontid="nineFont" Tdirection="横" Align="center" Positiontype="位置固定" />
+    <ClsTextdata Name="入院时间" X="320" Y="113" Twidth="100" Theight="10" Texttype="" Fontid="nineFont" Tdirection="横" Align="center" Positiontype="位置固定" />
+    <ClsTextdata Name="诊断" X="318" Y="109" Twidth="100" Theight="10" Texttype="" Fontid="nineFont" Tdirection="横" Align="center" Positiontype="位置固定" />
+    <ClsTextdata Name="页码" X="389" Y="1120" Twidth="100" Theight="10" Texttype="" Fontid="tenFont" Tdirection="横" Align="center" Positiontype="位置固定" />
+    <ClsTextdata Name="日期" X="114" Y="137" Twidth="70" Theight="20" Texttype="" Fontid="eightFont" Tdirection="横" Align="center" Positiontype="按天位移" />
+    <ClsTextdata Name="住院天数" X="114" Y="165" Twidth="70" Theight="20" Texttype="" Fontid="eightredfont" Tdirection="横" Align="center" Positiontype="按天位移" />
+    <ClsTextdata Name="事件" X="112" Y="741" Twidth="100" Theight="10" Texttype="" Fontid="nineBlueFont" Tdirection="竖" Align="center" />
+    <ClsTextdata Name="呼吸次数" X="111" Y="811" Twidth="12" Theight="27" Texttype="上下" Fontid="sevenFont" Tdirection="横" Align="left" />
+    <ClsTextdata Name="呼吸R" X="105" Y="821" Twidth="12" Theight="27" Texttype="上下" Fontid="sevenFont" Tdirection="横" Align="left" />
+    <ClsTextdata Name="体重" Fontid="nineFont" X="113" Y="867" Twidth="70" Theight="20" Texttype="" Tdirection="横" Align="center" Positiontype="按天位移" />
+    <ClsTextdata Name="身高" Fontid="nineFont" X="113" Y="889" Twidth="70" Theight="20" Texttype="" Tdirection="横" Align="center" Positiontype="按天位移" />
+    <ClsTextdata Name="头围" Fontid="nineFont" X="113" Y="911" Twidth="70" Theight="20" Texttype="" Tdirection="横" Align="center" Positiontype="按天位移" />
+    <ClsTextdata Name="总入量" Fontid="nineFont" X="113" Y="933" Twidth="70" Theight="20" Texttype="" Tdirection="横" Align="center" Positiontype="按天位移" />
+    <ClsTextdata Name="输入量" Fontid="nineFont" X="113" Y="955" Twidth="70" Theight="20" Texttype="" Tdirection="横" Align="center" Positiontype="按天位移" />
+    <ClsTextdata Name="口入量" Fontid="nineFont" X="113" Y="977" Twidth="70" Theight="20" Texttype="" Tdirection="横" Align="center" Positiontype="按天位移" />
+    <ClsTextdata Name="总出量" Fontid="nineFont" X="113" Y="999" Twidth="70" Theight="20" Texttype="" Tdirection="横" Align="center" Positiontype="按天位移" />
+    <ClsTextdata Name="尿量" Fontid="nineFont" X="113" Y="1025" Twidth="70" Theight="10" Texttype="" Tdirection="横" Align="center" Positiontype="按天位移" />
+    <ClsTextdata Name="引流量" Fontid="nineFont" X="113" Y="1043" Twidth="70" Theight="20" Texttype="" Tdirection="横" Align="center" Positiontype="按天位移" />
+    <ClsTextdata Name="大便次数" Fontid="nineFont" X="113" Y="1065" Twidth="70" Theight="20" Texttype="" Tdirection="横" Align="center" Positiontype="按天位移" />
+    <ClsTextdata Name="大便量" Fontid="nineFont" X="113" Y="1085" Twidth="70" Theight="20" Texttype="" Tdirection="横" Align="center" Positiontype="按天位移" />
+  </vdataset>
+</temperture>

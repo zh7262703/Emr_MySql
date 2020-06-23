@@ -1,0 +1,10 @@
+<Tempture>
+  <page Starttime="2017-09-26 00:00:00" Endtime="2017-10-02 23:59:59">
+    <ClsDataObj id="1" clsdate="腋温" rdatetime="">38</ClsDataObj>
+    <ClsDataObj id="2" clsdate="姓名" rdatetime="">呵呵</ClsDataObj>
+    <ClsDataObj id="3" clsdate="肛温" rdatetime="">40</ClsDataObj>
+    <ClsDataObj id="4" clsdate="入院时间" rdatetime="">2017-09-26</ClsDataObj>
+    <ClsDataObj id="5" clsdate="口温" rdatetime="2017-09-27 18:36:02">38</ClsDataObj>
+    <ClsDataObj id="6" clsdate="口温" rdatetime="2017-09-28 09:39:23">36.5</ClsDataObj>
+  </page>
+</Tempture>

@@ -1,0 +1,44 @@
+<HLKB>
+  <bqgk>
+    <cbo9>转入</cbo9>
+    <cbo8>昨日手术</cbo8>
+    <cbo7>I级护理</cbo7>
+    <cbo6>I级护理</cbo6>
+    <cbo5>出院</cbo5>
+    <cbo4>昨日手术</cbo4>
+    <cbo3>昨日手术</cbo3>
+    <cbo2>转出</cbo2>
+    <cbo1>转入</cbo1>
+    <chkSYNSS>所有拟手术</chkSYNSS>
+    <dtpStart>15:00:00</dtpStart>
+    <dtpEnd>18:00:00</dtpEnd>
+  </bqgk>
+  <smtzjk>
+    <chkTZ>体重</chkTZ>
+    <chkDB>大便</chkDB>
+    <chkTW>体温</chkTW>
+    <chkCXY chkCXY1h="Q1h">测血压:</chkCXY>
+    <chkCMB chkCMB1h="Q1h">测脉搏:</chkCMB>
+    <chkCHX chkCHX1h="Q1h">测呼吸:</chkCHX>
+    <chkCXL chkCXL1h="Q1h">测心率:</chkCXL>
+    <chkCBP chkDX1h="Q1h">测BP/</chkCBP>
+    <chkP chkDX1h="Q1h">P/</chkP>
+    <chkR chkDX1h="Q1h">R/</chkR>
+    <chkHR chkDX1h="Q1h">HR:</chkHR>
+  </smtzjk>
+  <xdjh>
+    <chkXDJH>心电监护</chkXDJH>
+  </xdjh>
+  <zkhl>
+    <cboZKHL1>动态生成</cboZKHL1>
+    <cboZKHL0>压疮高危</cboZKHL0>
+  </zkhl>
+  <tyz>
+    <rboBXS>不显示</rboBXS>
+    <txtTZHtime>
+    </txtTZHtime>
+    <chkSMTZJK>生命体征监控</chkSMTZJK>
+    <chkXDJHtz>心电监护</chkXDJHtz>
+    <chkZKHL>专科护理</chkZKHL>
+  </tyz>
+</HLKB>

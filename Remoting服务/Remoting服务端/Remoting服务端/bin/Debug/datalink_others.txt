@@ -1,0 +1,1 @@
+Persist Security Info=False;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.20.24)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=hisrac)));user id=emr_his;password=123

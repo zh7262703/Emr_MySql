@@ -1,0 +1,3 @@
+<emrtextdoc version="1.0" checkcount="0" senior=""><underwritemarks /><savelogs><savelog user_id="7036201" user_name="测试医生" name="测试医生" time="2015-12-11 13:24" ip="192.168.23.61" /></savelogs><docsetting modifytime="20151211132456" version="1.0" /><pagesetting paperwidth="827" paperheight="1169" leftmargin="67" topmargin="177" rightmargin="63" bottommargin="79" paperkind="A4" /><script runpwd="" editpwd=""><![CDATA[]]></script><text>
+</text><head history_name="马鞍山市中心医院" text_name="病   程   记   录" section_id="7040691" bed_name="25" bed_id="7650891" section_name="心血管三病区" gender="0" sick_area="心三护理单元" /><body id="CE44B751"><p operatercreater="0" /></body></emrtextdoc>
+

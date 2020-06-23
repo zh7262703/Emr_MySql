@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<emrtextdoc>
+  <body>
+    <table width="692">
+      <row width="691">
+        <cell width="40">
+          <span operatercreater="1" creator="1" deleter="1">shijian</span>
+          <span operatercreater="0" creator="1">时间</span>
+          <p operatercreater="0" />
+        </cell>
+        <cell width="644">
+          <span operatercreater="1" creator="1" id="355">住院第3-6天</span>
+          <p align="2" operatercreater="0" />
+          <span operatercreater="1" creator="1" id="355">(术前日)</span>
+          <p align="2" operatercreater="0" />
+        </cell>
+      </row>
+      <row width="691">
+        <cell width="40">
+          <span operatercreater="0" creator="1" id="765">主要诊疗工作</span>
+          <p operatercreater="0" />
+        </cell>
+        <cell width="644" id="765" name="主要诊疗工作">
+          <checkbox check="N" operatercreater="0" creator="1" id="2380" />
+          <span operatercreater="1" creator="1" id="2380">根据病史、体检、平片、CT、MRI等，行术前讨论，确定手术方案</span>
+          <p operatercreater="0" />
+          <checkbox check="N" operatercreater="0" creator="1" id="2381" />
+          <span operatercreater="1" creator="1" id="2381">完成必要的相关科室会诊</span>
+          <p operatercreater="0" />
+          <checkbox check="N" operatercreater="0" creator="1" id="2382" />
+          <span operatercreater="1" creator="1" id="2382">完成术前准备与术前评估</span>
+          <p operatercreater="0" />
+          <checkbox check="N" operatercreater="0" creator="1" id="2383" />
+          <span operatercreater="1" creator="1" id="2383">完成术前小结、上级医师查房记录等病历书写</span>
+          <p operatercreater="0" />
+          <checkbox check="N" operatercreater="0" creator="1" id="2384" />
+          <span operatercreater="1" creator="1" id="2384">签署手术知情同意书、自费用品协议书、输血同意书</span>
+          <p operatercreater="0" />
+          <checkbox check="N" operatercreater="0" creator="1" id="2385" />
+          <span operatercreater="1" creator="1" id="2385">向患者及家属交待病情及围手术期注意事项</span>
+          <p operatercreater="0" />
+        </cell>
+      </row>
+      <row width="691">
+        <cell width="40">
+          <span operatercreater="0" creator="1" id="766">重点医嘱</span>
+          <p operatercreater="0" />
+        </cell>
+        <cell width="644" id="766" name="重点医嘱">
+          <yizhu title="临时医嘱：" name="临时医嘱" id="1027" valueSource="临时医嘱：">
+            <p operatercreater="0" />
+            <checkbox check="N" operatercreater="0" creator="1" id="2386" />
+            <span operatercreater="1" creator="1" id="2386">术前医嘱：常规准备明日在 □全麻下行 ◎颈前路减压植骨内固定术 ◎颈后路椎管成形术 ◎颈前路＋颈后路手术</span>
+            <p operatercreater="0" />
+            <checkbox check="N" operatercreater="0" creator="1" id="2387" />
+            <span operatercreater="1" creator="1" id="2387">术前禁食水</span>
+            <p operatercreater="0" />
+            <checkbox check="N" operatercreater="0" creator="1" id="2388" />
+            <span operatercreater="1" creator="1" id="2388">抗生素皮试</span>
+            <p operatercreater="0" />
+            <checkbox check="N" operatercreater="0" creator="1" id="2389" />
+            <span operatercreater="1" creator="1" id="2389">配血</span>
+            <p operatercreater="0" />
+            <checkbox check="N" operatercreater="0" creator="1" id="2390" />
+            <span operatercreater="1" creator="1" id="2390">一次性导尿包</span>
+            <p operatercreater="0" />
+          </yizhu>
+        </cell>
+      </row>
+      <row width="691">
+        <cell width="40">
+          <span operatercreater="0" creator="1" id="767">主要护理工作</span>
+          <p operatercreater="0" />
+        </cell>
+        <cell width="644" id="767" name="主要护理工作">
+          <checkbox check="N" operatercreater="0" creator="1" id="2391" />
+          <span operatercreater="1" creator="1" id="2391">宣教、备皮等术前准备</span>
+          <p operatercreater="0" />
+          <checkbox check="N" operatercreater="0" creator="1" id="2392" />
+          <span operatercreater="1" creator="1" id="2392">提醒患者明晨禁水</span>
+          <p operatercreater="0" />
+        </cell>
+      </row>
+      <row width="691">
+        <cell width="40">
+          <span operatercreater="0" creator="1" id="768">病情变异记录</span>
+          <p operatercreater="0" />
+        </cell>
+        <cell width="644" id="768" name="病情变异记录" />
+      </row>
+      <row width="691">
+        <cell width="40">
+          <span operatercreater="0" creator="1" id="769">护士签名</span>
+          <p operatercreater="0" />
+        </cell>
+        <cell width="644" id="769" name="护士签名" />
+      </row>
+    </table>
+  </body>
+</emrtextdoc>

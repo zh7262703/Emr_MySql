@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstMsg_Setting" targetNamespace="http://tempuri.org/dstMsg_Setting.xsd" xmlns:mstns="http://tempuri.org/dstMsg_Setting.xsd" xmlns="http://tempuri.org/dstMsg_Setting.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstMsg_Setting" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstMsg_Setting" msprop:Generator_DataSetName="dstMsg_Setting">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="t_msg_setting" msprop:Generator_UserTableName="t_msg_setting" msprop:Generator_RowDeletedName="t_msg_settingRowDeleted" msprop:Generator_TableClassName="t_msg_settingDataTable" msprop:Generator_RowChangedName="t_msg_settingRowChanged" msprop:Generator_RowClassName="t_msg_settingRow" msprop:Generator_RowChangingName="t_msg_settingRowChanging" msprop:Generator_RowEvArgName="t_msg_settingRowChangeEvent" msprop:Generator_RowEvHandlerName="t_msg_settingRowChangeEventHandler" msprop:Generator_TablePropName="t_msg_setting" msprop:Generator_TableVarName="tablet_msg_setting" msprop:Generator_RowDeletingName="t_msg_settingRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" />
+              <xs:element name="WARN_TYPE" msprop:Generator_UserColumnName="WARN_TYPE" msprop:Generator_ColumnPropNameInRow="WARN_TYPE" msprop:Generator_ColumnVarNameInTable="columnWARN_TYPE" msprop:Generator_ColumnPropNameInTable="WARN_TYPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MSG_TYPE" msprop:Generator_UserColumnName="MSG_TYPE" msprop:Generator_ColumnPropNameInRow="MSG_TYPE" msprop:Generator_ColumnVarNameInTable="columnMSG_TYPE" msprop:Generator_ColumnPropNameInTable="MSG_TYPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MSG_BORDER_VALUE" msprop:Generator_UserColumnName="MSG_BORDER_VALUE" msprop:Generator_ColumnPropNameInRow="MSG_BORDER_VALUE" msprop:Generator_ColumnVarNameInTable="columnMSG_BORDER_VALUE" msprop:Generator_ColumnPropNameInTable="MSG_BORDER_VALUEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MSGSECTION_ID" msprop:Generator_UserColumnName="MSGSECTION_ID" msprop:Generator_ColumnPropNameInRow="MSGSECTION_ID" msprop:Generator_ColumnVarNameInTable="columnMSGSECTION_ID" msprop:Generator_ColumnPropNameInTable="MSGSECTION_IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MSG_VOLUNTARILY_POP" msprop:Generator_UserColumnName="MSG_VOLUNTARILY_POP" msprop:Generator_ColumnPropNameInRow="MSG_VOLUNTARILY_POP" msprop:Generator_ColumnVarNameInTable="columnMSG_VOLUNTARILY_POP" msprop:Generator_ColumnPropNameInTable="MSG_VOLUNTARILY_POPColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="MSG_START_UP" msprop:Generator_UserColumnName="MSG_START_UP" msprop:Generator_ColumnPropNameInRow="MSG_START_UP" msprop:Generator_ColumnVarNameInTable="columnMSG_START_UP" msprop:Generator_ColumnPropNameInTable="MSG_START_UPColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="WARN_TYPE_NAME" msprop:Generator_UserColumnName="WARN_TYPE_NAME" msprop:Generator_ColumnPropNameInRow="WARN_TYPE_NAME" msprop:Generator_ColumnVarNameInTable="columnWARN_TYPE_NAME" msprop:Generator_ColumnPropNameInTable="WARN_TYPE_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MSG_SECTION_NAME" msprop:Generator_UserColumnName="MSG_SECTION_NAME" msprop:Generator_ColumnPropNameInRow="MSG_SECTION_NAME" msprop:Generator_ColumnVarNameInTable="columnMSG_SECTION_NAME" msprop:Generator_ColumnPropNameInTable="MSG_SECTION_NAMEColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:t_msg_setting" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

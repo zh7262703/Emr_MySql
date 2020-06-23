@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	//
+    // 摘要:
+    //     指定控件停靠的位置和方式。
+    [Editor("System.Windows.Forms.Design.DockEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(UITypeEditor))]
+    public enum DockStyle
+    {
+        //
+        // 摘要:
+        //     该控件未停靠。
+        None = 0,
+        //
+        // 摘要:
+        //     该控件的上边缘停靠在其包含控件的顶端。
+        Top = 1,
+        //
+        // 摘要:
+        //     该控件的下边缘停靠在其包含控件的底部。
+        Bottom = 2,
+        //
+        // 摘要:
+        //     该控件的左边缘停靠在其包含控件的左边缘。
+        Left = 3,
+        //
+        // 摘要:
+        //     该控件的右边缘停靠在其包含控件的右边缘。
+        Right = 4,
+        //
+        // 摘要:
+        //     控件的各个边缘分别停靠在其包含控件的各个边缘，并且适当调整大小。
+        Fill = 5
+    }
+	//
+    // 摘要:
+    //指定应用到文本的字形信息。
+    public enum FontStyle
+    {
+        //
+        // 摘要:
+        //     普通文本。
+        Regular = 0,
+        //
+        // 摘要:
+        //     加粗文本。
+        Bold = 1,
+        //
+        // 摘要:
+        //     倾斜文本。
+        Italic = 2,
+        //
+        // 摘要:
+        //     带下划线的文本。
+        Underline = 4,
+        //
+        // 摘要:
+        //     中间有直线通过的文本。
+        Strikeout = 8
+    }
+
+	 //
+    // 摘要:
+    //指定 System.Windows.Forms.DateTimePicker 控件显示的日期和时间格式。
+    public enum DateTimePickerFormat
+    {
+        //
+        // 摘要:
+        //     System.Windows.Forms.DateTimePicker 控件以用户操作系统设置的长日期格式显示日期/时间值。
+        Long = 1,
+        //
+        // 摘要:
+        //     System.Windows.Forms.DateTimePicker 控件以用户操作系统设置的短日期格式显示日期/时间值。
+        Short = 2,
+        //
+        // 摘要:
+        //     System.Windows.Forms.DateTimePicker 控件以用户操作系统设置的时间格式显示日期/时间值。
+        Time = 4,
+        //
+        // 摘要:
+        //     System.Windows.Forms.DateTimePicker 控件以自定义格式显示日期/时间值。
+        Custom = 8
+    }
+	
+	 //
+    // 摘要:
+    //     指定 System.Windows.Forms.ComboBox 样式。
+    public enum ComboBoxStyle
+    {
+        //
+        // 摘要:
+        //     文本部分可编辑。列表部分总可见。
+        Simple = 0,
+        //
+        // 摘要:
+        //     文本部分可编辑。用户必须单击箭头按钮来显示列表部分。这是默认样式。
+        DropDown = 1,
+        //
+        // 摘要:
+        //     用户不能直接编辑文本部分。用户必须单击箭头按钮来显示列表部分。只有在 System.Windows.Forms.ComboBox.AutoCompleteMode
+        //     为 System.Windows.Forms.AutoCompleteMode.Suggest 或 System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        //     时才会显示列表。
+        DropDownList = 2
+    }
+	
+	 //
+    // 摘要:
+    //     Indicates the style of mutli-functional splitter control.
+    public enum eSplitterStyle
+    {
+        //
+        // 摘要:
+        //     Specifies Office 2003 like splitter style and color scheme.
+        Office2003 = 0,
+        //
+        // 摘要:
+        //     Specifies Mozilla like splitter style and color scheme.
+        Mozilla = 1,
+        //
+        // 摘要:
+        //     Specifies Office 2007 like splitter style and color scheme.
+        Office2007 = 2
+    }
+	
+	 //
+    // 摘要:
+    //     Specifies the appearance of a item.
+    public enum eDotNetBarStyle
+    {
+        OfficeXP = 0,
+        Office2000 = 1,
+        Office2003 = 2,
+        VS2005 = 3,
+        Office2007 = 4,
+        Office2010 = 5,
+        Windows7 = 6,
+        Metro = 7,
+        StyleManagerControlled = 8
+    }
+-->
+<temperture Genid="100">
+  <Vars>
+	<!--映射:RadioButton.Name<==>绑定模板文件名-->
+	<Var Name="rdBtn1" Value="ucTemperatureFrame_child.clmb"/>
+	<Var Name="rdBtn2" Value="ucTemperatureFrame.clmb"/>
+	<Var Name="rdBtn3" Value="ucTemperaturePrintFrame_child.clmb"/>
+  </Vars>
+  <Fonts>
+    <Font Name="nineFont" FamilyName="宋体" Size="9" Style="0"/>
+    <Font Name="twelveFont" FamilyName="宋体" Size="12" Style="0"/>
+    <Font Name="nineBoldFont" FamilyName="宋体" Size="9" Style="1"/>
+    <Font Name="twelveBoldFont" FamilyName="宋体" Size="12" Style="1"/>
+  </Fonts>
+  <CustomEventHandlers>
+	<CustomEventHandler Name="MSG_RegisterEventHandler" Handler="Register_ucMainFrame()"/>
+  </CustomEventHandlers>
+  <Controls>
+		<Control Type="GroupPanel" Name="GroupPanel2" X="0" Y="0" Width="597" Height="24"  TabIndex="1" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="1" Events="" AutoScroll="false" ShowFocusRectangle="false" ColorSchemeStyle="4">
+          <Controls>
+			<Control Type="Label" Name="label1" X="26" Y="2" Width="65" Height="12" TabIndex="1" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" BackColor="Transparent" AutoSize="true" Text="当前操作：" />
+			 <Control Type="RadioButton" Name="rdBtn1" X="97" Y="1" Width="71" Height="16"  TabIndex="1" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="Click:temperatureFrame_Click(panelTemperatureFrame1,GroupPanel2)" ForeColor="#000000"  BackColor="Transparent" AutoSize="true" Text="新生儿编辑" Checked="false"/>
+			  <Control Type="RadioButton" Name="rdBtn2" X="185" Y="1" Width="71" Height="16"  TabIndex="2" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="Click:temperatureFrame_Click(panelTemperatureFrame1,GroupPanel2)" ForeColor="#000000" BackColor="Transparent" AutoSize="true" Text="成人编辑" Checked="false"/>
+			   <Control Type="RadioButton" Name="rdBtn3" X="273" Y="1" Width="71" Height="16"  TabIndex="3" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="Click:temperatureFrame_Click(panelTemperatureFrame1,GroupPanel2)" ForeColor="#000000" BackColor="Transparent" AutoSize="true" Text="新生儿打印" Checked="false"/>
+			   <Control Type="RadioButton" Name="rdBtn4" X="361" Y="1" Width="71" Height="16"  TabIndex="4" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="Click:temperatureFrame_Click(panelTemperatureFrame1,GroupPanel2)" ForeColor="#000000" BackColor="Transparent" AutoSize="true" Text="成人打印" Checked="false"/>
+		  </Controls>
+		 </Control>
+		 <Control Type="GroupPanel" Name="panelTemperatureFrame1" X="0" Y="24" Width="597" Height="744"  TabIndex="2" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="5" Events="" AutoScroll="false" Text="体温单操作" ShowFocusRectangle="false" ColorSchemeStyle="4">
+        </Control>
+  </Controls>
+</temperture>

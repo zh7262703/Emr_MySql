@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AppSettings>
+  <ServiceUri>http://172.16.98.87/QcWcf/QcService.svc</ServiceUri>
+</AppSettings>

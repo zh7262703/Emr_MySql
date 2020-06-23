@@ -1,0 +1,1 @@
+Persist Security Info=False;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.1.70)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=NEWDOC)));user id=newdoc;password=new123456,ftp://test:test@192.168.1.70/Update.xml,ftp://test:test@192.168.1.70/DirSet.xml

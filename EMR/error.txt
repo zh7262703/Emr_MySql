@@ -1,0 +1,21 @@
+System.IO.FileLoadException: 未能加载文件或程序集“DevComponents.DotNetBar2, Version=10.5.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+文件名:“DevComponents.DotNetBar2, Version=10.5.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b”
+   在 TextEditor.frmText.init()
+   在 TextEditor.frmText..ctor(Int32 _textKind_ID, Int32 _belong_ToSys_ID, Int32 _sickKind_ID, String _textName, Int32 _tid, InPatientInfo _inPatientInfo, Boolean _userVisible, Boolean _isMore, String _recordTime, String _recordText)
+
+=== 预绑定状态信息 ===
+日志: 用户 = zhanghua-PC\zhanghua
+日志: DisplayName = DevComponents.DotNetBar2, Version=10.5.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b
+ (Fully-specified)
+日志: Appbase = file:///D:/project/EMR6.0 - 副本/EMR/
+日志: 初始 PrivatePath = NULL
+调用程序集: Moran.TextEditor, Version=1.0.6846.18529, Culture=neutral, PublicKeyToken=null。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 正在使用应用程序配置文件: D:\project\EMR6.0 - 副本\EMR\EMR.exe.Config
+日志: 使用 C:\Windows\Microsoft.NET\Framework\v2.0.50727\config\machine.config 的计算机配置文件。
+日志: 策略后引用: DevComponents.DotNetBar2, Version=10.5.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b
+日志: 试图下载新的 URL file:///D:/project/EMR6.0 - 副本/EMR/DevComponents.DotNetBar2.DLL。
+警告: 比较程序集名称时发生不匹配: 主版本
+错误: 未能完成程序集的安装(hr = 0x80131040)。探测终止。
+

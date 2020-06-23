@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="DataOperater">
+</Property><Property Name="解决方案文件" Value="G:\MAS\Remoting服务\DataOperater\DataOperater\DataOperater.sln">
+</Property><Property Name="用户选项文件" Value="G:\MAS\Remoting服务\DataOperater\DataOperater\DataOperater.suo">
+</Property><Property Name="Date" Value="2015年12月10日">
+</Property><Property Name="Time" Value="16:37">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="DataOperater.sln" Description="文件已成功备份为 G:\MAS\Remoting服务\DataOperater\DataOperater\Backup\DataOperater.sln">
+</Event><Event ErrorLevel="0" Project="" Source="DataOperater.suo" Description="文件已成功备份为 G:\MAS\Remoting服务\DataOperater\DataOperater\Backup\DataOperater.suo">
+</Event><Event ErrorLevel="0" Project="DataOperater" Source="DataOperater.csproj" Description="项目文件已成功备份为 G:\MAS\Remoting服务\DataOperater\DataOperater\Backup\DataOperater.csproj">
+</Event><Event ErrorLevel="0" Project="DataOperater" Source="DataOperater.csproj.user" Description="项目用户文件成功备份为 G:\MAS\Remoting服务\DataOperater\DataOperater\Backup\DataOperater.csproj.user">
+</Event><Event ErrorLevel="0" Project="DataOperater" Source="Class_Table.cs" Description="文件已成功备份为 G:\MAS\Remoting服务\DataOperater\DataOperater\Backup\Class_Table.cs">
+</Event><Event ErrorLevel="0" Project="DataOperater" Source="client_obj.cs" Description="文件已成功备份为 G:\MAS\Remoting服务\DataOperater\DataOperater\Backup\client_obj.cs">
+</Event><Event ErrorLevel="0" Project="DataOperater" Source="Oral.cs" Description="文件已成功备份为 G:\MAS\Remoting服务\DataOperater\DataOperater\Backup\Oral.cs">
+</Event><Event ErrorLevel="0" Project="DataOperater" Source="Properties\AssemblyInfo.cs" Description="文件已成功备份为 G:\MAS\Remoting服务\DataOperater\DataOperater\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DataOperater" Source="Properties\Settings.Designer.cs" Description="文件已成功备份为 G:\MAS\Remoting服务\DataOperater\DataOperater\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="DataOperater" Source="App.config" Description="文件已成功备份为 G:\MAS\Remoting服务\DataOperater\DataOperater\Backup\App.config">
+</Event><Event ErrorLevel="0" Project="DataOperater" Source="Properties\Settings.settings" Description="文件已成功备份为 G:\MAS\Remoting服务\DataOperater\DataOperater\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="DataOperater" Source="DataOperater.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="DataOperater" Source="DataOperater.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="" Source="DataOperater.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="DataOperater.sln" Description="Converted">
+</Event></UpgradeLog>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+  <Settings>
+    <ServiceUri>http://localhost:8087/QcService.svc</ServiceUri> 
+  </Settings>

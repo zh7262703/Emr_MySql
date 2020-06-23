@@ -1,0 +1,12 @@
+G:\MAS\Remoting服务\DataOperater\DataOperater\bin\Release\DataOperater.dll.config
+G:\MAS\Remoting服务\DataOperater\DataOperater\bin\Release\DataOperater.dll
+G:\MAS\Remoting服务\DataOperater\DataOperater\bin\Release\DataOperater.pdb
+G:\MAS\Remoting服务\DataOperater\DataOperater\obj\Release\ResolveAssemblyReference.cache
+G:\MAS\Remoting服务\DataOperater\DataOperater\obj\Release\DataOperater.dll
+G:\MAS\Remoting服务\DataOperater\DataOperater\obj\Release\DataOperater.pdb
+D:\Project\MAS\Remoting服务\DataOperater\DataOperater\bin\Release\DataOperater.dll.config
+D:\Project\MAS\Remoting服务\DataOperater\DataOperater\bin\Release\DataOperater.dll
+D:\Project\MAS\Remoting服务\DataOperater\DataOperater\bin\Release\DataOperater.pdb
+D:\Project\MAS\Remoting服务\DataOperater\DataOperater\obj\Release\ResolveAssemblyReference.cache
+D:\Project\MAS\Remoting服务\DataOperater\DataOperater\obj\Release\DataOperater.dll
+D:\Project\MAS\Remoting服务\DataOperater\DataOperater\obj\Release\DataOperater.pdb

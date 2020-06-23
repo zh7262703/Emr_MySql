@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD1AEE69-C55C-4D51-8CF6-EBD005F0D7DF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TempertureEditor</RootNamespace>
+    <AssemblyName>TempertureEditor</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\EMR\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>GRAPH02.ICO</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Base_App, Version=1.0.7413.32321, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\EMR\Base_App.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=10.5.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\KLNK\廊坊爱德堡\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base.cs" />
+    <Compile Include="Comm.cs" />
+    <Compile Include="Controls\DataGridViewPrint.cs" />
+    <Compile Include="Controls\frmDataTxtTypeSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmDataTxtTypeSet.Designer.cs">
+      <DependentUpon>frmDataTxtTypeSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmDataLineTypeSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmDataLineTypeSet.Designer.cs">
+      <DependentUpon>frmDataLineTypeSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmFontSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmFontSet.Designer.cs">
+      <DependentUpon>frmFontSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmImgSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmImgSet.Designer.cs">
+      <DependentUpon>frmImgSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmLineSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmLineSet.Designer.cs">
+      <DependentUpon>frmLineSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmRecSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmRecSet.Designer.cs">
+      <DependentUpon>frmRecSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmMainSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmMainSet.Designer.cs">
+      <DependentUpon>frmMainSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmPensSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmPensSet.Designer.cs">
+      <DependentUpon>frmPensSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmTextSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmTextSet.Designer.cs">
+      <DependentUpon>frmTextSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MultiColHeaderDgv.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EditDesigner\ParsingFileCLMB.cs" />
+    <Compile Include="EditDesigner\ParsingFileTLMB.cs" />
+    <Compile Include="EditDesigner\tlElement\TlAdvTree.cs" />
+    <Compile Include="EditDesigner\tlElement\TlAiTemperature.cs" />
+    <Compile Include="EditDesigner\tlElement\TlButton.cs" />
+    <Compile Include="EditDesigner\tlElement\TlButtonX.cs" />
+    <Compile Include="EditDesigner\tlElement\TlCheckBox.cs" />
+    <Compile Include="EditDesigner\tlElement\TlComboBox.cs" />
+    <Compile Include="EditDesigner\tlElement\TlControl.cs" />
+    <Compile Include="EditDesigner\tlElement\TlDateTimePicker.cs" />
+    <Compile Include="EditDesigner\tlElement\TlEventHandler.cs" />
+    <Compile Include="EditDesigner\tlElement\TlExpandableSplitter.cs" />
+    <Compile Include="EditDesigner\tlElement\TlFont.cs" />
+    <Compile Include="EditDesigner\tlElement\TlGroupBox.cs" />
+    <Compile Include="EditDesigner\tlElement\TlGroupPanel.cs" />
+    <Compile Include="EditDesigner\tlElement\TlLabel.cs" />
+    <Compile Include="EditDesigner\tlElement\TlListBox.cs" />
+    <Compile Include="EditDesigner\tlElement\TlPanel.cs" />
+    <Compile Include="EditDesigner\tlElement\TlPanelControl.cs" />
+    <Compile Include="EditDesigner\tlElement\TlPictureBox.cs" />
+    <Compile Include="EditDesigner\tlElement\TlRadioButton.cs" />
+    <Compile Include="EditDesigner\tlElement\TlRibbonBar.cs" />
+    <Compile Include="EditDesigner\tlElement\TlSlider.cs" />
+    <Compile Include="EditDesigner\tlElement\TlTemperatureReport.cs" />
+    <Compile Include="EditDesigner\tlElement\TlTextBox.cs" />
+    <Compile Include="EditDesigner\ucAiTemperature.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditDesigner\ucMainFrame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditDesigner\ucTemperatureFrame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditDesigner\ucTemperatureLrToolBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditDesigner\ucTemperaturePrintFrame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditDesigner\ucTemperatureReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditDesigner\ucTempratureDataLoad_ai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditDesigner\ucTempratureDataLoad_ai.designer.cs">
+      <DependentUpon>ucTempratureDataLoad_ai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Element\Class_Temprute_Point.cs" />
+    <Compile Include="Element\ClsBase.cs" />
+    <Compile Include="Element\ClsBlock.cs" />
+    <Compile Include="Element\ClsComboData.cs" />
+    <Compile Include="Element\ClsDataObj.cs" />
+    <Compile Include="Element\ClsFont.cs" />
+    <Compile Include="Element\ClsImg.cs" />
+    <Compile Include="Element\ClsLine.cs" />
+    <Compile Include="Element\ClsLinedata.cs" />
+    <Compile Include="Element\ClsMainFrame.cs" />
+    <Compile Include="Element\ClsPens.cs" />
+    <Compile Include="Element\ClsRec.cs" />
+    <Compile Include="Element\ClsSymbol.cs" />
+    <Compile Include="Element\ClsText.cs" />
+    <Compile Include="Element\ClsTextdata.cs" />
+    <Compile Include="Element\Page.cs" />
+    <Compile Include="Element\SymeType.cs" />
+    <Compile Include="frmInputAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputAll.Designer.cs">
+      <DependentUpon>frmInputAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainSelect.Designer.cs">
+      <DependentUpon>frmMainSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperaterTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperaterTest.designer.cs">
+      <DependentUpon>frmOperaterTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrint.Designer.cs">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTempertureDataEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTempertureDataEdit.Designer.cs">
+      <DependentUpon>frmTempertureDataEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTempertureEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTempertureEditor.Designer.cs">
+      <DependentUpon>frmTempertureEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TemperatureInfo.cs" />
+    <Compile Include="Model\TemperatureMonitoring.cs" />
+    <Compile Include="OpenInterface.cs" />
+    <Compile Include="PaperMapMode.cs" />
+    <Compile Include="PrintTp.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tempreture_Management\tempetureDataComm.cs" />
+    <Compile Include="Tempreture_Management\ucTemperPrintDataLoad_child.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tempreture_Management\ucTemperPrintDataLoad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tempreture_Management\ucTemperPrintDataLoad_child.designer.cs">
+      <DependentUpon>ucTemperPrintDataLoad_child.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tempreture_Management\ucTemperPrintDataLoad.designer.cs">
+      <DependentUpon>ucTemperPrintDataLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tempreture_Management\ucTempratureDataLoad_child.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tempreture_Management\ucTempratureDataLoad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tempreture_Management\ucTempratureDataLoad_child.designer.cs">
+      <DependentUpon>ucTempratureDataLoad_child.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tempreture_Management\ucTempratureDataLoad.designer.cs">
+      <DependentUpon>ucTempratureDataLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tempreture_Management\ucTempretureList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tempreture_Management\ucTempretureList.designer.cs">
+      <DependentUpon>ucTempretureList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcTempertureCheckValSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcTempertureCheckValSet.Designer.cs">
+      <DependentUpon>UcTempertureCheckValSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucTempertureEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTempertureEditor.Designer.cs">
+      <DependentUpon>ucTempertureEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucTemperturePrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTemperturePrint.Designer.cs">
+      <DependentUpon>ucTemperturePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucTempraute.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTempraute.designer.cs">
+      <DependentUpon>ucTempraute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\DgvTools.cs" />
+    <Compile Include="Util\DictionaryHelper.cs" />
+    <Compile Include="Util\EnumHelper.cs" />
+    <Compile Include="Util\ObjectHelper.cs" />
+    <Compile Include="Util\RowHelper.cs" />
+    <Compile Include="Util\StringHelper.cs" />
+    <EmbeddedResource Include="Controls\frmDataLineTypeSet.resx">
+      <DependentUpon>frmDataLineTypeSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmDataTxtTypeSet.resx">
+      <DependentUpon>frmDataTxtTypeSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmFontSet.resx">
+      <DependentUpon>frmFontSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmImgSet.resx">
+      <DependentUpon>frmImgSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmLineSet.resx">
+      <DependentUpon>frmLineSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmRecSet.resx">
+      <DependentUpon>frmRecSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmMainSet.resx">
+      <DependentUpon>frmMainSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmPensSet.resx">
+      <DependentUpon>frmPensSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmTextSet.resx">
+      <DependentUpon>frmTextSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDesigner\ucTemperatureReport.resx">
+      <DependentUpon>ucTemperatureReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDesigner\ucTempratureDataLoad_ai.resx">
+      <DependentUpon>ucTempratureDataLoad_ai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInputAll.resx">
+      <DependentUpon>frmInputAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainSelect.resx">
+      <DependentUpon>frmMainSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperaterTest.resx">
+      <DependentUpon>frmOperaterTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTempertureDataEdit.resx">
+      <DependentUpon>frmTempertureDataEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTempertureEditor.resx">
+      <DependentUpon>frmTempertureEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Tempreture_Management\ucTemperPrintDataLoad_child.resx">
+      <DependentUpon>ucTemperPrintDataLoad_child.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tempreture_Management\ucTemperPrintDataLoad.resx">
+      <DependentUpon>ucTemperPrintDataLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tempreture_Management\ucTempratureDataLoad_child.resx">
+      <DependentUpon>ucTempratureDataLoad_child.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tempreture_Management\ucTempratureDataLoad.resx">
+      <DependentUpon>ucTempratureDataLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tempreture_Management\ucTempretureList.resx">
+      <DependentUpon>ucTempretureList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcTempertureCheckValSet.resx">
+      <DependentUpon>UcTempertureCheckValSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTempertureEditor.resx">
+      <DependentUpon>ucTempertureEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTemperturePrint.resx">
+      <DependentUpon>ucTemperturePrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTempraute.resx">
+      <DependentUpon>ucTempraute.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\TempertureSet_new.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GRAPH02.ICO" />
+    <None Include="Resources\Webcontrol_ConnectionsZone.bmp" />
+    <None Include="Resources\prints.bmp" />
+    <None Include="Resources\print.bmp" />
+    <None Include="Resources\Print1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

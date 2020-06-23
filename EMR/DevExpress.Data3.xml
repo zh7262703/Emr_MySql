@@ -1,0 +1,702 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Data3</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Data.SelectionChangedEventHandler.SelectionChangedEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraGrid.Views.Base.ColumnView.SelectionChanged"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.SelectionChangedEventHandler.Invoke(System.Object,DevExpress.Data.SelectionChangedEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraGrid.Views.Base.ColumnView.SelectionChanged"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event sender.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.Data.SelectionChangedEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Data.SelectionChangedEventArgs.SelectionChangedEventArgs">
+
+            <summary>
+                <para>Provides data for the selection changed events.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.SelectionChangedEventArgs.#ctor">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Data.SelectionChangedEventArgs"/> class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Data.SelectionChangedEventArgs.#ctor(System.ComponentModel.CollectionChangeAction,System.Int32)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Data.SelectionChangedEventArgs"/> class with the specified settings.
+</para>
+            </summary>
+            <param name="action">
+		A <see cref="T:System.ComponentModel.CollectionChangeAction"/> enumeration value which specifies how the collection has been changed. This value is assigned to the <see cref="P:DevExpress.Data.SelectionChangedEventArgs.Action"/> property.
+
+            </param>
+            <param name="controllerRow">
+		A zero-based integer specifying the handle of the row whose selected state has been changed. This value is assigned to the <see cref="P:DevExpress.Data.SelectionChangedEventArgs.ControllerRow"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Data.SelectionChangedEventArgs.Action">
+            <summary>
+                <para>Gets an action which describes how the collection has been changed.
+</para>
+            </summary>
+            <value>A <see cref="T:System.ComponentModel.CollectionChangeAction"/> enumeration value which specifies how the collection has been changed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.SelectionChangedEventArgs.ControllerRow">
+            <summary>
+                <para>Identifies the row whose selected state has been changed.
+</para>
+            </summary>
+            <value>A zero-based integer identifying the row whose selected state has been changed.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Data.PivotGrid.PivotFilterType.PivotFilterType">
+
+            <summary>
+                <para>Contains the values that specify a field's filter type in the XtraPivotGrid control.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Data.PivotGrid.PivotFilterType.Excluded">
+            <summary>
+                <para>Specifies that the XtraPivotGrid control should not display the filter values. All the other values will be displayed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.PivotGrid.PivotFilterType.Included">
+            <summary>
+                <para>Specifies that the XtraPivotGrid control should display only the filter values.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Data.CustomSummaryEventHandler.CustomSummaryEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraGrid.Views.Grid.GridView.CustomSummaryCalculate"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.CustomSummaryEventHandler.Invoke(System.Object,DevExpress.Data.CustomSummaryEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraGrid.Views.Grid.GridView.CustomSummaryCalculate"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.Data.CustomSummaryEventArgs"/> object containing data related to the event.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Data.SummaryItemType.SummaryItemType">
+
+            <summary>
+                <para>Lists values specifying the aggregate function types.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Data.SummaryItemType.Average">
+            <summary>
+                <para>The average value of a column.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.SummaryItemType.Count">
+            <summary>
+                <para>The record count.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.SummaryItemType.Custom">
+            <summary>
+                <para>Specifies whether calculations should be performed manually using a specially designed event.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.SummaryItemType.Max">
+            <summary>
+                <para>The maximum value in a column.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.SummaryItemType.Min">
+            <summary>
+                <para>The minimum value in a column.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.SummaryItemType.None">
+            <summary>
+                <para>Disables summary value calculation.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.SummaryItemType.Sum">
+            <summary>
+                <para>The sum of all values in a column.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Data.ColumnSortOrder.ColumnSortOrder">
+
+            <summary>
+                <para>Lists values specifying the sort orders.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Data.ColumnSortOrder.Ascending">
+            <summary>
+                <para>Sorts the column in ascending order.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.ColumnSortOrder.Descending">
+            <summary>
+                <para>Sorts the columns in descending order.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.ColumnSortOrder.None">
+            <summary>
+                <para>No sorting is applied to a column.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Data.CustomSummaryExistEventArgs.CustomSummaryExistEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraGrid.Views.Grid.GridView.CustomSummaryExists"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.CustomSummaryExistEventArgs.#ctor(System.Int32,System.Int32,System.Object)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Data.CustomSummaryExistEventArgs"/> class.
+</para>
+            </summary>
+            <param name="groupRowHandle">
+		An integer value specifying the handle of the group row whose summary value is about to be calculated. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryExistEventArgs.GroupRowHandle"/> property.
+
+            </param>
+            <param name="groupLevel">
+		An integer value specifying the zero-based nesting level of the processed group. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryExistEventArgs.GroupLevel"/> property.
+
+            </param>
+            <param name="item">
+		An object which represents the summary item whose value is about to be calculated. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryExistEventArgs.Item"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryExistEventArgs.Exists">
+            <summary>
+                <para>Gets or sets whether the summary value should be calculated and displayed.
+</para>
+            </summary>
+            <value><B>true</B> to calculate and display the summary value; otherwise, <B>false</B>. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryExistEventArgs.GroupLevel">
+            <summary>
+                <para>Gets the nesting level of the group whose summary value is being calculated.
+</para>
+            </summary>
+            <value>An integer value representing the zero-based nesting level of the processed group.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryExistEventArgs.GroupRowHandle">
+            <summary>
+                <para>Gets a value identifying the group row whose summary value is about to be calculated.
+</para>
+            </summary>
+            <value>An integer value representing the handle of the group row whose summary value is about to be calculated. <B>0</B> when calculating a total summary value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryExistEventArgs.IsGroupSummary">
+            <summary>
+                <para>Gets whether a group summary value is about to be calculated.
+</para>
+            </summary>
+            <value><B>true</B> if a group summary value is about to be calculated; otherwise, <B>false</B>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryExistEventArgs.IsTotalSummary">
+            <summary>
+                <para>Gets whether a total summary value is about to be calculated.
+</para>
+            </summary>
+            <value><B>true</B> if a total summary value is about to be calculated; otherwise, <B>false</B>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryExistEventArgs.Item">
+            <summary>
+                <para>Gets a summary item whose value is about to be calculated.
+</para>
+            </summary>
+            <value>An object representing a summary item whose value is about to be calculated.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Data.CustomSummaryProcess.CustomSummaryProcess">
+
+            <summary>
+                <para>Specifies the current status of custom summary calculation.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Data.CustomSummaryProcess.Calculate">
+            <summary>
+                <para>Indicates that custom summary calculation is in progress. This means the event is raised for a specific data row containing the field value used to calculate the processed custom summary.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.CustomSummaryProcess.Finalize">
+            <summary>
+                <para>Indicates that the process of custom summary calculation is finished. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.CustomSummaryProcess.Start">
+            <summary>
+                <para>Indicates that the process of custom summary calculation is about to be started. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Data.PivotGrid.PivotSummaryType.PivotSummaryType">
+
+            <summary>
+                <para>Lists values that specify the summary function types.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Data.PivotGrid.PivotSummaryType.Average">
+            <summary>
+                <para>The average of the values.
+<para>
+
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.PivotGrid.PivotSummaryType.Count">
+            <summary>
+                <para>The number of values.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.PivotGrid.PivotSummaryType.Custom">
+            <summary>
+                <para>Specifies whether calculations should be performed manually using a specially designed event. 
+
+<para>
+In the XtraPivotGrid control handle the <see cref="E:DevExpress.XtraPivotGrid.PivotGridControl.CustomSummary"/> event to calculate custom summaries.
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.PivotGrid.PivotSummaryType.Max">
+            <summary>
+                <para>The largest value.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.PivotGrid.PivotSummaryType.Min">
+            <summary>
+                <para>The smallest value.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.PivotGrid.PivotSummaryType.StdDev">
+            <summary>
+                <para>An estimate of the standard deviation of a population, where the sample is a subset of the entire population.
+<para>
+
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.PivotGrid.PivotSummaryType.StdDevp">
+            <summary>
+                <para>The standard deviation of a population, where the population is all of the data to be summarized.
+<para>
+
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.PivotGrid.PivotSummaryType.Sum">
+            <summary>
+                <para>The sum of the values.
+<para>
+
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.PivotGrid.PivotSummaryType.Var">
+            <summary>
+                <para>An estimate of the variance of a population, where the sample is a subset of the entire population.
+<para>
+
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.PivotGrid.PivotSummaryType.Varp">
+            <summary>
+                <para>The variance of a population, where the population is all of the data to be summarized.
+<para>
+
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Data.UnboundColumnType.UnboundColumnType">
+
+            <summary>
+                <para>Contains values that specify the data type and binding mode of columns.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Data.UnboundColumnType.Boolean">
+            <summary>
+                <para>Indicates that the column is unbound and it contains Boolean values (the <see cref="T:System.Boolean"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.UnboundColumnType.Bound">
+            <summary>
+                <para>Indicates that the column is bound to a field in the control's underlying data source. The type of data this column contains is determined by the bound field.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.UnboundColumnType.DateTime">
+            <summary>
+                <para>Indicates that the column is unbound and it contains date/time values (the <see cref="T:System.DateTime"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.UnboundColumnType.Decimal">
+            <summary>
+                <para>Indicates that the column is unbound and it contains decimal values (the <see cref="T:System.Decimal"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.UnboundColumnType.Integer">
+            <summary>
+                <para>Indicates that the column is unbound and it contains integer values (the <see cref="T:System.Int32"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.UnboundColumnType.Object">
+            <summary>
+                <para>Indicates that the column is unbound and it contains values of any type. A <see cref="T:DevExpress.XtraEditors.TextEdit"/> editor is assigned for the in-place editing of such a column.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.UnboundColumnType.String">
+            <summary>
+                <para>Indicates that the column is unbound and it contains string values (the <see cref="T:System.String"/> type). 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Data.CustomSummaryEventArgs.CustomSummaryEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraGrid.Views.Grid.GridView.CustomSummaryCalculate"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.CustomSummaryEventArgs.#ctor(System.Int32,System.Object,System.Object,System.Int32,DevExpress.Data.CustomSummaryProcess,System.Object,System.Int32)">
+            <summary>
+                <para>Creates a new <see cref="T:DevExpress.Data.CustomSummaryEventArgs"/> object.
+</para>
+            </summary>
+            <param name="rowHandle">
+		An integer value identifying the processed row by its handle. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryEventArgs.RowHandle"/> property.
+
+            </param>
+            <param name="totalValue">
+		An object representing the custom calculated summary value. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryEventArgs.TotalValue"/> property.
+
+            </param>
+            <param name="fieldValue">
+		An object representing the currently processed field value. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryEventArgs.FieldValue"/> property.
+
+            </param>
+            <param name="groupRowHandle">
+		An integer value identifying the group row whose child data rows are involved in summary calculation. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryEventArgs.GroupRowHandle"/> property.
+
+            </param>
+            <param name="summaryProcess">
+		A <see cref="T:DevExpress.Data.CustomSummaryProcess"/> enumeration value identifying the current calculation stage. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryEventArgs.SummaryProcess"/> property.
+
+            </param>
+            <param name="item">
+		An object representing the summary item whose value is being calculated. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryEventArgs.Item"/> property.
+
+            </param>
+            <param name="groupLevel">
+		An integer value indicating the nested group level of the processed row. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryEventArgs.GroupLevel"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.CustomSummaryEventArgs.#ctor">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Data.CustomSummaryEventArgs"/> class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.FieldValue">
+            <summary>
+                <para>Gets the processed field value.
+</para>
+            </summary>
+            <value>An object representing the processed field value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.GroupLevel">
+            <summary>
+                <para>Gets the nested level of the group whose summary value is being calculated.
+</para>
+            </summary>
+            <value>An integer value representing the zero-based nested level of the processed group.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.GroupRowHandle">
+            <summary>
+                <para>Gets a value identifying the group row whose child data rows are involved in summary calculation.
+</para>
+            </summary>
+            <value>An integer value representing the handle of the group row containing the processed row as a child. <B>0</B> when calculating a total summary value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.IsGroupSummary">
+            <summary>
+                <para>Gets whether a group summary value is being calculated.
+</para>
+            </summary>
+            <value><B>true</B> if a group summary value is being calculated; otherwise, <B>false</B>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.IsTotalSummary">
+            <summary>
+                <para>Gets whether a total summary value is being calculated.
+</para>
+            </summary>
+            <value><B>true</B> if a total summary value is being calculated; otherwise, <B>false</B>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.Item">
+            <summary>
+                <para>Gets a summary item whose value is being calculated.
+</para>
+            </summary>
+            <value>An object representing a summary item whose value is being calculated.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.RowHandle">
+            <summary>
+                <para>Gets the handle of the processed row.
+</para>
+            </summary>
+            <value>An integer value identifying the processed data row by its handle.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.SummaryProcess">
+            <summary>
+                <para>Gets a value indicating calculation stage.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Data.CustomSummaryProcess"/> enumeration value indicating calculation stage.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.TotalValue">
+            <summary>
+                <para>Gets or sets the total summary value.
+</para>
+            </summary>
+            <value>An object representing the total summary value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.TotalValueReady">
+            <summary>
+                <para>Gets or sets whether the Calculation stage of the custom summary calculation process should be skipped.
+</para>
+            </summary>
+            <value><b>true</b> if the Calculation stage of the custom summary calculation process should be skipped; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Data.CustomSummaryExistEventHandler.CustomSummaryExistEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraGrid.Views.Grid.GridView.CustomSummaryExists"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.CustomSummaryExistEventHandler.Invoke(System.Object,DevExpress.Data.CustomSummaryExistEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraGrid.Views.Grid.GridView.CustomSummaryExists"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.Data.CustomSummaryExistEventArgs"/> object containing data related to the event.
+
+            </param>
+
+
+        </member>
+    </members>
+</doc>

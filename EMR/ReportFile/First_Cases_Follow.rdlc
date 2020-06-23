@@ -1,0 +1,4777 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>d4660041-43c4-4176-bff9-b3c80130ceb0</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=newdoc70;User ID=newdoc;Password=new123456;Unicode=True</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>0.6cm</RightMargin>
+  <LeftMargin>0.7cm</LeftMargin>
+  <BottomMargin>0.4cm</BottomMargin>
+  <rd:ReportID>eb972e4b-ad47-4c24-a28d-dded2dbff2d2</rd:ReportID>
+  <PageWidth>22cm</PageWidth>
+  <DataSets>
+    <DataSet Name="DsReportSource_COVER_ATTACH_OPER">
+      <Fields>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PAGE_ID">
+          <DataField>PAGE_ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OPER_NAME1">
+          <DataField>OPER_NAME1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_DATE_CHANGE1">
+          <DataField>IS_DATE_CHANGE1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ASA_LEVEL1">
+          <DataField>ASA_LEVEL1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NHIS_LEVEL1">
+          <DataField>NHIS_LEVEL1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_ANTIBIOSIS1">
+          <DataField>IS_ANTIBIOSIS1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SERIAL_NUMBER1">
+          <DataField>SERIAL_NUMBER1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OPER_NAME2">
+          <DataField>OPER_NAME2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_DATE_CHANGE2">
+          <DataField>IS_DATE_CHANGE2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ASA_LEVEL2">
+          <DataField>ASA_LEVEL2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NHIS_LEVEL2">
+          <DataField>NHIS_LEVEL2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_ANTIBIOSIS2">
+          <DataField>IS_ANTIBIOSIS2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SERIAL_NUMBER2">
+          <DataField>SERIAL_NUMBER2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OPER_NAME3">
+          <DataField>OPER_NAME3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_DATE_CHANGE3">
+          <DataField>IS_DATE_CHANGE3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ASA_LEVEL3">
+          <DataField>ASA_LEVEL3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NHIS_LEVEL3">
+          <DataField>NHIS_LEVEL3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_ANTIBIOSIS3">
+          <DataField>IS_ANTIBIOSIS3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SERIAL_NUMBER3">
+          <DataField>SERIAL_NUMBER3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OPER_NAME4">
+          <DataField>OPER_NAME4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_DATE_CHANGE4">
+          <DataField>IS_DATE_CHANGE4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ASA_LEVEL4">
+          <DataField>ASA_LEVEL4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NHIS_LEVEL4">
+          <DataField>NHIS_LEVEL4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_ANTIBIOSIS4">
+          <DataField>IS_ANTIBIOSIS4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SERIAL_NUMBER4">
+          <DataField>SERIAL_NUMBER4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OPER_NAME5">
+          <DataField>OPER_NAME5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_DATE_CHANGE5">
+          <DataField>IS_DATE_CHANGE5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ASA_LEVEL5">
+          <DataField>ASA_LEVEL5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NHIS_LEVEL5">
+          <DataField>NHIS_LEVEL5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_ANTIBIOSIS5">
+          <DataField>IS_ANTIBIOSIS5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SERIAL_NUMBER5">
+          <DataField>SERIAL_NUMBER5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OPER_NAME6">
+          <DataField>OPER_NAME6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_DATE_CHANGE6">
+          <DataField>IS_DATE_CHANGE6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ASA_LEVEL6">
+          <DataField>ASA_LEVEL6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NHIS_LEVEL6">
+          <DataField>NHIS_LEVEL6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_ANTIBIOSIS6">
+          <DataField>IS_ANTIBIOSIS6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SERIAL_NUMBER6">
+          <DataField>SERIAL_NUMBER6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DsReportSource</rd:DataSetName>
+        <rd:TableName>COVER_ATTACH_OPER</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="DsReportSource_COVER_ATTACH_PAGE">
+      <Fields>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PATIENT_NAME">
+          <DataField>PATIENT_NAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PATIENT_ID">
+          <DataField>PATIENT_ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PID">
+          <DataField>PID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_EXECUTE">
+          <DataField>IS_EXECUTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_FINISH">
+          <DataField>IS_FINISH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_MUTATE">
+          <DataField>IS_MUTATE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="QUIT_REASON">
+          <DataField>QUIT_REASON</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MUTATE_REASON">
+          <DataField>MUTATE_REASON</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_DIFFICULT">
+          <DataField>IS_DIFFICULT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_SEVERE">
+          <DataField>IS_SEVERE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIMEFROMFIRSTIN">
+          <DataField>TIMEFROMFIRSTIN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_SAME_PREIN">
+          <DataField>IS_SAME_PREIN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_INFUSE">
+          <DataField>IS_INFUSE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_INFUSE_REACTION">
+          <DataField>IS_INFUSE_REACTION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_BLOOD_INFUSE">
+          <DataField>IS_BLOOD_INFUSE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_BLOOD_INFUSE_REACTION">
+          <DataField>IS_BLOOD_INFUSE_REACTION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_BEDSORE">
+          <DataField>IS_BEDSORE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BEDSORE_TIME">
+          <DataField>BEDSORE_TIME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BEDSORE_LEVEL">
+          <DataField>BEDSORE_LEVEL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_FELL">
+          <DataField>IS_FELL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FELL_DAMAGE_LEVEL">
+          <DataField>FELL_DAMAGE_LEVEL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FELL_REASON">
+          <DataField>FELL_REASON</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_PHYSICAL_CONSTRAINT">
+          <DataField>IS_PHYSICAL_CONSTRAINT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONSTRAINT_TIMESPAN">
+          <DataField>CONSTRAINT_TIMESPAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONSTRAINT_TOOL">
+          <DataField>CONSTRAINT_TOOL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONSTRAINT_REASON">
+          <DataField>CONSTRAINT_REASON</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ICU_INFO">
+          <DataField>ICU_INFO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_RETURNICU">
+          <DataField>IS_RETURNICU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RETURN_TIMESPAN">
+          <DataField>RETURN_TIMESPAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_CANCER">
+          <DataField>IS_CANCER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="QUIT_REASON_OTHER">
+          <DataField>QUIT_REASON_OTHER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MUTATE_REASON_OTHER">
+          <DataField>MUTATE_REASON_OTHER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONSTRAINT_METHOD">
+          <DataField>CONSTRAINT_METHOD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SUPREME_DIAG_BASE">
+          <DataField>SUPREME_DIAG_BASE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CANCER_LEVEL">
+          <DataField>CANCER_LEVEL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_INFECTED">
+          <DataField>IS_INFECTED</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="INFECTED_PART">
+          <DataField>INFECTED_PART</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="INFECTED_NAME">
+          <DataField>INFECTED_NAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="INFECTED_NAME_OTHER">
+          <DataField>INFECTED_NAME_OTHER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_DIE_WITHIN">
+          <DataField>IS_DIE_WITHIN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_DIE_AFTER">
+          <DataField>IS_DIE_AFTER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_PRE_ANTIBIOSIS_DRUG">
+          <DataField>IS_PRE_ANTIBIOSIS_DRUG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRE_ANTIBIOSIS_TIMESPAN">
+          <DataField>PRE_ANTIBIOSIS_TIMESPAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRE_UNION_DRUG">
+          <DataField>PRE_UNION_DRUG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_ANTIBIOSIS_DRUG">
+          <DataField>IS_ANTIBIOSIS_DRUG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ANTIBIOSIS_DRUG_TIMESPAN">
+          <DataField>ANTIBIOSIS_DRUG_TIMESPAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ICU_INFO_OTHER">
+          <DataField>ICU_INFO_OTHER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FELL_REASON_OTHER">
+          <DataField>FELL_REASON_OTHER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONSTRAINT_METHOD_OTHER">
+          <DataField>CONSTRAINT_METHOD_OTHER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONSTRAINT_TOOL_OTHER">
+          <DataField>CONSTRAINT_TOOL_OTHER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONSTRAINT_REASON_OTHER">
+          <DataField>CONSTRAINT_REASON_OTHER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_PIPE_DROP">
+          <DataField>IS_PIPE_DROP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="WITHIN_UNION_DRUG">
+          <DataField>WITHIN_UNION_DRUG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IS_MISSDRAGTODIED">
+          <DataField>IS_MISSDRAGTODIED</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OPERUNKNOWCOUNT">
+          <DataField>OPERUNKNOWCOUNT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TXTTHINGSHAPPEDRATE">
+          <DataField>TXTTHINGSHAPPEDRATE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ISICUINHOSPITAL">
+          <DataField>ISICUINHOSPITAL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DsReportSource</rd:DataSetName>
+        <rd:TableName>COVER_ATTACH_PAGE</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Code />
+  <Width>19.71463cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox193">
+        <rd:DefaultName>textbox193</rd:DefaultName>
+        <Top>47.5cm</Top>
+        <Width>17.75132cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>17</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.75cm</Left>
+        <Height>1cm</Height>
+        <Value>手术持续时间的分值相加（见下表），总分0分为手术风险指数0级，余类推，1分为1级、2分为2级，3分为3级。手术风险分值分配表：</Value>
+      </Textbox>
+      <Textbox Name="textbox192">
+        <rd:DefaultName>textbox192</rd:DefaultName>
+        <Top>47cm</Top>
+        <Width>11.25cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>16</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>7.25cm</Left>
+        <Height>0.74074cm</Height>
+        <Value>手术风险分为4级。具体计算方法：将手术切口清洁程度、麻醉分级和</Value>
+      </Textbox>
+      <Textbox Name="textbox191">
+        <rd:DefaultName>textbox191</rd:DefaultName>
+        <Top>47cm</Top>
+        <Width>5.5cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>15</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.75cm</Left>
+        <Height>0.74074cm</Height>
+        <Value>（二）手术风险（NNIS）分级：</Value>
+      </Textbox>
+      <Rectangle Name="rectangle2">
+        <Left>0.75cm</Left>
+        <ZIndex>14</ZIndex>
+        <ReportItems>
+          <Line Name="line31">
+            <Width>0cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>16</ZIndex>
+            <Left>13.25cm</Left>
+          </Line>
+          <Line Name="line30">
+            <Width>0cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>15</ZIndex>
+            <Left>8.75cm</Left>
+          </Line>
+          <Line Name="line29">
+            <Width>0cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>14</ZIndex>
+            <Left>4.25cm</Left>
+          </Line>
+          <Line Name="line28">
+            <Top>1.5cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>13</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line27">
+            <Top>0.75cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>12</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="textbox194">
+            <rd:DefaultName>textbox194</rd:DefaultName>
+            <Width>2.98942cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>11</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.5cm</Left>
+            <Height>0.75cm</Height>
+            <Value>分值</Value>
+          </Textbox>
+          <Textbox Name="textbox197">
+            <rd:DefaultName>textbox197</rd:DefaultName>
+            <Width>3.99471cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>10</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>13.5cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>手术持续时间</Value>
+          </Textbox>
+          <Textbox Name="textbox196">
+            <rd:DefaultName>textbox196</rd:DefaultName>
+            <Width>3.99471cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>9</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>麻醉分级</Value>
+          </Textbox>
+          <Textbox Name="textbox195">
+            <rd:DefaultName>textbox195</rd:DefaultName>
+            <Width>4.00661cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>8</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.5cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>手术切口类型</Value>
+          </Textbox>
+          <Textbox Name="textbox202">
+            <rd:DefaultName>textbox202</rd:DefaultName>
+            <Top>0.75cm</Top>
+            <Width>3.99471cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>7</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9cm</Left>
+            <Height>0.5cm</Height>
+            <Value>P1、P2</Value>
+          </Textbox>
+          <Textbox Name="textbox200">
+            <rd:DefaultName>textbox200</rd:DefaultName>
+            <Top>0.75cm</Top>
+            <Width>3.99471cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>6</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.5cm</Left>
+            <Height>0.5cm</Height>
+            <Value>0类、I类、II类切口</Value>
+          </Textbox>
+          <Textbox Name="textbox198">
+            <rd:DefaultName>textbox198</rd:DefaultName>
+            <Top>0.75cm</Top>
+            <Width>2.98942cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>5</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.5cm</Left>
+            <Height>0.5cm</Height>
+            <Value>0分</Value>
+          </Textbox>
+          <Textbox Name="textbox204">
+            <rd:DefaultName>textbox204</rd:DefaultName>
+            <Top>0.75cm</Top>
+            <Width>4.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>13.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>未超出标准时间（3小时）</Value>
+          </Textbox>
+          <Textbox Name="textbox205">
+            <rd:DefaultName>textbox205</rd:DefaultName>
+            <Top>1.5cm</Top>
+            <Width>3.99471cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>13.5cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>超出标准时间（3小时）</Value>
+          </Textbox>
+          <Textbox Name="textbox203">
+            <rd:DefaultName>textbox203</rd:DefaultName>
+            <Top>1.5cm</Top>
+            <Width>3.99471cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>P3、P4、P5</Value>
+          </Textbox>
+          <Textbox Name="textbox201">
+            <rd:DefaultName>textbox201</rd:DefaultName>
+            <Top>1.5cm</Top>
+            <Width>3.99471cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.5cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>III类、IV类切口</Value>
+          </Textbox>
+          <Textbox Name="textbox199">
+            <rd:DefaultName>textbox199</rd:DefaultName>
+            <Top>1.5cm</Top>
+            <Width>2.98942cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Left>0.5cm</Left>
+            <Height>0.5cm</Height>
+            <Value>1分</Value>
+          </Textbox>
+        </ReportItems>
+        <Top>48.5cm</Top>
+        <Width>17.75132cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+      </Rectangle>
+      <Textbox Name="textbox190">
+        <rd:DefaultName>textbox190</rd:DefaultName>
+        <Top>46.25cm</Top>
+        <Width>17.75132cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>13</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.75cm</Left>
+        <Height>1cm</Height>
+        <Value>临床症状的患者；4.P4有明显系统临床症状，且危及生命的患者；5.P5不手术将不能存活的患者；6.P6脑死亡的患者。</Value>
+      </Textbox>
+      <Textbox Name="textbox189">
+        <rd:DefaultName>textbox189</rd:DefaultName>
+        <Top>45.75cm</Top>
+        <Width>12.5cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>12</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>6cm</Left>
+        <Height>0.74074cm</Height>
+        <Value>（6级）： 1.P1正常的患者； 2.P2有轻微临床症状的患者； 3.P3有明显系统</Value>
+      </Textbox>
+      <Textbox Name="textbox188">
+        <rd:DefaultName>textbox188</rd:DefaultName>
+        <Top>45.75cm</Top>
+        <Width>5.5cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>11</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.75cm</Left>
+        <Height>0.74074cm</Height>
+        <Value>说明：（一）麻醉（ASA）分级</Value>
+      </Textbox>
+      <Textbox Name="PID">
+        <rd:DefaultName>PID</rd:DefaultName>
+        <Top>2cm</Top>
+        <Width>2.75cm</Width>
+        <Style>
+          <BorderColor>
+            <Bottom>Black</Bottom>
+          </BorderColor>
+          <BorderStyle>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderWidth>
+            <Bottom>1pt</Bottom>
+          </BorderWidth>
+          <FontFamily>宋体</FontFamily>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>10</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>14.75cm</Left>
+        <Height>0.5cm</Height>
+        <Value>="00"+First(Fields!PID.Value.ToString(), "DsReportSource_COVER_ATTACH_PAGE")</Value>
+      </Textbox>
+      <Textbox Name="PATIENT_NAME">
+        <rd:DefaultName>PATIENT_NAME</rd:DefaultName>
+        <Top>2cm</Top>
+        <Width>2.75cm</Width>
+        <Style>
+          <BorderColor>
+            <Bottom>Black</Bottom>
+          </BorderColor>
+          <BorderStyle>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderWidth>
+            <Bottom>1pt</Bottom>
+          </BorderWidth>
+          <FontFamily>宋体</FontFamily>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>9</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.5cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!PATIENT_NAME.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <Top>2cm</Top>
+        <Width>1.5cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <FontSize>11pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>8</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>13.25cm</Left>
+        <Height>0.74074cm</Height>
+        <Value>住院号</Value>
+      </Textbox>
+      <Textbox Name="textbox4">
+        <rd:DefaultName>textbox4</rd:DefaultName>
+        <Top>2cm</Top>
+        <Width>1.25cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <FontSize>11pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>7</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>2.25cm</Left>
+        <Height>0.74074cm</Height>
+        <Value>姓名</Value>
+      </Textbox>
+      <Textbox Name="textbox3">
+        <rd:DefaultName>textbox3</rd:DefaultName>
+        <Top>1.75cm</Top>
+        <Width>3.75cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <FontSize>11pt</FontSize>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>6</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>8cm</Left>
+        <Height>0.74074cm</Height>
+        <Value>（医疗质量管理用）</Value>
+      </Textbox>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Top>1cm</Top>
+        <Width>4.39268cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <FontSize>13pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>7.66097cm</Left>
+        <Height>0.75cm</Height>
+        <Value>住院病案首页 附页
+
+</Value>
+      </Textbox>
+      <Textbox Name="textbox2">
+        <Top>0.25cm</Top>
+        <Width>3.59789cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <FontSize>12pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>3pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>10.36178cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>(组织机构代码:</Value>
+      </Textbox>
+      <Textbox Name="textbox114">
+        <Top>0.25198cm</Top>
+        <Width>5.97885cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <FontSize>12pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>1pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>13.48578cm</Left>
+        <Height>0.5291cm</Height>
+        <Value>46650456-932031111A5191)</Value>
+      </Textbox>
+      <Textbox Name="textbox176">
+        <rd:DefaultName>textbox176</rd:DefaultName>
+        <Top>0.29167cm</Top>
+        <Width>3.80953cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <FontSize>12pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>1pt</PaddingTop>
+          <PaddingBottom>1pt</PaddingBottom>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3cm</Left>
+        <Height>0.58201cm</Height>
+        <Value>徐州市儿童医院</Value>
+      </Textbox>
+      <Textbox Name="textbox111">
+        <Top>0.25cm</Top>
+        <Width>2.35451cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <FontSize>12pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.72889cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>医疗机构:</Value>
+      </Textbox>
+      <Rectangle Name="rectangle1">
+        <Left>0.75cm</Left>
+        <ReportItems>
+          <Line Name="line34">
+            <Top>23cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>215</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line33">
+            <Top>22.75cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>214</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="textbox37">
+            <rd:DefaultName>textbox37</rd:DefaultName>
+            <Top>16.25cm</Top>
+            <Width>5.5cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>213</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>6cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.否 2.是 (如是请填写一下内容)</Value>
+          </Textbox>
+          <Textbox Name="textbox34">
+            <Top>16.25cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>212</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!ISICUINHOSPITAL.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox23">
+            <rd:DefaultName>textbox23</rd:DefaultName>
+            <Top>28.75cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>211</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.5cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_MISSDRAGTODIED.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox21">
+            <rd:DefaultName>textbox21</rd:DefaultName>
+            <Top>31.5cm</Top>
+            <Width>2.75cm</Width>
+            <Style>
+              <BorderColor>
+                <Bottom>Black</Bottom>
+              </BorderColor>
+              <BorderStyle>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderWidth>
+                <Bottom>1pt</Bottom>
+              </BorderWidth>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>210</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>13.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!TXTTHINGSHAPPEDRATE.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Line Name="line32">
+            <Top>32.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>209</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="MUTATE_REASON">
+            <rd:DefaultName>MUTATE_REASON</rd:DefaultName>
+            <Top>1.75cm</Top>
+            <Width>2.5cm</Width>
+            <Style>
+              <BorderColor>
+                <Bottom>Black</Bottom>
+              </BorderColor>
+              <BorderStyle>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderWidth>
+                <Bottom>1pt</Bottom>
+              </BorderWidth>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>208</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>12.75cm</Left>
+            <Height>0.5cm</Height>
+            <Value />
+          </Textbox>
+          <Textbox Name="textbox156">
+            <rd:DefaultName>textbox156</rd:DefaultName>
+            <Top>35.5cm</Top>
+            <Width>3.25397cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>207</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>14.25cm</Left>
+            <Height>1.24339cm</Height>
+            <Value>是否术前0.5-2小时内预防用抗菌药</Value>
+          </Textbox>
+          <Textbox Name="textbox153">
+            <rd:DefaultName>textbox153</rd:DefaultName>
+            <Top>35.5cm</Top>
+            <Width>1.50794cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>206</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>8.25cm</Left>
+            <Height>1.24339cm</Height>
+            <Value>是否择期手术</Value>
+          </Textbox>
+          <Textbox Name="textbox152">
+            <rd:DefaultName>textbox152</rd:DefaultName>
+            <Top>35.5cm</Top>
+            <Width>3.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontSize>11pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>205</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>手术及操作名称</Value>
+          </Textbox>
+          <Textbox Name="textbox147">
+            <rd:DefaultName>textbox147</rd:DefaultName>
+            <Top>36cm</Top>
+            <Width>0.74074cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontSize>11pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>204</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>号</Value>
+          </Textbox>
+          <Line Name="line26">
+            <Top>35cm</Top>
+            <Width>0cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>203</ZIndex>
+            <Left>14cm</Left>
+          </Line>
+          <Line Name="line25">
+            <Top>35cm</Top>
+            <Width>0cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>202</ZIndex>
+            <Left>12cm</Left>
+          </Line>
+          <Line Name="line24">
+            <Top>35cm</Top>
+            <Width>0cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>201</ZIndex>
+            <Left>10cm</Left>
+          </Line>
+          <Line Name="line23">
+            <Top>35cm</Top>
+            <Width>0cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>200</ZIndex>
+            <Left>8cm</Left>
+          </Line>
+          <Line Name="line22">
+            <Top>35cm</Top>
+            <Width>0cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>199</ZIndex>
+            <Left>1cm</Left>
+          </Line>
+          <Line Name="line21">
+            <Top>41.75cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>198</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line20">
+            <Top>40.75cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>197</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line19">
+            <Top>39.75cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>196</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line18">
+            <Top>38.75cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>195</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line17">
+            <Top>37.75cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>194</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line16">
+            <Top>37cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>193</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line15">
+            <Top>35cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>192</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line14">
+            <Top>34cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>191</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line13">
+            <Top>31.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>190</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="PRE_UNION_DRUG">
+            <rd:DefaultName>PRE_UNION_DRUG</rd:DefaultName>
+            <Top>30.5cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>189</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!PRE_UNION_DRUG.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox132">
+            <rd:DefaultName>textbox132</rd:DefaultName>
+            <Top>30.5cm</Top>
+            <Width>7cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>188</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.75cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>1.一联　2.二联　3.三联　4.四联及以上</Value>
+          </Textbox>
+          <Textbox Name="textbox131">
+            <rd:DefaultName>textbox131</rd:DefaultName>
+            <Top>30.5cm</Top>
+            <Width>3cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>187</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>是否联合用药：</Value>
+          </Textbox>
+          <Textbox Name="textbox130">
+            <rd:DefaultName>textbox130</rd:DefaultName>
+            <Top>29.75cm</Top>
+            <Width>1cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>186</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>13.5cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>小时</Value>
+          </Textbox>
+          <Textbox Name="PRE_ANTIBIOSIS_TIMESPAN">
+            <rd:DefaultName>PRE_ANTIBIOSIS_TIMESPAN</rd:DefaultName>
+            <Top>29.75cm</Top>
+            <Width>2.24868cm</Width>
+            <Style>
+              <BorderColor>
+                <Bottom>Black</Bottom>
+              </BorderColor>
+              <BorderStyle>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderWidth>
+                <Bottom>1pt</Bottom>
+              </BorderWidth>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>185</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>11.25cm</Left>
+            <Height>0.5cm</Height>
+            <Value>=First(Fields!PRE_ANTIBIOSIS_TIMESPAN.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox127">
+            <Top>29.75cm</Top>
+            <Width>4.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>184</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>6.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是 2.否，使用持续时间：</Value>
+          </Textbox>
+          <Textbox Name="textbox128">
+            <Top>29.75cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>183</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>6cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_PRE_ANTIBIOSIS_DRUG.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox126">
+            <rd:DefaultName>textbox126</rd:DefaultName>
+            <Top>29.75cm</Top>
+            <Width>6cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>182</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>Ⅰ类手术切口预防性应用抗菌药物</Value>
+          </Textbox>
+          <Line Name="line12">
+            <Top>29.5cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>181</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="textbox124">
+            <Top>28cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>180</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>14.5cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是 2.否</Value>
+          </Textbox>
+          <Textbox Name="textbox125">
+            <Top>28cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>179</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>13.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_DIE_AFTER.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox123">
+            <rd:DefaultName>textbox123</rd:DefaultName>
+            <Top>28cm</Top>
+            <Width>3.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>178</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10.5cm</Left>
+            <Height>0.75cm</Height>
+            <Value>是否发生术后猝死 </Value>
+          </Textbox>
+          <Textbox Name="textbox121">
+            <Top>28cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>177</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>8.25661cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是 2.否</Value>
+          </Textbox>
+          <Textbox Name="textbox122">
+            <Top>28cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>176</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>7.50661cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_DIE_WITHIN.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox120">
+            <rd:DefaultName>textbox120</rd:DefaultName>
+            <Top>28cm</Top>
+            <Width>7.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>175</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>手术及操作相关情况：是否发生围术期死亡</Value>
+          </Textbox>
+          <Line Name="line11">
+            <Top>27.75cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>174</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="INFECTED_NAME_OTHER">
+            <rd:DefaultName>INFECTED_NAME_OTHER</rd:DefaultName>
+            <Top>27cm</Top>
+            <Width>10cm</Width>
+            <Style>
+              <BorderColor>
+                <Bottom>Black</Bottom>
+              </BorderColor>
+              <BorderStyle>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderWidth>
+                <Bottom>1pt</Bottom>
+              </BorderWidth>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>173</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.25cm</Left>
+            <Height>0.5cm</Height>
+            <Value>=First(Fields!INFECTED_NAME_OTHER.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox118">
+            <rd:DefaultName>textbox118</rd:DefaultName>
+            <Top>27cm</Top>
+            <Width>1cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>172</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>其他</Value>
+          </Textbox>
+          <Textbox Name="textbox117">
+            <rd:DefaultName>textbox117</rd:DefaultName>
+            <Top>26cm</Top>
+            <Width>16cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>171</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>1cm</Height>
+            <Value>阴沟肠杆菌7.金黄色葡萄球菌8.耐甲氧西林金黄色葡萄球菌（MRSA）9.耐万古霉素肠球菌（VRE）10.耐碳青霉酶烯类肠杆菌（CRE）11.多重耐药鲍曼不动杆菌（MDR Ab）12.多重耐药铜绿假单胞菌(MRPA)13.</Value>
+          </Textbox>
+          <Textbox Name="textbox116">
+            <rd:DefaultName>textbox116</rd:DefaultName>
+            <Top>25.25cm</Top>
+            <Width>14.49735cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>170</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>1.铜绿假单胞菌2.鲍曼不动杆菌3.大肠埃希菌4.肺炎克雷伯菌5.洋葱伯克霍尔德菌6.</Value>
+          </Textbox>
+          <Textbox Name="textbox115">
+            <Top>25.25cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>169</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!INFECTED_NAME.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox113">
+            <rd:DefaultName>textbox113</rd:DefaultName>
+            <Top>25.25cm</Top>
+            <Width>2.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>168</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>感染名称：</Value>
+          </Textbox>
+          <Textbox Name="INFECTED_PART">
+            <rd:DefaultName>INFECTED_PART</rd:DefaultName>
+            <Top>24.5cm</Top>
+            <Width>6.24339cm</Width>
+            <Style>
+              <BorderColor>
+                <Bottom>Black</Bottom>
+              </BorderColor>
+              <BorderStyle>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderWidth>
+                <Bottom>1pt</Bottom>
+              </BorderWidth>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>167</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>7.25cm</Left>
+            <Height>0.5cm</Height>
+            <Value>=First(Fields!INFECTED_PART.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox110">
+            <rd:DefaultName>textbox110</rd:DefaultName>
+            <Top>24.5cm</Top>
+            <Width>2.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>166</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>感染部位：</Value>
+          </Textbox>
+          <Textbox Name="textbox109">
+            <Top>24.5cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>165</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是 2.否</Value>
+          </Textbox>
+          <Textbox Name="textbox108">
+            <Top>24.5cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>164</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_INFECTED.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox107">
+            <rd:DefaultName>textbox107</rd:DefaultName>
+            <Top>24.5cm</Top>
+            <Width>2.24868cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>163</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>医院感染：</Value>
+          </Textbox>
+          <Line Name="line10">
+            <Top>24.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>162</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="textbox106">
+            <Top>23.5cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>161</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!CANCER_LEVEL.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox105">
+            <rd:DefaultName>textbox105</rd:DefaultName>
+            <Top>23.5cm</Top>
+            <Width>5.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>160</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>1.Ⅰ期　2.Ⅱ期　3.Ⅲ期　4.Ⅳ期</Value>
+          </Textbox>
+          <Textbox Name="textbox104">
+            <rd:DefaultName>textbox104</rd:DefaultName>
+            <Top>22.75cm</Top>
+            <Width>13.99471cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>159</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>5.生化、免疫　 6.细胞学、血片 　7.尸检（有病理）</Value>
+          </Textbox>
+          <Textbox Name="textbox103">
+            <Top>22cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>158</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!SUPREME_DIAG_BASE.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox102">
+            <rd:DefaultName>textbox102</rd:DefaultName>
+            <Top>22cm</Top>
+            <Width>12.48677cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>157</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.75cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>1.临床 　2.手术 　3.病理（原发）　　4.X线/CT/超声波/内窥镜等影像学 </Value>
+          </Textbox>
+          <Textbox Name="textbox101">
+            <rd:DefaultName>textbox101</rd:DefaultName>
+            <Top>23.5cm</Top>
+            <Width>2.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>156</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>肿瘤分期：</Value>
+          </Textbox>
+          <Textbox Name="textbox100">
+            <rd:DefaultName>textbox100</rd:DefaultName>
+            <Top>22cm</Top>
+            <Width>3cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>155</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>最高诊断依据：</Value>
+          </Textbox>
+          <Textbox Name="textbox99">
+            <Top>21cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>154</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_CANCER.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox98">
+            <Top>21cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>153</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是 2.否</Value>
+          </Textbox>
+          <Textbox Name="textbox97">
+            <rd:DefaultName>textbox97</rd:DefaultName>
+            <Top>21cm</Top>
+            <Width>3.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>152</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>是否为肿瘤病人：</Value>
+          </Textbox>
+          <Line Name="line9">
+            <Top>21.75cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>151</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line8">
+            <Top>20.75cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>150</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="textbox96">
+            <rd:DefaultName>textbox96</rd:DefaultName>
+            <Top>20cm</Top>
+            <Width>7.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>149</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.75cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>0.非重返  1. 24h内   2. 24-48h   3. ＞48h</Value>
+          </Textbox>
+          <Textbox Name="textbox95">
+            <Top>20cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>148</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!RETURN_TIMESPAN.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox94">
+            <rd:DefaultName>textbox94</rd:DefaultName>
+            <Top>20cm</Top>
+            <Width>2.5cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>147</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>重返间隔时间</Value>
+          </Textbox>
+          <Textbox Name="textbox93">
+            <Top>19.25cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>146</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_RETURNICU.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox92">
+            <rd:DefaultName>textbox92</rd:DefaultName>
+            <Top>19.25cm</Top>
+            <Width>10cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>145</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是 2.否（注：指同一住院过程中转出ICU后的重返）</Value>
+          </Textbox>
+          <Textbox Name="textbox91">
+            <rd:DefaultName>textbox91</rd:DefaultName>
+            <Top>19.25cm</Top>
+            <Width>4.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>144</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>是否非预期的重返重症医学科</Value>
+          </Textbox>
+          <Textbox Name="textbox90">
+            <Top>18.5cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>143</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是 2.否</Value>
+          </Textbox>
+          <Textbox Name="IS_PIPE_DROP">
+            <rd:DefaultName>IS_PIPE_DROP</rd:DefaultName>
+            <Top>18.5cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>142</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_PIPE_DROP.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox88">
+            <rd:DefaultName>textbox88</rd:DefaultName>
+            <Top>18.5cm</Top>
+            <Width>3.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>141</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>是否发生人工气道脱出</Value>
+          </Textbox>
+          <Textbox Name="textbox87">
+            <rd:DefaultName>textbox87</rd:DefaultName>
+            <Top>17.75cm</Top>
+            <Width>9.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>140</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>5.PICU(儿科)   6. SICU(外科)  7.综合ICU  9.其他</Value>
+          </Textbox>
+          <Textbox Name="textbox86">
+            <Top>17cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>139</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5.5cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!ICU_INFO.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox85">
+            <rd:DefaultName>textbox85</rd:DefaultName>
+            <Top>17cm</Top>
+            <Width>10.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>138</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>6.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>1.EICU(急诊)  2.CCU(心内)  3. RICU(呼吸)   4.NICU(神经)</Value>
+          </Textbox>
+          <Textbox Name="textbox84">
+            <rd:DefaultName>textbox84</rd:DefaultName>
+            <Top>17cm</Top>
+            <Width>5.5cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>137</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>入住重症监护室（ICU）情况：</Value>
+          </Textbox>
+          <Textbox Name="textbox83">
+            <Top>13cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>136</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_PHYSICAL_CONSTRAINT.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox82">
+            <Top>13cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>135</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是 2.否</Value>
+          </Textbox>
+          <Textbox Name="textbox81">
+            <rd:DefaultName>textbox81</rd:DefaultName>
+            <Top>15.25cm</Top>
+            <Width>12.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>134</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.75cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>1.认知障碍 2.可能跌倒 3.行为紊乱 4.治疗需要 5.躁动6.医疗限制 7.其他</Value>
+          </Textbox>
+          <Textbox Name="textbox80">
+            <rd:DefaultName>textbox80</rd:DefaultName>
+            <Top>14.5cm</Top>
+            <Width>9.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>133</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.75cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>1.软式管  2.硬式管  3.背心  4.老人椅  5.约束带  6.其他</Value>
+          </Textbox>
+          <Textbox Name="textbox79">
+            <Top>15.25cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>132</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!CONSTRAINT_REASON.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox78">
+            <Top>14.5cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>131</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!CONSTRAINT_TOOL.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox77">
+            <Top>13.75cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>130</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!CONSTRAINT_METHOD.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox76">
+            <rd:DefaultName>textbox76</rd:DefaultName>
+            <Top>13.75cm</Top>
+            <Width>5cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>129</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9.75cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>1.一处 2.两处 3.三处 4.其他</Value>
+          </Textbox>
+          <Textbox Name="textbox75">
+            <rd:DefaultName>textbox75</rd:DefaultName>
+            <Top>13.75cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>128</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>7.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>约束方式</Value>
+          </Textbox>
+          <Textbox Name="textbox74">
+            <rd:DefaultName>textbox74</rd:DefaultName>
+            <Top>13.75cm</Top>
+            <Width>1.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>127</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>小时</Value>
+          </Textbox>
+          <Textbox Name="CONSTRAINT_TIMESPAN">
+            <rd:DefaultName>CONSTRAINT_TIMESPAN</rd:DefaultName>
+            <Top>13.75cm</Top>
+            <Width>1.5cm</Width>
+            <Style>
+              <BorderColor>
+                <Bottom>Black</Bottom>
+              </BorderColor>
+              <BorderStyle>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderWidth>
+                <Bottom>1pt</Bottom>
+              </BorderWidth>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>126</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.5cm</Left>
+            <Height>0.5cm</Height>
+            <Value>=First(Fields!CONSTRAINT_TIMESPAN.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox72">
+            <Top>15.25cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>125</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>约束原因 </Value>
+          </Textbox>
+          <Textbox Name="textbox71">
+            <Top>14.5cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>124</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>约束工具</Value>
+          </Textbox>
+          <Textbox Name="textbox70">
+            <Top>13.75cm</Top>
+            <Width>2.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>123</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>约束总时间</Value>
+          </Textbox>
+          <Textbox Name="textbox69">
+            <rd:DefaultName>textbox69</rd:DefaultName>
+            <Top>13cm</Top>
+            <Width>4.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>122</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>住院期间是否使用物理约束</Value>
+          </Textbox>
+          <Line Name="line7">
+            <Top>16cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>121</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="textbox68">
+            <Top>12cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>120</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.5cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!FELL_REASON.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox66">
+            <Top>11.25cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>119</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!FELL_DAMAGE_LEVEL.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox65">
+            <rd:DefaultName>textbox65</rd:DefaultName>
+            <Top>11.25cm</Top>
+            <Width>7.98942cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>118</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>6.5cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>0.未造成伤害 1. 一级 2. 二级 3. 三级</Value>
+          </Textbox>
+          <Textbox Name="textbox63">
+            <Top>10.5cm</Top>
+            <Width>2.98942cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>117</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>6cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是 2.否</Value>
+          </Textbox>
+          <Textbox Name="textbox64">
+            <Top>10.5cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>116</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_FELL.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox61">
+            <rd:DefaultName>textbox61</rd:DefaultName>
+            <Top>11.25cm</Top>
+            <Width>5.5cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>115</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>住院期间跌倒或坠床的伤害程度</Value>
+          </Textbox>
+          <Textbox Name="textbox60">
+            <rd:DefaultName>textbox60</rd:DefaultName>
+            <Top>10.5cm</Top>
+            <Width>5cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>114</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>住院期间是否发生跌倒或坠床</Value>
+          </Textbox>
+          <Line Name="line6">
+            <Top>12.75cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>113</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="textbox59">
+            <rd:DefaultName>textbox59</rd:DefaultName>
+            <Top>8.75cm</Top>
+            <Width>3.75661cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>112</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.入院前 2.住院期间</Value>
+          </Textbox>
+          <Textbox Name="BEDSORE_TIME">
+            <rd:DefaultName>BEDSORE_TIME</rd:DefaultName>
+            <Top>8.75cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>111</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!BEDSORE_TIME.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox57">
+            <rd:DefaultName>textbox57</rd:DefaultName>
+            <Top>8.75cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>110</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>1.是 2.否</Value>
+          </Textbox>
+          <Textbox Name="textbox56">
+            <Top>8.75cm</Top>
+            <Width>0.5cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>109</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.5cm</Left>
+            <Height>0.5cm</Height>
+            <Value>=First(Fields!IS_BEDSORE.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="BEDSORE_LEVEL">
+            <rd:DefaultName>BEDSORE_LEVEL</rd:DefaultName>
+            <Top>9.5cm</Top>
+            <Width>0.5cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>108</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2cm</Left>
+            <Height>0.5cm</Height>
+            <Value>=First(Fields!BEDSORE_LEVEL.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox53">
+            <Top>8.75cm</Top>
+            <Width>2.5cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>107</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>6.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>压疮发生时间</Value>
+          </Textbox>
+          <Textbox Name="textbox51">
+            <Top>8.75cm</Top>
+            <Width>2.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>106</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>是否有压疮</Value>
+          </Textbox>
+          <Line Name="line5">
+            <Top>10.25cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>105</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="textbox50">
+            <Top>7.75cm</Top>
+            <Width>0.5cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>104</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>11cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_BLOOD_INFUSE_REACTION.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="IS_INFUSE_REACTION">
+            <rd:DefaultName>IS_INFUSE_REACTION</rd:DefaultName>
+            <Top>7cm</Top>
+            <Width>0.5cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>103</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>11cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_INFUSE_REACTION.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox48">
+            <Top>7cm</Top>
+            <Width>2.98942cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>102</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>11.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是 2.否</Value>
+          </Textbox>
+          <Textbox Name="textbox45">
+            <rd:DefaultName>textbox45</rd:DefaultName>
+            <Top>7cm</Top>
+            <Width>2.98942cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>101</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是 2.否</Value>
+          </Textbox>
+          <Textbox Name="IS_BLOOD_INFUSE">
+            <rd:DefaultName>IS_BLOOD_INFUSE</rd:DefaultName>
+            <Top>7.75cm</Top>
+            <Width>0.5cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>100</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.5cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_BLOOD_INFUSE.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="IS_INFUSE">
+            <rd:DefaultName>IS_INFUSE</rd:DefaultName>
+            <Top>7cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>99</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.5cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_INFUSE.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox42">
+            <Top>7cm</Top>
+            <Width>3.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>98</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>7.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>是否发生输液反应：</Value>
+          </Textbox>
+          <Textbox Name="textbox39">
+            <rd:DefaultName>textbox39</rd:DefaultName>
+            <Top>7cm</Top>
+            <Width>3.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>97</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>住院期间是否输液</Value>
+          </Textbox>
+          <Line Name="line4">
+            <Top>8.5cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>96</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="IS_SAME_PREIN">
+            <rd:DefaultName>IS_SAME_PREIN</rd:DefaultName>
+            <Top>6cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>95</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_SAME_PREIN.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox35">
+            <rd:DefaultName>textbox35</rd:DefaultName>
+            <Top>5.25cm</Top>
+            <Width>12.24868cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>94</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5cm</Left>
+            <Height>0.75cm</Height>
+            <Value>0.第一次住本院  1.当天  2.2-15天   3.16-31天    4.＞31天</Value>
+          </Textbox>
+          <Textbox Name="TIMEFROMFIRSTIN">
+            <rd:DefaultName>TIMEFROMFIRSTIN</rd:DefaultName>
+            <Top>5.25cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>93</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!TIMEFROMFIRSTIN.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox33">
+            <rd:DefaultName>textbox33</rd:DefaultName>
+            <Top>5.25cm</Top>
+            <Width>4cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>92</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>距上一次住本院的时间</Value>
+          </Textbox>
+          <Line Name="line3">
+            <Top>6.75cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>91</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="textbox31">
+            <Top>4.25cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>90</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>8cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_SEVERE.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="IS_DIFFICULT">
+            <rd:DefaultName>IS_DIFFICULT</rd:DefaultName>
+            <Top>4.25cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>89</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_DIFFICULT.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Line Name="line2">
+            <Top>5cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>88</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="textbox26">
+            <rd:DefaultName>textbox26</rd:DefaultName>
+            <Top>3.25cm</Top>
+            <Width>4.7619cm</Width>
+            <Style>
+              <BorderColor>
+                <Bottom>Black</Bottom>
+              </BorderColor>
+              <BorderStyle>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderWidth>
+                <Bottom>1pt</Bottom>
+              </BorderWidth>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>87</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>6.25cm</Left>
+            <Height>0.5cm</Height>
+            <Value />
+          </Textbox>
+          <Textbox Name="textbox24">
+            <rd:DefaultName>textbox24</rd:DefaultName>
+            <Top>2.5cm</Top>
+            <Width>14.49735cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>86</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>1.检验受理时间受限。2.休息日不能进行手术。3.临床诊断与病理诊断不相符。4.治疗</Value>
+          </Textbox>
+          <Textbox Name="MUTATE_REASON_1">
+            <rd:DefaultName>MUTATE_REASON_1</rd:DefaultName>
+            <Top>2.5cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>85</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!MUTATE_REASON.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox22">
+            <rd:DefaultName>textbox22</rd:DefaultName>
+            <Top>2.5cm</Top>
+            <Width>2.24868cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>84</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>变异原因：</Value>
+          </Textbox>
+          <Textbox Name="textbox20">
+            <rd:DefaultName>textbox20</rd:DefaultName>
+            <Top>1.75cm</Top>
+            <Width>12.5cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>83</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>疗方式而需退出临床路径的；3.发现患者因诊断有误而进入临床路径的；4.其他</Value>
+          </Textbox>
+          <Textbox Name="textbox19">
+            <rd:DefaultName>textbox19</rd:DefaultName>
+            <Top>1cm</Top>
+            <Width>14.49735cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>82</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.患者出现了严重的并发症，需要改变原治疗方案的；2.患者要求出院、转院或改变治</Value>
+          </Textbox>
+          <Textbox Name="QUIT_REASON">
+            <rd:DefaultName>QUIT_REASON</rd:DefaultName>
+            <Top>1cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>81</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!QUIT_REASON.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox17">
+            <rd:DefaultName>textbox17</rd:DefaultName>
+            <Top>1cm</Top>
+            <Width>2.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>80</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>退出原因：</Value>
+          </Textbox>
+          <Textbox Name="textbox16">
+            <Top>0.25cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>79</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>13cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_MUTATE.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox15">
+            <Top>0.25cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>78</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>13.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是 2.否</Value>
+          </Textbox>
+          <Textbox Name="textbox14">
+            <Top>0.25cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>77</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>11.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>是否变异</Value>
+          </Textbox>
+          <Textbox Name="textbox13">
+            <Top>0.25cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>76</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9.5cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是 2.否</Value>
+          </Textbox>
+          <Textbox Name="IS_FINISH">
+            <rd:DefaultName>IS_FINISH</rd:DefaultName>
+            <Top>0.25cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>75</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>8.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_FINISH.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox11">
+            <rd:DefaultName>textbox11</rd:DefaultName>
+            <Top>0.25cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>74</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>7cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>是否完成</Value>
+          </Textbox>
+          <Textbox Name="textbox10">
+            <rd:DefaultName>textbox10</rd:DefaultName>
+            <Top>0.25cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>73</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是 2.否</Value>
+          </Textbox>
+          <Textbox Name="IS_EXECUTE">
+            <rd:DefaultName>IS_EXECUTE</rd:DefaultName>
+            <Top>0.25cm</Top>
+            <Width>0.5cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>72</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.5cm</Left>
+            <Height>0.5cm</Height>
+            <Value>=First(Fields!IS_EXECUTE.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox8">
+            <rd:DefaultName>textbox8</rd:DefaultName>
+            <Top>0.25cm</Top>
+            <Width>4.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>71</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>临床路径管理：是否实施</Value>
+          </Textbox>
+          <Line Name="line1">
+            <Top>4cm</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <ZIndex>70</ZIndex>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="textbox144">
+            <rd:DefaultName>textbox144</rd:DefaultName>
+            <Top>35.25cm</Top>
+            <Width>0.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontSize>11pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>69</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>序</Value>
+          </Textbox>
+          <Textbox Name="textbox154">
+            <rd:DefaultName>textbox154</rd:DefaultName>
+            <Top>35.5cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>68</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10cm</Left>
+            <Height>1.24339cm</Height>
+            <Value>麻醉(ASA) 分级</Value>
+          </Textbox>
+          <Textbox Name="textbox155">
+            <rd:DefaultName>textbox155</rd:DefaultName>
+            <Top>35.5cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontSize>9pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>67</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>12cm</Left>
+            <Height>1.24339cm</Height>
+            <Value>手术风险(NNIS)分级</Value>
+          </Textbox>
+          <Textbox Name="textbox142">
+            <rd:DefaultName>textbox142</rd:DefaultName>
+            <Top>34.25cm</Top>
+            <Width>13.75661cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>66</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>择期手术和术前预防用抗菌药:1.是 2.否；麻醉ASA分级：1-6级；NNIS分级：0-3级</Value>
+          </Textbox>
+          <Textbox Name="textbox143">
+            <rd:DefaultName>textbox143</rd:DefaultName>
+            <Top>34.25cm</Top>
+            <Width>2.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>65</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>填写说明：</Value>
+          </Textbox>
+          <Textbox Name="textbox137">
+            <Top>32.5cm</Top>
+            <Width>2.24868cm</Width>
+            <Style>
+              <BorderColor>
+                <Bottom>Black</Bottom>
+              </BorderColor>
+              <BorderStyle>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderWidth>
+                <Bottom>1pt</Bottom>
+              </BorderWidth>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>64</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10.5cm</Left>
+            <Height>0.5cm</Height>
+            <Value>=First(Fields!ANTIBIOSIS_DRUG_TIMESPAN.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox139">
+            <Top>33.25cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>63</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!WITHIN_UNION_DRUG.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox140">
+            <Top>33.25cm</Top>
+            <Width>7cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>62</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.75cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>1.一联　2.二联　3.三联　4.四联及以上</Value>
+          </Textbox>
+          <Textbox Name="textbox141">
+            <Top>33.25cm</Top>
+            <Width>3cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>61</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>是否联合用药：</Value>
+          </Textbox>
+          <Textbox Name="textbox138">
+            <Top>32.5cm</Top>
+            <Width>1cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>60</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>12.75cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>小时</Value>
+          </Textbox>
+          <Textbox Name="IS_ANTIBIOSIS_DRUG">
+            <rd:DefaultName>IS_ANTIBIOSIS_DRUG</rd:DefaultName>
+            <Top>32.5cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>59</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_ANTIBIOSIS_DRUG.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox135">
+            <rd:DefaultName>textbox135</rd:DefaultName>
+            <Top>32.5cm</Top>
+            <Width>4.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>58</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5.75cm</Left>
+            <Height>0.74074cm</Height>
+            <Value> 1.是 2.否，使用持续时间：</Value>
+          </Textbox>
+          <Textbox Name="textbox134">
+            <rd:DefaultName>textbox134</rd:DefaultName>
+            <Top>32.5cm</Top>
+            <Width>4.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>57</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>住院期间是否应用抗菌药物</Value>
+          </Textbox>
+          <Textbox Name="textbox6">
+            <rd:DefaultName>textbox6</rd:DefaultName>
+            <Top>28.75cm</Top>
+            <Width>4.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>56</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>因用药错误导致患儿死亡</Value>
+          </Textbox>
+          <Textbox Name="textbox7">
+            <Top>28.75cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>55</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是 2.否</Value>
+          </Textbox>
+          <Textbox Name="textbox9">
+            <rd:DefaultName>textbox9</rd:DefaultName>
+            <Top>31.5cm</Top>
+            <Width>4cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>54</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>术后非预期再手术例数</Value>
+          </Textbox>
+          <Textbox Name="textbox12">
+            <rd:DefaultName>textbox12</rd:DefaultName>
+            <Top>31.5cm</Top>
+            <Width>2.25cm</Width>
+            <Style>
+              <BorderColor>
+                <Bottom>Black</Bottom>
+              </BorderColor>
+              <BorderStyle>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderWidth>
+                <Bottom>1pt</Bottom>
+              </BorderWidth>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>53</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.25cm</Left>
+            <Height>0.5cm</Height>
+            <Value>=First(Fields!OPERUNKNOWCOUNT.Value, "DsReportSource_COVER_ATTACH_PAGE")</Value>
+          </Textbox>
+          <Textbox Name="textbox18">
+            <rd:DefaultName>textbox18</rd:DefaultName>
+            <Top>31.5cm</Top>
+            <Width>4.7619cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>52</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>8.5cm</Left>
+            <Height>0.75cm</Height>
+            <Value>手术过程中异物遗留发生率</Value>
+          </Textbox>
+          <Textbox Name="textbox25">
+            <rd:DefaultName>textbox25</rd:DefaultName>
+            <Top>3.25cm</Top>
+            <Width>6cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>51</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75265cm</Height>
+            <Value>过程中对治疗方案依从性差。5.其他</Value>
+          </Textbox>
+          <Textbox Name="textbox30">
+            <Top>4.25cm</Top>
+            <Width>3.25397cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>50</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>8.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是  2.否</Value>
+          </Textbox>
+          <Textbox Name="textbox32">
+            <Top>4.25cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>49</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>6.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>危重病例</Value>
+          </Textbox>
+          <Textbox Name="textbox29">
+            <rd:DefaultName>textbox29</rd:DefaultName>
+            <Top>4.25cm</Top>
+            <Width>3.25397cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>48</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是  2.否</Value>
+          </Textbox>
+          <Textbox Name="textbox27">
+            <rd:DefaultName>textbox27</rd:DefaultName>
+            <Top>4.25cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>47</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>疑难病例</Value>
+          </Textbox>
+          <Textbox Name="textbox38">
+            <rd:DefaultName>textbox38</rd:DefaultName>
+            <Top>6cm</Top>
+            <Width>4.7619cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>46</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9.75cm</Left>
+            <Height>0.75265cm</Height>
+            <Value>1.是  2.否</Value>
+          </Textbox>
+          <Textbox Name="textbox36">
+            <rd:DefaultName>textbox36</rd:DefaultName>
+            <Top>6cm</Top>
+            <Width>8.75661cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>45</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75265cm</Height>
+            <Value>上一次住本院与本次住院是否因同一疾病(主要诊断) </Value>
+          </Textbox>
+          <Textbox Name="textbox47">
+            <Top>7.75cm</Top>
+            <Width>2.98942cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>44</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>11.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是 2.否</Value>
+          </Textbox>
+          <Textbox Name="textbox46">
+            <Top>7.75cm</Top>
+            <Width>2.98942cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>43</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1.是 2.否</Value>
+          </Textbox>
+          <Textbox Name="textbox41">
+            <Top>7.75cm</Top>
+            <Width>3.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>42</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>7.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>是否发生输血反应：</Value>
+          </Textbox>
+          <Textbox Name="textbox40">
+            <Top>7.75cm</Top>
+            <Width>3.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>41</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>住院期间是否输血</Value>
+          </Textbox>
+          <Textbox Name="textbox54">
+            <rd:DefaultName>textbox54</rd:DefaultName>
+            <Top>9.5cm</Top>
+            <Width>5.75cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>40</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>1. 1期  2. 2期  3. 3期  4. 4期</Value>
+          </Textbox>
+          <Textbox Name="textbox52">
+            <Top>9.5cm</Top>
+            <Width>2.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>39</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>压疮分期</Value>
+          </Textbox>
+          <Textbox Name="textbox67">
+            <rd:DefaultName>textbox67</rd:DefaultName>
+            <Top>12cm</Top>
+            <Width>10.25cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>38</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.25cm</Left>
+            <Height>0.75265cm</Height>
+            <Value> 1.健康原因 2.治疗、药物、麻醉原因 3.环境因素 4.其他原因</Value>
+          </Textbox>
+          <Textbox Name="textbox62">
+            <rd:DefaultName>textbox62</rd:DefaultName>
+            <Top>12cm</Top>
+            <Width>3.5cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>37</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75265cm</Height>
+            <Value>跌倒或坠床的原因</Value>
+          </Textbox>
+          <Textbox Name="IS_ANTIBIOSIS">
+            <rd:DefaultName>IS_ANTIBIOSIS</rd:DefaultName>
+            <Top>37cm</Top>
+            <Width>0.5cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>36</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>15.5cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_ANTIBIOSIS1.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="NHIS_LEVEL">
+            <rd:DefaultName>NHIS_LEVEL</rd:DefaultName>
+            <Top>37cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>35</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>12.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!NHIS_LEVEL1.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="ASA_LEVEL">
+            <rd:DefaultName>ASA_LEVEL</rd:DefaultName>
+            <Top>37cm</Top>
+            <Width>0.5cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>34</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!ASA_LEVEL1.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="IS_DATE_CHANGE">
+            <rd:DefaultName>IS_DATE_CHANGE</rd:DefaultName>
+            <Top>37cm</Top>
+            <Width>0.5cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>33</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>8.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_DATE_CHANGE1.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="textbox145">
+            <rd:DefaultName>textbox145</rd:DefaultName>
+            <Top>37cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>32</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>1</Value>
+          </Textbox>
+          <Textbox Name="OPER_NAME">
+            <rd:DefaultName>OPER_NAME</rd:DefaultName>
+            <Top>37cm</Top>
+            <Width>6.50794cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>31</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>=First(Fields!OPER_NAME1.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="IS_ANTIBIOSIS_5">
+            <rd:DefaultName>IS_ANTIBIOSIS_5</rd:DefaultName>
+            <Top>42cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>30</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>15.5cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_ANTIBIOSIS6.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="NHIS_LEVEL_5">
+            <rd:DefaultName>NHIS_LEVEL_5</rd:DefaultName>
+            <Top>42cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>29</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>12.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!NHIS_LEVEL6.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="ASA_LEVEL_5">
+            <rd:DefaultName>ASA_LEVEL_5</rd:DefaultName>
+            <Top>42cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>28</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!ASA_LEVEL6.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="IS_DATE_CHANGE_5">
+            <rd:DefaultName>IS_DATE_CHANGE_5</rd:DefaultName>
+            <Top>42cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>27</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>8.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_DATE_CHANGE6.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="IS_ANTIBIOSIS_4">
+            <rd:DefaultName>IS_ANTIBIOSIS_4</rd:DefaultName>
+            <Top>41cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>26</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>15.5cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_ANTIBIOSIS5.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="NHIS_LEVEL_4">
+            <rd:DefaultName>NHIS_LEVEL_4</rd:DefaultName>
+            <Top>41cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>25</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>12.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!NHIS_LEVEL5.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="ASA_LEVEL_4">
+            <rd:DefaultName>ASA_LEVEL_4</rd:DefaultName>
+            <Top>41cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>24</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!ASA_LEVEL5.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="IS_DATE_CHANGE_4">
+            <rd:DefaultName>IS_DATE_CHANGE_4</rd:DefaultName>
+            <Top>41cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>23</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>8.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_DATE_CHANGE5.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="IS_ANTIBIOSIS_3">
+            <rd:DefaultName>IS_ANTIBIOSIS_3</rd:DefaultName>
+            <Top>40cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>22</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>15.5cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_ANTIBIOSIS4.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="NHIS_LEVEL_3">
+            <rd:DefaultName>NHIS_LEVEL_3</rd:DefaultName>
+            <Top>40cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>21</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>12.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!NHIS_LEVEL4.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="ASA_LEVEL_3">
+            <rd:DefaultName>ASA_LEVEL_3</rd:DefaultName>
+            <Top>40cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>20</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!ASA_LEVEL4.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="IS_DATE_CHANGE_3">
+            <rd:DefaultName>IS_DATE_CHANGE_3</rd:DefaultName>
+            <Top>40cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>19</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>8.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_DATE_CHANGE4.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="IS_ANTIBIOSIS_2">
+            <rd:DefaultName>IS_ANTIBIOSIS_2</rd:DefaultName>
+            <Top>39cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>18</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>15.5cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_ANTIBIOSIS3.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="NHIS_LEVEL_2">
+            <rd:DefaultName>NHIS_LEVEL_2</rd:DefaultName>
+            <Top>39cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>17</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>12.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!NHIS_LEVEL3.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="ASA_LEVEL_2">
+            <rd:DefaultName>ASA_LEVEL_2</rd:DefaultName>
+            <Top>39cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>16</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!ASA_LEVEL3.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="IS_DATE_CHANGE_2">
+            <rd:DefaultName>IS_DATE_CHANGE_2</rd:DefaultName>
+            <Top>39cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>15</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>8.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_DATE_CHANGE3.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="IS_ANTIBIOSIS_1">
+            <rd:DefaultName>IS_ANTIBIOSIS_1</rd:DefaultName>
+            <Top>38cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>14</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>15.5cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_ANTIBIOSIS2.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="NHIS_LEVEL_1">
+            <rd:DefaultName>NHIS_LEVEL_1</rd:DefaultName>
+            <Top>38cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>13</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>12.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!NHIS_LEVEL2.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="ASA_LEVEL_1">
+            <rd:DefaultName>ASA_LEVEL_1</rd:DefaultName>
+            <Top>38cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>12</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!ASA_LEVEL2.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="IS_DATE_CHANGE_1">
+            <rd:DefaultName>IS_DATE_CHANGE_1</rd:DefaultName>
+            <Top>38cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>11</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>8.75cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!IS_DATE_CHANGE2.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="textbox151">
+            <rd:DefaultName>textbox151</rd:DefaultName>
+            <Top>42cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>10</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>6</Value>
+          </Textbox>
+          <Textbox Name="textbox150">
+            <rd:DefaultName>textbox150</rd:DefaultName>
+            <Top>41cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>9</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>5</Value>
+          </Textbox>
+          <Textbox Name="textbox149">
+            <rd:DefaultName>textbox149</rd:DefaultName>
+            <Top>40cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>8</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>4</Value>
+          </Textbox>
+          <Textbox Name="textbox148">
+            <rd:DefaultName>textbox148</rd:DefaultName>
+            <Top>39cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>7</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>3</Value>
+          </Textbox>
+          <Textbox Name="textbox146">
+            <Top>38cm</Top>
+            <Width>0.50265cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>6</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>2</Value>
+          </Textbox>
+          <Textbox Name="OPER_NAME_1">
+            <rd:DefaultName>OPER_NAME_1</rd:DefaultName>
+            <Top>39cm</Top>
+            <Width>6.50794cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>5</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>=First(Fields!OPER_NAME3.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="textbox158">
+            <Top>38cm</Top>
+            <Width>6.50794cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>=First(Fields!OPER_NAME2.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="OPER_NAME_2">
+            <rd:DefaultName>OPER_NAME_2</rd:DefaultName>
+            <Top>40cm</Top>
+            <Width>6.50794cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>=First(Fields!OPER_NAME4.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="OPER_NAME_4">
+            <rd:DefaultName>OPER_NAME_4</rd:DefaultName>
+            <Top>41cm</Top>
+            <Width>6.50794cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.25cm</Left>
+            <Height>0.74074cm</Height>
+            <Value>=First(Fields!OPER_NAME5.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="OPER_NAME_3">
+            <rd:DefaultName>OPER_NAME_3</rd:DefaultName>
+            <Top>42cm</Top>
+            <Width>6.50794cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.25cm</Left>
+            <Value>=First(Fields!OPER_NAME6.Value, "DsReportSource_COVER_ATTACH_OPER")</Value>
+          </Textbox>
+          <Textbox Name="textbox28">
+            <Top>16.25cm</Top>
+            <Width>5cm</Width>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>住院期间是否入住重症监护室</Value>
+          </Textbox>
+        </ReportItems>
+        <Top>2.75cm</Top>
+        <Width>17.76323cm</Width>
+        <Style>
+          <BorderColor>
+            <Bottom>Black</Bottom>
+          </BorderColor>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderWidth>
+            <Bottom>1pt</Bottom>
+          </BorderWidth>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Height>42.75cm</Height>
+      </Rectangle>
+    </ReportItems>
+    <Height>50.75cm</Height>
+  </Body>
+  <Language>zh-CN</Language>
+  <TopMargin>0.4cm</TopMargin>
+  <PageHeight>27cm</PageHeight>
+</Report>

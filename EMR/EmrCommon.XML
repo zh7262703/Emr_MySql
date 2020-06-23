@@ -1,0 +1,719 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EmrCommon</name>
+    </assembly>
+    <members>
+        <member name="P:EmrCommon.ClobData.Type">
+            <summary>
+            0 Clob 1 Blob
+            </summary>
+        </member>
+        <member name="T:EmrCommon.Common">
+            <summary>
+            公用方法
+            </summary>
+        </member>
+        <member name="M:EmrCommon.Common.GetWidth(System.Drawing.Graphics,System.Drawing.Font,System.String)">
+            <summary>
+            获取字符串的长度
+            </summary>
+            <param name="g"></param>
+            <param name="font"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Common.MeasureStringSize(System.Drawing.Graphics,System.String,System.Drawing.Font)">
+             <summary>
+            字符串大小
+             </summary>
+             <param name="g"></param>
+             <param name="word"></param>
+             <param name="font"></param>
+             <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Common.GetExpressionResult(System.Linq.Expressions.Expression)">
+            <summary>
+            获取表达式编译后的结果
+            </summary>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Common.GetNumberTypeList">
+            <summary>
+            数字型类型集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Common.DataTableToListByDelegate``1(System.Data.DataTable)">
+            <summary>
+            动态委托赋值
+            </summary>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Common.DataTableToList``1(System.Data.DataTable)">
+            <summary>
+            通过反射赋值
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Common.First``1(System.Data.DataTable)">
+            <summary>
+            通过反射赋值将DataTable的第一行转成Entity
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Common.ToEntity``1(System.Data.DataRow)">
+            <summary>
+            将DataRow转成Entity
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="row"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Common.Delete``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            删除实体中符合条件的数据
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="whereExpr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Common.GetEntityName``1">
+            <summary>
+            获取实体类映射的数据库对应的表名
+            包含数据库用户名
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Common.ShowSQL(System.String)">
+            <summary>
+            显示SQL
+            </summary>
+            <param name="SQL"></param>
+        </member>
+        <member name="M:EmrCommon.CommonSql`1.UpdateAll(System.Linq.Expressions.Expression{System.Predicate{`0}},System.Linq.Expressions.Expression{System.Predicate{`0}},System.String)">
+            <summary>
+             返回 更新所有符合条件记录的Sql语句
+            </summary>
+            <param name="match"></param>
+            <param name="action"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.CommonSql`1.UpdateAll(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object[])">
+            <summary>
+            返回更新符合条件的记录SQL
+            </summary>
+            <param name="whereExpr">条件表达式</param>
+            <param name="colExpr">需要更新的列表达式</param>
+            <param name="colValues">列值集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.CommonSql`1.FindAll(System.Linq.Expressions.Expression{System.Predicate{`0}},System.String,System.Int32)">
+            <summary>
+            返回符合条件的记录中的 前rownum行记录
+            </summary>
+            <param name="match"></param>
+            <param name="rownum"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EmrCommon.DataEntity">
+            <summary>
+            DataEntity 的摘要说明
+            存放字典数据
+            </summary>
+        </member>
+        <member name="T:EmrCommon.ExpressionExtensions">
+            <summary>
+            表达式扩展方法
+            </summary>
+        </member>
+        <member name="M:EmrCommon.ExpressionExtensions.ToSQL(System.Linq.Expressions.ExpressionType)">
+            <summary>
+            将表达式类型转成sql
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.ExpressionExtensions.ToSQL(System.Linq.Expressions.BinaryExpression)">
+            <summary>
+            将二元表达式转成sql
+            </summary>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.ExpressionExtensions.ToSQL(System.Linq.Expressions.MemberExpression)">
+            <summary>
+            将成员表达式转成sql
+            </summary>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.ExpressionExtensions.ToSQL(System.Linq.Expressions.ConditionalExpression)">
+            <summary>
+            讲条件表达式转成sql
+            </summary>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.ExpressionExtensions.ToSQL(System.Linq.Expressions.ConstantExpression)">
+            <summary>
+            将常量表达式转成sql
+            </summary>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.ExpressionExtensions.ToSQL(System.Linq.Expressions.UnaryExpression)">
+            <summary>
+            将一元表达式转成sql
+            </summary>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.ExpressionExtensions.ToSQL(System.Linq.Expressions.MethodCallExpression,System.Boolean)">
+            <summary>
+            方法表达式转成sql
+            </summary>
+            <param name="expr"></param>
+            <param name="flag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.ExpressionExtensions.ToSQL(System.Linq.Expressions.NewExpression)">
+            <summary>
+            NewExpression表达式转StringJoiner
+            </summary>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.ExpressionExtensions.ToSQL(System.Linq.Expressions.Expression,System.Boolean)">
+            <summary>
+            将表达式转换成sql语句
+            </summary>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.ExpressionExtensions.ToSQLValue(System.Object)">
+            <summary>
+            将object值转换成sql所需要的值
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.ExpressionExtensions.ToSQLValue(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            
+            </summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EmrCommon.StringExtensions">
+            <summary>
+            String扩展方法
+            </summary>
+        </member>
+        <member name="M:EmrCommon.StringExtensions.IsNullOrEmpty(System.String)">
+            <summary>
+            字符串是否为空或者null
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.StringExtensions.IsNotEmpty(System.String)">
+            <summary>
+            字符串是否不为空
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.StringExtensions.IsNotEmptyAndEquals(System.String,System.String)">
+            <summary>
+            不为空且等于s2字符串
+            </summary>
+            <param name="s"></param>
+            <param name="s2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.StringExtensions.In(System.String,System.String[])">
+            <summary>
+            字符串是否在集合中
+            </summary>
+            <param name="s"></param>
+            <param name="strs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.StringExtensions.In(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            字符串是否在集合中
+            </summary>
+            <param name="s"></param>
+            <param name="strs"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EmrCommon.TypeExtensions">
+            <summary>
+            类型转换扩展方法
+            </summary>
+        </member>
+        <member name="M:EmrCommon.TypeExtensions.ParseTo``1(System.IConvertible)">
+            <summary>
+            类型转换扩展方法
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="convertibleValue"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EmrCommon.DbEntityExtensions">
+            <summary>
+            数据库实体类
+            </summary>
+        </member>
+        <member name="M:EmrCommon.DbEntityExtensions.GetUserId``1(``0)">
+            <summary>
+            获取实体类所在的数据库用户
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.DbEntityExtensions.GetEntityName``1(``0)">
+            <summary>
+            获取实体类映射的数据库对应的表名
+            包含数据库用户名
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="entity">实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.DbEntityExtensions.Insert``1(``0)">
+            <summary>
+            获取插入实体类的SQL
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.DbEntityExtensions.Update``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            获取更新实体类的SQL
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.EntityExtensions.AsBaseEntity``1(System.Object)">
+            <summary>
+            将子类转成基类
+            </summary>
+            <typeparam name="TBase"></typeparam>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.EntityExtensions.As``1(System.Object)">
+            <summary>
+            obj转成指定类型
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.ObjectExtensions.ToValue(System.Object,System.Type)">
+            <summary>
+            转成指定类型
+            </summary>
+            <param name="obj"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EmrCommon.DataTableExtensions">
+            <summary>
+            DataTable静态扩展方法
+            </summary>
+        </member>
+        <member name="M:EmrCommon.DataTableExtensions.ToList``1(System.Data.DataTable)">
+            <summary>
+            将datatable数据转成list泛型集合
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.DataTableExtensions.First``1(System.Data.DataTable)">
+            <summary>
+            将DataTable中的第一条数据转换成Entity
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.DataTableExtensions.ToGenericList(System.Data.DataTable)">
+            <summary>
+            将datatable转成一个IList
+            </summary>
+            <param name="dataTable"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EmrCommon.TreeExtensions">
+            <summary>
+            树形结构的一些扩展方法
+            </summary>
+        </member>
+        <member name="M:EmrCommon.TreeExtensions.Descendants``2(``0,System.Func{``0,System.Collections.Generic.IEnumerable{``1}},System.Func{``1,System.Collections.Generic.IEnumerable{``1}},System.Predicate{``1})">
+            <summary>
+            返回树下所有符合条件的子孙节点集合
+            </summary>
+            <typeparam name="TParent"></typeparam>
+            <typeparam name="TNode"></typeparam>
+            <param name="tree"></param>
+            <param name="rootNodeSelector"></param>
+            <param name="clildrenSelector"></param>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.TreeExtensions.Descendants``1(``0,System.Func{``0,System.Collections.Generic.IEnumerable{``0}},System.Predicate{``0})">
+            <summary>
+            返回节点下所有符合条件的子孙节点集合
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="root">根节点</param>
+            <param name="childSelector">子节点选择条件</param>
+            <param name="filter">过滤条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.TreeExtensions.NodesForFunc``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``0}},``1,System.Func{``0,``1,``1})">
+            <summary>
+            将一个T的集合转成一个树形结构
+            </summary>
+            <typeparam name="T">待转化的对象类型</typeparam>
+            <typeparam name="TNode">树节点的类型</typeparam>
+            <param name="roots">父级对象集合</param>
+            <param name="childSelector">根据父级对象筛选的Func返回子集</param>
+            <param name="parentNode">父级节点</param>
+            <param name="funcToNode">传入父级节点和需要转化的对象 返回节点</param>
+        </member>
+        <member name="M:EmrCommon.TreeExtensions.NodesForFunc``2(``0,System.Func{``0,System.Collections.Generic.IEnumerable{``0}},``1,System.Func{``0,``1,``1})">
+            <summary>
+            将一个T的集合转成一个树形结构
+            </summary>
+            <typeparam name="T">树的类型</typeparam>
+            <typeparam name="TNode">树节点的类型</typeparam>
+            <param name="parent">父级对象集合</param>
+            <param name="childSelector">根据父级对象筛选的Func返回子集</param>
+            <param name="parentNode">父级节点</param>
+            <param name="funcToNode">根据传入的父级节点和T对象，将T对象转成节点的Func</param>
+        </member>
+        <member name="M:EmrCommon.TreeExtensions.NodesForAction``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``0}},System.Action{``0})">
+            <summary>
+            选中节点及其子孙节点执行某个操作
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="roots"></param>
+            <param name="childSelector"></param>
+            <param name="action"></param>
+        </member>
+        <member name="M:EmrCommon.TreeExtensions.ChildrenNodesForAction``1(``0,System.Func{``0,System.Collections.Generic.IEnumerable{``0}},System.Action{``0})">
+            <summary>
+            选中节点的子孙节点执行某个操作
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="parent"></param>
+            <param name="childSelector"></param>
+            <param name="action"></param>
+        </member>
+        <member name="P:EmrCommon.GridCol.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:EmrCommon.GridCol.Caption">
+             <summary>
+            标题
+             </summary>
+        </member>
+        <member name="P:EmrCommon.GridCol.Visiable">
+            <summary>
+            是否显示
+            </summary>
+        </member>
+        <member name="M:EmrCommon.Interface.ICrudSql`1.Insert(`0)">
+            <summary>
+            获取插入一条t记录的sql语句
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Interface.ICrudSql`1.Update(`0)">
+            <summary>
+            获取更新一条t记录的sql语句
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Interface.ICrudSql`1.UpdateAll(System.Linq.Expressions.Expression{System.Predicate{`0}},System.Linq.Expressions.Expression{System.Predicate{`0}})">
+            <summary>
+            获取 更新符合条件的所有记录的Sql语句
+            </summary>
+            <param name="match"></param>
+            <param name="action"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Interface.ICrudSql`1.Delete(System.Linq.Expressions.Expression{System.Predicate{`0}})">
+            <summary>
+            删除表中符合条件的数据的sql语句
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="match"></param>
+            <returns></returns>
+        </member>
+        <member name="P:EmrCommon.Interface.ICrudSql`1.Datas">
+            <summary>
+            是否有大数据字段
+            </summary>
+        </member>
+        <member name="M:EmrCommon.Interface.IFindSql`1.FindAll(System.Linq.Expressions.Expression{System.Predicate{`0}},System.Int32)">
+            <summary>
+            获取表中或者视图符合条件的记录的sql语句
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="match"></param>
+            <param name="rownum">取表中的前多少行记录</param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Interface.IRowToModel`1.ToModel(System.Data.DataRow)">
+            <summary>
+            将datarow转化成对应的Model
+            </summary>
+            <param name="row"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EmrCommon.Lazy`1">
+            <summary>
+            延迟加载类
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:EmrCommon.MBindingList`1.CompareBedValue(System.Object,System.Object,System.Type)">
+            <summary>
+            对比床号
+            </summary>
+            <param name="o1"></param>
+            <param name="o2"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="P:EmrCommon.MenuItemAction.Parent">
+            <summary>
+            父级菜单名称
+            </summary>
+        </member>
+        <member name="P:EmrCommon.MenuItemAction.Name">
+            <summary>
+            菜单名称
+            </summary>
+        </member>
+        <member name="P:EmrCommon.MenuItemAction.Action">
+            <summary>
+            菜单Click事件
+            </summary>
+        </member>
+        <member name="P:EmrCommon.MenuItemAction.IsVisiableByHeader">
+            <summary>
+            是否需要根据阶段不同来控制是否显示
+            </summary>
+        </member>
+        <member name="P:EmrCommon.MenuItemAction.ActionStatus">
+            <summary>
+            在路径的哪些状态下可以操作
+            </summary>
+        </member>
+        <member name="T:EmrCommon.SetColValueSql">
+            <summary>
+            将表达式转换成设置更新语句中Set后面的Sql
+            </summary>
+        </member>
+        <member name="M:EmrCommon.StringJoiner.Left(System.String)">
+            <summary>
+            在左边拼接字符串
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.StringJoiner.Right(System.String)">
+            <summary>
+            右边拼接字符串
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EmrCommon.Xml.WordXmlOperator">
+            <summary>
+            简单的word与xml转换
+            </summary>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.CreateBaseXml">
+            <summary>
+            创建一个基础的xml文档
+            </summary>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.OpenWordXml">
+            <summary>
+            打开wordxml文件
+            </summary>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.OpenWordXml(System.String)">
+            <summary>
+            打开指定wordxml文件
+            </summary>
+            <param name="filename"></param>
+        </member>
+        <member name="P:EmrCommon.Xml.WordXmlOperator.IsNull">
+            <summary>
+            当前操作的xdoc是否为null
+            </summary>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.GetAllPElement">
+            <summary>
+            获取所有的段落元素
+            </summary>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.GetAllPContent">
+            <summary>
+            获取段落内容
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.GetAllTableElement">
+            <summary>
+            获取所有表格元素
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.GetAllTableContent">
+            <summary>
+            获取所有表格的内容
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.GetWord2003BaseXml">
+            <summary>
+            word2003的xml基础构架
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.AddTable(System.Data.DataTable)">
+            <summary>
+            添加表格数据
+            </summary>
+            <param name="table"></param>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.AddTable(EmrCommon.Xml.XTable)">
+            <summary>
+            添加表格数据
+            </summary>
+            <param name="table"></param>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.AddTable(System.Collections.Generic.List{EmrCommon.Xml.XTable})">
+            <summary>
+            添加表格数据
+            </summary>
+            <param name="tables"></param>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.CreateTableElement(System.Data.DataTable)">
+            <summary>
+            将表格数据转成word表格数据
+            </summary>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.AddP">
+            <summary>
+            增加段落元素
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.AddRow(System.Data.DataRow)">
+            <summary>
+            表格中添加一行内容
+            </summary>
+            <param name="row"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.AddRow(EmrCommon.Xml.XRow)">
+            <summary>
+            表格中添加一行内容
+            </summary>
+            <param name="row"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.AddRow(System.String[])">
+            <summary>
+            表格添加一行内容
+            </summary>
+            <param name="cells"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.AddContentInTableCell(System.String)">
+            <summary>
+            单元格中添加一段内容
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmrCommon.Xml.WordXmlOperator.Save(System.String)">
+            <summary>
+            保存Xml文档
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="T:EmrCommon.Xml.XCell">
+            <summary>
+            单元格
+            </summary>
+        </member>
+        <member name="P:EmrCommon.Xml.XCell.Ps">
+            <summary>
+            单元格包含的段落
+            </summary>
+        </member>
+        <member name="T:EmrCommon.Xml.XCol">
+            <summary>
+            列
+            </summary>
+        </member>
+        <member name="T:EmrCommon.Xml.XRow">
+            <summary>
+            行
+            </summary>
+        </member>
+        <member name="P:EmrCommon.Xml.XRow.Cells">
+            <summary>
+            一行包含的单元格
+            </summary>
+        </member>
+        <member name="T:EmrCommon.Xml.XTable">
+            <summary>
+            表格
+            </summary>
+        </member>
+        <member name="P:EmrCommon.Xml.XTable.IsColCaptionVisiable">
+            <summary>
+            列标题是否显示
+            </summary>
+        </member>
+        <member name="P:EmrCommon.Xml.XTable.Cols">
+            <summary>
+            列集合
+            </summary>
+        </member>
+        <member name="P:EmrCommon.Xml.XTable.Rows">
+            <summary>
+            行集合
+            </summary>
+        </member>
+    </members>
+</doc>

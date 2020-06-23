@@ -1,0 +1,893 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FD4B43ED-E2B4-4A19-A6EF-D85CA7524280}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Base_App</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Bifrost</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\EMR\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\EMR\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Common, Version=1.0.20031.116, Culture=neutral, PublicKeyToken=e272bb32d11b1948">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EMR\C1.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Command, Version=1.0.20071.19104, Culture=neutral, PublicKeyToken=e808566f358766d8">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EMR\C1.Win.C1Command.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid, Version=2.6.20071.324, Culture=neutral, PublicKeyToken=79882d576c6336da">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EMR\C1.Win.C1FlexGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DataOperater, Version=1.0.4693.18172, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EMR\DataOperater.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EMR\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NAudio, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EMR\NAudio.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\EMR\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Name>system.drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security">
+      <Name>system.security</Name>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="TeeChart, Version=3.2.2699.17379, Culture=neutral, PublicKeyToken=ec7a903a227899d6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\EMR\TeeChart.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VoiceRecorder.Audio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EMR\VoiceRecorder.Audio.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlertCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Back_EventArgers.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class_Doc_Role.cs" />
+    <Compile Include="Class_Font_Spell.cs" />
+    <Compile Include="Class_Font_Spell_First.cs" />
+    <Compile Include="DeletingStores.cs" />
+    <Compile Include="Ecp_IData\Data_Newdoc.cs" />
+    <Compile Include="Ecp_IData\Data_Operator.cs" />
+    <Compile Include="Ecp_IData\IDataSource.cs" />
+    <Compile Include="frmCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCode.Designer.cs">
+      <DependentUpon>frmCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelp.Designer.cs">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridAction.cs" />
+    <Compile Include="HisInStance\frmBa_Insert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HisInStance\frmBa_Insert.Designer.cs">
+      <DependentUpon>frmBa_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HisInStance\frmPicShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HisInStance\frmPicShow.designer.cs">
+      <DependentUpon>frmPicShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HisInStance\FrmVJZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HisInStance\FrmVJZ.designer.cs">
+      <DependentUpon>FrmVJZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hook\FrmPassWordChecked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hook\FrmPassWordChecked.Designer.cs">
+      <DependentUpon>FrmPassWordChecked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hook\KeyBordHook.cs" />
+    <Compile Include="Hook\MouseHook.cs" />
+    <Compile Include="LogHelper.cs" />
+    <Compile Include="Encrypt.cs" />
+    <Compile Include="frmCodeSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCodeSelect.Designer.cs">
+      <DependentUpon>frmCodeSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHightLevelSign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHightLevelSign.Designer.cs">
+      <DependentUpon>frmHightLevelSign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateTime.designer.cs">
+      <DependentUpon>frmUpdateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmZLGF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmZLGF.Designer.cs">
+      <DependentUpon>frmZLGF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GListBoxItem.cs" />
+    <Compile Include="HisInStance\frmBljc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HisInStance\frmBljc.designer.cs">
+      <DependentUpon>frmBljc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HisInStance\FrmLis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HisInStance\FrmLis.designer.cs">
+      <DependentUpon>FrmLis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HisInStance\frmPatientProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HisInStance\frmPatientProgress.Designer.cs">
+      <DependentUpon>frmPatientProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HisInStance\frmYZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HisInStance\frmYZ.designer.cs">
+      <DependentUpon>frmYZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HisInStance\frm_Pasc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HisInStance\frm_Pasc.Designer.cs">
+      <DependentUpon>frm_Pasc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HisInStance\ucPascInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HisInStance\ucPascInfo.Designer.cs">
+      <DependentUpon>ucPascInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Class_Bgrecode.cs" />
+    <Compile Include="Model\Class_CaseHospital.cs" />
+    <Compile Include="Model\Class_Datacodecs.cs" />
+    <Compile Include="Model\Class_DiagCAT.cs" />
+    <Compile Include="Model\Class_DiagDEF.cs" />
+    <Compile Include="Model\Class_DiagnosisTreat.cs" />
+    <Compile Include="Model\Class_DocSign.cs" />
+    <Compile Include="Model\Class_Hospital_GradeParam.cs" />
+    <Compile Include="Model\Class_Hyperlink.cs" />
+    <Compile Include="Model\Class_Message.cs" />
+    <Compile Include="Model\Class_Nurse.cs" />
+    <Compile Include="Model\Class_Nurse_Record.cs" />
+    <Compile Include="Model\Class_Nurse_Record_Dict.cs" />
+    <Compile Include="Model\Class_Periphery_BG__Recode.cs" />
+    <Compile Include="Model\Class_Quality_HLB_View.cs" />
+    <Compile Include="Model\Class_Quality_Var_HLB.cs" />
+    <Compile Include="Model\Class_Quality_Var_YWC.cs" />
+    <Compile Include="Model\Class_Quality_YWC_View.cs" />
+    <Compile Include="Model\Class_Record_Monitor_View.cs" />
+    <Compile Include="Model\Class_SectionArea.cs" />
+    <Compile Include="Model\Class_Sickarea.cs" />
+    <Compile Include="Model\class_SickAreaInfo.cs" />
+    <Compile Include="Model\Class_SickRoomInfo.cs" />
+    <Compile Include="Model\Class_Take_over_SEQ.cs" />
+    <Compile Include="Model\Class_Temperature_Monitoring.cs" />
+    <Compile Include="Model\Class_Text.cs" />
+    <Compile Include="Model\Class_ThedayStatistics.cs" />
+    <Compile Include="Model\Class_TngAccount.cs" />
+    <Compile Include="Model\Class_T_Case_Hispital.cs" />
+    <Compile Include="Model\Class_VitalSigns.cs" />
+    <Compile Include="Model\Consultation_Apply.cs" />
+    <Compile Include="Model\Consultation_Record.cs" />
+    <Compile Include="Model\Inhospital_action.cs" />
+    <Compile Include="Model\Inout_amount_dist.cs" />
+    <Compile Include="Model\InPatientInfo.cs" />
+    <Compile Include="Model\ListItem.cs" />
+    <Compile Include="Model\Nurse_OutIn_Record.cs" />
+    <Compile Include="Model\NuserInout_show.cs" />
+    <Compile Include="Model\Path_Instance.cs" />
+    <Compile Include="Model\Patient_Doc.cs" />
+    <Compile Include="Model\T_CASE_COPY_RECORD.cs" />
+    <Compile Include="Model\T_Entity_Path.cs" />
+    <Compile Include="Model\T_Header_Type.cs" />
+    <Compile Include="Model\T_Item_Index.cs" />
+    <Compile Include="Model\T_Path_Itme.cs" />
+    <Compile Include="MultiColumnComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NurseTemplate\frmTemplateAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NurseTemplate\frmTemplateAdd.designer.cs">
+      <DependentUpon>frmTemplateAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NurseTemplate\frmTemplateList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NurseTemplate\frmTemplateList.designer.cs">
+      <DependentUpon>frmTemplateList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SPEECH\MSCDLL.cs" />
+    <Compile Include="SpellAndWbCode.cs" />
+    <Compile Include="SYSTEMSET\frmDocRoleSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmDocRoleSet.Designer.cs">
+      <DependentUpon>frmDocRoleSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExcelInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlassButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GlassButton.Designer.cs">
+      <DependentUpon>GlassButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPAddressTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IPAddressTextBox.Designer.cs">
+      <DependentUpon>IPAddressTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmAccount.Designer.cs">
+      <DependentUpon>frmAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmAccountSimpleSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmAccountSimpleSet.Designer.cs">
+      <DependentUpon>frmAccountSimpleSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmDutyDoctorSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmDutyDoctorSet.Designer.cs">
+      <DependentUpon>frmDutyDoctorSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmDutyTimeSpanSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmDutyTimeSpanSet.Designer.cs">
+      <DependentUpon>frmDutyTimeSpanSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmJobLeverSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmJobLeverSet.Designer.cs">
+      <DependentUpon>frmJobLeverSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmMessageShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmMessageShow.Designer.cs">
+      <DependentUpon>frmMessageShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmMsg.Designer.cs">
+      <DependentUpon>frmMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmOperaterShow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmOperaterShow.Designer.cs">
+      <DependentUpon>frmOperaterShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmParamSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmParamSet.Designer.cs">
+      <DependentUpon>frmParamSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmPasswordChanged.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmPasswordChanged.Designer.cs">
+      <DependentUpon>frmPasswordChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmPermissionSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmPermissionSet.Designer.cs">
+      <DependentUpon>frmPermissionSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmPermissionSet_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmPermissionSet_Info.Designer.cs">
+      <DependentUpon>frmPermissionSet_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmQuitlyNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmQuitlyNotice.Designer.cs">
+      <DependentUpon>frmQuitlyNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmRoleRange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmRoleRange.Designer.cs">
+      <DependentUpon>frmRoleRange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmRoleSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmRoleSet.Designer.cs">
+      <DependentUpon>frmRoleSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmShowServerLinks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmShowServerLinks.Designer.cs">
+      <DependentUpon>frmShowServerLinks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmTextRightSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmTextRightSet.Designer.cs">
+      <DependentUpon>frmTextRightSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmUserInfoAccountSet1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmUserInfoAccountSet1.designer.cs">
+      <DependentUpon>frmUserInfoAccountSet1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucDeletePatientDoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucDeletePatientDoc.Designer.cs">
+      <DependentUpon>ucDeletePatientDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucNurseMask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucNurseMask.Designer.cs">
+      <DependentUpon>ucNurseMask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucOperaterLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucOperaterLog.Designer.cs">
+      <DependentUpon>ucOperaterLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucPasswordStrongCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucPasswordStrongCheck.Designer.cs">
+      <DependentUpon>ucPasswordStrongCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucPatientDocCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucPatientDocCheck.Designer.cs">
+      <DependentUpon>ucPatientDocCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucSectionkeep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucSectionkeep.designer.cs">
+      <DependentUpon>ucSectionkeep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucServerLinkShow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucServerLinkShow.Designer.cs">
+      <DependentUpon>ucServerLinkShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucSetTextRight.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucSetTextRight.Designer.cs">
+      <DependentUpon>ucSetTextRight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmSectionAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\frmSectionAccount.Designer.cs">
+      <DependentUpon>frmSectionAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucUserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SYSTEMSET\ucUserInfo.designer.cs">
+      <DependentUpon>ucUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextBoxMarginColourPainter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextBoxMarginCustomise.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TextEdit.Designer.cs">
+      <DependentUpon>TextEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucC1FlexGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucC1FlexGrid.Designer.cs">
+      <DependentUpon>ucC1FlexGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucGridviewX.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucGridviewX.Designer.cs">
+      <DependentUpon>ucGridviewX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uobject.cs" />
+    <Compile Include="UserInfor\Class_Account.cs" />
+    <Compile Include="UserInfor\Class_Datacodecs_A.cs" />
+    <Compile Include="UserInfor\Class_Doc_Job.cs" />
+    <Compile Include="UserInfor\Class_Doc_OtherRights.cs" />
+    <Compile Include="UserInfor\Class_Doc_User_Range.cs" />
+    <Compile Include="UserInfor\Class_Mr_File_Index.cs" />
+    <Compile Include="UserInfor\Class_Permission.cs" />
+    <Compile Include="UserInfor\Class_Permission_Info.cs" />
+    <Compile Include="UserInfor\Class_Rnage.cs" />
+    <Compile Include="UserInfor\Class_Role.cs" />
+    <Compile Include="UserInfor\Class_Sections.cs" />
+    <Compile Include="UserInfor\Class_SelectObj.cs" />
+    <Compile Include="UserInfor\Class_Sub_Hospital.cs" />
+    <Compile Include="UserInfor\Class_Text_A.cs" />
+    <Compile Include="UserInfor\Class_User.cs" />
+    <Compile Include="Web References\WebReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="frmHightLevelSign_Nurse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHightLevelSign_Nurse.Designer.cs">
+      <DependentUpon>frmHightLevelSign_Nurse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHightLevelDigSign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHightLevelDigSign.Designer.cs">
+      <DependentUpon>frmHightLevelDigSign.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AlertCustom.resx">
+      <DependentUpon>AlertCustom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCode.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCodeSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCodeSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExcelInfo.resx">
+      <DependentUpon>frmExcelInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHightLevelSign.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmHightLevelSign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProgress.resx">
+      <DependentUpon>FrmProgress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateTime.resx">
+      <DependentUpon>frmUpdateTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmZLGF.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmZLGF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HisInStance\frmBa_Insert.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBa_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HisInStance\frmBljc.resx">
+      <DependentUpon>frmBljc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HisInStance\FrmLis.resx">
+      <DependentUpon>FrmLis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HisInStance\frmPatientProgress.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPatientProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HisInStance\frmPicShow.resx">
+      <DependentUpon>frmPicShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HisInStance\FrmVJZ.resx">
+      <DependentUpon>FrmVJZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HisInStance\frmYZ.resx">
+      <DependentUpon>frmYZ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HisInStance\frm_Pasc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_Pasc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HisInStance\ucPascInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPascInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hook\FrmPassWordChecked.resx">
+      <DependentUpon>FrmPassWordChecked.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IPAddressTextBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IPAddressTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NurseTemplate\frmTemplateAdd.resx">
+      <DependentUpon>frmTemplateAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NurseTemplate\frmTemplateList.resx">
+      <DependentUpon>frmTemplateList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmAccount.resx">
+      <DependentUpon>frmAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmAccountSimpleSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAccountSimpleSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmDocRoleSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDocRoleSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmDutyDoctorSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDutyDoctorSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmDutyTimeSpanSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDutyTimeSpanSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmJobLeverSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmJobLeverSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmMessageShow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMessageShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmMsg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmOperaterShow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmOperaterShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmParamSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmParamSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmPasswordChanged.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPasswordChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmPermissionSet.resx">
+      <DependentUpon>frmPermissionSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmPermissionSet_Info.resx">
+      <DependentUpon>frmPermissionSet_Info.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmQuitlyNotice.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmQuitlyNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmRoleRange.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRoleRange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmRoleSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRoleSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmShowServerLinks.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmShowServerLinks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmTextRightSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTextRightSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmUserInfoAccountSet1.resx">
+      <DependentUpon>frmUserInfoAccountSet1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\ucDeletePatientDoc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDeletePatientDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\ucNurseMask.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucNurseMask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\ucOperaterLog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucOperaterLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\ucPasswordStrongCheck.resx">
+      <DependentUpon>ucPasswordStrongCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\ucPatientDocCheck.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPatientDocCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\ucSectionkeep.resx">
+      <DependentUpon>ucSectionkeep.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\ucServerLinkShow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucServerLinkShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\ucSetTextRight.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucSetTextRight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\frmSectionAccount.resx">
+      <DependentUpon>frmSectionAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYSTEMSET\ucUserInfo.resx">
+      <DependentUpon>ucUserInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TextEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucC1FlexGrid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucC1FlexGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucGridviewX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucGridviewX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHightLevelSign_Nurse.resx">
+      <DependentUpon>frmHightLevelSign_Nurse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHightLevelDigSign.resx">
+      <DependentUpon>frmHightLevelDigSign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WebReference\Service.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.1.84/WebSite1/Service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebReference\</RelPath>
+      <UpdateFromURL>http://192.168.1.84/WebSite1/Service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Leadron_WebReference_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WebReference\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WebReference\Service.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

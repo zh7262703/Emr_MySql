@@ -1,0 +1,1 @@
+C:\Program Files\BIFOST\TempDocRead,172.16.1.150,d:\doct\mr,D:\EMR\WebSite1\html,http://172.16.1.151/WebSite1/html

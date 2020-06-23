@@ -1,0 +1,70 @@
+D:\Project\EMR6.0\EMR\TempertureEditor.dll.config
+D:\Project\EMR6.0\EMR\TempertureEditor.dll
+D:\Project\EMR6.0\EMR\TempertureEditor.pdb
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.csprojResolveAssemblyReference.cache
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmDataLineTypeSet.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmDataTxtTypeSet.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmFontSet.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmImgSet.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmLineSet.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmRecSet.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmMainSet.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmPensSet.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmTextSet.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.EditDesigner.ucTemperatureReport.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.EditDesigner.ucTempratureDataLoad_ai.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.frmInputAll.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.frmMainSelect.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.frmOperaterTest.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.frmPrint.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.frmTempertureDataEdit.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.frmTempertureEditor.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.frmUser.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.Properties.Resources.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.Tempreture_Management.ucTemperPrintDataLoad_child.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.Tempreture_Management.ucTemperPrintDataLoad.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.Tempreture_Management.ucTempratureDataLoad_child.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.Tempreture_Management.ucTempratureDataLoad.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.ucTempretureList.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.UcTempertureCheckValSet.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.ucTempertureEditor.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.ucTemperturePrint.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.ucTempraute.resources
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.csproj.GenerateResource.Cache
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.dll
+D:\Project\EMR6.0\tempture\TempertureEditor\obj\Debug\TempertureEditor.pdb
+D:\project\EMR6.0 - 副本\EMR\TempertureEditor.pdb
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmDataLineTypeSet.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmDataTxtTypeSet.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmFontSet.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmImgSet.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmLineSet.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmRecSet.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmMainSet.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmPensSet.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.Controls.frmTextSet.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.EditDesigner.ucTemperatureReport.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.EditDesigner.ucTempratureDataLoad_ai.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.frmInputAll.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.frmMainSelect.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.frmOperaterTest.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.frmPrint.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.frmTempertureDataEdit.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.frmTempertureEditor.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.frmUser.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.Properties.Resources.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.Tempreture_Management.ucTemperPrintDataLoad_child.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.Tempreture_Management.ucTemperPrintDataLoad.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.Tempreture_Management.ucTempratureDataLoad_child.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.Tempreture_Management.ucTempratureDataLoad.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.ucTempretureList.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.UcTempertureCheckValSet.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.ucTempertureEditor.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.ucTemperturePrint.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.ucTempraute.resources
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.csproj.GenerateResource.Cache
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.pdb
+D:\project\EMR6.0 - 副本\EMR\TempertureEditor.dll.config
+D:\project\EMR6.0 - 副本\EMR\TempertureEditor.dll
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.dll
+D:\project\EMR6.0 - 副本\tempture\TempertureEditor\obj\Debug\TempertureEditor.csprojResolveAssemblyReference.cache

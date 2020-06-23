@@ -1,0 +1,17 @@
+SCC = This is a Source Code Control file
+
+[Leadron.csproj]
+SCC_Aux_Path = "\\192.168.36.120\vsssource"
+SCC_Project_Name = "$/框架库程序/Leadron", FEAAAAAA
+
+[Leadron.sln]
+SCC_Aux_Path = "\\192.168.36.120\vsssource"
+SCC_Project_Name = "$/框架库程序/Leadron", FEAAAAAA
+
+[Bifrost.csproj]
+SCC_Aux_Path = "\\192.168.1.116\Resource"
+SCC_Project_Name = "$/江苏版电子病历/Bifrost", FWMAAAAA
+
+[Bifrost.sln]
+SCC_Aux_Path = "\\192.168.1.116\Resource"
+SCC_Project_Name = "$/江苏版电子病历/Bifrost", FWMAAAAA

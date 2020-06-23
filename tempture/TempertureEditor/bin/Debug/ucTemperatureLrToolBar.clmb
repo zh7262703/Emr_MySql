@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	//
+    // 摘要:
+    //     指定控件停靠的位置和方式。
+    [Editor("System.Windows.Forms.Design.DockEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(UITypeEditor))]
+    public enum DockStyle
+    {
+        //
+        // 摘要:
+        //     该控件未停靠。
+        None = 0,
+        //
+        // 摘要:
+        //     该控件的上边缘停靠在其包含控件的顶端。
+        Top = 1,
+        //
+        // 摘要:
+        //     该控件的下边缘停靠在其包含控件的底部。
+        Bottom = 2,
+        //
+        // 摘要:
+        //     该控件的左边缘停靠在其包含控件的左边缘。
+        Left = 3,
+        //
+        // 摘要:
+        //     该控件的右边缘停靠在其包含控件的右边缘。
+        Right = 4,
+        //
+        // 摘要:
+        //     控件的各个边缘分别停靠在其包含控件的各个边缘，并且适当调整大小。
+        Fill = 5
+    }
+	//
+    // 摘要:
+    //指定应用到文本的字形信息。
+    public enum FontStyle
+    {
+        //
+        // 摘要:
+        //     普通文本。
+        Regular = 0,
+        //
+        // 摘要:
+        //     加粗文本。
+        Bold = 1,
+        //
+        // 摘要:
+        //     倾斜文本。
+        Italic = 2,
+        //
+        // 摘要:
+        //     带下划线的文本。
+        Underline = 4,
+        //
+        // 摘要:
+        //     中间有直线通过的文本。
+        Strikeout = 8
+    }
+
+	 //
+    // 摘要:
+    //指定 System.Windows.Forms.DateTimePicker 控件显示的日期和时间格式。
+    public enum DateTimePickerFormat
+    {
+        //
+        // 摘要:
+        //     System.Windows.Forms.DateTimePicker 控件以用户操作系统设置的长日期格式显示日期/时间值。
+        Long = 1,
+        //
+        // 摘要:
+        //     System.Windows.Forms.DateTimePicker 控件以用户操作系统设置的短日期格式显示日期/时间值。
+        Short = 2,
+        //
+        // 摘要:
+        //     System.Windows.Forms.DateTimePicker 控件以用户操作系统设置的时间格式显示日期/时间值。
+        Time = 4,
+        //
+        // 摘要:
+        //     System.Windows.Forms.DateTimePicker 控件以自定义格式显示日期/时间值。
+        Custom = 8
+    }
+	
+	 //
+    // 摘要:
+    //     指定 System.Windows.Forms.ComboBox 样式。
+    public enum ComboBoxStyle
+    {
+        //
+        // 摘要:
+        //     文本部分可编辑。列表部分总可见。
+        Simple = 0,
+        //
+        // 摘要:
+        //     文本部分可编辑。用户必须单击箭头按钮来显示列表部分。这是默认样式。
+        DropDown = 1,
+        //
+        // 摘要:
+        //     用户不能直接编辑文本部分。用户必须单击箭头按钮来显示列表部分。只有在 System.Windows.Forms.ComboBox.AutoCompleteMode
+        //     为 System.Windows.Forms.AutoCompleteMode.Suggest 或 System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        //     时才会显示列表。
+        DropDownList = 2
+    }
+	
+	 //
+    // 摘要:
+    //     Indicates the style of mutli-functional splitter control.
+    public enum eSplitterStyle
+    {
+        //
+        // 摘要:
+        //     Specifies Office 2003 like splitter style and color scheme.
+        Office2003 = 0,
+        //
+        // 摘要:
+        //     Specifies Mozilla like splitter style and color scheme.
+        Mozilla = 1,
+        //
+        // 摘要:
+        //     Specifies Office 2007 like splitter style and color scheme.
+        Office2007 = 2
+    }
+	
+	//
+    // 摘要:
+    //     Specifies the appearance of a item.
+    public enum eDotNetBarStyle
+    {
+        OfficeXP = 0,
+        Office2000 = 1,
+        Office2003 = 2,
+        VS2005 = 3,
+        Office2007 = 4,
+        Office2010 = 5,
+        Windows7 = 6,
+        Metro = 7,
+        StyleManagerControlled = 8
+    }
+-->
+<temperture Genid="102">
+  <Vars>
+    <Var Name="HighTemper" Value="38.5"/>
+	<Var Name="ExcludeEvents" Value="**请选择**,"/>
+	
+	<!--映射:体温类型选项-<==>体温单数据类型-->
+	<Var Name="腋表" Value="腋温"/>
+	<Var Name="口表" Value="口温"/>
+	<Var Name="肛表" Value="肛温"/>
+	<!--映射:控件<==>体温单数据类型-->
+	<Var Name="ckReiteration" Value="复测标志"/>
+	<Var Name="ckChu" Value="脉膊短绌"/>
+	<Var Name="ckBreath" Value="辅助标志"/>
+	<Var Name="ckHeartRate" Value="心率标志"/>
+	<Var Name="cbTemperType" Value="体温类型"/>
+	<Var Name="txtTemper" Value="腋温"/>
+	<Var Name="txtDown" Value="体温↓"/>
+	<Var Name="txtPulse" Value="脉搏"/>
+	<Var Name="txtBreathing" Value="呼吸次数"/>
+	<Var Name="txtHeart" Value="心率"/>	
+	<Var Name="cbEvent" Value="事件"/>
+	<Var Name="lbEvents" Value="操作事件"/>	
+	<Var Name="cmbBp" Value="血压1"/>	
+	<Var Name="cmbBp2" Value="血压2"/>
+	<Var Name="cmbShit" Value="大便次数"/>	
+	<Var Name="cmbUrine" Value="小便次数"/>	
+	<Var Name="txtHeight" Value="身高"/>
+	<Var Name="cmbWeight" Value="体重"/>
+	<Var Name="txtInAmount" Value="总入量"/>	
+	<Var Name="txtIntLiquidAmount" Value="输入量"/>	
+	<Var Name="txtOutAmount" Value="总出量"/>
+	<Var Name="txtVOLUME_OF_DRAINAGE" Value="引流量"/>	
+	<Var Name="txtAllergyHistory" Value="过敏史"/>	
+	<Var Name="txtCustomName" Value="自定义名称"/>	
+	<Var Name="txtCustomContent" Value="自定义内容"/>	
+  </Vars>
+  <Fonts>
+    <Font Name="nineFont" FamilyName="宋体" Size="9" Style="0"/>
+    <Font Name="twelveFont" FamilyName="宋体" Size="12" Style="0"/>
+    <Font Name="nineBoldFont" FamilyName="宋体" Size="9" Style="1"/>
+    <Font Name="twelveBoldFont" FamilyName="宋体" Size="12" Style="1"/>
+	<Font Name="forteenFont" FamilyName="宋体" Size="14" Style="0"/>
+  </Fonts>
+  <CustomEventHandlers>
+	<CustomEventHandler Name="MSG_RegisterEventHandler" Handler="Register_ucTemperatureLrToolBar()"/>
+	<CustomEventHandler Name="MSG_Load" Handler="ucTemperatureLrToolBar_Load()"/>
+	<CustomEventHandler Name="MSG_LoadPageInfo" Handler="LoadPageInfo(cboPageIndex)"/>
+	<CustomEventHandler Name="MSG_setDateTimeMinOrMax" Handler="setDateTimeMinOrMax(dateTimePicker_Select)"/>
+	<CustomEventHandler Name="MSG_cboTime_LoadItemsByTemplate" Handler="cboTime_LoadItemsByTemplate(cboTime)"/>
+	<CustomEventHandler Name="MSG_cboTime_SelectIndexByNowTime" Handler="cboTime_SelectIndexByNowTime(cboTime)"/>
+	<CustomEventHandler Name="MSG_cboTime_enableInputByInHospitalTime" Handler="enableInputByInHospitalTime(groupBox1,groupBox2)"/>
+	<CustomEventHandler Name="MSG_TemperClear" Handler="TemperClear(groupBox1,groupBox2)"/>
+	<CustomEventHandler Name="MSG_RefreshData" Handler="RefreshData(groupBox1,groupBox2,ckReiteration,ckChu,ckBreath,ckHeartRate,cbTemperType,txtTemper,txtDown,txtPulse,txtBreathing,txtHeart,cbEvent,lbEvents,cmbBp,cmbBp2,txtHeight,cmbWeight,txtTouWei,txtInAmount,txtIntLiquidAmount,txtOutAmount,txtInMouthAmount,txtUrineAmount,txtVOLUME_OF_DRAINAGE,cmbShit,txtShitAmount)"/>
+	<CustomEventHandler Name="MSG_GetEndOperaterEndTime" Handler="GetEndOperaterEndTime(dtpSurgeryEndTime)"/>
+  </CustomEventHandlers>
+  <Controls>
+    <Control Type="Panel" Name="panel6" X="0" Y="0" Width="289" Height="39"  TabIndex="1" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="1" Events="" AutoScroll="false">
+      <Controls>
+        <Control Type="ButtonX" Name="btn_up" X="21" Y="9" Width="23" Height="20"  TabIndex="1" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="Click:btn_up_Click(cboPageIndex)" Text="〈"/>
+        <Control Type="ComboBox" Name="cboPageIndex" X="48" Y="9" Width="190" Height="20"  TabIndex="2" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="SelectedIndexChanged:cboPageIndex_SelectedIndexChanged()" DropDownStyle="2" Items="1,2,3"/>
+        <Control Type="ButtonX" Name="btn_next" X="246" Y="9" Width="23" Height="20"  TabIndex="3" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="Click:btn_next_Click(cboPageIndex)" Text="〉"/>
+      </Controls>
+    </Control>
+    <Control Type="Panel" Name="panel5" X="0" Y="39" Width="289" Height="658"  TabIndex="2" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="5" Events="" AutoScroll="true">
+      <Controls>
+        <Control Type="Panel" Name="panel8" X="0" Y="0" Width="289" Height="34"  TabIndex="1" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="1" Events="" AutoScroll="false">
+          <Controls>
+            <Control Type="Label" Name="label8" X="21" Y="8" Width="42" Height="16" TabIndex="1" Visable="true" Enable="true" TabStop="false" FontName="twelveBoldFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="日期" />
+            <Control Type="DateTimePicker" Name="dateTimePicker_Select" X="67" Y="6" Width="124" Height="21" TabIndex="2" Visable="true" Enable="true" TabStop="true" FontName="nineFont"  Dock="0" Events="ValueChanged:writerTime_SelectedIndexChanged(dateTimePicker_Select,cboTime,lbTime)" ShowUpDown="false" Format="8" CustomFormat="yyyy-MM-dd"/>
+            <Control Type="ComboBox" Name="cboTime" X="194" Y="6" Width="72" Height="20"  TabIndex="3" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="SelectedIndexChanged:writerTime_SelectedIndexChanged(dateTimePicker_Select,cboTime,lbTime)" DropDownStyle="2" Items=""/>
+          </Controls>
+        </Control>
+        <Control  Type="GroupBox" Name='groupBox1'  X="0" Y="34" Width="289" Height="336" TabIndex="2" Visable="true" Enable="true" TabStop="false" FontName="nineBoldFont" Dock="1" Events="" ForeColor="#000000" Text="            " >
+          <Controls>
+            <Control Type="Label" Name="label14" X="7" Y="0" Width="77" Height="12" TabIndex="1" Visable="true" Enable="true" TabStop="false" FontName="nineBoldFont" Dock="0" Events="" ForeColor="#FF0000" AutoSize="true" Text="按时间点录入" />
+            <Control Type="Label" Name="label6" X="48" Y="19" Width="29" Height="12" TabIndex="2" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="时间" />
+            <Control Type="Label" Name="lbTime" X="91" Y="17" Width="53" Height="16" TabIndex="3" Visable="true" Enable="true" TabStop="false" FontName="twelveBoldFont" Dock="0" Events=""  ForeColor="#0000FF" AutoSize="true" Text="00:00" />
+            <Control Type="Label" Name="label55" X="24" Y="44" Width="53" Height="12" TabIndex="4" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="体温(℃)" />
+            <Control Type="ComboBox" Name="cbTemperType" X="89" Y="41" Width="72" Height="20"  TabIndex="5" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="SelectedIndexChanged:TemperTypeChanged(cbTemperType,txtTemper,ckReiteration)" DropDownStyle="2" Items="腋表,口表,肛表"/>
+            <Control Type="TextBox" Name="txtTemper" X="89" Y="68" Width="39" Height="21"  TabIndex="6" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="Click:testClick()|TextChanged:ControlTemperatureVisable(txtTemper,txtDown,label1)"/>
+            <Control Type="CheckBox" Name="ckReiteration" X="130" Y="70" Width="36" Height="21"  TabIndex="7" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="CheckedChanged:TemperTypeChanged(cbTemperType,txtTemper,ckReiteration)" ForeColor="#000000" AutoSize="true" Text="∨" Checked="false"/>
+            <Control Type="TextBox" Name="txtDown" X="179" Y="68" Width="39" Height="21"  TabIndex="8" Visable="false" Enable="false" TabStop="true" FontName="nineFont" Dock="0" Events=""/>
+            <Control Type="Label" Name="label1" X="220" Y="71" Width="14" Height="17" TabIndex="9" Visable="false" Enable="false" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="↓" />
+            <Control Type="Label" Name="label60" X="6" Y="103" Width="71" Height="12" TabIndex="10" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="脉搏(次/分)" />
+            <Control Type="TextBox" Name="txtPulse" X="89" Y="98" Width="39" Height="21"  TabIndex="11" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events=""/>
+            <Control Type="CheckBox" Name="ckChu" X="130" Y="99" Width="39" Height="21"  TabIndex="12" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="CheckedChanged:ckChu_CheckedChanged(txtHeart,ckHeartRate)" ForeColor="#000000" AutoSize="true" Text="绌" Checked="false"/>
+            <Control Type="Label" Name="label59" X="6" Y="130" Width="71" Height="12" TabIndex="13" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="呼吸(次/分" />
+            <Control Type="TextBox" Name="txtBreathing" X="89" Y="126" Width="39" Height="21"  TabIndex="14" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events=""/>
+            <Control Type="CheckBox" Name="ckBreath" X="130" Y="126" Width="39" Height="21"  TabIndex="15" Visable="true" Enable="true" TabStop="true" FontName="forteenFont" Dock="0" Events="CheckedChanged:ckBreath_CheckedChanged(txtBreathing)" ForeColor="#000000" AutoSize="true" Text="®" Checked="false"/>
+            <Control Type="Label" Name="label54" X="6" Y="158" Width="71" Height="12" TabIndex="16" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="心率(次/分)" />
+            <Control Type="TextBox" Name="txtHeart" X="89" Y="154" Width="39" Height="21"  TabIndex="17" Visable="true" Enable="false" TabStop="true" FontName="nineFont" Dock="0" Events=""/>
+            <Control Type="CheckBox" Name="ckHeartRate" X="130" Y="155" Width="39" Height="21"  TabIndex="18" Visable="true" Enable="false" TabStop="true" FontName="nineFont" Dock="0" Events="CheckedChanged:ckHeartRate_CheckedChanged(txtHeart)" ForeColor="#000000" AutoSize="true" Text="Ⓗ" Checked="false"/>
+            <Control Type="Label" Name="label58" X="48" Y="184" Width="29" Height="12" TabIndex="19" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="事件" />
+            <Control Type="ComboBox" Name="cbEvent" X="89" Y="181" Width="154" Height="20"  TabIndex="20" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="" DropDownStyle="2" Items="**请选择**,已测,私自外出,请假,劝阻无效外出,拒测,外出" />
+            <Control Type="Label" Name="label57" X="24" Y="212" Width="53" Height="12" TabIndex="21" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="添加事件" />
+            <Control Type="ComboBox" Name="cbAddEvent" X="89" Y="208" Width="103" Height="20"  TabIndex="22" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="SelectedIndexChanged:cbAddEvent_SelectedIndexChanged(dtpSurgeryEndTime)" DropDownStyle="2" Items="**请选择**,入院,转入,转出,手术,分娩,出院,死亡,回室,回家待产,返院待产,回家待术,返院待术"/>
+            <Control Type="Button" Name="btnAddEvent" X="198" Y="206" Width="20" Height="23"  TabIndex="23" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="Click:ListBoxAddItem(lbEvents,cbAddEvent,cboTime,dtpAddEventTime)" Text="+"/>
+            <Control Type="Button" Name="btnClear" X="221" Y="206" Width="20" Height="23"  TabIndex="24" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="Click:ListBoxRemoveItem(lbEvents)" Text="-"/>
+            <Control Type="Label" Name="label56" X="24" Y="239" Width="53" Height="12" TabIndex="25" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="事件时间" />
+            <Control Type="DateTimePicker" Name="dtpAddEventTime" X="89" Y="235" Width="154" Height="21" TabIndex="26" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events=""  ShowUpDown="true" Format="8" CustomFormat="HH:mm"/>
+            <Control Type="Label" Name="label53" X="0" Y="263" Width="154" Height="21" TabIndex="27" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="手术结束时间" />
+            <Control Type="DateTimePicker" Name="dtpSurgeryEndTime" X="89" Y="263" Width="154" Height="21" TabIndex="28" Visable="true" Enable="false" TabStop="true" FontName="nineFont" Dock="0" Events=""  ShowUpDown="true" Format="8" CustomFormat="yyyy-MM-dd HH:mm"/>
+            <Control Type="Label" Name="label52" X="24" Y="292" Width="53" Height="12" TabIndex="29" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="事件集合" />
+            <Control Type="ListBox" Name="lbEvents" X="89" Y="291" Width="155" Height="40"  TabIndex="30" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events=""/>
+          </Controls>
+        </Control>
+        <Control  Type="GroupBox" Name='groupBox2'  X="0" Y="350" Width="289" Height="300" TabIndex="3" Visable="true" Enable="true" TabStop="false" FontName="nineBoldFont" Dock="1" Events="" ForeColor="#000000" Text="          " >
+          <Controls>
+            <Control Type="Label" Name="label16" X="7" Y="0" Width="77" Height="12" TabIndex="1" Visable="true" Enable="true" TabStop="false" FontName="nineBoldFont" Dock="0" Events="" ForeColor="#FF0000" AutoSize="true" Text="按天录入" />
+            <Control Type="Label" Name="label15" X="10" Y="24" Width="47" Height="12" TabIndex="2" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="血压 ①" />
+			<Control Type="ComboBox" Name="cmbBp" X="60" Y="21" Width="68" Height="20"  TabIndex="3" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="" DropDownStyle="1" Items=",/,测不出,拒测"/>
+			<Control Type="Label" Name="label21" X="136" Y="24" Width="17" Height="12" TabIndex="4" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="②" />
+            <Control Type="ComboBox" Name="cmbBp2" X="163" Y="21" Width="68" Height="20"  TabIndex="5" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="" DropDownStyle="1" Items=",/,测不出,拒测"/> 
+			<Control Type="Label" Name="label67" X="235" Y="25" Width="29" Height="12" TabIndex="6" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="mmHg" />
+			<Control Type="Label" Name="lshit" X="4" Y="53" Width="53" Height="12" TabIndex="7" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="大便次数" />
+			<Control Type="ComboBox" Name="cmbShit" X="60" Y="50" Width="68" Height="20"  TabIndex="8" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="" DropDownStyle="1" Items=",0/E,1/E,1/2E,/E,*,☆,导泻,造口"/>
+			<Control Type="Label" Name="label68" X="138" Y="52" Width="53" Height="12" TabIndex="9" Visable="false" Enable="false" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="小便次数" />
+			<Control Type="ComboBox" Name="cmbUrine" X="192" Y="50" Width="61" Height="20"  TabIndex="10" Visable="false" Enable="false" TabStop="true" FontName="nineFont" Dock="0" Events="" DropDownStyle="1" Items=",*"/>
+			<Control Type="Label" Name="label69" X="16" Y="82" Width="41" Height="12" TabIndex="11" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="引流量" />
+			<Control Type="TextBox" Name="txtVOLUME_OF_DRAINAGE" X="60" Y="79" Width="193" Height="21"  TabIndex="12" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events=""/>
+			<Control Type="Label" Name="label65" X="255" Y="88" Width="17" Height="12" TabIndex="13" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="ml" />			
+			<Control Type="Label" Name="label71" X="16" Y="110" Width="41" Height="12" TabIndex="14" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="总入量" />
+			<Control Type="TextBox" Name="txtInAmount" X="60" Y="107" Width="68" Height="21"  TabIndex="15" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events=""/>
+			<Control Type="Label" Name="label7" X="128" Y="111" Width="17" Height="12" TabIndex="16" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="ml" />
+			<Control Type="Label" Name="label23" X="150" Y="110" Width="41" Height="12" TabIndex="17" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="总出量" />
+			<Control Type="TextBox" Name="txtOutAmount" X="194" Y="107" Width="61" Height="21"  TabIndex="18" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events=""/>
+			<Control Type="Label" Name="label66" X="255" Y="112" Width="17" Height="12" TabIndex="19" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="ml" />
+			<Control Type="Label" Name="label17" X="255" Y="142" Width="17" Height="12" TabIndex="20" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="ml" />
+			<Control Type="Label" Name="label4" X="28" Y="138" Width="29" Height="12" TabIndex="21" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="身高" />
+			<Control Type="TextBox" Name="txtHeight" X="60" Y="135" Width="68" Height="21"  TabIndex="22" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events=""/>
+			<Control Type="Label" Name="label5" X="128" Y="140" Width="17" Height="12" TabIndex="23" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="cm" />
+			<Control Type="Label" Name="label37" X="162" Y="140" Width="29" Height="12" TabIndex="24" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="体重" />
+			<Control Type="ComboBox" Name="cmbWeight" X="194" Y="137" Width="61" Height="20"  TabIndex="25" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="" DropDownStyle="1" Items=",平车,卧床,轮椅"/> 
+			<Control Type="Label" Name="label63" X="255" Y="140" Width="17" Height="12" TabIndex="26" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="kg" />
+			<Control Type="Label" Name="label3" X="4" Y="166" Width="53" Height="12" TabIndex="27" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="过敏药物" />
+			<Control Type="TextBox" Name="txtAllergyHistory" X="60" Y="163" Width="193" Height="21"  TabIndex="28" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events=""/>
+			<Control Type="Label" Name="label9" X="4" Y="195" Width="65" Height="12" TabIndex="29" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="自定义名称" />
+			<Control Type="TextBox" Name="txtCustomName" X="70" Y="192" Width="183" Height="21"  TabIndex="30" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events=""/>
+			<Control Type="Label" Name="label10" X="4" Y="222" Width="65" Height="12" TabIndex="31" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="0" Events="" ForeColor="#000000" AutoSize="true" Text="自定义内容" />
+			<Control Type="TextBox" Name="txtCustomContent" X="70" Y="219" Width="183" Height="21"  TabIndex="32" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events=""/>
+          </Controls>
+        </Control>
+      </Controls>
+    </Control>
+    <Control Type="Panel" Name="panel7" X="0" Y="697" Width="289" Height="47"  TabIndex="3" Visable="true" Enable="true" TabStop="false" FontName="nineFont" Dock="2" Events="" AutoScroll="false">
+      <Controls>
+        <Control Type="ButtonX" Name="btnSure" X="63" Y="10" Width="73" Height="33"  TabIndex="0" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="Click:btnSure_Click(dateTimePicker_Select,groupBox1,groupBox2,ckReiteration,ckChu,ckBreath,ckHeartRate,cbTemperType,txtTemper,txtDown,txtPulse,txtBreathing,txtHeart,cbEvent,lbEvents,cmbBp,cmbBp2,cmbShit,cmbUrine,txtHeight,cmbWeight,txtInAmount,txtOutAmount,txtUrineAmount,txtVOLUME_OF_DRAINAGE,txtAllergyHistory,txtCustomName,txtCustomContent)" Text="保存"/>
+        <Control Type="ButtonX" Name="btnCancel" X="152" Y="10" Width="73" Height="33"  TabIndex="1" Visable="true" Enable="true" TabStop="true" FontName="nineFont" Dock="0" Events="Click:btnReset_Click()" Text="重置"/>
+      </Controls>
+    </Control>
+  </Controls>
+</temperture>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Users>
+  <User content="测试11111,男,S03,王梦迪。" SendIp="192.168.1.101" TargetSectionId="104" opflag="0" />
+  <User content="测试11111转出到康复理疗科" SendIp="192.168.1.101" TargetSectionId="511" opflag="0" />
+  <User content="测试11111,男。" SendIp="192.168.1.101" TargetSectionId="104" opflag="0" />
+  <User content="测试11111转出到康复理疗科" SendIp="192.168.1.101" TargetSectionId="511" opflag="0" />
+  <User content="测试11111,男。" SendIp="192.168.1.101" TargetSectionId="104" opflag="0" />
+  <User content="王如银,男,S03,王梦迪。" SendIp="192.168.1.102" TargetSectionId="104" opflag="0" />
+  <User content="王如银,男,S03,王梦迪。" SendIp="192.168.1.102" TargetSectionId="104" opflag="0" />
+  <User content="王如银,男,S03,王梦迪。" SendIp="192.168.1.102" TargetSectionId="104" opflag="0" />
+  <User content="测试4,男,J30,陈国平。" SendIp="192.168.0.68" TargetSectionId="213" opflag="0" />
+  <User content="TEST,男,w301,张波。" SendIp="fe80::f139:62b4:ba5c:e3f1%13" TargetSectionId="523" opflag="0" />
+</Users>

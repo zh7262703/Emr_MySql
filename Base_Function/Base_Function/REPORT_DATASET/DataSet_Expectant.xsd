@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_Expectant" targetNamespace="http://tempuri.org/DataSet_Expectant.xsd" xmlns:mstns="http://tempuri.org/DataSet_Expectant.xsd" xmlns="http://tempuri.org/DataSet_Expectant.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_Expectant" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet_Expectant" msprop:Generator_DataSetName="DataSet_Expectant">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable_Expectant" msprop:Generator_UserTableName="DataTable_Expectant" msprop:Generator_RowDeletedName="DataTable_ExpectantRowDeleted" msprop:Generator_RowChangedName="DataTable_ExpectantRowChanged" msprop:Generator_RowClassName="DataTable_ExpectantRow" msprop:Generator_RowChangingName="DataTable_ExpectantRowChanging" msprop:Generator_RowEvArgName="DataTable_ExpectantRowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable_ExpectantRowChangeEventHandler" msprop:Generator_TableClassName="DataTable_ExpectantDataTable" msprop:Generator_TableVarName="tableDataTable_Expectant" msprop:Generator_RowDeletingName="DataTable_ExpectantRowDeleting" msprop:Generator_TablePropName="DataTable_Expectant">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="日期" msprop:Generator_UserColumnName="日期" msprop:Generator_ColumnVarNameInTable="column日期" msprop:Generator_ColumnPropNameInRow="日期" msprop:Generator_ColumnPropNameInTable="日期Column" type="xs:string" minOccurs="0" />
+              <xs:element name="时间" msprop:Generator_UserColumnName="时间" msprop:Generator_ColumnVarNameInTable="column时间" msprop:Generator_ColumnPropNameInRow="时间" msprop:Generator_ColumnPropNameInTable="时间Column" type="xs:string" minOccurs="0" />
+              <xs:element name="宫底" msprop:Generator_UserColumnName="宫底" msprop:Generator_ColumnVarNameInTable="column宫底" msprop:Generator_ColumnPropNameInRow="宫底" msprop:Generator_ColumnPropNameInTable="宫底Column" type="xs:string" minOccurs="0" />
+              <xs:element name="先露部位" msprop:Generator_UserColumnName="先露部位" msprop:Generator_ColumnVarNameInTable="column先露部位" msprop:Generator_ColumnPropNameInRow="先露部位" msprop:Generator_ColumnPropNameInTable="先露部位Column" type="xs:string" minOccurs="0" />
+              <xs:element name="胎位" msprop:Generator_UserColumnName="胎位" msprop:Generator_ColumnVarNameInTable="column胎位" msprop:Generator_ColumnPropNameInRow="胎位" msprop:Generator_ColumnPropNameInTable="胎位Column" type="xs:string" minOccurs="0" />
+              <xs:element name="胎心" msprop:Generator_UserColumnName="胎心" msprop:Generator_ColumnVarNameInTable="column胎心" msprop:Generator_ColumnPropNameInRow="胎心" msprop:Generator_ColumnPropNameInTable="胎心Column" type="xs:string" minOccurs="0" />
+              <xs:element name="胎动" msprop:Generator_UserColumnName="胎动" msprop:Generator_ColumnVarNameInTable="column胎动" msprop:Generator_ColumnPropNameInRow="胎动" msprop:Generator_ColumnPropNameInTable="胎动Column" type="xs:string" minOccurs="0" />
+              <xs:element name="备注" msprop:Generator_UserColumnName="备注" msprop:Generator_ColumnVarNameInTable="column备注" msprop:Generator_ColumnPropNameInRow="备注" msprop:Generator_ColumnPropNameInTable="备注Column" type="xs:string" minOccurs="0" />
+              <xs:element name="血压" msprop:Generator_UserColumnName="血压" msprop:Generator_ColumnVarNameInTable="column血压" msprop:Generator_ColumnPropNameInRow="血压" msprop:Generator_ColumnPropNameInTable="血压Column" type="xs:string" minOccurs="0" />
+              <xs:element name="浮肿" msprop:Generator_UserColumnName="浮肿" msprop:Generator_ColumnVarNameInTable="column浮肿" msprop:Generator_ColumnPropNameInRow="浮肿" msprop:Generator_ColumnPropNameInTable="浮肿Column" type="xs:string" minOccurs="0" />
+              <xs:element name="头痛" msprop:Generator_UserColumnName="头痛" msprop:Generator_ColumnPropNameInRow="头痛" msprop:Generator_ColumnVarNameInTable="column头痛" msprop:Generator_ColumnPropNameInTable="头痛Column" type="xs:string" minOccurs="0" />
+              <xs:element name="头晕" msprop:Generator_UserColumnName="头晕" msprop:Generator_ColumnVarNameInTable="column头晕" msprop:Generator_ColumnPropNameInRow="头晕" msprop:Generator_ColumnPropNameInTable="头晕Column" type="xs:string" minOccurs="0" />
+              <xs:element name="恶心" msprop:Generator_UserColumnName="恶心" msprop:Generator_ColumnVarNameInTable="column恶心" msprop:Generator_ColumnPropNameInRow="恶心" msprop:Generator_ColumnPropNameInTable="恶心Column" type="xs:string" minOccurs="0" />
+              <xs:element name="眼花" msprop:Generator_UserColumnName="眼花" msprop:Generator_ColumnPropNameInRow="眼花" msprop:Generator_ColumnVarNameInTable="column眼花" msprop:Generator_ColumnPropNameInTable="眼花Column" type="xs:string" minOccurs="0" />
+              <xs:element name="签名" msprop:Generator_UserColumnName="签名" msprop:Generator_ColumnVarNameInTable="column签名" msprop:Generator_ColumnPropNameInRow="签名" msprop:Generator_ColumnPropNameInTable="签名Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

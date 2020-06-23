@@ -1,0 +1,389 @@
+D:\心医国际\病历标准版\EMR\Base_App.dll.config
+D:\心医国际\病历标准版\EMR\Base_App.dll
+D:\心医国际\病历标准版\EMR\Base_App.pdb
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.csprojResolveAssemblyReference.cache
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.AlertCustom.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmCode.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmCodeSelect.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmExcelInfo.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmHelp.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmHightLevelSign.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.FrmProgress.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmUpdateTime.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmZLGF.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.HisInStance.frmBa_Insert.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.HisInstance.frmBljc.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.HisInstance.FrmLis.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.HisInStance.frmPatientProgress.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.HisInStance.frmPicShow.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.HisInStance.FrmVJZ.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.HisInstance.frmYZ.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.HisInStance.frm_Pasc.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.HisInStance.ucPascInfo.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.Hook.FrmPassWordChecked.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.IPAddressTextBox.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.NurseTemplate.frmTemplateAdd.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.NurseTemplate.frmTemplateList.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.Properties.Resources.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmAccount.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmAccountSimpleSet.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmDocRoleSet.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmDutyDoctorSet.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmDutyTimeSpanSet.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmJobLeverSet.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmMessageShow.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmMsg.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmOperaterShow.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmParamSet.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmPasswordChanged.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmPermissionSet.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmPermissionSet_Info.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmQuitlyNotice.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmRoleRange.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmRoleSet.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmShowServerLinks.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmTextRightSet.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmUserInfoAccountSet1.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucDeletePatientDoc.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucNurseMask.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucOperaterLog.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.ucPasswordStrongCheck.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucPatientDocCheck.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucSectionkeep.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucServerLinkShow.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucSetTextRight.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmSectionAccount.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucUserInfo.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.TextEdit.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.ucC1FlexGrid.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.ucGridviewX.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmHightLevelSign_Nurse.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.frmHightLevelDigSign.resources
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.csproj.GenerateResource.Cache
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Base_App.dll
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Base_App.pdb
+D:\心医国际\病历标准版\code\Bifrost\obj\Debug\Bifrost.csproj.CoreCompileInputs.cache
+G:\项目工程\idb\EMR\Base_App.dll.config
+G:\项目工程\idb\EMR\Base_App.dll
+G:\项目工程\idb\EMR\Base_App.pdb
+G:\项目工程\idb\Bifrost\obj\Debug\ResolveAssemblyReference.cache
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.AlertCustom.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmCode.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmCodeSelect.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmExcelInfo.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmHelp.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmHightLevelSign.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.FrmProgress.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmUpdateTime.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmZLGF.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.HisInStance.frmBa_Insert.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.HisInstance.frmBljc.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.HisInstance.FrmLis.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.HisInStance.frmPatientProgress.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.HisInStance.frmPicShow.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.HisInStance.FrmVJZ.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.HisInstance.frmYZ.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.HisInStance.frm_Pasc.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.HisInStance.ucPascInfo.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.Hook.FrmPassWordChecked.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.IPAddressTextBox.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.NurseTemplate.frmTemplateAdd.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.NurseTemplate.frmTemplateList.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.Properties.Resources.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmAccount.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmAccountSimpleSet.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmDocRoleSet.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmDutyDoctorSet.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmDutyTimeSpanSet.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmJobLeverSet.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmMessageShow.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmMsg.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmOperaterShow.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmParamSet.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmPasswordChanged.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmPermissionSet.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmPermissionSet_Info.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmQuitlyNotice.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmRoleRange.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmRoleSet.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmShowServerLinks.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmTextRightSet.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmUserInfoAccountSet1.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucDeletePatientDoc.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucNurseMask.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucOperaterLog.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.ucPasswordStrongCheck.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucPatientDocCheck.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucSectionkeep.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucServerLinkShow.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucSetTextRight.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmSectionAccount.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucUserInfo.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.TextEdit.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.ucC1FlexGrid.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.ucGridviewX.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmHightLevelSign_Nurse.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.frmHightLevelDigSign.resources
+G:\项目工程\idb\Bifrost\obj\Debug\Bifrost.csproj.GenerateResource.Cache
+G:\项目工程\idb\Bifrost\obj\Debug\Base_App.dll
+G:\项目工程\idb\Bifrost\obj\Debug\Base_App.pdb
+D:\心医国际\病历标准版\idb\EMR\Base_App.dll
+D:\心医国际\病历标准版\idb\EMR\Base_App.dll.config
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.AlertCustom.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmCode.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmCodeSelect.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmExcelInfo.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmHelp.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmHightLevelSign.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.FrmProgress.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmUpdateTime.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmZLGF.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.HisInStance.frmBa_Insert.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.HisInstance.frmBljc.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.HisInstance.FrmLis.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.HisInStance.frmPatientProgress.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.HisInStance.frmPicShow.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.HisInStance.FrmVJZ.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.HisInstance.frmYZ.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.HisInStance.frm_Pasc.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.HisInStance.ucPascInfo.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.Hook.FrmPassWordChecked.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.IPAddressTextBox.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.NurseTemplate.frmTemplateAdd.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.NurseTemplate.frmTemplateList.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.Properties.Resources.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmAccount.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmAccountSimpleSet.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmDocRoleSet.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmDutyDoctorSet.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmDutyTimeSpanSet.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmJobLeverSet.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmMessageShow.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmMsg.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmOperaterShow.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmParamSet.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmPasswordChanged.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmPermissionSet.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmPermissionSet_Info.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmQuitlyNotice.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmRoleRange.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmRoleSet.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmShowServerLinks.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmTextRightSet.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmUserInfoAccountSet1.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucDeletePatientDoc.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucNurseMask.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucOperaterLog.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.ucPasswordStrongCheck.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucPatientDocCheck.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucSectionkeep.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucServerLinkShow.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucSetTextRight.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmSectionAccount.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucUserInfo.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.TextEdit.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.ucC1FlexGrid.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.ucGridviewX.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmHightLevelSign_Nurse.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.frmHightLevelDigSign.resources
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.csproj.GenerateResource.Cache
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.csproj.CoreCompileInputs.cache
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Base_App.dll
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Base_App.pdb
+D:\心医国际\病历标准版\idb\EMR\Base_App.pdb
+D:\心医国际\病历标准版\idb\Bifrost\obj\Debug\Bifrost.csprojResolveAssemblyReference.cache
+D:\Project\idb\EMR\Base_App.dll
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.AlertCustom.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmCode.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmCodeSelect.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmExcelInfo.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmHelp.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmHightLevelSign.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.FrmProgress.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmUpdateTime.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmZLGF.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.HisInStance.frmBa_Insert.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.HisInstance.frmBljc.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.HisInstance.FrmLis.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.HisInStance.frmPatientProgress.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.HisInStance.frmPicShow.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.HisInStance.FrmVJZ.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.HisInstance.frmYZ.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.HisInStance.frm_Pasc.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.HisInStance.ucPascInfo.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.Hook.FrmPassWordChecked.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.IPAddressTextBox.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.NurseTemplate.frmTemplateAdd.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.NurseTemplate.frmTemplateList.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.Properties.Resources.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmAccount.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmAccountSimpleSet.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmDocRoleSet.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmDutyDoctorSet.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmDutyTimeSpanSet.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmJobLeverSet.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmMessageShow.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmMsg.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmOperaterShow.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmParamSet.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmPasswordChanged.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmPermissionSet.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmPermissionSet_Info.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmQuitlyNotice.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmRoleRange.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmRoleSet.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmShowServerLinks.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmTextRightSet.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmUserInfoAccountSet1.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucDeletePatientDoc.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucNurseMask.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucOperaterLog.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.ucPasswordStrongCheck.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucPatientDocCheck.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucSectionkeep.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucServerLinkShow.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucSetTextRight.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmSectionAccount.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucUserInfo.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.TextEdit.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.ucC1FlexGrid.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.ucGridviewX.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmHightLevelSign_Nurse.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.frmHightLevelDigSign.resources
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.csproj.GenerateResource.Cache
+D:\Project\idb\Bifrost\obj\Debug\Base_App.dll.licenses
+D:\Project\idb\EMR\Base_App.dll.config
+D:\Project\idb\EMR\Base_App.pdb
+D:\Project\idb\Bifrost\obj\Debug\Base_App.dll
+D:\Project\idb\Bifrost\obj\Debug\Base_App.pdb
+D:\Project\idb\Bifrost\obj\Debug\Bifrost.csprojResolveAssemblyReference.cache
+D:\Project\EMR6.0\EMR\Base_App.dll.config
+D:\Project\EMR6.0\EMR\Base_App.dll
+D:\Project\EMR6.0\EMR\Base_App.pdb
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.csprojResolveAssemblyReference.cache
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.AlertCustom.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmCode.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmCodeSelect.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmExcelInfo.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmHelp.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmHightLevelSign.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.FrmProgress.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmUpdateTime.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmZLGF.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.HisInStance.frmBa_Insert.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.HisInstance.frmBljc.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.HisInstance.FrmLis.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.HisInStance.frmPatientProgress.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.HisInStance.frmPicShow.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.HisInStance.FrmVJZ.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.HisInstance.frmYZ.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.HisInStance.frm_Pasc.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.HisInStance.ucPascInfo.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.Hook.FrmPassWordChecked.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.IPAddressTextBox.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.NurseTemplate.frmTemplateAdd.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.NurseTemplate.frmTemplateList.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.Properties.Resources.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmAccount.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmAccountSimpleSet.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmDocRoleSet.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmDutyDoctorSet.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmDutyTimeSpanSet.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmJobLeverSet.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmMessageShow.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmMsg.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmOperaterShow.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmParamSet.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmPasswordChanged.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmPermissionSet.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmPermissionSet_Info.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmQuitlyNotice.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmRoleRange.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmRoleSet.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmShowServerLinks.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmTextRightSet.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmUserInfoAccountSet1.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucDeletePatientDoc.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucNurseMask.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucOperaterLog.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.ucPasswordStrongCheck.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucPatientDocCheck.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucSectionkeep.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucServerLinkShow.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucSetTextRight.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmSectionAccount.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucUserInfo.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.TextEdit.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.ucC1FlexGrid.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.ucGridviewX.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmHightLevelSign_Nurse.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.frmHightLevelDigSign.resources
+D:\Project\EMR6.0\Bifrost\obj\Debug\Bifrost.csproj.GenerateResource.Cache
+D:\Project\EMR6.0\Bifrost\obj\Debug\Base_App.dll.licenses
+D:\Project\EMR6.0\Bifrost\obj\Debug\Base_App.dll
+D:\Project\EMR6.0\Bifrost\obj\Debug\Base_App.pdb
+D:\project\EMR6.0 - 副本\EMR\Base_App.dll.config
+D:\project\EMR6.0 - 副本\EMR\Base_App.dll
+D:\project\EMR6.0 - 副本\EMR\Base_App.pdb
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.csprojResolveAssemblyReference.cache
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.AlertCustom.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmCode.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmCodeSelect.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmExcelInfo.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmHelp.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmHightLevelSign.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.FrmProgress.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmUpdateTime.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmZLGF.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.HisInStance.frmBa_Insert.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.HisInstance.frmBljc.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.HisInstance.FrmLis.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.HisInStance.frmPatientProgress.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.HisInStance.frmPicShow.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.HisInStance.FrmVJZ.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.HisInstance.frmYZ.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.HisInStance.frm_Pasc.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.HisInStance.ucPascInfo.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.Hook.FrmPassWordChecked.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.IPAddressTextBox.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.NurseTemplate.frmTemplateAdd.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.NurseTemplate.frmTemplateList.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.Properties.Resources.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmAccount.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmAccountSimpleSet.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmDocRoleSet.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmDutyDoctorSet.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmDutyTimeSpanSet.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmJobLeverSet.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmMessageShow.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmMsg.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmOperaterShow.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmParamSet.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmPasswordChanged.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmPermissionSet.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmPermissionSet_Info.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmQuitlyNotice.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmRoleRange.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmRoleSet.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmShowServerLinks.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmTextRightSet.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.frmUserInfoAccountSet1.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucDeletePatientDoc.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucNurseMask.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucOperaterLog.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.ucPasswordStrongCheck.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucPatientDocCheck.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucSectionkeep.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucServerLinkShow.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucSetTextRight.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmSectionAccount.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.SYSTEMSET.ucUserInfo.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.TextEdit.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.ucC1FlexGrid.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.ucGridviewX.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmHightLevelSign_Nurse.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.frmHightLevelDigSign.resources
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Bifrost.csproj.GenerateResource.Cache
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Base_App.dll.licenses
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Base_App.dll
+D:\project\EMR6.0 - 副本\Bifrost\obj\Debug\Base_App.pdb

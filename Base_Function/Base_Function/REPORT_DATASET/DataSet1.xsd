@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_TablePropName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="复印时间" msprop:Generator_UserColumnName="复印时间" msprop:Generator_ColumnPropNameInRow="复印时间" msprop:Generator_ColumnVarNameInTable="column复印时间" msprop:Generator_ColumnPropNameInTable="复印时间Column" type="xs:string" minOccurs="0" />
+              <xs:element name="申请单位" msprop:Generator_UserColumnName="申请单位" msprop:Generator_ColumnPropNameInRow="申请单位" msprop:Generator_ColumnVarNameInTable="column申请单位" msprop:Generator_ColumnPropNameInTable="申请单位Column" type="xs:string" minOccurs="0" />
+              <xs:element name="申请人" msprop:Generator_UserColumnName="申请人" msprop:Generator_ColumnPropNameInRow="申请人" msprop:Generator_ColumnVarNameInTable="column申请人" msprop:Generator_ColumnPropNameInTable="申请人Column" type="xs:string" minOccurs="0" />
+              <xs:element name="病历号" msprop:Generator_UserColumnName="病历号" msprop:Generator_ColumnPropNameInRow="病历号" msprop:Generator_ColumnVarNameInTable="column病历号" msprop:Generator_ColumnPropNameInTable="病历号Column" type="xs:string" minOccurs="0" />
+              <xs:element name="身份证" msprop:Generator_UserColumnName="身份证" msprop:Generator_ColumnPropNameInRow="身份证" msprop:Generator_ColumnVarNameInTable="column身份证" msprop:Generator_ColumnPropNameInTable="身份证Column" type="xs:string" minOccurs="0" />
+              <xs:element name="工作证号" msprop:Generator_UserColumnName="工作证号" msprop:Generator_ColumnPropNameInRow="工作证号" msprop:Generator_ColumnVarNameInTable="column工作证号" msprop:Generator_ColumnPropNameInTable="工作证号Column" type="xs:string" minOccurs="0" />
+              <xs:element name="委托书" msprop:Generator_UserColumnName="委托书" msprop:Generator_ColumnPropNameInRow="委托书" msprop:Generator_ColumnVarNameInTable="column委托书" msprop:Generator_ColumnPropNameInTable="委托书Column" type="xs:string" minOccurs="0" />
+              <xs:element name="死亡证明" msprop:Generator_UserColumnName="死亡证明" msprop:Generator_ColumnPropNameInRow="死亡证明" msprop:Generator_ColumnVarNameInTable="column死亡证明" msprop:Generator_ColumnPropNameInTable="死亡证明Column" type="xs:string" minOccurs="0" />
+              <xs:element name="近亲属关系证明" msprop:Generator_UserColumnName="近亲属关系证明" msprop:Generator_ColumnPropNameInRow="近亲属关系证明" msprop:Generator_ColumnVarNameInTable="column近亲属关系证明" msprop:Generator_ColumnPropNameInTable="近亲属关系证明Column" type="xs:string" minOccurs="0" />
+              <xs:element name="复印内容" msprop:Generator_UserColumnName="复印内容" msprop:Generator_ColumnPropNameInRow="复印内容" msprop:Generator_ColumnVarNameInTable="column复印内容" msprop:Generator_ColumnPropNameInTable="复印内容Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NureserObserver" msprop:Generator_UserTableName="NureserObserver" msprop:Generator_RowDeletedName="NureserObserverRowDeleted" msprop:Generator_RowChangedName="NureserObserverRowChanged" msprop:Generator_RowClassName="NureserObserverRow" msprop:Generator_RowChangingName="NureserObserverRowChanging" msprop:Generator_RowEvArgName="NureserObserverRowChangeEvent" msprop:Generator_RowEvHandlerName="NureserObserverRowChangeEventHandler" msprop:Generator_TableClassName="NureserObserverDataTable" msprop:Generator_TableVarName="tableNureserObserver" msprop:Generator_RowDeletingName="NureserObserverRowDeleting" msprop:Generator_TablePropName="NureserObserver">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TEST_TIME" msprop:Generator_UserColumnName="TEST_TIME" msprop:Generator_ColumnVarNameInTable="columnTEST_TIME" msprop:Generator_ColumnPropNameInRow="TEST_TIME" msprop:Generator_ColumnPropNameInTable="TEST_TIMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="T" msprop:Generator_UserColumnName="T" msprop:Generator_ColumnVarNameInTable="columnT" msprop:Generator_ColumnPropNameInRow="T" msprop:Generator_ColumnPropNameInTable="TColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="P" msprop:Generator_UserColumnName="P" msprop:Generator_ColumnVarNameInTable="columnP" msprop:Generator_ColumnPropNameInRow="P" msprop:Generator_ColumnPropNameInTable="PColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="R" msprop:Generator_UserColumnName="R" msprop:Generator_ColumnVarNameInTable="columnR" msprop:Generator_ColumnPropNameInRow="R" msprop:Generator_ColumnPropNameInTable="RColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BP" msprop:Generator_UserColumnName="BP" msprop:Generator_ColumnVarNameInTable="columnBP" msprop:Generator_ColumnPropNameInRow="BP" msprop:Generator_ColumnPropNameInTable="BPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SPO" msprop:Generator_UserColumnName="SPO" msprop:Generator_ColumnVarNameInTable="columnSPO" msprop:Generator_ColumnPropNameInRow="SPO" msprop:Generator_ColumnPropNameInTable="SPOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="XL" msprop:Generator_UserColumnName="XL" msprop:Generator_ColumnVarNameInTable="columnXL" msprop:Generator_ColumnPropNameInRow="XL" msprop:Generator_ColumnPropNameInTable="XLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TK_L" msprop:Generator_UserColumnName="TK_L" msprop:Generator_ColumnVarNameInTable="columnTK_L" msprop:Generator_ColumnPropNameInRow="TK_L" msprop:Generator_ColumnPropNameInTable="TK_LColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TK_R" msprop:Generator_UserColumnName="TK_R" msprop:Generator_ColumnVarNameInTable="columnTK_R" msprop:Generator_ColumnPropNameInRow="TK_R" msprop:Generator_ColumnPropNameInTable="TK_RColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BS" msprop:Generator_UserColumnName="BS" msprop:Generator_ColumnVarNameInTable="columnBS" msprop:Generator_ColumnPropNameInRow="BS" msprop:Generator_ColumnPropNameInTable="BSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MON" msprop:Generator_UserColumnName="MON" msprop:Generator_ColumnVarNameInTable="columnMON" msprop:Generator_ColumnPropNameInRow="MON" msprop:Generator_ColumnPropNameInTable="MONColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SIGN_NAME" msprop:Generator_UserColumnName="SIGN_NAME" msprop:Generator_ColumnVarNameInTable="columnSIGN_NAME" msprop:Generator_ColumnPropNameInRow="SIGN_NAME" msprop:Generator_ColumnPropNameInTable="SIGN_NAMEColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

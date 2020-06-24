@@ -110,7 +110,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\EMR\C1.Win.C1FlexGrid.dll</HintPath>
     </Reference>
-    <Reference Include="DataOperater, Version=1.0.4693.18172, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="DataOperater, Version=1.0.7480.31136, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\EMR\DataOperater.dll</HintPath>
     </Reference>
@@ -119,6 +119,10 @@
       <HintPath>..\EMR\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=5.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EMR\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="NAudio, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\EMR\NAudio.dll</HintPath>
@@ -130,6 +134,9 @@
       <HintPath>..\..\EMR\System.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <HintPath>..\EMR\System.Data.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing">
@@ -306,6 +313,7 @@
     <Compile Include="Model\Class_Sickarea.cs" />
     <Compile Include="Model\class_SickAreaInfo.cs" />
     <Compile Include="Model\Class_SickRoomInfo.cs" />
+    <Compile Include="Model\Class_Table.cs" />
     <Compile Include="Model\Class_Take_over_SEQ.cs" />
     <Compile Include="Model\Class_Temperature_Monitoring.cs" />
     <Compile Include="Model\Class_Text.cs" />
@@ -319,6 +327,7 @@
     <Compile Include="Model\Inout_amount_dist.cs" />
     <Compile Include="Model\InPatientInfo.cs" />
     <Compile Include="Model\ListItem.cs" />
+    <Compile Include="Model\MySqlDBParameter.cs" />
     <Compile Include="Model\Nurse_OutIn_Record.cs" />
     <Compile Include="Model\NuserInout_show.cs" />
     <Compile Include="Model\Path_Instance.cs" />
@@ -590,11 +599,6 @@
     <Compile Include="UserInfor\Class_Sub_Hospital.cs" />
     <Compile Include="UserInfor\Class_Text_A.cs" />
     <Compile Include="UserInfor\Class_User.cs" />
-    <Compile Include="Web References\WebReference\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.map</DependentUpon>
-    </Compile>
     <Compile Include="frmHightLevelSign_Nurse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -834,36 +838,12 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <WebReferences Include="Web References\" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Web References\WebReference\Service.wsdl" />
-  </ItemGroup>
-  <ItemGroup>
-    <WebReferenceUrl Include="http://192.168.1.84/WebSite1/Service.asmx">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\WebReference\</RelPath>
-      <UpdateFromURL>http://192.168.1.84/WebSite1/Service.asmx</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>Leadron_WebReference_Service</CachedSettingsPropName>
-    </WebReferenceUrl>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Web References\WebReference\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Web References\WebReference\Service.disco" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

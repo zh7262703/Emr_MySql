@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Bifrost.SYSTEMSET;
+using DataOperater.Model;
 
 namespace Bifrost
 {
@@ -111,17 +112,17 @@ namespace Bifrost
         private void IniTrvAccount()
         {           
             trvAccount.Nodes.Clear();           
-            Bifrost.WebReference.Class_Table[] tabSqls = new Bifrost.WebReference.Class_Table[3];
+            Class_Table[] tabSqls = new Class_Table[3];
 
-            tabSqls[0] = new Bifrost.WebReference.Class_Table();
+            tabSqls[0] = new Class_Table();
             tabSqls[0].Sql = "select * from T_ACCOUNT where ACCOUNT_ID in (Select ACCOUNT_ID from T_ACCOUNT_USER where USER_ID=" + User.User_id + ")";
             tabSqls[0].Tablename = "account";
 
-            tabSqls[1] = new Bifrost.WebReference.Class_Table();
+            tabSqls[1] = new Class_Table();
             tabSqls[1].Sql = "select a.role_id,a.role_name,a.enable_flag,b.account_id,a.role_type from T_ROLE a inner join T_ACC_ROLE b on a.role_id=b.role_id";
             tabSqls[1].Tablename = "acc_role";
 
-            tabSqls[2] = new Bifrost.WebReference.Class_Table();
+            tabSqls[2] = new Class_Table();
             tabSqls[2].Sql = "select a.id,b.account_id,a.acc_role_id,a.section_id,a.sickarea_id,a.isbelongto,c.section_name,d.sick_area_name,b.role_id from T_ACC_ROLE_RANGE a left join T_ACC_ROLE b on a.acc_role_id=b.id left join T_SECTIONINFO c on a.section_id=c.sid left join T_SICKAREAINFO d on a.sickarea_id=d.said";
             tabSqls[2].Tablename = "range";
 

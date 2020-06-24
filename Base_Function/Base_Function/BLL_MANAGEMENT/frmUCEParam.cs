@@ -56,25 +56,25 @@ namespace Base_Function.BLL_MANAGEMENT
         private void InitCombobox()
         {
            
-            Bifrost.WebReference.Class_Table[] cboTables = new Bifrost.WebReference.Class_Table[4];
+            Class_Table[] cboTables = new Class_Table[4];
 
             //初始化文书类型
-            cboTables[0] = new Bifrost.WebReference.Class_Table();
+            cboTables[0] = new Class_Table();
             cboTables[0].Sql = "select * from t_data_code ta where ta.type=18 and ta.name in('体温单','体温单其他')";//,'危重护理记录'
             cboTables[0].Tablename = "TextKind";
 
             //监控患者类型
-            cboTables[1] = new Bifrost.WebReference.Class_Table();
+            cboTables[1] = new Class_Table();
             cboTables[1].Sql = "select * from t_data_code where type=27";
             cboTables[1].Tablename = "MonitorType";
 
             //参考时间
-            cboTables[2] = new Bifrost.WebReference.Class_Table();
+            cboTables[2] = new Class_Table();
             cboTables[2].Sql = "select * from t_data_code where type=28 and enable='Y'";
             cboTables[2].Tablename = "CKTime";
 
             //监控子项
-            cboTables[3] = new Bifrost.WebReference.Class_Table();
+            cboTables[3] = new Class_Table();
             cboTables[3].Sql = "select * from t_data_code where type=29 and enable='Y'";
             cboTables[3].Tablename = "Monitoring";
 

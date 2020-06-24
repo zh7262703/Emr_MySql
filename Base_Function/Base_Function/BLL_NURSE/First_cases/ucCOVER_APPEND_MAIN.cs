@@ -49,35 +49,35 @@ namespace Base_Function.BLL_NURSE.First_cases
         {
 
             #region ≥ı ºªØ…Ë÷√
-            Bifrost.WebReference.Class_Table[] tables=new Bifrost.WebReference.Class_Table[6]; //6
+            Class_Table[] tables=new Class_Table[6]; //6
             
             //◊°‘∫∏Ω“≥
-            tables[0] = new Bifrost.WebReference.Class_Table();
+            tables[0] = new Class_Table();
             tables[0].Sql = "select id,CREATE_TIME from COVER_APPEND_IN where PATIENT_ID="+inPatientInfo.Id.ToString()+"";
             tables[0].Tablename = "APPEND_IN";
 
             // ÷ ı∏Ω“≥
-            tables[1] = new Bifrost.WebReference.Class_Table();
+            tables[1] = new Class_Table();
             tables[1].Sql = "select id,CREATE_TIME from COVER_APPEND_OPER where PATIENT_ID="+inPatientInfo.Id.ToString()+"";
             tables[1].Tablename = "APPEND_OPER";
 
             //øπ…˙Àÿ∏Ω“≥
-            tables[2] = new Bifrost.WebReference.Class_Table();
+            tables[2] = new Class_Table();
             tables[2].Sql = "select id,CREATE_TIME from COVER_APPEND_ANTIBIOTICS where PATIENT_ID=" + inPatientInfo.Id.ToString() + "";
             tables[2].Tablename = "APPEND_ANTIBIOTICS";
 
             //÷ÿ÷¢“Ω—ß∏Ω“≥
-            tables[3] = new Bifrost.WebReference.Class_Table();
+            tables[3] = new Class_Table();
             tables[3].Sql = "select id,CREATE_TIME from COVER_APPEND_GRAVE where PATIENT_ID=" + inPatientInfo.Id.ToString() + "";
             tables[3].Tablename = "APPEND_GRAVE";
 
             //—π¥Øªº’ﬂ∏Ω“≥
-            tables[4] = new Bifrost.WebReference.Class_Table();
+            tables[4] = new Class_Table();
             tables[4].Sql = "select id,create_time from COVER_APPEND_PS where patient_id=" + inPatientInfo.Id.ToString() + "";
             tables[4].Tablename = "APPEND_PS";
 
             //µ¯µπ/◊π¥≤µ»ªº’ﬂ∏Ω“≥
-            tables[5] = new Bifrost.WebReference.Class_Table();
+            tables[5] = new Class_Table();
             tables[5].Sql = "select id,create_time from COVER_APPEND_DROP where patient_id=" + inPatientInfo.Id.ToString() + "";
             tables[5].Tablename = "APPEND_DROP";
 

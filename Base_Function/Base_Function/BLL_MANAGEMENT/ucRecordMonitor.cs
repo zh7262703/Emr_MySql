@@ -487,24 +487,24 @@ namespace Base_Function.BLL_MANAGEMENT
         {
             try
             {
-                Bifrost.WebReference.Class_Table[] cboTables = new Bifrost.WebReference.Class_Table[4];
+                Class_Table[] cboTables = new Class_Table[4];
 
 
-                cboTables[0] = new Bifrost.WebReference.Class_Table();
+                cboTables[0] = new Class_Table();
                 cboTables[0].Sql = sqlSection_Area;
                 //select distinct(ts.sid),ts.section_name from t_Section_Area tsa inner join t_Sectioninfo ts on tsa.sid=ts.sid order by ts.section_name,ts.sid";//科室
                 cboTables[0].Tablename = "YWC";
 
-                cboTables[1] = new Bifrost.WebReference.Class_Table();
+                cboTables[1] = new Class_Table();
                 cboTables[1].Sql = sqlSection_Area;
                     //"select SAID,SICK_AREA_NAME from t_sickareainfo order by sick_area_name,said";//病区
                 cboTables[1].Tablename = "HLB";
 
-                cboTables[2] = new Bifrost.WebReference.Class_Table();
+                cboTables[2] = new Class_Table();
                 cboTables[2].Sql = sqlYellow;//黄灯
                 cboTables[2].Tablename = "yellow";
 
-                cboTables[3] = new Bifrost.WebReference.Class_Table();
+                cboTables[3] = new Class_Table();
                 cboTables[3].Sql = sqlRed;//红灯
                 cboTables[3].Tablename = "red";
 

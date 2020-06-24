@@ -412,12 +412,12 @@ namespace Base_Function.BLL_FOLLOW.Element
             //                    doc.LoadXml(temp);
             //                    XmlElement xmlElement = doc.DocumentElement;
             //                    string doc_sql = "insert into T_FOLLOW_RECORD_DOC values(" + doc_id + "," + record_id + ",:docContent,'" + clss.Textname + "'," + clss.Id + ")";
-            //                    Bifrost.WebReference.OracleParameter[] xmlPars = new Bifrost.WebReference.OracleParameter[1];
-            //                    xmlPars[0] = new Bifrost.WebReference.OracleParameter();
+            //                    MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+            //                    xmlPars[0] = new MySqlDBParameter();
             //                    xmlPars[0].ParameterName = "docContent";
             //                    xmlPars[0].Value = doc.OuterXml;
-            //                    xmlPars[0].OracleType = Bifrost.WebReference.OracleType.Clob;
-            //                    xmlPars[0].Direction = Bifrost.WebReference.ParameterDirection.Input;
+            //                    xmlPars[0].DBType = MySqlDbType.Text;
+            //                    xmlPars[0].Direction = ParameterDirection.Input;
             //                    int message = App.ExecuteSQL(doc_sql, xmlPars);
             //                    if (message != 0)
             //                    {
@@ -475,12 +475,12 @@ namespace Base_Function.BLL_FOLLOW.Element
             //                    doc.LoadXml(temp);
             //                    XmlElement xmlElement = doc.DocumentElement;
             //                    string doc_sql = "insert into T_FOLLOW_RECORD_DOC values(" + doc_id + "," + record_id + ",:docContent,'" + clss.Textname + "'," + clss.Id + ")";
-            //                    Bifrost.WebReference.OracleParameter[] xmlPars = new Bifrost.WebReference.OracleParameter[1];
-            //                    xmlPars[0] = new Bifrost.WebReference.OracleParameter();
+            //                    MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+            //                    xmlPars[0] = new MySqlDBParameter();
             //                    xmlPars[0].ParameterName = "docContent";
             //                    xmlPars[0].Value = doc.OuterXml;
-            //                    xmlPars[0].OracleType = Bifrost.WebReference.OracleType.Clob;
-            //                    xmlPars[0].Direction = Bifrost.WebReference.ParameterDirection.Input;
+            //                    xmlPars[0].DBType = MySqlDbType.Text;
+            //                    xmlPars[0].Direction = ParameterDirection.Input;
             //                    int message = App.ExecuteSQL(doc_sql, xmlPars);
             //                    if (message != 0)
             //                    {
@@ -519,12 +519,12 @@ namespace Base_Function.BLL_FOLLOW.Element
             //                    doc.LoadXml(temp);
             //                    XmlElement xmlElement = doc.DocumentElement;
             //                    string sql_updoc = "update T_FOLLOW_RECORD_DOC set doc_name=:docContent where id=" + id + " ";
-            //                    Bifrost.WebReference.OracleParameter[] xmlPars = new Bifrost.WebReference.OracleParameter[1];
-            //                    xmlPars[0] = new Bifrost.WebReference.OracleParameter();
+            //                    MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+            //                    xmlPars[0] = new MySqlDBParameter();
             //                    xmlPars[0].ParameterName = "docContent";
             //                    xmlPars[0].Value = doc.OuterXml;
-            //                    xmlPars[0].OracleType = Bifrost.WebReference.OracleType.Clob;
-            //                    xmlPars[0].Direction = Bifrost.WebReference.ParameterDirection.Input;
+            //                    xmlPars[0].DBType = MySqlDbType.Text;
+            //                    xmlPars[0].Direction = ParameterDirection.Input;
             //                    int message = App.ExecuteSQL(sql_updoc, xmlPars);
             //                    if (message != 0)
             //                    {
@@ -554,12 +554,12 @@ namespace Base_Function.BLL_FOLLOW.Element
             //                    doc.LoadXml(temp);
             //                    XmlElement xmlElement = doc.DocumentElement;
             //                    string sql_updoc = "update T_FOLLOW_RECORD_DOC set doc_name=:docContent ,doc_name='"+time+"' where id=" + id + " ";
-            //                    Bifrost.WebReference.OracleParameter[] xmlPars = new Bifrost.WebReference.OracleParameter[1];
-            //                    xmlPars[0] = new Bifrost.WebReference.OracleParameter();
+            //                    MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+            //                    xmlPars[0] = new MySqlDBParameter();
             //                    xmlPars[0].ParameterName = "docContent";
             //                    xmlPars[0].Value = doc.OuterXml;
-            //                    xmlPars[0].OracleType = Bifrost.WebReference.OracleType.Clob;
-            //                    xmlPars[0].Direction = Bifrost.WebReference.ParameterDirection.Input;
+            //                    xmlPars[0].DBType = MySqlDbType.Text;
+            //                    xmlPars[0].Direction = ParameterDirection.Input;
             //                    int message = App.ExecuteSQL(sql_updoc, xmlPars);
             //                    if (message != 0)
             //                    {

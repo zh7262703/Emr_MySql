@@ -10,7 +10,7 @@ using Bifrost;
 //using Bifrost_Doctor.CommonClass;
 using System.Collections;
 using System.Xml;
-using Bifrost.WebReference;
+
 using TextEditor;
 using Base_Function.BASE_COMMON;
 using Base_Function.BLL_DOCTOR.Consultation_Manager;

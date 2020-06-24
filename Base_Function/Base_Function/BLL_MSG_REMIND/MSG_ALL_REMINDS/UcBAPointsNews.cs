@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Data;
 using System.Text;
 using System.Windows.Forms;
-using Bifrost.WebReference;
+
 using DevComponents.AdvTree;
 using System.Collections;
 using Base_Function.BLL_MSG_REMIND.MSG_ALL_REMINDS;

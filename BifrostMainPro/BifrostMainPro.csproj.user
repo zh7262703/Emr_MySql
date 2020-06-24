@@ -15,10 +15,10 @@
     <ErrorReportUrlHistory />
     <FallbackCulture>zh-CN</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
-    <ReferencePath>D:\Project\EMR6.0\EMR\</ReferencePath>
+    <ReferencePath>D:\project\EMR6.0_MYSQL\EMR\</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <StartWorkingDirectory>D:\Project\idb\EMR\</StartWorkingDirectory>
+    <StartWorkingDirectory>D:\project\EMR6.0_MYSQL\EMR\</StartWorkingDirectory>
     <StartAction>Project</StartAction>
     <StartProgram>G:\爱得宝医院\爱德堡现场专用\zt\zt\BIFOST_FRAME\EMR.exe</StartProgram>
   </PropertyGroup>

@@ -1207,13 +1207,13 @@ namespace BifrostMainPro
                     //MenuBar.Items.Clear();
                     Menu_Clear();
 
-                    Bifrost.WebReference.Class_Table[] tabsqls = new Bifrost.WebReference.Class_Table[2];
+                    Class_Table[] tabsqls = new Class_Table[2];
 
-                    tabsqls[0] = new Bifrost.WebReference.Class_Table();
+                    tabsqls[0] = new Class_Table();
                     tabsqls[0].Sql = "select * from t_permission where PERM_KIND='1' order by num asc";
                     tabsqls[0].Tablename = "permssion";
 
-                    tabsqls[1] = new Bifrost.WebReference.Class_Table();
+                    tabsqls[1] = new Class_Table();
                     tabsqls[1].Sql = "select PERM_CODE,FUNCTION,VERSION,DLLNAME from t_permission_fuctions";//,FUNCTIONIMAGE 
                     tabsqls[1].Tablename = "permission_fuctions";
 

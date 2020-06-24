@@ -217,17 +217,17 @@ namespace Base_Function.BASE_COMMON
                                         "and CHILD_ID ='{0}' " +
                                         "and MEASURE_TIME BETWEEN to_date('{1}','yyyy-MM-dd') AND to_date('{2}','yyyy-MM-dd') " +
                                         "ORDER BY MEASURE_TIME", child_id, DateTime.Parse(inTime).ToString("yyyy-MM-dd"), endTime);
-            Bifrost.WebReference.Class_Table[] table = new Bifrost.WebReference.Class_Table[3];
+            Class_Table[] table = new Class_Table[3];
 
-            table[0] = new Bifrost.WebReference.Class_Table();
+            table[0] = new Class_Table();
             table[0].Sql = sql1;
             table[0].Tablename = "sql1";
 
-            table[1] = new Bifrost.WebReference.Class_Table();
+            table[1] = new Class_Table();
             table[1].Sql = sql2;
             table[1].Tablename = "sql2";
 
-            table[2] = new Bifrost.WebReference.Class_Table();
+            table[2] = new Class_Table();
             table[2].Sql = sql3;
             table[2].Tablename = "sql3";
             DataSet dssqls= App.GetDataSet(table);

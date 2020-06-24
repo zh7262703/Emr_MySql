@@ -403,10 +403,10 @@ namespace Base_Function.BLL_MANAGEMENT
         {
             string[] strtemp = note.Split(',');
 
-            Bifrost.WebReference.Class_Table[] qualityTable = new Bifrost.WebReference.Class_Table[strtemp.Length];
+            Class_Table[] qualityTable = new Class_Table[strtemp.Length];
             for (int i = 0; i < qualityTable.Length; i++)
             {
-                qualityTable[i] = new Bifrost.WebReference.Class_Table();
+                qualityTable[i] = new Class_Table();
                 qualityTable[i].Sql = "select sec.section_name from t_sectioninfo sec where sec.sid=" + strtemp[i] + " and sec.enable_flag='Y'";
                 qualityTable[i].Tablename = i.ToString();
             }
@@ -926,20 +926,20 @@ namespace Base_Function.BLL_MANAGEMENT
         /// </summary>
         public void InitCombobox()
         {
-            Bifrost.WebReference.Class_Table[] cboTables = new Bifrost.WebReference.Class_Table[3];
+            Class_Table[] cboTables = new Class_Table[3];
 
             //初始化文书类型
-            cboTables[0] = new Bifrost.WebReference.Class_Table();
+            cboTables[0] = new Class_Table();
             cboTables[0].Sql = "select * from t_data_code ta where ta.type=18 and enable='Y' order by decode(name,'首次病程记录',1,'D型病例查房',2,'入院记录',3,'再次（多次）入院记录',4,'24小时入出院',5,'24小时入院死亡',6,'病程',7,'主治查房',8,'病危患者病程记录',9,'病重患者病程记录',10,'转入记录',11,'转出记录',12,'交班记录',13,'接班记录',14,'会诊记录',15,'抢救记录',16,'手术记录',17,'术后首次病程记录',18,'术后病程',19,'阶段小结',20,'出院记录',21,'死亡记录',22,'死亡病历讨论记录',23,24)";
             cboTables[0].Tablename = "TextKind";
 
             //监控患者类型
-            cboTables[1] = new Bifrost.WebReference.Class_Table();
+            cboTables[1] = new Class_Table();
             cboTables[1].Sql = "select * from t_data_code where type=27";
             cboTables[1].Tablename = "MonitorType";
 
             //参考时间
-            cboTables[2] = new Bifrost.WebReference.Class_Table();
+            cboTables[2] = new Class_Table();
             cboTables[2].Sql = "select * from t_data_code where type=28";
             cboTables[2].Tablename = "CKTime";
 

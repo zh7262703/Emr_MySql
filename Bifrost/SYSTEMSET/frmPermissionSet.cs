@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using Bifrost;
 using DevComponents.AdvTree;
+using DataOperater.Model;
 
 namespace Bifrost
 {  
@@ -43,12 +44,12 @@ namespace Bifrost
         /// </summary>
         private void getMenuData()
         {
-            Bifrost.WebReference.Class_Table[] tabsqls = new Bifrost.WebReference.Class_Table[2];
-            tabsqls[0] = new Bifrost.WebReference.Class_Table();
+            Class_Table[] tabsqls = new Class_Table[2];
+            tabsqls[0] = new Class_Table();
             tabsqls[0].Sql = "select * from t_permission where PERM_KIND='1' order by num asc";
             tabsqls[0].Tablename = "permission";
 
-            tabsqls[1] = new Bifrost.WebReference.Class_Table();
+            tabsqls[1] = new Class_Table();
             tabsqls[1].Sql = "select id,PERM_CODE,FUNCTION,VERSION,DLLNAME,FUNCTIONIMAGE from t_permission_fuctions";
             tabsqls[1].Tablename = "fuctions";
             ds = App.GetDataSet(tabsqls);
@@ -59,12 +60,12 @@ namespace Bifrost
         /// </summary>
         private void getTabData()
         {
-            Bifrost.WebReference.Class_Table[] tabsqls = new Bifrost.WebReference.Class_Table[2];
-            tabsqls[0] = new Bifrost.WebReference.Class_Table();
+            Class_Table[] tabsqls = new Class_Table[2];
+            tabsqls[0] = new Class_Table();
             tabsqls[0].Sql = "select * from t_permission where PERM_KIND='3' order by num asc";
             tabsqls[0].Tablename = "permission";
 
-            tabsqls[1] = new Bifrost.WebReference.Class_Table();
+            tabsqls[1] = new Class_Table();
             tabsqls[1].Sql = "select id,PERM_CODE,FUNCTION,VERSION,DLLNAME,FUNCTIONIMAGE from t_permission_fuctions";
             tabsqls[1].Tablename = "fuctions";
             ds = App.GetDataSet(tabsqls);

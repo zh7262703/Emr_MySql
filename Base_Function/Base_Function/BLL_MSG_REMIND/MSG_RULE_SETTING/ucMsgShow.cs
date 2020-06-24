@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using Bifrost;
 using DevComponents.AdvTree;
-using Bifrost.WebReference;
+
 //using Microsoft.Office.Core;
 
 namespace Base_Function.BLL_MSG_REMIND.MSG_RULE_SETTING

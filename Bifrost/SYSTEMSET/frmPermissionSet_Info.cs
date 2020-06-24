@@ -7,6 +7,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using Bifrost;
+using DataOperater.Model;
+using MySql.Data.MySqlClient;
 
 namespace Bifrost
 {
@@ -235,7 +237,7 @@ namespace Bifrost
         private void btnSure_Click(object sender, EventArgs e)
         {
             int num;
-            Bifrost.WebReference.OracleParameter[] parameterArray;
+            MySqlDBParameter[] parameterArray;
             string str;
             Exception exception;
             if (this.Type == 1)
@@ -287,62 +289,62 @@ namespace Bifrost
                     {
                         num = Convert.ToInt32(this.CurrentPermission.Id);
                     }
-                    parameterArray = new Bifrost.WebReference.OracleParameter[5];
-                    parameterArray[0] = new Bifrost.WebReference.OracleParameter();
+                    parameterArray = new MySqlDBParameter[5];
+                    parameterArray[0] = new MySqlDBParameter();
                     parameterArray[0].ParameterName = "VID";
-                    parameterArray[0].OracleType = Bifrost.WebReference.OracleType.Number;
+                    parameterArray[0].DBType = MySqlDbType.Decimal;
                     parameterArray[0].Value = num;
-                    parameterArray[1] = new Bifrost.WebReference.OracleParameter();
+                    parameterArray[1] = new MySqlDBParameter();
                     parameterArray[1].ParameterName = "VPERM_CODE";
-                    parameterArray[1].OracleType = Bifrost.WebReference.OracleType.VarChar;
+                    parameterArray[1].DBType = MySqlDbType.VarChar;
                     parameterArray[1].Value = this.txtMenuCode.Text;
-                    parameterArray[2] = new Bifrost.WebReference.OracleParameter();
+                    parameterArray[2] = new MySqlDBParameter();
                     parameterArray[2].ParameterName = "PERM_NAME";
-                    parameterArray[2].OracleType = Bifrost.WebReference.OracleType.VarChar;
+                    parameterArray[2].DBType = MySqlDbType.VarChar;
                     parameterArray[2].Value = this.txtMenuName.Text;
-                    parameterArray[3] = new Bifrost.WebReference.OracleParameter();
+                    parameterArray[3] = new MySqlDBParameter();
                     parameterArray[3].ParameterName = "PERM_KIND";
-                    parameterArray[3].OracleType = Bifrost.WebReference.OracleType.Char;
+                    parameterArray[3].DBType = MySqlDbType.VarChar;
                     parameterArray[3].Value = "1";
-                    parameterArray[4] = new Bifrost.WebReference.OracleParameter();
+                    parameterArray[4] = new MySqlDBParameter();
                     parameterArray[4].ParameterName = "NUM";
-                    parameterArray[4].OracleType = Bifrost.WebReference.OracleType.Number;
+                    parameterArray[4].DBType = MySqlDbType.Decimal;
                     parameterArray[4].Value = num;
                     int id = App.GenId("T_PERMISSION_FUCTIONS", "id");
                     if (this.CurrentPermission != null)
                     {
                         id = this.CurrentPermission.Permission_Info.Id;
                     }
-                    Bifrost.WebReference.OracleParameter[] parameters = new Bifrost.WebReference.OracleParameter[6];
-                    parameters[0] = new Bifrost.WebReference.OracleParameter();
+                    MySqlDBParameter[] parameters = new MySqlDBParameter[6];
+                    parameters[0] = new MySqlDBParameter();
                     parameters[0].ParameterName = "VID";
-                    parameters[0].OracleType = Bifrost.WebReference.OracleType.Number;
+                    parameters[0].DBType = MySqlDbType.Decimal;
                     parameters[0].Value = id;
-                    parameters[0].IsNullable = true;
-                    parameters[1] = new Bifrost.WebReference.OracleParameter();
+                    
+                    parameters[1] = new MySqlDBParameter();
                     parameters[1].ParameterName = "VPERM_CODE";
-                    parameters[1].OracleType = Bifrost.WebReference.OracleType.VarChar;
+                    parameters[1].DBType = MySqlDbType.VarChar;
                     parameters[1].Value = this.txtMenuCode.Text;
-                    parameters[1].IsNullable = true;
-                    parameters[2] = new Bifrost.WebReference.OracleParameter();
+                    
+                    parameters[2] = new MySqlDBParameter();
                     parameters[2].ParameterName = "FUNCTION";
-                    parameters[2].OracleType = Bifrost.WebReference.OracleType.VarChar;
-                    parameters[2].IsNullable = true;
+                    parameters[2].DBType = MySqlDbType.VarChar;
+                   
                     parameters[2].Value = this.txtFunctinName.Text;
-                    parameters[3] = new Bifrost.WebReference.OracleParameter();
+                    parameters[3] = new MySqlDBParameter();
                     parameters[3].ParameterName = "VERSION";
-                    parameters[3].OracleType = Bifrost.WebReference.OracleType.VarChar;
-                    parameters[3].IsNullable = true;
+                    parameters[3].DBType = MySqlDbType.VarChar;
+                  
                     parameters[3].Value = this.txtVersion.Text;
-                    parameters[4] = new Bifrost.WebReference.OracleParameter();
+                    parameters[4] = new MySqlDBParameter();
                     parameters[4].ParameterName = "DLLNAME";
-                    parameters[4].OracleType = Bifrost.WebReference.OracleType.VarChar;
-                    parameters[4].IsNullable = true;
+                    parameters[4].DBType = MySqlDbType.VarChar;
+                   
                     parameters[4].Value = this.txtDllName.Text;
-                    parameters[5] = new Bifrost.WebReference.OracleParameter();
+                    parameters[5] = new MySqlDBParameter();
                     parameters[5].ParameterName = "FUNCTIONIMAGE";
-                    parameters[5].OracleType = Bifrost.WebReference.OracleType.Blob;
-                    parameters[5].IsNullable = true;
+                    parameters[5].DBType = MySqlDbType.Blob;
+                  
                     if (this.ImageBytes != null)
                     {
                         parameters[5].Value = this.ImageBytes;
@@ -405,26 +407,26 @@ namespace Bifrost
                     {
                         num = Convert.ToInt32(this.CurrentPermission.Id);
                     }
-                    parameterArray = new Bifrost.WebReference.OracleParameter[5];
-                    parameterArray[0] = new Bifrost.WebReference.OracleParameter();
+                    parameterArray = new MySqlDBParameter[5];
+                    parameterArray[0] = new MySqlDBParameter();
                     parameterArray[0].ParameterName = "VID";
-                    parameterArray[0].OracleType = Bifrost.WebReference.OracleType.Number;
+                    parameterArray[0].DBType = MySqlDbType.Decimal;
                     parameterArray[0].Value = num;
-                    parameterArray[1] = new Bifrost.WebReference.OracleParameter();
+                    parameterArray[1] = new MySqlDBParameter();
                     parameterArray[1].ParameterName = "VPERM_CODE";
-                    parameterArray[1].OracleType = Bifrost.WebReference.OracleType.VarChar;
+                    parameterArray[1].DBType = MySqlDbType.VarChar;
                     parameterArray[1].Value = this.txtButtonCode.Text;
-                    parameterArray[2] = new Bifrost.WebReference.OracleParameter();
+                    parameterArray[2] = new MySqlDBParameter();
                     parameterArray[2].ParameterName = "PERM_NAME";
-                    parameterArray[2].OracleType = Bifrost.WebReference.OracleType.VarChar;
+                    parameterArray[2].DBType = MySqlDbType.VarChar;
                     parameterArray[2].Value = this.txtButtonName.Text;
-                    parameterArray[3] = new Bifrost.WebReference.OracleParameter();
+                    parameterArray[3] = new MySqlDBParameter();
                     parameterArray[3].ParameterName = "PERM_KIND";
-                    parameterArray[3].OracleType = Bifrost.WebReference.OracleType.Char;
+                    parameterArray[3].DBType = MySqlDbType.VarChar;
                     parameterArray[3].Value = "2";
-                    parameterArray[4] = new Bifrost.WebReference.OracleParameter();
+                    parameterArray[4] = new MySqlDBParameter();
                     parameterArray[4].ParameterName = "NUM";
-                    parameterArray[4].OracleType = Bifrost.WebReference.OracleType.Number;
+                    parameterArray[4].DBType = MySqlDbType.Decimal;
                     parameterArray[4].Value = num;
                     str = "insert into T_PERMISSION(id,PERM_CODE,PERM_NAME,PERM_KIND,NUM)values(:VID,:VPERM_CODE,:PERM_NAME,:PERM_KIND,:NUM)";
                     if (this.CurrentPermission == null)
@@ -473,47 +475,46 @@ namespace Bifrost
                     {
                         num = Convert.ToInt32(this.CurrentPermission.Id);
                     }
-                    parameterArray = new Bifrost.WebReference.OracleParameter[5];
-                    parameterArray[0] = new Bifrost.WebReference.OracleParameter();
+                    parameterArray = new MySqlDBParameter[5];
+                    parameterArray[0] = new MySqlDBParameter();
                     parameterArray[0].ParameterName = "VID";
-                    parameterArray[0].OracleType = Bifrost.WebReference.OracleType.Number;
+                    parameterArray[0].DBType = MySqlDbType.Decimal;
                     parameterArray[0].Value = num;
-                    parameterArray[1] = new Bifrost.WebReference.OracleParameter();
+                    parameterArray[1] = new MySqlDBParameter();
                     parameterArray[1].ParameterName = "VPERM_CODE";
-                    parameterArray[1].OracleType = Bifrost.WebReference.OracleType.VarChar;
+                    parameterArray[1].DBType = MySqlDbType.VarChar;
                     parameterArray[1].Value = this.txtTabCode.Text;
-                    parameterArray[2] = new Bifrost.WebReference.OracleParameter();
+                    parameterArray[2] = new MySqlDBParameter();
                     parameterArray[2].ParameterName = "PERM_NAME";
-                    parameterArray[2].OracleType = Bifrost.WebReference.OracleType.VarChar;
+                    parameterArray[2].DBType = MySqlDbType.VarChar;
                     parameterArray[2].Value = this.txtTabName.Text;
-                    parameterArray[3] = new Bifrost.WebReference.OracleParameter();
+                    parameterArray[3] = new MySqlDBParameter();
                     parameterArray[3].ParameterName = "PERM_KIND";
-                    parameterArray[3].OracleType = Bifrost.WebReference.OracleType.Char;
+                    parameterArray[3].DBType = MySqlDbType.VarChar;
                     parameterArray[3].Value = "3";
-                    parameterArray[4] = new Bifrost.WebReference.OracleParameter();
+                    parameterArray[4] = new MySqlDBParameter();
                     parameterArray[4].ParameterName = "NUM";
-                    parameterArray[4].OracleType = Bifrost.WebReference.OracleType.Number;
+                    parameterArray[4].DBType = MySqlDbType.Decimal;
                     parameterArray[4].Value = num;
                     int id = App.GenId("T_PERMISSION_FUCTIONS", "id");
                     if (this.CurrentPermission != null)
                     {
                         id = this.CurrentPermission.Permission_Info.Id;
                     }
-                    Bifrost.WebReference.OracleParameter[] parameters = new Bifrost.WebReference.OracleParameter[3];
-                    parameters[0] = new Bifrost.WebReference.OracleParameter();
+                    MySqlDBParameter[] parameters = new MySqlDBParameter[3];
+                    parameters[0] = new MySqlDBParameter();
                     parameters[0].ParameterName = "VID";
-                    parameters[0].OracleType = Bifrost.WebReference.OracleType.Number;
+                    parameters[0].DBType = MySqlDbType.Decimal;
                     parameters[0].Value = id;
-                    parameters[0].IsNullable = true;
-                    parameters[1] = new Bifrost.WebReference.OracleParameter();
+                  
+                    parameters[1] = new MySqlDBParameter();
                     parameters[1].ParameterName = "VPERM_CODE";
-                    parameters[1].OracleType = Bifrost.WebReference.OracleType.VarChar;
+                    parameters[1].DBType = MySqlDbType.VarChar;
                     parameters[1].Value = this.txtTabCode.Text;
-                    parameters[1].IsNullable = true;
-                    parameters[2] = new Bifrost.WebReference.OracleParameter();
+                 
+                    parameters[2] = new MySqlDBParameter();
                     parameters[2].ParameterName = "FUNCTION";
-                    parameters[2].OracleType = Bifrost.WebReference.OracleType.VarChar;
-                    parameters[2].IsNullable = true;
+                    parameters[2].DBType = MySqlDbType.VarChar;                   
                     parameters[2].Value = this.txtTabModelName.Text;
                   
                     str = "insert into T_PERMISSION(id,PERM_CODE,PERM_NAME,PERM_KIND,NUM)values(:VID,:VPERM_CODE,:PERM_NAME,:PERM_KIND,:NUM)";

@@ -4,7 +4,7 @@ using System.Text;
 using System.Data;
 using Bifrost;
 using System.Windows.Forms;
-using Bifrost.WebReference;
+
 using System.Collections;
 using DevComponents.AdvTree;
 using System.Xml;
@@ -28,7 +28,7 @@ using Base_Function.TEMPERATURES;
 using EmrCommon;
 using MoranEditor.GUI;
 using MoranEditor.MPrint;
-
+using MySql.Data.MySqlClient;
 
 namespace Base_Function.BASE_COMMON
 {
@@ -4207,13 +4207,14 @@ namespace Base_Function.BASE_COMMON
                                 }
                                 #endregion
 
-
+                                
+                                   
                                 String sql_clob = string.Format("update T_PATIENT_DOC_COLB set CONTENT=:doc1 where TID = '{0}'", CurrentFrmText.MyDoc.Us.Tid);
-                                OracleParameter[] xmlPars = new OracleParameter[1];
-                                xmlPars[0] = new OracleParameter();
+                                MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                                xmlPars[0] = new MySqlDBParameter();
                                 xmlPars[0].ParameterName = "doc1";
                                 xmlPars[0].Value = tempxmldoc.OuterXml;
-                                xmlPars[0].OracleType = OracleType.Clob;
+                                xmlPars[0].DBType = MySqlDbType.Text;
                                 App.ExecuteSQL(sql_clob, xmlPars);
                                 App.Msg("文书保存成功！");
                                 CurrentFrmText.MyDoc.Modified = false;
@@ -4311,20 +4312,20 @@ namespace Base_Function.BASE_COMMON
                                     /***
                                      * 临床路径文书相关
                                      */
-                                    //OracleParameter op1 = new OracleParameter();
+                                    //MySqlDBParameter op1 = new MySqlDBParameter();
                                     //op1.ParameterName = "yizhu";
                                     //op1.Value = tid;
-                                    //OracleParameter op2 = new OracleParameter();
+                                    //MySqlDBParameter op2 = new MySqlDBParameter();
                                     //op2.ParameterName = "patient_id";
                                     //op2.Value = this.Us.InpatientInfo.Id;
-                                    //OracleParameter op3 = new OracleParameter();
+                                    //MySqlDBParameter op3 = new MySqlDBParameter();
                                     //op3.ParameterName = "tiem";
                                     //op3.Value = sysTime.ToString("yyyy-MM-dd HH:mm");
-                                    //OracleParameter op4 = new OracleParameter();
+                                    //MySqlDBParameter op4 = new MySqlDBParameter();
                                     //op4.ParameterName = "execute_person";
                                     //op4.Value = App.UserAccount.UserInfo.User_id + "|" + App.UserAccount.UserInfo.User_name;
 
-                                    //App.RunProcedure("ecp.proc_excute_patientdoc", new OracleParameter[] { op1, op2, op3, op4 });
+                                    //App.RunProcedure("ecp.proc_excute_patientdoc", new MySqlDBParameter[] { op1, op2, op3, op4 });
                                     if (App.ExecuteSQL(sql2) < 1)
                                     {
                                         App.Msg("质控表保存失败" + sql2);
@@ -4355,11 +4356,11 @@ namespace Base_Function.BASE_COMMON
                                 }
 
                                 string sql_clob = "insert into T_PATIENT_DOC_COLB(tid,CONTENT)values(" + CurrentFrmText.MyDoc.Us.Tid + ",:doc1)";
-                                OracleParameter[] xmlPars = new OracleParameter[1];
-                                xmlPars[0] = new OracleParameter();
+                                MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                                xmlPars[0] = new MySqlDBParameter();
                                 xmlPars[0].ParameterName = "doc1";
                                 xmlPars[0].Value = tempxmldoc.OuterXml;
-                                xmlPars[0].OracleType = OracleType.Clob;
+                                xmlPars[0].DBType = MySqlDbType.Text;
                                 App.ExecuteSQL(sql_clob, xmlPars);
                                 App.Msg("文书保存成功！");
                                 CurrentFrmText.MyDoc.Modified = false;
@@ -4459,11 +4460,11 @@ namespace Base_Function.BASE_COMMON
             {
                 sql_clob = "update t_patient_doc_colb_div set CONTENT=:doc1 where patient_id='" + CurrentFrmText.MyDoc.Us.InpatientInfo.Id + "'";
             }
-            OracleParameter[] xmlPars = new OracleParameter[1];
-            xmlPars[0] = new OracleParameter();
+            MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+            xmlPars[0] = new MySqlDBParameter();
             xmlPars[0].ParameterName = "doc1";
             xmlPars[0].Value = nodes[0].OuterXml + nodes[1].OuterXml + nodes[2].OuterXml;
-            xmlPars[0].OracleType = OracleType.Clob;
+            xmlPars[0].DBType = MySqlDbType.Text;
             App.ExecuteSQL(sql_clob, xmlPars);
         }
 
@@ -5932,11 +5933,11 @@ namespace Base_Function.BASE_COMMON
                     App.UserAccount.UserInfo.User_id + ",:doc1," +
                     editor.MyDoc.Us.InpatientInfo.Id + ")");
 
-                OracleParameter[] xmlPars = new OracleParameter[1];
-                xmlPars[0] = new OracleParameter();
+                MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                xmlPars[0] = new MySqlDBParameter();
                 xmlPars[0].ParameterName = "doc1";
                 xmlPars[0].Value = tempxmldoc.OuterXml;
-                xmlPars[0].OracleType = OracleType.Clob;
+                xmlPars[0].DBType = MySqlDbType.Text;
 
                 if (App.ExecuteSQL(sql_clob, xmlPars) > 0)
                 {
@@ -5948,11 +5949,11 @@ namespace Base_Function.BASE_COMMON
             {
                 //修改操作
                 String sql_clob = string.Format("update T_DISCUSS_DOC set CONTENT=:doc1 where id = '{0}'", editor.MyDoc.Us.Tid);
-                OracleParameter[] xmlPars = new OracleParameter[1];
-                xmlPars[0] = new OracleParameter();
+                MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                xmlPars[0] = new MySqlDBParameter();
                 xmlPars[0].ParameterName = "doc1";
                 xmlPars[0].Value = tempxmldoc.OuterXml;
-                xmlPars[0].OracleType = OracleType.Clob;
+                xmlPars[0].DBType = MySqlDbType.Text;
                 if (App.ExecuteSQL(sql_clob, xmlPars) > 0)
                 {
                     App.Msg("操作成功！");
@@ -6567,11 +6568,11 @@ namespace Base_Function.BASE_COMMON
 																   '{5}',
 																   sysdate,
 																   :doc)", App.GenId(), text.MyDoc.Us.Tid, type, text.MyDoc.Us.InpatientInfo.Id, "Y", App.UserAccount.UserInfo.User_id);
-                                    OracleParameter[] xmlPars = new OracleParameter[1];
-                                    xmlPars[0] = new OracleParameter();
+                                    MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                                    xmlPars[0] = new MySqlDBParameter();
                                     xmlPars[0].ParameterName = "doc";
                                     xmlPars[0].Value = Diagnose;
-                                    xmlPars[0].OracleType = OracleType.Clob;
+                                    xmlPars[0].DBType = MySqlDbType.Text;
                                     App.ExecuteSQL(insertDiagnose, xmlPars);
                                 }
                             }

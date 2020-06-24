@@ -73,12 +73,14 @@ namespace Remoting服务端
             string orcl_connectionString = string.Format(@"Persist Security Info=False;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST={0})(PORT={1})))(CONNECT_DATA=(SID={2})));user id={3};password={4}", link.Split(',')[0], link.Split(',')[1], link.Split(',')[2], link.Split(',')[3], link.Split(',')[4]);
 
             Operater = new DbHelp();
-            Operater.orcl_connectionString = orcl_connectionString;
-            Operater.mysql_connectionString = mysqllink;
+            //Operater.orcl_connectionString = orcl_connectionString;
+            Operater.mysql_connectionString = "data source=localhost;database=emrbzb;user id=root;password=111111;pooling=true;charset=utf8;Convert Zero Datetime=True;Allow Zero Datetime=True"; //mysqllink;
+            
+            bool yy = Operater.ConnectTest_MySql();
 
-            bool yy = Operater.ConnectTest();
-
-            DataSet ds = Operater.GetDataSet("select a.id,a.patient_name as 姓名,a.pid as 住院号,a.section_name as 科室 from t_in_patient a where a.id in (select patient_id from  t_patients_doc where tid in (select tid from t_patient_doc_colb)) and rownum<100 order by id desc");
+           // DataSet ds = Operater.GetDataSet_MySql("select a.id,a.patient_name as 姓名,a.pid as 住院号,a.section_name as 科室 from t_in_patient a where a.id in (select patient_id from  t_patients_doc where tid in (select tid from t_patient_doc_colb)) order by id desc");
+            //DataSet ds = Operater.GetDataSet_MySql("select * from T_ACCOUNT where upper(ACCOUNT_NAME)='FK' and PASSWORD='BB31597A358EFF6E'");
+            DataSet ds = Operater.GetDataSet_MySql("select n.ACCOUNT_ID,n.ENABLE_START_TIME from t_account n where n.ENABLE_START_TIME is not NULL LIMIT 1");
             if (File.Exists(filename))
             {
                 regiestCode = File.ReadAllText(filename).Split(',')[1];

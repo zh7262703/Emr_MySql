@@ -9,9 +9,10 @@ using DevComponents.DotNetBar;
 using TextEditor;
 using Bifrost;
 using System.Xml;
-using Bifrost.WebReference;
+
 using Base_Function.BASE_COMMON;
 using TextEditor.TextDocument.Document;
+using MySql.Data.MySqlClient;
 
 namespace Base_Function.EMERGENCY
 {
@@ -455,11 +456,11 @@ namespace Base_Function.EMERGENCY
 
                 }
 
-                OracleParameter[] xmlPars = new OracleParameter[1];
-                xmlPars[0] = new OracleParameter();
+                MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                xmlPars[0] = new MySqlDBParameter();
                 xmlPars[0].ParameterName = "doc1";
                 xmlPars[0].Value = tempxmldoc.OuterXml;
-                xmlPars[0].OracleType = OracleType.Clob;
+                xmlPars[0].DBType = MySqlDbType.Text;
 
                 int j = App.ExecuteSQL(sql, xmlPars);
                 if (j > 0)

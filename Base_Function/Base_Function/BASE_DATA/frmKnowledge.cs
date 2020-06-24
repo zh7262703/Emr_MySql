@@ -11,7 +11,7 @@ using System.Collections;
 using System.Xml;
 using TextEditor.TextDocument.Document;
 using TextEditor;
-
+using MySql.Data.MySqlClient;
 
 namespace Base_Function.BASE_DATA
 {
@@ -968,9 +968,9 @@ namespace Base_Function.BASE_DATA
                                                         , evalueCode
                                                         , this.txtComplexName.Text.Trim()
                                                         , "-1");
-                            Bifrost.WebReference.OracleParameter[] op = new Bifrost.WebReference.OracleParameter[] { new Bifrost.WebReference.OracleParameter() };
+                            MySqlDBParameter[] op = new MySqlDBParameter[] { new MySqlDBParameter() };
                             op[0].ParameterName = "doc";
-                            op[0].OracleType = Bifrost.WebReference.OracleType.Clob;
+                            op[0].DBType = MySqlDbType.Text; 
                             op[0].Value = tempxmldoc.OuterXml;
                             if (App.ExecuteSQL(sql) > 0 && App.ExecuteSQL(sql2,op)>0)
                             {
@@ -1013,9 +1013,9 @@ namespace Base_Function.BASE_DATA
                             string sql2 = string.Format("UPDATE ET_DOCUMENT SET OBJECTDATA=:doc,OBJECTNAME='{0}' where objectid='{1}'"
                                                         , this.txtComplexName.Text
                                                         , this.tvList.SelectedNode.Tag.ToString());
-                            Bifrost.WebReference.OracleParameter[] op2 = new Bifrost.WebReference.OracleParameter[] { new Bifrost.WebReference.OracleParameter() };
+                            MySqlDBParameter[] op2 = new MySqlDBParameter[] { new MySqlDBParameter() };
                             op2[0].ParameterName = "doc";
-                            op2[0].OracleType = Bifrost.WebReference.OracleType.Clob;
+                            op2[0].DBType = MySqlDbType.Text;
                             op2[0].Value = temxmldoc.OuterXml;
                             if (App.ExecuteSQL( sql) > 0 && App.ExecuteSQL(sql2,op2)>0)
                             {

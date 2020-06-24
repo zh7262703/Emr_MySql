@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Bifrost;
-using Bifrost.WebReference;
+using MySql.Data.MySqlClient;
 
 namespace Base_Function.Infection
 {
@@ -83,9 +83,9 @@ namespace Base_Function.Infection
                 if (string.IsNullOrEmpty(Content))
                     Content = " ";
                 byte[] bs = System.Text.Encoding.Default.GetBytes(Content);
-                OracleParameter[] ops = new OracleParameter[1];
-                OracleParameter op = new OracleParameter();
-                op.OracleType = OracleType.Blob;
+                MySqlDBParameter[] ops = new MySqlDBParameter[1];
+                MySqlDBParameter op = new MySqlDBParameter();
+                op.DBType = MySqlDbType.Blob;
                 op.ParameterName = "description";
                 op.Value = bs;
                 ops[0] = op;

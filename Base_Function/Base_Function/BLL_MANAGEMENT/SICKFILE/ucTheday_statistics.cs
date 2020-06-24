@@ -1048,7 +1048,7 @@ namespace Base_Function.BLL_MANAGEMENT.SICKFILE
         {
             try
             {
-                Bifrost.WebReference.Class_Table[] temtables = new Bifrost.WebReference.Class_Table[13];
+                Class_Table[] temtables = new Class_Table[13];
 
                 //入院人数
                 string sql_into_area = "select a.id,a.pid,a.patient_name,case when a.gender_code=0 then '男' else '女' end sex,concat(age,age_unit) as 年龄,a.in_time,a.die_time,'' as 入院诊断,'' as 出院诊断,a.insection_name ,a.section_name ,a.birthday,a.section_id,a.SICK_AREA_ID,a.SICK_AREA_name from t_In_Patient a where (select count(id) from t_inhospital_action b where b.patient_id=a.id)>0 and to_char(a.in_time,'yyyy-MM-dd')='" + dtpTime.Value.ToString("yyyy-MM-dd") + "'";
@@ -1087,55 +1087,55 @@ namespace Base_Function.BLL_MANAGEMENT.SICKFILE
                 string sql_allin_diag = "select patient_id,diagnose_name,create_time,diagnose_sort from t_diagnose_item where diagnose_type=408 ";
                 //所有出院诊断
                 string sql_allout_diag = "select patient_id,diagnose_name,create_time,diagnose_sort from t_diagnose_item where diagnose_type=406";
-                temtables[0] = new Bifrost.WebReference.Class_Table();
+                temtables[0] = new Class_Table();
                 temtables[0].Sql = sql_into_area;
                 temtables[0].Tablename = "into_area";
 
-                temtables[1] = new Bifrost.WebReference.Class_Table();
+                temtables[1] = new Class_Table();
                 temtables[1].Sql = sql_in_area;
                 temtables[1].Tablename = "in_area";
 
-                temtables[2] = new Bifrost.WebReference.Class_Table();
+                temtables[2] = new Class_Table();
                 temtables[2].Sql = sql_out_area;
                 temtables[2].Tablename = "out_area";
 
-                temtables[3] = new Bifrost.WebReference.Class_Table();
+                temtables[3] = new Class_Table();
                 temtables[3].Sql = sql_turn_out;
                 temtables[3].Tablename = "turn_out";
 
-                temtables[4] = new Bifrost.WebReference.Class_Table();
+                temtables[4] = new Class_Table();
                 temtables[4].Sql = sql_turn_in;
                 temtables[4].Tablename = "turn_in";
 
-                temtables[5] = new Bifrost.WebReference.Class_Table();
+                temtables[5] = new Class_Table();
                 temtables[5].Sql = sql_operate;
                 temtables[5].Tablename = "operate";
 
-                temtables[6] = new Bifrost.WebReference.Class_Table();
+                temtables[6] = new Class_Table();
                 temtables[6].Sql = sql_consultaion_applay;
                 temtables[6].Tablename = "consultaion_applay";
 
-                temtables[7] = new Bifrost.WebReference.Class_Table();
+                temtables[7] = new Class_Table();
                 temtables[7].Sql = sql_consultaion_recive;
                 temtables[7].Tablename = "consultaion_accept";
 
-                temtables[8] = new Bifrost.WebReference.Class_Table();
+                temtables[8] = new Class_Table();
                 temtables[8].Sql = sql_danger;
                 temtables[8].Tablename = "danger";
 
-                temtables[9] = new Bifrost.WebReference.Class_Table();
+                temtables[9] = new Class_Table();
                 temtables[9].Sql = sql_bad;
                 temtables[9].Tablename = "bad";
 
-                temtables[10] = new Bifrost.WebReference.Class_Table();
+                temtables[10] = new Class_Table();
                 temtables[10].Sql = sql_death;
                 temtables[10].Tablename = "death";
 
-                temtables[11] = new Bifrost.WebReference.Class_Table();
+                temtables[11] = new Class_Table();
                 temtables[11].Sql = sql_allin_diag;
                 temtables[11].Tablename = "allindiag";
 
-                temtables[12] = new Bifrost.WebReference.Class_Table();
+                temtables[12] = new Class_Table();
                 temtables[12].Sql = sql_allout_diag;
                 temtables[12].Tablename = "alloutdiag";
 

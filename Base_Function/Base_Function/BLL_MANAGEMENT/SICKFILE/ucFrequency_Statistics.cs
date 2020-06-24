@@ -696,7 +696,7 @@ namespace Base_Function.BLL_MANAGEMENT.SICKFILE
         /// </summary>
         private void Get_Search_Data()
         {
-            Bifrost.WebReference.Class_Table[] tables = new Bifrost.WebReference.Class_Table[15];
+            Class_Table[] tables = new Class_Table[15];
 
             //ËùÓÐ²¡Çø
             string sql_Sickarea = "select said,sick_area_name from t_sickareainfo";
@@ -852,71 +852,71 @@ namespace Base_Function.BLL_MANAGEMENT.SICKFILE
                 //sql_zhenduan_wrong += " and to_char(in_time,'yyyy')='" + year + "'";
             }
 
-            tables[0] = new Bifrost.WebReference.Class_Table();
+            tables[0] = new Class_Table();
             tables[0].Sql = sql_into_area;
             tables[0].Tablename = "into_area";
 
-            tables[1] = new Bifrost.WebReference.Class_Table();
+            tables[1] = new Class_Table();
             tables[1].Sql = sql_out_area;
             tables[1].Tablename = "out_area";
 
-            tables[2] = new Bifrost.WebReference.Class_Table();
+            tables[2] = new Class_Table();
             tables[2].Sql = sql_turn_out;
             tables[2].Tablename = "turn_out";
 
-            tables[3] = new Bifrost.WebReference.Class_Table();
+            tables[3] = new Class_Table();
             tables[3].Sql = sql_turn_in;
             tables[3].Tablename = "turn_in";
 
-            tables[4] = new Bifrost.WebReference.Class_Table();
+            tables[4] = new Class_Table();
             tables[4].Sql = sql_operate;
             tables[4].Tablename = "operate";
 
-            tables[5] = new Bifrost.WebReference.Class_Table();
+            tables[5] = new Class_Table();
             tables[5].Sql = sql_consultaion_applay;
             tables[5].Tablename = "consultaion_applay";
 
-            tables[6] = new Bifrost.WebReference.Class_Table();
+            tables[6] = new Class_Table();
             tables[6].Sql = sql_consultaion_recive;
             tables[6].Tablename = "consultaion_recive";
 
-            tables[7] = new Bifrost.WebReference.Class_Table();
+            tables[7] = new Class_Table();
             tables[7].Sql = sql_Danger;
             tables[7].Tablename = "danger";
 
-            tables[8] = new Bifrost.WebReference.Class_Table();
+            tables[8] = new Class_Table();
             tables[8].Sql = sql_Bad;
             tables[8].Tablename = "bad";
 
-            tables[9] = new Bifrost.WebReference.Class_Table();
+            tables[9] = new Class_Table();
             tables[9].Sql = sql_Section;
             tables[9].Tablename = "section";
 
-            tables[10] = new Bifrost.WebReference.Class_Table();
+            tables[10] = new Class_Table();
             tables[10].Sql = sql_Sickarea;
             tables[10].Tablename = "sickarea";
 
-            tables[11] = new Bifrost.WebReference.Class_Table();
+            tables[11] = new Class_Table();
             tables[11].Sql = sql_zhiyulv;
             tables[11].Tablename = "zhiyulv";
 
-            tables[12] = new Bifrost.WebReference.Class_Table();
+            tables[12] = new Class_Table();
             tables[12].Sql = sql_bingsilv;
             tables[12].Tablename = "bingsilv";
 
-            //tables[13] = new Bifrost.WebReference.Class_Table();
+            //tables[13] = new Class_Table();
             //tables[13].Sql = sql_zhenduan_right;
             //tables[13].Tablename = "zhenduan_right";
 
-            tables[13] = new Bifrost.WebReference.Class_Table();
+            tables[13] = new Class_Table();
             tables[13].Sql = sql_allin_diag;
             tables[13].Tablename = "indiag";
 
-            tables[14] = new Bifrost.WebReference.Class_Table();
+            tables[14] = new Class_Table();
             tables[14].Sql = sql_allout_diag;
             tables[14].Tablename = "outdiag";
 
-            //tables[14] = new Bifrost.WebReference.Class_Table();
+            //tables[14] = new Class_Table();
             //tables[14].Sql = sql_zhenduan_wrong;
             //tables[14].Tablename = "zhenduan_wrong";
             try

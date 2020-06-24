@@ -15,6 +15,7 @@ namespace Remoting服务端
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmRemotingServer());
+            //Application.Run(new frmTest());
         }
     }
 }

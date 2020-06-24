@@ -74,7 +74,7 @@ namespace Bifrost.HisInStance
                 Insert_pat_interface(ref Sqls, Ids[i]);
                 try
                 {
-                    App.WebService.ExecuteBatch_SqlSv(Sqls.ToArray());
+                   // App.WebService.ExecuteBatch_SqlSv(Sqls.ToArray());
                     //if (App.WebService.ExecuteBatch_SqlSv(Sqls.ToArray()) > 0)
                     //{
                     //    App.Msg("操作已经成功！");

@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using Bifrost;
 using System.Collections;
-using Bifrost.WebReference;
+
 using System.Text.RegularExpressions;
 using C1.Win.C1FlexGrid;
 using Base_Function.BASE_COMMON;
@@ -862,32 +862,32 @@ namespace Base_Function.BLL_NURSE.Nereuse_record
         /// </summary>
         private void addSum()
         {
-            //OracleParameter[] parameters = new OracleParameter[6];
-            //parameters[0] = new OracleParameter();
+            //MySqlDBParameter[] parameters = new MySqlDBParameter[6];
+            //parameters[0] = new MySqlDBParameter();
             //parameters[0].ParameterName = "pid";
-            //parameters[0].OracleType = Bifrost.WebReference.OracleType.VarChar;
+            //parameters[0].DBType = MySqlDbType.VarChar;
             //parameters[0].Value = inpatientInfo.PId;
             //parameters[0].Size = 20;
 
-            //parameters[1] = new OracleParameter();
+            //parameters[1] = new MySqlDBParameter();
             //parameters[1].ParameterName = "Total_time";
-            //parameters[1].OracleType = Bifrost.WebReference.OracleType.Timestamp;
+            //parameters[1].DBType = MySqlDbType.Timestamp;
             //parameters[1].Value = App.GetSystemTime().ToString("yyyy-MM-dd HH:mm");
 
-            //parameters[2] = new OracleParameter();
+            //parameters[2] = new MySqlDBParameter();
             //parameters[2].ParameterName = "begin_time";
-            //parameters[2].OracleType = Bifrost.WebReference.OracleType.Timestamp;
+            //parameters[2].DBType = MySqlDbType.Timestamp;
             //parameters[2].Value =  dtpStart.Value.ToString("yyyy-MM-dd HH:mm");
 
-            //parameters[3] = new OracleParameter();
+            //parameters[3] = new MySqlDBParameter();
             //parameters[3].ParameterName = "end_time";
-            //parameters[3].OracleType = Bifrost.WebReference.OracleType.Timestamp;
+            //parameters[3].DBType = MySqlDbType.Timestamp;
             //parameters[3].Value =  dtpEnd.Value.ToString("yyyy-MM-dd HH:mm");
 
 
-            //parameters[4] = new OracleParameter();
+            //parameters[4] = new MySqlDBParameter();
             //parameters[4].ParameterName = "recordByid";
-            //parameters[4].OracleType = Bifrost.WebReference.OracleType.VarChar;
+            //parameters[4].DBType = MySqlDbType.VarChar;
             //if (App.UserAccount.UserInfo != null)
             //{
             //    parameters[4].Value = App.UserAccount.UserInfo.User_id;
@@ -898,9 +898,9 @@ namespace Base_Function.BLL_NURSE.Nereuse_record
             //}
             //parameters[4].Size = 20;
 
-            //parameters[5] = new OracleParameter();
+            //parameters[5] = new MySqlDBParameter();
             //parameters[5].ParameterName = "sum_type";
-            //parameters[5].OracleType = Bifrost.WebReference.OracleType.Number;
+            //parameters[5].DBType = MySqlDbType.Number;
             //parameters[5].Value = cbxTotal.SelectedIndex;
             #region 汇总计算
             //:pid,:Total_time,:begin_time,:end_time,:recordByid,:sum_type

@@ -9,7 +9,7 @@ using Bifrost;
 using Base_Function.BASE_COMMON;
 using TextEditor;
 using System.Xml;
-using Bifrost.WebReference;
+using MySql.Data.MySqlClient;
 
 namespace Base_Function.BLL_MANAGEMENT.BLL_MEDICAL_RECORD_GRADE.Quality_Control_Score
 {
@@ -775,11 +775,11 @@ namespace Base_Function.BLL_MANAGEMENT.BLL_MEDICAL_RECORD_GRADE.Quality_Control_
                     frm.MyDoc.Modified = false;
 
                     String sql_clob = string.Format("update T_PATIENT_DOC_COLB set CONTENT=:doc1 where TID = '{0}'", frm.MyDoc.Us.Tid.ToString());
-                    OracleParameter[] xmlPars = new OracleParameter[1];
-                    xmlPars[0] = new OracleParameter();
+                    MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                    xmlPars[0] = new MySqlDBParameter();
                     xmlPars[0].ParameterName = "doc1";
                     xmlPars[0].Value = tempxmldoc.OuterXml;
-                    xmlPars[0].OracleType = OracleType.Clob;
+                    xmlPars[0].DBType = MySqlDbType.Text;
                     App.ExecuteSQL(sql_clob, xmlPars);
 
                 }

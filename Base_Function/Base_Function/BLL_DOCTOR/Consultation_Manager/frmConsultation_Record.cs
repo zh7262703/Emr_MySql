@@ -9,7 +9,7 @@ using System.Xml;
 using TextEditor;
 using Bifrost;
 using Base_Function.BASE_COMMON;
-using Bifrost.WebReference;
+using MySql.Data.MySqlClient;
 
 namespace Base_Function.BLL_DOCTOR.Consultation_Manager
 {
@@ -293,11 +293,11 @@ namespace Base_Function.BLL_DOCTOR.Consultation_Manager
                         }
                     }
                 }
-                OracleParameter[] xmlPars = new OracleParameter[1];
-                xmlPars[0] = new OracleParameter();
+                MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                xmlPars[0] = new MySqlDBParameter();
                 xmlPars[0].ParameterName = "Patients_Doc";
                 xmlPars[0].Value = xmlDoc.OuterXml;
-                xmlPars[0].OracleType = OracleType.Clob;
+                xmlPars[0].DBType = MySqlDbType.Text;
                 string update_content = "update t_patients_doc set Patients_Doc=:Patients_Doc where consultaion_record_id=" + Convert.ToInt32(flgGrid[flgGrid.RowSel, "会诊记录序号"]);
                 int num = App.ExecuteSQL(update_content, xmlPars);
                 if (num > 0)

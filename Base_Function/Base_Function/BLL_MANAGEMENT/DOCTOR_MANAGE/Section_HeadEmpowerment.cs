@@ -414,8 +414,8 @@ namespace Base_Function.BLL_MANAGEMENT.DOCTOR_MANAGE
         private void Show_chaxun()
         {
             lstSetionName.Items.Clear();
-            Bifrost.WebReference.Class_Table[] NTables1 = new Bifrost.WebReference.Class_Table[1];
-            NTables1[0] = new Bifrost.WebReference.Class_Table();
+            Class_Table[] NTables1 = new Class_Table[1];
+            NTables1[0] = new Class_Table();
             NTables1[0].Tablename = "Sections_peoples";
             NTables1[0].Sql = "select * from T_APPROVE_ACCREDIT tap inner join t_userinfo us on  tap.userid=us.user_id ";
             DataSet ds = App.GetDataSet(NTables1);

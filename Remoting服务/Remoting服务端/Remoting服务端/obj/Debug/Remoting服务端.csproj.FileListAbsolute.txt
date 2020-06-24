@@ -75,5 +75,6 @@ D:\project\EMR6.0_MYSQL\Remoting服务\Remoting服务端\Remoting服务端\obj\D
 D:\project\EMR6.0_MYSQL\Remoting服务\Remoting服务端\Remoting服务端\obj\Debug\Remoting服务端.csproj.GenerateResource.Cache
 D:\project\EMR6.0_MYSQL\Remoting服务\Remoting服务端\Remoting服务端\bin\Debug\Remoting服务端.exe
 D:\project\EMR6.0_MYSQL\Remoting服务\Remoting服务端\Remoting服务端\bin\Debug\Remoting服务端.pdb
+D:\project\EMR6.0_MYSQL\Remoting服务\Remoting服务端\Remoting服务端\obj\Debug\Remoting服务端.frmTest.resources
 D:\project\EMR6.0_MYSQL\Remoting服务\Remoting服务端\Remoting服务端\bin\Debug\MySql.Data.dll
 D:\project\EMR6.0_MYSQL\Remoting服务\Remoting服务端\Remoting服务端\bin\Debug\DataOperater.pdb

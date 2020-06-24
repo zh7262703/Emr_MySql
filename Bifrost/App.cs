@@ -30,7 +30,9 @@ using System.Runtime.Remoting.Channels.Http;
 using Bifrost.Hook;
 using Bifrost.NurseTemplate;
 using NAudio.Wave;
-using VoiceRecorder.Audio; 
+using VoiceRecorder.Audio;
+using DataOperater.Model;
+using MySql.Data.MySqlClient;
 
 namespace Bifrost
 {
@@ -80,10 +82,7 @@ namespace Bifrost
 
         //当前应用程序的路径             
         private static string apppath;
-
-        //web服务，
-        public static WebReference.Service WebService;
-
+       
         //判断是否已经进行过了初始化设置
         private static bool startflag = false;
 
@@ -160,8 +159,8 @@ namespace Bifrost
         /// Remoting映射类，该类主要功能是
         /// 是使可户端与服务器端建立映射关系，从而进行数据库的操作。
         /// </summary>
-        public static Oral Operater = null;
-        public static Oral Operater2 = null;
+        public static DbHelp Operater = null;
+        public static DbHelp Operater2 = null;
 
         // 医院名称      
         public static string HospitalTittle = "";
@@ -242,7 +241,7 @@ namespace Bifrost
         public static string PascResault_YJ = "";
 
         public static string[] ServerListUrl;
-
+        
         /// <summary>
         /// 当前选中的WebServie地址
         /// </summary>
@@ -396,9 +395,9 @@ namespace Bifrost
         /// </summary>
         public static void iniwebservice()
         {
-            WebService = new Bifrost.WebReference.Service();
-            string webip = @"http://" + Encrypt.DecryptStr(Read_ConfigInfo("WebServerPath", "Url", Application.StartupPath + "\\Config.ini")) + @"/WebService_EMR/Service.asmx";
-            WebService.Url = webip;
+            //WebService = new Bifrost.WebReference.Service();
+            //string webip = @"http://" + Encrypt.DecryptStr(Read_ConfigInfo("WebServerPath", "Url", Application.StartupPath + "\\Config.ini")) + @"/WebService_EMR/Service.asmx";
+            //WebService.Url = webip;
 
         }
 
@@ -435,7 +434,8 @@ namespace Bifrost
             {
                 //WebReference.Service web = new Bifrost.WebReference.Service();
                 //return web.GetImageSourceFiles();
-                return WebService.GetImageSourceFiles();
+                //return WebService.GetImageSourceFiles();
+                return null;
             }
             catch
             {
@@ -514,29 +514,17 @@ namespace Bifrost
         {
             try
             {
-                if (linkFormat == "0")
-                {
+               
                     if (RegeditRemotingChanel())
                     {
-                        bool flag = Operater.ConnectTest();
+                        bool flag = Operater.ConnectTest_MySql();
                         return flag;
                     }
                     else
                     {
                         return false;
                     }
-                }
-                else
-                {
-                    if (RegeditWebServiceChanel())
-                    {
-                        return WebService.ConnectTest();
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
+                
             }
             catch
             {
@@ -555,24 +543,14 @@ namespace Bifrost
             {
                 if (CmdString != "")
                 {
-                    if (linkFormat == "0")
-                    {
+                   
                         DataSet ds = new DataSet();
                         if (RegeditRemotingChanel())
                         {
-                            ds = Operater.GetDataSet(CmdString);
+                            ds = Operater.GetDataSet_MySql(CmdString);
                         }
                         return ds;
-                    }
-                    else
-                    {
-                        DataSet ds = new DataSet();
-                        if (RegeditWebServiceChanel())
-                        {
-                            ds=WebService.GetDataSet(CmdString);
-                        }
-                        return ds;                       
-                    }
+                    
                 }
                 else
                 {
@@ -756,11 +734,12 @@ namespace Bifrost
         {
             try
             {
-                //string[] His_id = his_id.Split('-');
-                WebReference.Service web = new Bifrost.WebReference.Service();
-                string sql = @"select ZYH,KSSJ,YZMC,YCJL,YCSL,SYPC,YPYF,XMMC,YPDJ,TZSJ,CZGH,FHGH,FYSX,YSGH,YSXGGH,TZYS,BZXX,LSYZ,XMLX,zfpb from zlhis.intf_emr_yzxx where zyh='" + his_id + "'";
-                DataSet ds_yz = web.GetDataSet(sql);
-                return ds_yz;
+                ////string[] His_id = his_id.Split('-');
+                //WebReference.Service web = new Bifrost.WebReference.Service();
+                //string sql = @"select ZYH,KSSJ,YZMC,YCJL,YCSL,SYPC,YPYF,XMMC,YPDJ,TZSJ,CZGH,FHGH,FYSX,YSGH,YSXGGH,TZYS,BZXX,LSYZ,XMLX,zfpb from zlhis.intf_emr_yzxx where zyh='" + his_id + "'";
+                //DataSet ds_yz = web.GetDataSet(sql);
+                //return ds_yz;
+                return null;
             }
             catch (Exception ex)
             {
@@ -775,36 +754,25 @@ namespace Bifrost
         /// </summary>
         /// <param name="TabSqls">查询语句集合</param>        
         /// <returns></returns>
-        public static DataSet GetDataSet(Bifrost.WebReference.Class_Table[] TabSqls)
+        public static DataSet GetDataSet(Class_Table[] TabSqls)
         {
             try
             {
-
-                if (linkFormat == "0")
-                {
+                
                     DataSet ds = new DataSet();
                     if (RegeditRemotingChanel())
                     {
-                        DataOperater.Class_Table[] TabSql2s = new Class_Table[TabSqls.Length];
+                        DataOperater.Model.Class_Table[] TabSql2s = new DataOperater.Model.Class_Table[TabSqls.Length];
                         for (int i = 0; i < TabSqls.Length; i++)
                         {
-                            TabSql2s[i] = new Class_Table();
+                            TabSql2s[i] = new DataOperater.Model.Class_Table();
                             TabSql2s[i].Sql = TabSqls[i].Sql;
                             TabSql2s[i].Tablename = TabSqls[i].Tablename;
                         }
-                        ds = Operater.GetDataSets(TabSql2s);
+                        ds = Operater.GetDataSets_MySql(TabSql2s);
                     }
                     return ds;
-                }
-                else
-                {
-                    DataSet ds = new DataSet();
-                    if (RegeditWebServiceChanel())
-                    {
-                        ds = WebService.GetDataSets(TabSqls);
-                    }
-                    return ds;
-                }
+               
             }
             catch
             {
@@ -823,26 +791,14 @@ namespace Bifrost
         {
             try
             {
-                if (linkFormat == "0")
-                {
+                
                     string val = "";
                     if (RegeditRemotingChanel())
                     {
-                        val = Operater.ReadSqlVal(CmdString, rowindex, colName);
+                        val = Operater.ReadSqlVal_MySql(CmdString, rowindex, colName);
                     }
                     return val;
-                }
-                else
-                {
-                    if (RegeditWebServiceChanel())
-                    {
-                        return WebService.ReadSqlVal(CmdString, rowindex, colName);
-                    }
-                    else
-                    {
-                        return "";
-                    }                  
-                }
+               
             }
             catch
             {
@@ -978,26 +934,14 @@ namespace Bifrost
         {
             try
             {
-                if (linkFormat == "0")
+               
+                int cot = 0;
+                if (RegeditRemotingChanel())
                 {
-                    int cot = 0;
-                    if (RegeditRemotingChanel())
-                    {
-                        cot = Operater.ExecuteSQL(CmdString);
-                    }
-                    return cot;
+                    cot = Operater.ExecuteSQL_MySql(CmdString);
                 }
-                else
-                {
-                    int cot = 0;
-                    if (RegeditWebServiceChanel())
-                    {
-                        cot = WebService.ExecuteSQL(CmdString);
-                    }
-                    return cot;
-
-                    //return WebService.ExecuteSQL(CmdString);
-                }
+                return cot;
+               
             }
             catch
             {
@@ -1011,24 +955,15 @@ namespace Bifrost
         /// <param name="CmdStrings">查询语句集合</param>       
         public static int ExecuteBatch(string[] CmdStrings)
         {
-            if (linkFormat == "0")
-            {
+          
                 int cot = 0;
                 if (RegeditRemotingChanel())
                 {
-                    cot = Operater.ExecuteBatch(CmdStrings);
+                    cot = Operater.ExecuteBatch_MySql(CmdStrings);
                 }
                 return cot;
-            }
-            else
-            {
-                int cot = 0;
-                if (RegeditWebServiceChanel())
-                {
-                    cot = WebService.ExecuteBatch(CmdStrings);
-                }
-                return cot;
-            }
+            
+           
         }
 
         /// <summary>
@@ -1037,41 +972,30 @@ namespace Bifrost
         /// <param name="CmdString">SQL语句</param>
         /// <param name="Parameters">参数集合</param>       
         /// <returns></returns>        
-        public static int ExecuteSQL(string CmdString, Bifrost.WebReference.OracleParameter[] Parameters)
+        public static int ExecuteSQL(string CmdString, MySqlDBParameter[] Parameters)
         {
             try
             {
-                if (linkFormat == "0")
-                {
 
-                    DBParameter[] pmets = new DBParameter[Parameters.Length];
+
+                    MySqlSDBParameter[] pmets = new MySqlSDBParameter[Parameters.Length];
                     for (int i = 0; i < Parameters.Length; i++)
                     {
-                        pmets[i] = new DBParameter();
+                        pmets[i] = new MySqlSDBParameter();
                         pmets[i].ParameterName = Parameters[i].ParameterName;
                         pmets[i].Value = Parameters[i].Value;
-                        getOracleTypeProperty(Parameters[i], ref pmets[i]);
+
+                        getMySqlTypeProperty(Parameters[i], ref pmets[i]);
                     }
                     if (RegeditRemotingChanel())
                     {
-                        return Operater.ExecuteSQLWithParams(CmdString, pmets);
+                        return Operater.ExecuteSQLWithParams_MySql(CmdString, pmets);
                     }
                     else
                     {
                         return 0;
                     }
-                }
-                else
-                {
-                    if (RegeditWebServiceChanel())
-                    {
-                        return WebService.ExecuteSQLWithParams(CmdString, Parameters);
-                    }
-                    else
-                    {
-                        return 0;
-                    }
-                }
+                
             }
             catch
             {
@@ -1084,29 +1008,28 @@ namespace Bifrost
         /// </summary>
         /// <param name="storedProcName">存储过程名称</param>
         /// <param name="parameters">参数</param>
-        public static void RunProcedure(string storedProcName, Bifrost.WebReference.OracleParameter[] parameters)
+        public static void RunProcedure(string storedProcName, MySqlDBParameter[] parameters)
         {
             try
             {
-                if (linkFormat == "0")
-                {
+                
                     if (RegeditRemotingChanel())
                     {
-                        DBParameter[] pmets = new DBParameter[parameters.Length];
+                        MySqlSDBParameter[] pmets = new MySqlSDBParameter[parameters.Length];
                         for (int i = 0; i < parameters.Length; i++)
                         {
-                            pmets[i] = new DBParameter();
+                            pmets[i] = new MySqlSDBParameter();
                             pmets[i].ParameterName = parameters[i].ParameterName;
                             pmets[i].Value = parameters[i].Value;
-                            if (parameters[i].Direction == WebReference.ParameterDirection.Output)
+                            if (parameters[i].Direction ==ParameterDirection.Output)
                             {
                                 pmets[i].Direction = ParameterDirection.Output;
                             }
-                            else if (parameters[i].Direction == WebReference.ParameterDirection.Input)
+                            else if (parameters[i].Direction == ParameterDirection.Input)
                             {
                                 pmets[i].Direction = ParameterDirection.Input;
                             }
-                            else if (parameters[i].Direction == WebReference.ParameterDirection.InputOutput)
+                            else if (parameters[i].Direction == ParameterDirection.InputOutput)
                             {
                                 pmets[i].Direction = ParameterDirection.InputOutput;
                             }
@@ -1114,18 +1037,12 @@ namespace Bifrost
                             {
                                 pmets[i].Direction = ParameterDirection.ReturnValue;
                             }
-                            getOracleTypeProperty(parameters[i], ref pmets[i]);
+
+                            getMySqlTypeProperty(parameters[i], ref pmets[i]);
                         }
-                        Operater.RunProcedure(storedProcName, pmets);
+                        Operater.RunProcedure_MySql(storedProcName, pmets);
                     }
-                }
-                else
-                {
-                    if (RegeditWebServiceChanel())
-                    {
-                        WebService.RunProcedure(storedProcName, parameters);
-                    }
-                }
+               
             }
             catch
             { }
@@ -1136,49 +1053,49 @@ namespace Bifrost
         /// </summary>
         /// <param name="storedProcName">存储过程名称</param>
         /// <param name="parameters">参数</param>
-        public static DataSet RunProcedureGetDataSet(string storedProcName, Bifrost.WebReference.OracleParameter[] parameters)
+        public static DataSet RunProcedureGetDataSet(string storedProcName, MySqlDBParameter[] parameters)
         {
             try
             {
-                if (linkFormat == "0")
-                {
-                    if (RegeditRemotingChanel())
-                    {
-                        DBParameter[] pmets = new DBParameter[parameters.Length];
-                        for (int i = 0; i < parameters.Length; i++)
-                        {
-                            pmets[i] = new DBParameter();
-                            pmets[i].ParameterName = parameters[i].ParameterName;
-                            pmets[i].Value = parameters[i].Value;
-                            if (parameters[i].Direction == WebReference.ParameterDirection.Output)
-                            {
-                                pmets[i].Direction = ParameterDirection.Output;
-                            }
-                            else if (parameters[i].Direction == WebReference.ParameterDirection.Input)
-                            {
-                                pmets[i].Direction = ParameterDirection.Input;
-                            }
-                            else if (parameters[i].Direction == WebReference.ParameterDirection.InputOutput)
-                            {
-                                pmets[i].Direction = ParameterDirection.InputOutput;
-                            }
-                            else
-                            {
-                                pmets[i].Direction = ParameterDirection.ReturnValue;
-                            }
+                //if (linkFormat == "0")
+                //{
+                //    if (RegeditRemotingChanel())
+                //    {
+                //        MySqlDBParameter[] pmets = new MySqlDBParameter[parameters.Length];
+                //        for (int i = 0; i < parameters.Length; i++)
+                //        {
+                //            pmets[i] = new MySqlDBParameter();
+                //            pmets[i].ParameterName = parameters[i].ParameterName;
+                //            pmets[i].Value = parameters[i].Value;
+                //            if (parameters[i].Direction == ParameterDirection.Output)
+                //            {
+                //                pmets[i].Direction = ParameterDirection.Output;
+                //            }
+                //            else if (parameters[i].Direction == ParameterDirection.Input)
+                //            {
+                //                pmets[i].Direction = ParameterDirection.Input;
+                //            }
+                //            else if (parameters[i].Direction == ParameterDirection.InputOutput)
+                //            {
+                //                pmets[i].Direction = ParameterDirection.InputOutput;
+                //            }
+                //            else
+                //            {
+                //                pmets[i].Direction = ParameterDirection.ReturnValue;
+                //            }
 
-                            getOracleTypeProperty(parameters[i], ref pmets[i]);
-                        }
-                        return Operater.RunProcedureGetData(storedProcName, pmets);
-                    }
-                }
-                else
-                {
-                    if (RegeditWebServiceChanel())
-                    {
-                        return WebService.RunProcedureGetData(storedProcName, parameters);
-                    }
-                }
+                //            getOracleTypeProperty(parameters[i], ref pmets[i]);
+                //        }
+                //        return Operater.RunProcedureGetData(storedProcName, pmets);
+                //    }
+                //}
+                //else
+                //{
+                //    if (RegeditWebServiceChanel())
+                //    {
+                //        return WebService.RunProcedureGetData(storedProcName, parameters);
+                //    }
+                //}
                 return null;
             }
             catch
@@ -1212,7 +1129,10 @@ namespace Bifrost
                     p_PageCount = p_RowCount / p_PageSize;
                 else
                     p_PageCount = p_RowCount / p_PageSize + 1;
-                string _SelectCommand = "SELECT * FROM (SELECT a.*, row_number() over(ORDER BY " + p_KeyColumn + " " + (p_Order ? "asc" : "desc") + ") as rn FROM (" + p_SqlSelect + ") a) WHERE rn BETWEEN " + _StarRowIndex.ToString() + " AND " + _EndRowIndex.ToString();
+                //string _SelectCommand = "SELECT * FROM (SELECT a.*, row_number() over(ORDER BY " + p_KeyColumn + " " + (p_Order ? "asc" : "desc") + ") as rn FROM (" + p_SqlSelect + ") a) WHERE rn BETWEEN " + _StarRowIndex.ToString() + " AND " + _EndRowIndex.ToString();
+                //return GetDataSet(_SelectCommand);
+
+                string _SelectCommand = p_SqlSelect + "  LIMIT  "+ _StarRowIndex.ToString()+","+ p_PageSize.ToString();
                 return GetDataSet(_SelectCommand);
 
 
@@ -1580,9 +1500,9 @@ namespace Bifrost
                     {
                         string remotingIp = CurrentRemotings[i].ToString();
                         string uri = "tcp://" + remotingIp.Split(',')[0].ToString() + "/TcpService";
-                        object o = Activator.GetObject(typeof(Oral), uri);
-                        Operater = (Oral)o;
-                        Operater.ConnectTest();//remoting操作是否正确
+                        object o = Activator.GetObject(typeof(DbHelp), uri);
+                        Operater = (DbHelp)o;
+                        Operater.ConnectTest_MySql();//remoting操作是否正确
                         CurrentUseFullRemotings.Add(CurrentRemotings[i].ToString());
                     }
                     catch
@@ -1606,8 +1526,8 @@ namespace Bifrost
                 }
 
                 string uri2 = "tcp://" + remotingIp.Split(',')[0].ToString() + "/TcpService";
-                object o2 = Activator.GetObject(typeof(Oral), uri2);
-                Operater = (Oral)o2;
+                object o2 = Activator.GetObject(typeof(DbHelp), uri2);
+                Operater = (DbHelp)o2;
                 return true;
             }
             catch
@@ -1626,44 +1546,44 @@ namespace Bifrost
             try
             {
 
-                /*
-                * 检测哪些WebService是有用的
-                */
-                ArrayList CurrentUseFullRemotings = new ArrayList(); //目前可以使用的WebService集合
-                for (int i = 0; i < ServerListUrl.Length; i++)
-                {
-                    try
-                    {
-                        string webip = @"http://" + ServerListUrl[i] + @"/WebSite1/Service.asmx";
-                        WebService.Url = webip;
-                        if (WebService.ConnectTest())
-                        {
-                            CurrentUseFullRemotings.Add(ServerListUrl[i]);
-                        }
-                    }
-                    catch
-                    {
-                        ReSetWebServiceUrl();
-                    }
-                }
+                ///*
+                //* 检测哪些WebService是有用的
+                //*/
+                //ArrayList CurrentUseFullRemotings = new ArrayList(); //目前可以使用的WebService集合
+                //for (int i = 0; i < ServerListUrl.Length; i++)
+                //{
+                //    try
+                //    {
+                //        string webip = @"http://" + ServerListUrl[i] + @"/WebSite1/Service.asmx";
+                //        WebService.Url = webip;
+                //        if (WebService.ConnectTest())
+                //        {
+                //            CurrentUseFullRemotings.Add(ServerListUrl[i]);
+                //        }
+                //    }
+                //    catch
+                //    {
+                //        ReSetWebServiceUrl();
+                //    }
+                //}
 
 
 
-                /*
-                 * 绑定WebService
-                 */
-                if (CurrentUseFullRemotings.Count > 1)
-                {
-                    Random tn = new Random();
-                    webserviceIp = CurrentUseFullRemotings[tn.Next(0, CurrentUseFullRemotings.Count - 1)].ToString();
-                }
-                else
-                {
-                    webserviceIp = CurrentUseFullRemotings[0].ToString();
-                }
+                ///*
+                // * 绑定WebService
+                // */
+                //if (CurrentUseFullRemotings.Count > 1)
+                //{
+                //    Random tn = new Random();
+                //    webserviceIp = CurrentUseFullRemotings[tn.Next(0, CurrentUseFullRemotings.Count - 1)].ToString();
+                //}
+                //else
+                //{
+                //    webserviceIp = CurrentUseFullRemotings[0].ToString();
+                //}
 
-                string url2 = @"http://" + webserviceIp + @"/WebSite1/Service.asmx";
-                WebService.Url = url2;
+                //string url2 = @"http://" + webserviceIp + @"/WebSite1/Service.asmx";
+                //WebService.Url = url2;
 
                 return true;
             }
@@ -1680,31 +1600,31 @@ namespace Bifrost
         /// </summary>
         private static void ReSetWebServiceUrl()
         {
-            string AllService = Read_ConfigInfo("WebServerPath", "UrlList", SysPath + "\\Config.ini");
-            ArrayList serlist = new ArrayList();
-            string[] tempurls = AllService.Split(';');
-            for (int i = 0; i < tempurls.Length; i++)
-            {
-                try
-                {
-                    string webip = @"http://" + tempurls[i] + @"/WebSite1/Service.asmx";
-                    WebService.Url = webip;
-                    if (WebService.ConnectTest())
-                    {
-                        serlist.Add(tempurls[i]);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    ex.Message.ToString();
-                }
-            }
+            //string AllService = Read_ConfigInfo("WebServerPath", "UrlList", SysPath + "\\Config.ini");
+            //ArrayList serlist = new ArrayList();
+            //string[] tempurls = AllService.Split(';');
+            //for (int i = 0; i < tempurls.Length; i++)
+            //{
+            //    try
+            //    {
+            //        string webip = @"http://" + tempurls[i] + @"/WebSite1/Service.asmx";
+            //        WebService.Url = webip;
+            //        if (WebService.ConnectTest())
+            //        {
+            //            serlist.Add(tempurls[i]);
+            //        }
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        ex.Message.ToString();
+            //    }
+            //}
 
-            ServerListUrl = new string[serlist.Count];
-            for (int i = 0; i < serlist.Count; i++)
-            {
-                ServerListUrl[i] = serlist[i].ToString();
-            }
+            //ServerListUrl = new string[serlist.Count];
+            //for (int i = 0; i < serlist.Count; i++)
+            //{
+            //    ServerListUrl[i] = serlist[i].ToString();
+            //}
         }
 
 
@@ -2654,15 +2574,9 @@ namespace Bifrost
         /// <param name="msg">消息</param>
         /// <param name="Currentip">本机Ip</param>
         public static void SendMessage(string msg, string Currentip)
-        {
-            if (linkFormat == "0")
-            {
+        {           
                 Operater.sendmymsg(msg, Currentip);
-            }
-            else
-            {
-                WebService.sendmymsg(msg, Currentip);
-            }
+           
         }
 
         /// <summary>
@@ -3437,14 +3351,10 @@ namespace Bifrost
             try
             {
                 //str = WebService.InsertLableContent(TID, xmlDoc);
-                if (linkFormat == "0")
-                {
+               
                     str = Operater.InsertLableContent(TID, xmlDoc.OuterXml);
-                }
-                else
-                {
-                    str = WebService.InsertLableContent(TID, xmlDoc);
-                }
+                
+               
                 return str;
             }
             catch (Exception ex)
@@ -3466,15 +3376,10 @@ namespace Bifrost
             string str = "";
             try
             {
-                if (linkFormat == "0")
-                {
+                
 
                     str = Operater.InsertModel(PID, textKind_ID, xmlDoc.OuterXml, belongToSys_ID, sickKind_ID, textName);
-                }
-                else
-                {
-                    str = WebService.InsertModel(PID, textKind_ID, xmlDoc, belongToSys_ID, sickKind_ID, textName);
-                }
+              
                 return str;
             }
             catch
@@ -3542,14 +3447,9 @@ namespace Bifrost
             {
                 OracleDataAdapter oda = new OracleDataAdapter();
                 DataSet ds;
-                if (linkFormat == "0")
-                {
-                    ds = Operater.GetDataSet(str);
-                }
-                else
-                {
-                    ds = WebService.GetDataSet(str);
-                }
+               
+                ds = Operater.GetDataSet_MySql(str);
+               
                 //DataSet ds = WebService.GetDataSet(str);
 
 
@@ -5483,12 +5383,7 @@ namespace Bifrost
             {
                 try
                 {
-                    if (WebService == null)
-                    {
-                        WebService = new WebReference.Service();
-                        string webip = @"http://" + Encrypt.DecryptStr(Read_ConfigInfo("WebServerPath", "Url", Application.StartupPath + "\\Config.ini")) + @"/WebSite1/Service.asmx";
-                        WebService.Url = webip;
-                    }
+                    
                     if (App.UserAccount != null)
                     {
                         if (App.UserAccount.UserInfo != null)
@@ -5498,9 +5393,9 @@ namespace Bifrost
                             string host = Encrypt.DecryptStr(Read_ConfigInfo("WebServerPath", "Url", Application.StartupPath + "\\Config.ini"));
                             IPAddress ServerIp = IPAddress.Parse(host);
                             string uri = "tcp://" + ServerIp + ":2000/TcpService";
-                            object o = Activator.GetObject(typeof(Oral), uri);
+                            object o = Activator.GetObject(typeof(DbHelp), uri);
 
-                            Operater2 = (Oral)o;
+                            Operater2 = (DbHelp)o;
                             string sendStr = App.GetHostIp() + ";" + App.UserAccount.UserInfo.User_name + ";" + App.UserAccount.UserInfo.U_position_name + ";" + App.UserAccount.UserInfo.U_tech_post_name + ";" + App.UserAccount.Account_name + @"!";
                             /*
                             * 当前正在操作的文书和病人ID集合
@@ -6397,20 +6292,23 @@ namespace Bifrost
         {
             try
             {
-                if (oldName != string.Empty && newName != string.Empty)
+                if (ds != null)
                 {
-                    for (int i = 0; i < ds.Tables[0].Columns.Count; i++)
+                    if (oldName != string.Empty && newName != string.Empty)
                     {
-                        for (int j = 0; j < oldName.Split(',').Length; j++)
+                        for (int i = 0; i < ds.Tables[0].Columns.Count; i++)
                         {
-                            if (ds.Tables[0].Columns[i].ColumnName.ToLower() == oldName.Split(',')[j].ToLower())
+                            for (int j = 0; j < oldName.Split(',').Length; j++)
                             {
-                                ds.Tables[0].Columns[i].Caption = newName.Split(',')[j];
+                                if (ds.Tables[0].Columns[i].ColumnName.ToLower() == oldName.Split(',')[j].ToLower())
+                                {
+                                    ds.Tables[0].Columns[i].Caption = newName.Split(',')[j];
+                                }
                             }
                         }
                     }
+                    Grid.DataSource = ds.Tables[0].DefaultView;
                 }
-                Grid.DataSource = ds.Tables[0].DefaultView;
                 return 0;
             }
             catch (Exception ex)
@@ -6434,16 +6332,19 @@ namespace Bifrost
         {
             try
             {
-                Grid.DataSource = ds.Tables[0].DefaultView;
-                if (oldName != string.Empty && newName != string.Empty)
+                if (ds != null)
                 {
-                    for (int i = 0; i < Grid.Columns.Count; i++)
+                    Grid.DataSource = ds.Tables[0].DefaultView;
+                    if (oldName != string.Empty && newName != string.Empty)
                     {
-                        for (int j = 0; j < oldName.Split(',').Length; j++)
+                        for (int i = 0; i < Grid.Columns.Count; i++)
                         {
-                            if (Grid.Columns[i].HeaderText.ToLower() == oldName.Split(',')[j].ToLower())
+                            for (int j = 0; j < oldName.Split(',').Length; j++)
                             {
-                                Grid.Columns[i].HeaderText = newName.Split(',')[j];
+                                if (Grid.Columns[i].HeaderText.ToLower() == oldName.Split(',')[j].ToLower())
+                                {
+                                    Grid.Columns[i].HeaderText = newName.Split(',')[j];
+                                }
                             }
                         }
                     }
@@ -6606,11 +6507,11 @@ namespace Bifrost
             if (strDoc != string.Empty && strDoc != null)
             {
                 string Sql_Update = "update T_ENTITY_Path_Doc tdoc set tdoc.patient_doc=" + ":doc1" + " where tdoc.head_id='" + headid + "'";
-                Bifrost.WebReference.OracleParameter[] xmlPars = new Bifrost.WebReference.OracleParameter[1];
-                xmlPars[0] = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                xmlPars[0] = new MySqlDBParameter();
                 xmlPars[0].ParameterName = "doc1";
                 xmlPars[0].Value = strDoc;
-                xmlPars[0].OracleType = Bifrost.WebReference.OracleType.Clob;
+                xmlPars[0].DBType =MySqlDbType.Text;
 
 
                 int num = App.ExecuteSQL(Sql_Update, xmlPars);
@@ -6638,11 +6539,11 @@ namespace Bifrost
             {
 
                 string Sql_Update = "update t_path_doc td set td.patient_doc=" + ":doc1" + " where td.head_id='" + headid + "'";
-                Bifrost.WebReference.OracleParameter[] xmlPars = new Bifrost.WebReference.OracleParameter[1];
-                xmlPars[0] = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                xmlPars[0] = new MySqlDBParameter();
                 xmlPars[0].ParameterName = "doc1";
                 xmlPars[0].Value = strDoc;
-                xmlPars[0].OracleType = Bifrost.WebReference.OracleType.Clob;
+                xmlPars[0].DBType = MySqlDbType.Text;
                 int num = App.ExecuteSQL(Sql_Update, xmlPars);
                 if (num > 0)
                 {
@@ -6798,11 +6699,11 @@ namespace Bifrost
 
             //string uri = "ftp:// " + MediaFtpUrl + "/ " + fileInfo.Name;
 
-            string uri = @"ftp://" + Operater.MediaFtpUrl + @"/" + fileid + "." + ExtraName;
+           // string uri = @"ftp://" + Operater.MediaFtpUrl + @"/" + fileid + "." + ExtraName;
 
-            reqFTP = (FtpWebRequest)FtpWebRequest.Create(new Uri(uri));
+           // reqFTP = (FtpWebRequest)FtpWebRequest.Create(new Uri(uri));
 
-            reqFTP.Credentials = new NetworkCredential(Operater.MediaFtpUser, Operater.MediaFtpPassword);
+            //reqFTP.Credentials = new NetworkCredential(Operater.MediaFtpUser, Operater.MediaFtpPassword);
 
             reqFTP.KeepAlive = false;
 
@@ -7003,7 +6904,7 @@ namespace Bifrost
             bool flagserver = false;
             try
             {
-                flagserver = WebService.UploadPatientDoc(XMLOut, docname, PatientId);
+               // flagserver = WebService.UploadPatientDoc(XMLOut, docname, PatientId);
             }
             catch (Exception ex)
             {
@@ -7049,7 +6950,7 @@ namespace Bifrost
 
                 bool flaglocal = false;
                 bool flagserver = false;
-                flagserver = WebService.UploadPatientMzDoc(XMLOut, docname, PatientId);
+                //flagserver = WebService.UploadPatientMzDoc(XMLOut, docname, PatientId);
                 if (!flagserver)
                 {
                     //当保存服务器失败的情况下，就保存本地目录
@@ -7212,7 +7113,7 @@ namespace Bifrost
                             string filsname = fileids[j].Split('\\')[fileids[j].Split('\\').Length - 1];
                             XmlDocument doc = new XmlDocument();
                             doc.Load(docpath + "\\" + dirname + "\\" + filsname);
-                            bool flagsuccess = WebService.UploadPatientDoc(doc.OuterXml, filsname, dirname);
+                            bool flagsuccess =false;//WebService.UploadPatientDoc(doc.OuterXml, filsname, dirname);
                             if (flagsuccess)
                             {
                                 //如果上传成功删除本地文件
@@ -7760,35 +7661,31 @@ namespace Bifrost
         /// </summary>
         /// <param name="Parameter"></param>
         /// <param name="pmet"></param>
-        private static void getOracleTypeProperty(Bifrost.WebReference.OracleParameter Parameter, ref DBParameter pmet)
+        private static void getMySqlTypeProperty(MySqlDBParameter Parameter, ref MySqlSDBParameter pmet)
         {
-            if (Parameter.OracleType == Bifrost.WebReference.OracleType.Number)
+            if (Parameter.DBType == MySqlDbType.Decimal)
             {
-                pmet.DBType = System.Data.OracleClient.OracleType.Number;
+                pmet.DBType = MySqlDbType.Decimal;
             }
-            else if (Parameter.OracleType == Bifrost.WebReference.OracleType.VarChar)
+            else if (Parameter.DBType == MySqlDbType.VarChar)
             {
-                pmet.DBType = System.Data.OracleClient.OracleType.VarChar;
+                pmet.DBType = MySqlDbType.VarChar;
             }
-            else if (Parameter.OracleType == Bifrost.WebReference.OracleType.Blob)
+            else if (Parameter.DBType == MySqlDbType.Blob)
             {
-                pmet.DBType = System.Data.OracleClient.OracleType.Blob;
+                pmet.DBType = MySqlDbType.Blob;
             }
-            else if (Parameter.OracleType == Bifrost.WebReference.OracleType.Clob)
+            else if (Parameter.DBType == MySqlDbType.Text)
             {
-                pmet.DBType = System.Data.OracleClient.OracleType.Clob;
+                pmet.DBType = MySqlDbType.Text;
+            }         
+            else if (Parameter.DBType == MySqlDbType.DateTime)
+            {
+                pmet.DBType = MySqlDbType.DateTime;
             }
-            else if (Parameter.OracleType == Bifrost.WebReference.OracleType.Char)
+            else if (Parameter.DBType == MySqlDbType.Timestamp)
             {
-                pmet.DBType = System.Data.OracleClient.OracleType.Char;
-            }
-            else if (Parameter.OracleType == Bifrost.WebReference.OracleType.DateTime)
-            {
-                pmet.DBType = System.Data.OracleClient.OracleType.DateTime;
-            }
-            else if (Parameter.OracleType == Bifrost.WebReference.OracleType.Cursor)
-            {
-                pmet.DBType = System.Data.OracleClient.OracleType.Cursor;
+                pmet.DBType = MySqlDbType.Timestamp;
             }
         }
 

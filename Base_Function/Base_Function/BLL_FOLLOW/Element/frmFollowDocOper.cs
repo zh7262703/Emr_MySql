@@ -13,6 +13,7 @@ using TextEditor;
 using DevComponents.DotNetBar;
 using Base_Function.BLL_FOLLOW.CustonPage;
 using Base_Function.BLL_FOLLOW.StaticsAnalysis;
+using MySql.Data.MySqlClient;
 
 namespace Base_Function.BLL_FOLLOW.Element
 {
@@ -1027,12 +1028,12 @@ namespace Base_Function.BLL_FOLLOW.Element
                             else
                                 docSql = "update T_FOLLOW_RECORD_DOC set doc_content=:docContent where record_id="+myRecord.Id+" and doc_name='"+Key+"'";
                         }
-                        Bifrost.WebReference.OracleParameter[] xmlPars = new Bifrost.WebReference.OracleParameter[1];
-                        xmlPars[0] = new Bifrost.WebReference.OracleParameter();
+                        MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                        xmlPars[0] = new MySqlDBParameter();
                         xmlPars[0].ParameterName = "docContent";
                         xmlPars[0].Value = doc.OuterXml;
-                        xmlPars[0].OracleType = Bifrost.WebReference.OracleType.Clob;
-                        xmlPars[0].Direction = Bifrost.WebReference.ParameterDirection.Input;
+                        xmlPars[0].DBType = MySqlDbType.Text;
+                        xmlPars[0].Direction = ParameterDirection.Input;
                         int message = App.ExecuteSQL(docSql, xmlPars);
                         if (message > 0)
                         {

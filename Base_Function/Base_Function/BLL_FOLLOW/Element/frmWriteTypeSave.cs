@@ -9,6 +9,7 @@ using System.Xml;
 using TextEditor.TextDocument.Document;
 using Bifrost;
 using Base_Function.BASE_COMMON;
+using MySql.Data.MySqlClient;
 
 namespace Base_Function.BLL_FOLLOW.Element
 {
@@ -110,13 +111,13 @@ namespace Base_Function.BLL_FOLLOW.Element
                 + "" + Times + "," + solution_id + ",to_date('" + f_time + "','yyyy-MM-dd')," + creator + ")";
                 App.ExecuteSQL(sql);
                 insertLable="insert into T_FOLLOW_RECORD_DOC(ID,RECORD_ID,DOC_NAME,TEXT_TYPE,DOC_CONTENT) VALUES("+Did+","+Id+",'"+r_name+"',"+text_type+",:divContent)";
-                Bifrost.WebReference.OracleParameter[] xmlPars = new Bifrost.WebReference.OracleParameter[1];
-                xmlPars[0] = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                xmlPars[0] = new MySqlDBParameter();
                 xmlPars[0].ParameterName = "divContent";
                 //xmlPars[0].Value = divNode.OuterXml;
                 xmlPars[0].Value = xmldoc.OuterXml;
-                xmlPars[0].OracleType = Bifrost.WebReference.OracleType.Clob;
-                xmlPars[0].Direction = Bifrost.WebReference.ParameterDirection.Input;
+                xmlPars[0].DBType = MySqlDbType.Text;
+                xmlPars[0].Direction = ParameterDirection.Input;
                 message = App.ExecuteSQL(insertLable, xmlPars);
 
                 if (message != 0)

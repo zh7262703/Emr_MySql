@@ -4,7 +4,7 @@ using System.Text;
 using System.Data;
 using MySql.Data.MySqlClient;
 
-namespace DataOperater.Model
+namespace Bifrost
 {
     [Serializable]
     public class MySqlDBParameter

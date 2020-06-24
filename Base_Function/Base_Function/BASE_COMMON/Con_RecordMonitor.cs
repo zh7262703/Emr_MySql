@@ -65,13 +65,13 @@ namespace Base_Function.BASE_COMMON
         //        //imaList.Images.Add(img1.GetThumbnailImage(100,20,imgAbort,IntPtr.Zero));
         //        //imaList.Images.Add(img2.GetThumbnailImage(100,20,imgAbort,IntPtr.Zero));
         //        //imaList.Images.Clear();
-        //        Bifrost.WebReference.Class_Table[] table = new Bifrost.WebReference.Class_Table[2];
+        //        Class_Table[] table = new Class_Table[2];
 
-        //        table[0] = new Bifrost.WebReference.Class_Table();
+        //        table[0] = new Class_Table();
         //        table[0].Sql = sqlSel;
         //        table[0].Tablename = "sqlSel";
 
-        //        table[1] = new Bifrost.WebReference.Class_Table();
+        //        table[1] = new Class_Table();
         //        table[1].Sql = sqlCount;
         //        table[1].Tablename = "sqlCount";
         //        DS_QUALITYTABLE = App.GetDataSet(table);
@@ -327,13 +327,13 @@ namespace Base_Function.BASE_COMMON
         //{
         //    GbxMontior.Controls.Clear();
 
-        //        Bifrost.WebReference.Class_Table[] table = new Bifrost.WebReference.Class_Table[2];
+        //        Class_Table[] table = new Class_Table[2];
 
-        //        table[0] = new Bifrost.WebReference.Class_Table();
+        //        table[0] = new Class_Table();
         //        table[0].Sql = sqlSel;
         //        table[0].Tablename = "sqlSel";
 
-        //        table[1] = new Bifrost.WebReference.Class_Table();
+        //        table[1] = new Class_Table();
         //        table[1].Sql = sqlCount;
         //        table[1].Tablename = "sqlCount";
         //        DS_QUALITYTABLE = App.GetDataSet(table);
@@ -484,13 +484,13 @@ namespace Base_Function.BASE_COMMON
         {
             GbxMontior.Controls.Clear();
             pCount.Controls.Clear();
-            Bifrost.WebReference.Class_Table[] table = new Bifrost.WebReference.Class_Table[2];
+            Class_Table[] table = new Class_Table[2];
 
-            table[0] = new Bifrost.WebReference.Class_Table();
+            table[0] = new Class_Table();
             table[0].Sql = sqlSel;
             table[0].Tablename = "sqlSel";
 
-            table[1] = new Bifrost.WebReference.Class_Table();
+            table[1] = new Class_Table();
             table[1].Sql = sqlCount;
             table[1].Tablename = "sqlCount";
             DS_QUALITYTABLE = App.GetDataSet(table);
@@ -681,13 +681,13 @@ namespace Base_Function.BASE_COMMON
         //{
         //    GbxMontior.Controls.Clear();
 
-        //    Bifrost.WebReference.Class_Table[] table = new Bifrost.WebReference.Class_Table[2];
+        //    Class_Table[] table = new Class_Table[2];
 
-        //    table[0] = new Bifrost.WebReference.Class_Table();
+        //    table[0] = new Class_Table();
         //    table[0].Sql = sqlSel;
         //    table[0].Tablename = "sqlSel";
 
-        //    table[1] = new Bifrost.WebReference.Class_Table();
+        //    table[1] = new Class_Table();
         //    table[1].Sql = sqlCount;
         //    table[1].Tablename = "sqlCount";
         //    DS_QUALITYTABLE = App.GetDataSet(table);
@@ -790,13 +790,13 @@ namespace Base_Function.BASE_COMMON
         {
             GbxMontior.Controls.Clear();
             pCount.Controls.Clear();
-            Bifrost.WebReference.Class_Table[] table = new Bifrost.WebReference.Class_Table[2];
+            Class_Table[] table = new Class_Table[2];
 
-            table[0] = new Bifrost.WebReference.Class_Table();
+            table[0] = new Class_Table();
             table[0].Sql = sqlSel;
             table[0].Tablename = "sqlSel";
 
-            table[1] = new Bifrost.WebReference.Class_Table();
+            table[1] = new Class_Table();
             table[1].Sql = sqlCount;
             table[1].Tablename = "sqlCount";
             DS_QUALITYTABLE = App.GetDataSet(table);

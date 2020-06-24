@@ -8,9 +8,10 @@ using System.Windows.Forms;
 using C1.Win.C1FlexGrid;
 using Bifrost;
 
-using Bifrost.WebReference;
+
 using System.Collections;
 using System.Text.RegularExpressions;
+using MySql.Data.MySqlClient;
 
 namespace Base_Function.BLL_NURSE.Nurse_Record_Manager
 {
@@ -758,32 +759,32 @@ namespace Base_Function.BLL_NURSE.Nurse_Record_Manager
         /// </summary>
         private void addSum()
         {
-            OracleParameter[] parameters = new OracleParameter[6];
-            parameters[0] = new OracleParameter();
+            MySqlDBParameter[] parameters = new MySqlDBParameter[6];
+            parameters[0] = new MySqlDBParameter();
             parameters[0].ParameterName = "pid";
-            parameters[0].OracleType = Bifrost.WebReference.OracleType.VarChar;
+            parameters[0].DBType = MySqlDbType.VarChar;
             parameters[0].Value = Pid;
             parameters[0].Size = 20;
 
-            parameters[1] = new OracleParameter();
+            parameters[1] = new MySqlDBParameter();
             parameters[1].ParameterName = "Total_time";
-            parameters[1].OracleType = Bifrost.WebReference.OracleType.Timestamp;
+            parameters[1].DBType = MySqlDbType.Timestamp;
             parameters[1].Value = App.GetSystemTime();
 
-            parameters[2] = new OracleParameter();
+            parameters[2] = new MySqlDBParameter();
             parameters[2].ParameterName = "begin_time";
-            parameters[2].OracleType = Bifrost.WebReference.OracleType.Timestamp;
+            parameters[2].DBType = MySqlDbType.Timestamp;
             parameters[2].Value = dtpStart.Value;
 
-            parameters[3] = new OracleParameter();
+            parameters[3] = new MySqlDBParameter();
             parameters[3].ParameterName = "end_time";
-            parameters[3].OracleType = Bifrost.WebReference.OracleType.Timestamp;
+            parameters[3].DBType = MySqlDbType.Timestamp;
             parameters[3].Value = dtpEnd.Value;
 
 
-            parameters[4] = new OracleParameter();
+            parameters[4] = new MySqlDBParameter();
             parameters[4].ParameterName = "recordByid";
-            parameters[4].OracleType = Bifrost.WebReference.OracleType.VarChar;
+            parameters[4].DBType = MySqlDbType.VarChar;
             if (App.UserAccount.UserInfo != null)
             {
                 parameters[4].Value = App.UserAccount.UserInfo.User_id;
@@ -795,9 +796,9 @@ namespace Base_Function.BLL_NURSE.Nurse_Record_Manager
             }
             parameters[4].Size = 20;
 
-            parameters[5] = new OracleParameter();
+            parameters[5] = new MySqlDBParameter();
             parameters[5].ParameterName = "sum_type";
-            parameters[5].OracleType = Bifrost.WebReference.OracleType.Number;
+            parameters[5].DBType = MySqlDbType.Decimal;
             parameters[5].Value = cbxTotal.SelectedIndex;
 
             App.ExecuteSQL(Sql_sum, parameters);

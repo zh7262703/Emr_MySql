@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Bifrost;
-using Bifrost.WebReference;
+
 using System.Collections;
 
 namespace Base_Function.BLL_DOCTOR.Doc_Return

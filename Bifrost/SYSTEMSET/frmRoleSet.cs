@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Bifrost.SYSTEMSET;
+using DataOperater.Model;
 
 namespace Bifrost
 {
@@ -128,13 +129,13 @@ namespace Bifrost
         {
             trvPerssions.Nodes.Clear();
 
-            Bifrost.WebReference.Class_Table[] tabSqls = new Bifrost.WebReference.Class_Table[2];
+            Class_Table[] tabSqls = new Class_Table[2];
 
-            tabSqls[0] = new Bifrost.WebReference.Class_Table();
+            tabSqls[0] = new Class_Table();
             tabSqls[0].Sql = "select * from t_permission where PERM_KIND='1' order by num asc";
             tabSqls[0].Tablename = "permission";
 
-            tabSqls[1] = new Bifrost.WebReference.Class_Table();
+            tabSqls[1] = new Class_Table();
             tabSqls[1].Sql = "select id,PERM_CODE,FUNCTION,VERSION,DLLNAME,FUNCTIONIMAGE from t_permission_fuctions";
             tabSqls[1].Tablename = "fuctions";
 
@@ -365,13 +366,13 @@ namespace Bifrost
         {
             trvRoles.Nodes.Clear();
 
-            Bifrost.WebReference.Class_Table[] tabSqls = new Bifrost.WebReference.Class_Table[2];
+           Class_Table[] tabSqls = new Class_Table[2];
 
-            tabSqls[0] = new Bifrost.WebReference.Class_Table();
+            tabSqls[0] = new Class_Table();
             tabSqls[0].Sql = "select * from t_role";
             tabSqls[0].Tablename = "role";
 
-            tabSqls[1] = new Bifrost.WebReference.Class_Table();
+            tabSqls[1] = new Class_Table();
             tabSqls[1].Sql = "select * from T_PERMISSION a inner join T_ROLE_PERMISSION b on a.perm_code=b.perm_code";
             tabSqls[1].Tablename = "permission";
 

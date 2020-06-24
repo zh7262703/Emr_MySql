@@ -137,7 +137,7 @@ namespace Base_Function.BLL_MANAGEMENT.DOCTOR_MANAGE
             //         " where a.section_id='" + Inpatient.Section_Id + "' and  e.role_type='D';
 
             //select * from t_userinfo us inner join t_approve_accredit t on t.userid=us.user_id and t.sid=us.section_id
-            //Bifrost.WebReference.Class_Table[] NTables = new Bifrost.WebReference.Class_Table[3];
+            //Class_Table[] NTables = new Class_Table[3];
                  
              */
             #endregion
@@ -147,13 +147,13 @@ namespace Base_Function.BLL_MANAGEMENT.DOCTOR_MANAGE
             //    panel1.Controls.Clear();
             //    ArrayList Sqls = new ArrayList();
             
-            //    Bifrost.WebReference.Class_Table[] NTables = new Bifrost.WebReference.Class_Table[3];
+            //    Class_Table[] NTables = new Class_Table[3];
 
-            //    NTables[0] = new Bifrost.WebReference.Class_Table();
+            //    NTables[0] = new Class_Table();
             //    NTables[0].Tablename = "Sections";
             //    NTables[0].Sql = "select * from t_sectioninfo where ISBELONGTOBIGSECTION='N' order by SID asc";
 
-            //    NTables[1] = new Bifrost.WebReference.Class_Table();
+            //    NTables[1] = new Class_Table();
             //    NTables[1].Tablename = "Sections_Peoples";
             //    NTables[1].Sql = "select  distinct(u.user_id),u.user_name,f.section_id,sec.section_name,sec.ISBELONGTOBIGSECTION,r.role_id,r.role_name,r.role_type from t_userinfo u " +
             //                    @"inner join t_account_user a on a.user_id=u.user_id  " +
@@ -163,7 +163,7 @@ namespace Base_Function.BLL_MANAGEMENT.DOCTOR_MANAGE
             //                    @" inner join t_acc_role_range f on tac.id = f.acc_role_id  " +
             //                    @"inner join t_sectioninfo sec on sec.sid=f.section_id";
 
-            //    NTables[2] = new Bifrost.WebReference.Class_Table();
+            //    NTables[2] = new Class_Table();
             //    NTables[2].Tablename = "Sections_Exist_peoples";
             //    NTables[2].Sql = "select * from T_APPROVE_ACCREDIT tap inner join t_userinfo us on  tap.userid=us.user_id";
             //    DataSet ds = App.GetDataSet(NTables);
@@ -192,9 +192,9 @@ namespace Base_Function.BLL_MANAGEMENT.DOCTOR_MANAGE
                 ArrayList Sqls = new ArrayList();
                 y = 0;
 
-                Bifrost.WebReference.Class_Table[] NTables = new Bifrost.WebReference.Class_Table[2];
+                Class_Table[] NTables = new Class_Table[2];
 
-                NTables[0] = new Bifrost.WebReference.Class_Table();
+                NTables[0] = new Class_Table();
                 NTables[0].Tablename = "Sections_Peoples";
                 NTables[0].Sql = "select  distinct(u.user_id),u.user_name,f.section_id,sec.section_name,sec.ISBELONGTOBIGSECTION,r.role_id,r.role_name,r.role_type from t_userinfo u " +
                                 @"inner join t_account_user a on a.user_id=u.user_id  " +
@@ -204,7 +204,7 @@ namespace Base_Function.BLL_MANAGEMENT.DOCTOR_MANAGE
                                 @" inner join t_acc_role_range f on tac.id = f.acc_role_id  " +
                                 @"inner join t_sectioninfo sec on sec.sid=f.section_id";
 
-                NTables[1] = new Bifrost.WebReference.Class_Table();
+                NTables[1] = new Class_Table();
                 NTables[1].Tablename = "Sections_Exist_peoples";
                 NTables[1].Sql = "select * from T_APPROVE_ACCREDIT tap inner join t_userinfo us on  tap.userid=us.user_id";
                 DataSet ds = App.GetDataSet(NTables);

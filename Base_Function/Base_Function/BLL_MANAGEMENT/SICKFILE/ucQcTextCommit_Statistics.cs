@@ -100,7 +100,7 @@ namespace Base_Function.BLL_MANAGEMENT.SICKFILE
             string dataend = dtpEnd.Value.ToString("yyyy-MM-dd ");
             try
             {
-                Bifrost.WebReference.Class_Table[] temtables = new Bifrost.WebReference.Class_Table[7];
+                Class_Table[] temtables = new Class_Table[7];
 
 
                 //术前讨论记录
@@ -183,31 +183,31 @@ namespace Base_Function.BLL_MANAGEMENT.SICKFILE
                 "where diagnose_type=408 and diagnose_sort = 1\n" +
                 "and to_char(t.in_time, 'yyyy-MM-dd') between '" + dataStart.Trim() + "' and '" + dataend.Trim() + "'";
                 
-                temtables[0] = new Bifrost.WebReference.Class_Table();
+                temtables[0] = new Class_Table();
                 temtables[0].Sql = sql_into_area;
                 temtables[0].Tablename = "into_area";
 
-                temtables[1] = new Bifrost.WebReference.Class_Table();
+                temtables[1] = new Class_Table();
                 temtables[1].Sql = sql_out_area;
                 temtables[1].Tablename = "out_area";
 
-                temtables[2] = new Bifrost.WebReference.Class_Table();
+                temtables[2] = new Class_Table();
                 temtables[2].Sql = sql_turn_out;
                 temtables[2].Tablename = "turn_out";
 
-                temtables[3] = new Bifrost.WebReference.Class_Table();
+                temtables[3] = new Class_Table();
                 temtables[3].Sql = sqlString;
                 temtables[3].Tablename = "turn_in";
 
-                temtables[4] = new Bifrost.WebReference.Class_Table();
+                temtables[4] = new Class_Table();
                 temtables[4].Sql = sql_allSickArea;
                 temtables[4].Tablename = "allSickArea";
 
-                temtables[5] = new Bifrost.WebReference.Class_Table();
+                temtables[5] = new Class_Table();
                 temtables[5].Sql = sql_allSection;
                 temtables[5].Tablename = "allSection";
 
-                temtables[6] = new Bifrost.WebReference.Class_Table();
+                temtables[6] = new Class_Table();
                 temtables[6].Sql = sql_allin_diag;
                 temtables[6].Tablename = "allin_diag";
 

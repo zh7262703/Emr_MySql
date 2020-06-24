@@ -7,7 +7,7 @@ using Bifrost;
 using Microsoft.Reporting.WinForms;
 using System.ComponentModel;
 using System.Drawing;
-using Bifrost.WebReference;
+
 using Base_Function.MODEL;
 
 namespace Base_Function.BASE_COMMON

@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using Bifrost;
 using System.Collections;
-using Bifrost.WebReference;
+
 
 namespace Base_Function.BLL_DOCTOR.HisInStance.危急值查看
 {

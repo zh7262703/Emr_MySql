@@ -70,24 +70,24 @@ namespace Base_Function.BLL_MANAGEMENT
 
                 
 
-                Bifrost.WebReference.Class_Table[] temtables = new Bifrost.WebReference.Class_Table[5];
-                temtables[0] = new Bifrost.WebReference.Class_Table();
+                Class_Table[] temtables = new Class_Table[5];
+                temtables[0] = new Class_Table();
                 temtables[0].Sql = sql_into_area;
                 temtables[0].Tablename = "in";
 
-                temtables[1] = new Bifrost.WebReference.Class_Table();
+                temtables[1] = new Class_Table();
                 temtables[1].Sql = sql_at_area;
                 temtables[1].Tablename = "at";
 
-                temtables[2] = new Bifrost.WebReference.Class_Table();
+                temtables[2] = new Class_Table();
                 temtables[2].Sql = sql_bed;
                 temtables[2].Tablename = "bed";
 
-                temtables[3] = new Bifrost.WebReference.Class_Table();
+                temtables[3] = new Class_Table();
                 temtables[3].Sql = sql_nurse_level;
                 temtables[3].Tablename = "nurse";
 
-                temtables[4] = new Bifrost.WebReference.Class_Table();
+                temtables[4] = new Class_Table();
                 temtables[4].Sql = sql_sick_degree;
                 temtables[4].Tablename = "sick";
 

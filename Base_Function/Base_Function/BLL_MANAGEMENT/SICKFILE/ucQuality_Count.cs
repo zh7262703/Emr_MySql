@@ -63,7 +63,7 @@ namespace Base_Function.BLL_MANAGEMENT.SICKFILE.fuyou
         /// </summary>
         private void Data_Search()
         {
-            Bifrost.WebReference.Class_Table[] tables = new Bifrost.WebReference.Class_Table[3];
+            Class_Table[] tables = new Class_Table[3];
             DataSet ds = new DataSet();
 
             string sql_quality = @"select t.section_sickaera,t.doctype,count(t.id) from  t_quality_record t
@@ -94,15 +94,15 @@ namespace Base_Function.BLL_MANAGEMENT.SICKFILE.fuyou
             //所有科室
             string sql_Section = "select sid,section_name from t_sectioninfo where enable_flag='Y'";
 
-            tables[0] = new Bifrost.WebReference.Class_Table();
+            tables[0] = new Class_Table();
             tables[0].Sql = sql_Sickarea;
             tables[0].Tablename = "sickarea";
 
-            tables[1] = new Bifrost.WebReference.Class_Table();
+            tables[1] = new Class_Table();
             tables[1].Sql = sql_Section;
             tables[1].Tablename = "section";
 
-            tables[2] = new Bifrost.WebReference.Class_Table();
+            tables[2] = new Class_Table();
             tables[2].Sql = sql_quality + "group by t.section_sickaera,t.doctype";
             tables[2].Tablename = "quality";
 

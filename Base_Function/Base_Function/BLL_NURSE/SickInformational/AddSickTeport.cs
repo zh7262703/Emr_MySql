@@ -7,9 +7,10 @@ using System.Text;
 using System.Windows.Forms;
 using Bifrost;
 using System.Data.SqlClient;
-using Bifrost.WebReference;
+
 using Base_Function.MODEL;
-//using Bifrost.WebReference;
+using MySql.Data.MySqlClient;
+//
 
 namespace Base_Function.BLL_NURSE.SickInformational
 {
@@ -89,57 +90,57 @@ namespace Base_Function.BLL_NURSE.SickInformational
                 //    " recodertime, daywork) values({0},'{1}',{2},{3},'{4}','{5}',{6},'{7}',to_TIMESTAMP('{8}','yyyy-MM-dd'),'{9}')" +
                 //    " ", bed_no, illNessNO, diagnoseName, projectID, remak, datatime, bingquID, nurse_ID, time, dayWork);
 
-                Bifrost.WebReference.OracleParameter p_bed_no = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter p_bed_no = new MySqlDBParameter();
                 p_bed_no.Value = bed_no;
                 p_bed_no.ParameterName = "bed_no";
-                p_bed_no.OracleType = Bifrost.WebReference.OracleType.VarChar;
+                p_bed_no.DBType = MySqlDbType.VarChar;
 
-                Bifrost.WebReference.OracleParameter p_pid = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter p_pid = new MySqlDBParameter();
                 p_pid.Value = illNessNO;
                 p_pid.ParameterName = "pid";
-                p_pid.OracleType = Bifrost.WebReference.OracleType.VarChar;
+                p_pid.DBType = MySqlDbType.VarChar;
 
-                Bifrost.WebReference.OracleParameter p_diagnosis_id = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter p_diagnosis_id = new MySqlDBParameter();
                 p_diagnosis_id.Value = diagnoseName;
                 p_diagnosis_id.ParameterName = "diagnosis_id";
-                p_diagnosis_id.OracleType = Bifrost.WebReference.OracleType.VarChar;
+                p_diagnosis_id.DBType = MySqlDbType.VarChar;
 
-                Bifrost.WebReference.OracleParameter p_actiontype = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter p_actiontype = new MySqlDBParameter();
                 p_actiontype.Value = projectID;
                 p_actiontype.ParameterName = "actiontype";
-                p_actiontype.OracleType = Bifrost.WebReference.OracleType.Number;
+                p_actiontype.DBType = MySqlDbType.Decimal;
 
-                Bifrost.WebReference.OracleParameter p_remark = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter p_remark = new MySqlDBParameter();
                 p_remark.Value = remak;
                 p_remark.ParameterName = "remark";
-                p_remark.OracleType = Bifrost.WebReference.OracleType.VarChar;
+                p_remark.DBType = MySqlDbType.VarChar;
 
-                Bifrost.WebReference.OracleParameter p_set_yuanwai_datetime = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter p_set_yuanwai_datetime = new MySqlDBParameter();
                 p_set_yuanwai_datetime.Value = datatime;
                 p_set_yuanwai_datetime.ParameterName = "set_yuanwai_datetime";
-                p_set_yuanwai_datetime.OracleType = Bifrost.WebReference.OracleType.VarChar;
+                p_set_yuanwai_datetime.DBType = MySqlDbType.VarChar;
 
-                Bifrost.WebReference.OracleParameter p_sid = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter p_sid = new MySqlDBParameter();
                 p_sid.Value = bingquID;
                 p_sid.ParameterName = "sid";
-                p_sid.OracleType = Bifrost.WebReference.OracleType.Number;
+                p_sid.DBType = MySqlDbType.Decimal;
 
-                Bifrost.WebReference.OracleParameter p_nurse_id = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter p_nurse_id = new MySqlDBParameter();
                 p_nurse_id.Value = nurse_ID;
                 p_nurse_id.ParameterName = "nurse_id";
-                p_nurse_id.OracleType = Bifrost.WebReference.OracleType.Number;
+                p_nurse_id.DBType = MySqlDbType.Decimal;
 
-                //Bifrost.WebReference.OracleParameter p_recodertime = new Bifrost.WebReference.OracleParameter();
+                //MySqlDBParameter p_recodertime = new MySqlDBParameter();
                 //p_recodertime.Value =time;
                 //p_recodertime.ParameterName = "recodertime";
-                //p_recodertime.OracleType = Bifrost.WebReference.OracleType.Timestamp;
+                //p_recodertime.DBType = MySqlDbType.Timestamp;
 
-                Bifrost.WebReference.OracleParameter p_daywork = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter p_daywork = new MySqlDBParameter();
                 p_daywork.Value = dayWork;
                 p_daywork.ParameterName = "daywork";
-                p_daywork.OracleType = Bifrost.WebReference.OracleType.VarChar;
+                p_daywork.DBType = MySqlDbType.VarChar;
 
-                Bifrost.WebReference.OracleParameter[] parameters = new Bifrost.WebReference.OracleParameter[] { 
+                MySqlDBParameter[] parameters = new MySqlDBParameter[] { 
                     p_bed_no,
                     p_pid,
                     p_diagnosis_id,

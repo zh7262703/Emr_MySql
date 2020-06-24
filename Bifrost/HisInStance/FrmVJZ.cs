@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Collections;
-using Bifrost.WebReference;
+using DataOperater.Model;
 
 namespace Bifrost.HisInStance
 {

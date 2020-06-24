@@ -470,7 +470,7 @@ namespace BifrostMainPro
                     string sql_account = "select * from T_ACCOUNT where upper(ACCOUNT_NAME)='" + txtAccount.Text.ToUpper() + "' and PASSWORD='" + Encrypt.EncryptStr(txtPassword.Text) + "'";
 
                     string sql_userinfo = "select a.*,d1.name as u_tech_post_name,d2.name as u_position_name from t_userinfo a inner join t_account_user b on a.User_Id=b.user_id inner join T_DATA_CODE d1 on a.u_tech_post=d1.id inner join T_DATA_CODE d2 on a.u_position=d2.id where b.account_id in (select ACCOUNT_ID from T_ACCOUNT where upper(ACCOUNT_NAME)='" + txtAccount.Text.ToUpper() + "' and PASSWORD='" + Encrypt.EncryptStr(txtPassword.Text) + "')";
-
+                   
                     DataSet ds_account = App.GetDataSet(sql_account);
                     if (ds_account != null)
                     {
@@ -750,7 +750,7 @@ namespace BifrostMainPro
         /// </summary>
         private void IniAccountRoleRanges(string accountname)
         {
-            Bifrost.WebReference.Class_Table[] tabSqls = new Bifrost.WebReference.Class_Table[2];
+           Class_Table[] tabSqls = new Class_Table[2];
             DataSet ds;
             ArrayList Roles = new ArrayList();
             if (App.HosptalIds != null)
@@ -760,11 +760,11 @@ namespace BifrostMainPro
 
                     //App.ServerList2=App.GetServerListByHospitalId(App.ServerList, Convert.ToInt16(App.HosptalIds[i]));
                     App.CurrentHospitalId = Convert.ToInt16(App.HosptalIds[i]);
-                    tabSqls[0] = new Bifrost.WebReference.Class_Table();
+                    tabSqls[0] = new Class_Table();
                     tabSqls[0].Sql = "select * from T_ROLE where ROLE_ID in (select ROLE_ID from T_ACC_ROLE where ACCOUNT_ID=(Select ACCOUNT_ID from T_ACCOUNT where upper(ACCOUNT_NAME)='" + accountname.ToUpper() + "')) and enable_flag='Y'";
                     tabSqls[0].Tablename = "role";
 
-                    tabSqls[1] = new Bifrost.WebReference.Class_Table();
+                    tabSqls[1] = new Class_Table();
                     string Sql_range = "select a.id,a.acc_role_id,a.section_id,a.sickarea_id,a.isbelongto,c.section_name,d.sick_area_name,b.role_id from T_ACC_ROLE_RANGE a left join T_ACC_ROLE b on a.acc_role_id=b.id left join T_SECTIONINFO c on a.section_id=c.sid left join T_SICKAREAINFO d on a.sickarea_id=d.said ";
                     tabSqls[1].Sql = Sql_range + " where b.account_id in (select ACCOUNT_ID from T_ACCOUNT where upper(ACCOUNT_NAME)='" + accountname.ToUpper() + "')";
                     tabSqls[1].Tablename = "ranges";
@@ -835,11 +835,11 @@ namespace BifrostMainPro
                 /*
                  * 当没有获得多分院服务器列表时
                  */
-                tabSqls[0] = new Bifrost.WebReference.Class_Table();
+                tabSqls[0] = new Class_Table();
                 tabSqls[0].Sql = "select * from T_ROLE where ROLE_ID in (select ROLE_ID from T_ACC_ROLE where ACCOUNT_ID=(Select ACCOUNT_ID from T_ACCOUNT where upper(ACCOUNT_NAME)='" + accountname.ToUpper() + "')) and enable_flag='Y'";
                 tabSqls[0].Tablename = "role";
 
-                tabSqls[1] = new Bifrost.WebReference.Class_Table();
+                tabSqls[1] = new Class_Table();
                 string Sql_range = "select a.id,a.acc_role_id,a.section_id,a.sickarea_id,a.isbelongto,c.section_name,d.sick_area_name,b.role_id from T_ACC_ROLE_RANGE a left join T_ACC_ROLE b on a.acc_role_id=b.id left join T_SECTIONINFO c on a.section_id=c.sid left join T_SICKAREAINFO d on a.sickarea_id=d.said ";
                 tabSqls[1].Sql = Sql_range + " where b.account_id in (select ACCOUNT_ID from T_ACCOUNT where upper(ACCOUNT_NAME)='" + accountname.ToUpper() + "')";
                 tabSqls[1].Tablename = "ranges";

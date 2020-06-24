@@ -1,6 +1,6 @@
 ﻿using System;
 using DevComponents.DotNetBar.Controls;
-using System.Linq;
+using System.Data.Linq;
 using System.Windows.Forms;
 using System.Drawing;
 using DevComponents.DotNetBar.Rendering;
@@ -117,11 +117,16 @@ namespace Bifrost
             {
                 if (!(grid.DataSource is System.Data.DataView))
                 {
-                    grid.Columns.Cast<DataGridViewColumn>().ToList().ForEach(o =>
+                    //grid.Columns.Cast<DataGridViewColumn>().ToList().ForEach(o =>
+                    //{
+                    //    o.SortMode = DataGridViewColumnSortMode.NotSortable;
+                    //    //o.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                    //});
+
+                    for (int i = 0; i < grid.Columns.Count; i++)
                     {
-                        o.SortMode = DataGridViewColumnSortMode.NotSortable;
-                        //o.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-                    });
+                        grid.Columns[i].SortMode = DataGridViewColumnSortMode.NotSortable;
+                    }
                 }
             }
         }
@@ -196,43 +201,41 @@ namespace Bifrost
 
         private static void Grid_AfterDataRefresh(object sender, System.ComponentModel.ListChangedEventArgs e)
         {
-            C1.Win.C1FlexGrid.C1FlexGrid grid = sender as C1.Win.C1FlexGrid.C1FlexGrid;
-            //grid.SelChange += Grid_SelChange;
-            if (grid != null)
-            {
-                grid.Cols.Cast<C1.Win.C1FlexGrid.Column>()
-                       .ToList()
-                       .ForEach(o =>
-                       {
-                           if (string.IsNullOrEmpty(o.Caption) || o.Caption.ToUpper().Equals("RN"))
-                               o.Visible = false;
-                           else
-                           {
-                               o.TextAlignFixed = C1.Win.C1FlexGrid.TextAlignEnum.CenterCenter;
-                               if (o.DataType == typeof(bool))
-                                   o.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.CenterCenter;
-                               else
-                                   o.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.LeftCenter;
-                               o.StyleFixed.Font = captionFont;
-                               o.Style.Font = dataFont;
-                           }
-                       });
-                grid.Rows.Cast<C1.Win.C1FlexGrid.Row>()
-                    .ToList()
-                    .ForEach(o =>
-                    {
-                        if (o.Index < grid.Rows.Fixed)
-                            o.Height = headRowHeight;
-                        else
-                        {
-                            if (o.Index % 2 == 0)
-                                o.StyleNew.BackColor = dataBackColor1;
-                            else
-                                o.StyleNew.BackColor = dataBackColor2;
-                            o.Height = rowHeight;
-                        }
-                    });
-            }
+            //C1.Win.C1FlexGrid.C1FlexGrid grid = sender as C1.Win.C1FlexGrid.C1FlexGrid;
+            ////grid.SelChange += Grid_SelChange;
+            //if (grid != null)
+            //{
+            //    grid.Cols.Cast<C1.Win.C1FlexGrid.Column>()
+            //           .ToList()
+            //           .ForEach(o =>
+            //           {
+            //               if (string.IsNullOrEmpty(o.Caption) || o.Caption.ToUpper().Equals("RN"))
+            //                   o.Visible = false;
+            //               else
+            //               {
+            //                   o.TextAlignFixed = C1.Win.C1FlexGrid.TextAlignEnum.CenterCenter;
+            //                   if (o.DataType == typeof(bool))
+            //                       o.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.CenterCenter;
+            //                   else
+            //                       o.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.LeftCenter;
+            //                   o.StyleFixed.Font = captionFont;
+            //                   o.Style.Font = dataFont;
+            //               }
+            //           });
+            //    grid.Rows.Cast<C1.Win.C1FlexGrid.Row>().ToList().ForEach(o =>
+            //        {
+            //            if (o.Index < grid.Rows.Fixed)
+            //                o.Height = headRowHeight;
+            //            else
+            //            {
+            //                if (o.Index % 2 == 0)
+            //                    o.StyleNew.BackColor = dataBackColor1;
+            //                else
+            //                    o.StyleNew.BackColor = dataBackColor2;
+            //                o.Height = rowHeight;
+            //            }
+            //        });
+            //}
 
         }
     }

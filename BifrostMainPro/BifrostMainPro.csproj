@@ -67,7 +67,7 @@
     <ApplicationIcon>AUTHOR.ICO</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Base_App, Version=1.0.6935.29604, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Base_App, Version=1.0.7480.31496, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\EMR\Base_App.dll</HintPath>
     </Reference>

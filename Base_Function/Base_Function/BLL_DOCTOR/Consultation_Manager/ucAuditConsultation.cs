@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using Bifrost;
 using System.Xml;
 //using Bifrost_Doctor.CommonClass;
-using Bifrost.WebReference;
+
 using TextEditor;
 using Base_Function.BASE_COMMON;
 using Bifrost.HisInstance;

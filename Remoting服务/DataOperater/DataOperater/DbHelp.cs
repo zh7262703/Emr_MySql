@@ -18,7 +18,6 @@ using System.Threading;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using MySql.Data.MySqlClient;
-using DataOperater.Iinterface;
 using DataOperater.Model;
 
 namespace DataOperater
@@ -28,11 +27,9 @@ namespace DataOperater
     /// 创建者：张华
     /// 创建时间：2010-3-14
     /// </summary>
-    public class DbHelp : MarshalByRefObject, IOracle, IMySql
-    {
-        public string orcl_connectionString;//连接ORACLE数据库字符串  
-        public string mysql_connectionString;//连接ORACLE数据库字符串  
-        public string orcl_connectionString_others;//连接数据库字符串（其他数据）  
+    public class DbHelp : MarshalByRefObject
+    {       
+        public string mysql_connectionString;//连接MySql数据库字符串       
         public string mediaftpurl;     //媒体文件存放用的ftp
         public string mediaftpuser;    //媒体文件存放用的ftp的用户名
         public string mediaftppassword;//媒体文件存放用的ftp的密码 
@@ -64,363 +61,15 @@ namespace DataOperater
         public DbHelp()
         {
            
-            orcl_connectionString = File.ReadAllText("datalink.txt").Split(',')[0]; //oracle连接
+            //orcl_connectionString = File.ReadAllText("datalink.txt").Split(',')[0]; //oracle连接
             mysql_connectionString = File.ReadAllText("mysqldatalink.txt");
             mediaftpurl = File.ReadAllText("datalink.txt").Split(',')[1];
             mediaftpuser = File.ReadAllText("datalink.txt").Split(',')[2];
             mediaftppassword = File.ReadAllText("datalink.txt").Split(',')[3];
-            orcl_connectionString_others = File.ReadAllText("datalink_others.txt");
+            //orcl_connectionString_others = File.ReadAllText("datalink_others.txt");
         }        
 
-        #region ORCAL操作    
-        /// <summary>
-        /// 返回DataSet其他数据库
-        /// </summary>
-        /// <param name=CmdString></param>
-        /// <param name=TableName></param>
-        /// <returns></returns> 
-        public DataSet GetDataSet_Others(string CmdString)
-        {
-            OracleConnection cnn = new OracleConnection(orcl_connectionString_others);
-            try
-            {
-                cnn.Open();
-                OracleDataAdapter myDa = new OracleDataAdapter();
-                myDa.SelectCommand = new OracleCommand(CmdString, cnn);
-                DataSet myDs = new DataSet();
-                myDa.Fill(myDs, "table");
-                return myDs;
-            }
-            catch
-            {
-                return null;
-            }
-            finally
-            {
-                cnn.Close();
-            }
-        }      
-
-        /// <summary>
-        /// 返回DataSet
-        /// </summary>
-        /// <param name=CmdString></param>
-        /// <param name=TableName></param>
-        /// <returns></returns> 
-        public DataSet GetDataSet(string CmdString)
-        {
-            OracleConnection cnn = new OracleConnection(orcl_connectionString);
-            try
-            {              
-                cnn.Open();                                
-                OracleDataAdapter myDa = new OracleDataAdapter();                
-                myDa.SelectCommand = new OracleCommand(CmdString, cnn);                   
-                DataSet myDs = new DataSet();
-                myDa.Fill(myDs, "table");                
-                return myDs;
-            }
-            catch(Exception ex)
-            {
-                return null;
-            }
-            finally
-            {
-                cnn.Close();
-            }
-        }
-
-        /// <summary>
-        /// 返回DataSet 多张表
-        /// </summary>
-        /// <param name=CmdString></param>
-        /// <param name=TableName></param>
-        /// <returns></returns>       
-        public DataSet GetDataSets(Class_Table[] tabsqls)
-        {
-            OracleConnection cnn = new OracleConnection(orcl_connectionString);           
-            OracleDataAdapter myDa = new OracleDataAdapter();
-            DataSet myDs = new DataSet();
-            try
-            { 
-                cnn.Open();
-                for (int i = 0; i < tabsqls.Length; i++)
-                {                    
-                    myDa.SelectCommand = new OracleCommand(tabsqls[i].Sql, cnn);
-                    myDa.Fill(myDs, tabsqls[i].Tablename);
-                }
-                return myDs;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                cnn.Close();
-            }
-        }
-
-        /// <summary>
-        /// 根据行号和列名返回值
-        /// </summary>
-        /// <param name="CmdString">SQl语句</param>
-        /// <param name="rowindex">行号</param>
-        /// <param name="colName">列名</param>
-        /// <returns></returns>
-        public string ReadSqlVal(string CmdString, int rowindex, string colName)
-        {
-           OracleConnection cnn = new OracleConnection(orcl_connectionString);
-            try
-            {
-                
-                cnn.Open();
-                OracleDataAdapter myDa = new OracleDataAdapter();
-                myDa.SelectCommand = new OracleCommand(CmdString, cnn);
-                DataSet myDs = new DataSet();
-                myDa.Fill(myDs, "table");
-                return myDs.Tables[0].Rows[rowindex][colName].ToString();
-            }
-            catch
-            {
-                return null;
-            }
-            finally
-            {
-                cnn.Close();
-            }
-        }      
-
-        /// <summary>
-        /// 返回影响数据库的行数
-        /// </summary>
-        /// <param name=CmdString></param>
-        /// <returns></returns>
-        public int ExecuteSQL(string CmdString)
-        {
-            OracleConnection cnn = new OracleConnection(orcl_connectionString);
-            try
-            {
-               
-                cnn.Open();
-                OracleCommand myCmd = new OracleCommand(CmdString, cnn);
-                int Cmd = myCmd.ExecuteNonQuery();
-                return Cmd;
-            }
-            catch
-            {
-                return 0;
-            }
-            finally
-            {
-                cnn.Close();
-            }
-        }
-        
-
-        /// <summary>
-        /// 以带参数的形式执行操作
-        /// </summary>
-        /// <param name="CmdString">SQL语句</param>
-        /// <param name="Parameters">参数集合</param>       
-        /// <returns></returns>
-        public int ExecuteSQLWithParams(string CmdString, OrclParameter[] paremts)
-        {            
-            OracleConnection cnn = new OracleConnection(orcl_connectionString);
-            try
-            {
-              
-                cnn.Open();
-                OracleCommand myCmd = new OracleCommand(CmdString, cnn);
-                for (int i = 0; i < paremts.Length; i++)
-                {
-                    System.Data.OracleClient.OracleParameter Parameter = new OracleParameter();
-                    Parameter.Value = paremts[i].Value;
-                    Parameter.ParameterName = paremts[i].ParameterName;
-                    Parameter.OracleType = paremts[i].DBType;
-                    Parameter.Size = paremts[i].Size;
-                    myCmd.Parameters.Add(Parameter);
-                }
-                int Cmd = myCmd.ExecuteNonQuery();
-
-                return Cmd;
-            }
-            catch
-            {
-                return 0;
-            }
-            finally
-            {
-                cnn.Close();
-            }
-        }
-      
-
-
-        /// <summary>
-        /// 执行存储过程
-        /// </summary>
-        /// <param name="storedProcName">存储过程名称</param>
-        /// <param name="parameters">参数</param>     
-        public void RunProcedure(string storedProcName, OrclParameter[] parameters)
-        {     
-            OracleConnection cnn = new OracleConnection(orcl_connectionString);      
-            try
-            {
-                
-                cnn.Open();
-                OracleCommand myCmd = new OracleCommand();
-                myCmd.Connection = cnn;
-                myCmd.CommandText = storedProcName;//声明存储过程名
-                myCmd.CommandType = CommandType.StoredProcedure;
-                if (parameters != null)
-                {
-                    //foreach (OracleParameter parameter in parameters)
-                    //{
-                    //    myCmd.Parameters.Add(parameter);
-                    //}
-                    for (int i = 0; i < parameters.Length; i++)
-                    {
-                        System.Data.OracleClient.OracleParameter Parameter = new OracleParameter();
-                        Parameter.Value = parameters[i].Value;
-                        Parameter.ParameterName = parameters[i].ParameterName;
-                        Parameter.OracleType = parameters[i].DBType;
-                        myCmd.Parameters.Add(Parameter);
-                    }
-                }
-                myCmd.ExecuteNonQuery();//执行存储过程
-
-            }
-            catch
-            {
-
-            }
-            finally
-            {
-                cnn.Close();
-            }
-        }
-
-        /// <summary>
-        /// 执行存储过程
-        /// </summary>
-        /// <param name="storedProcName">存储过程名称</param>
-        /// <param name="parameters">参数</param>        
-        public DataSet RunProcedureGetData(string storedProcName, OrclParameter[] parameters)
-        {         
-            OracleConnection cnn = new OracleConnection(orcl_connectionString);  
-            try
-            {                
-                cnn.Open();
-                DataSet ds = new DataSet();
-                OracleDataAdapter sqlDA = new OracleDataAdapter();                 
-                sqlDA.SelectCommand = BuildQueryCommand(cnn, storedProcName, parameters);
-                sqlDA.Fill(ds, "table");                
-                return ds;
-            }
-            catch (Exception ex)
-            {
-                throw ex;                
-            }
-            finally
-            {
-                cnn.Close();
-            }
-        }
-
-        /// <summary>
-        /// 构建 OracleCommand 对象(用来返回一个结果集，而不是一个整数值)
-        /// </summary>
-        /// <param name="connection">数据库连接</param>
-        /// <param name="storedProcName">存储过程名</param>
-        /// <param name="parameters">存储过程参数</param>
-        /// <returns>OracleCommand</returns>
-        private OracleCommand BuildQueryCommand(OracleConnection connection, string storedProcName, OrclParameter[] parameters)
-        {
-            OracleCommand command = new OracleCommand(storedProcName, connection);
-            command.CommandType = CommandType.StoredProcedure;
-
-            if (parameters != null)
-            {                
-                for (int i = 0; i < parameters.Length; i++)
-                {
-                    System.Data.OracleClient.OracleParameter Parameter = new OracleParameter();
-                    Parameter.Value = parameters[i].Value;
-                    Parameter.ParameterName = parameters[i].ParameterName;
-                    Parameter.OracleType = parameters[i].DBType;
-                    Parameter.Direction = parameters[i].Direction;
-                    command.Parameters.Add(Parameter);
-                }
-            }          
-            return command;
-        }
-
-        ///   <summary> 
-        ///   批量执行Sql语句 
-        ///   </summary> 
-        ///   <param name= "BatchSql "> Sql语句数组 </param> 
-        public int ExecuteBatch(string[] BatchSql)
-        {
-           
-            //打开连接 
-            OracleConnection cnn = new OracleConnection(orcl_connectionString);
-            cnn.Open();
-
-            //创建事务 
-            OracleCommand cmd = cnn.CreateCommand();
-            //OracleTransaction transaction = cnn.BeginTransaction(IsolationLevel.ReadCommitted);
-            OracleTransaction transaction = cnn.BeginTransaction();
-
-            cmd.Transaction = transaction;
-            int y = 0;
-            try
-            {       //执行两个保存数据集的操作 
-                for (int i = 0; i < BatchSql.Length; i++)
-                {
-                    if (BatchSql[i].Trim() != "")
-                    {
-                        cmd.CommandText = BatchSql[i];
-                        cmd.ExecuteNonQuery();
-                    }
-                }
-                y = y + 1;
-                //执行完成后提交事务 
-                transaction.Commit();
-                return y;
-            }
-            catch(Exception ex)
-            {
-                //回滚事务 
-                transaction.Rollback();
-                throw ex;
-
-            }
-            finally
-            {
-                //关闭连接 
-                cnn.Close();
-            }
-        }
-
-        /// <summary>
-        /// 连接测试
-        /// </summary>
-        /// <returns></returns>
-        public bool ConnectTest()
-        {
-            try
-            {
-                OracleConnection cnn = new OracleConnection(orcl_connectionString);
-                cnn.Open();
-                cnn.Close();
-                return true;
-            }
-            catch(Exception ex)
-            {
-                return false;
-            }
-        }
-        #endregion
-
+     
         #region MySql操作
 
         /// <summary>
@@ -435,7 +84,7 @@ namespace DataOperater
             try
             {
                 cnn.Open();
-                MySqlDataAdapter myDa = new MySqlDataAdapter();
+                MySqlDataAdapter myDa = new MySqlDataAdapter();               
                 myDa.SelectCommand = new MySqlCommand(CmdString, cnn);
                 DataSet myDs = new DataSet();
                 myDa.Fill(myDs, "table");
@@ -545,7 +194,7 @@ namespace DataOperater
         /// <param name="CmdString">SQL语句</param>
         /// <param name="Parameters">参数集合</param>       
         /// <returns></returns>
-        public int ExecuteSQLWithParams_MySql(string CmdString, MySqlDBParameter[] paremts)
+        public int ExecuteSQLWithParams_MySql(string CmdString, MySqlSDBParameter[] paremts)
         {
             MySqlConnection cnn = new MySqlConnection(mysql_connectionString);
             try
@@ -560,7 +209,7 @@ namespace DataOperater
                     Parameter.ParameterName = paremts[i].ParameterName;
                     Parameter.MySqlDbType = paremts[i].DBType;
                     Parameter.Size = paremts[i].Size;
-                    myCmd.Parameters.Add(Parameter);
+                    myCmd.Parameters.Add(paremts[i]);
                 }
                 int Cmd = myCmd.ExecuteNonQuery();
 
@@ -583,7 +232,7 @@ namespace DataOperater
         /// </summary>
         /// <param name="storedProcName">存储过程名称</param>
         /// <param name="parameters">参数</param>     
-        public void RunProcedure_MySql(string storedProcName, MySqlDBParameter[] parameters)
+        public void RunProcedure_MySql(string storedProcName, MySqlSDBParameter[] parameters)
         {
             MySqlConnection cnn = new MySqlConnection(mysql_connectionString);
             try
@@ -627,7 +276,7 @@ namespace DataOperater
         /// </summary>
         /// <param name="storedProcName">存储过程名称</param>
         /// <param name="parameters">参数</param>        
-        public DataSet RunProcedureGetData_MySql(string storedProcName, MySqlDBParameter[] parameters)
+        public DataSet RunProcedureGetData_MySql(string storedProcName, MySqlSDBParameter[] parameters)
         {
             MySqlConnection cnn = new MySqlConnection(mysql_connectionString);
             try
@@ -656,7 +305,7 @@ namespace DataOperater
         /// <param name="storedProcName">存储过程名</param>
         /// <param name="parameters">存储过程参数</param>
         /// <returns>OracleCommand</returns>
-        private MySqlCommand BuildQueryCommand(MySqlConnection connection, string storedProcName, MySqlDBParameter[] parameters)
+        private MySqlCommand BuildQueryCommand(MySqlConnection connection, string storedProcName, MySqlSDBParameter[] parameters)
         {
             MySqlCommand command = new MySqlCommand(storedProcName, connection);
             command.CommandType = CommandType.StoredProcedure;
@@ -794,65 +443,66 @@ namespace DataOperater
         public string InsertModel(string PID, int textKind_ID, string xmlDoc, int belongToSys_ID, int sickKind_ID, string textName)
         {
             //XmlElement xmlElement = xmlDoc.DocumentElement;
-            string strinsert = "";
-            OracleConnection cnn = new OracleConnection(orcl_connectionString);
-            cnn.Open();
-            OracleCommand command = cnn.CreateCommand();
-            OracleTransaction transaction = null;
+            //string strinsert = "";
+            //OracleConnection cnn = new OracleConnection(orcl_connectionString);
+            //cnn.Open();
+            //OracleCommand command = cnn.CreateCommand();
+            //OracleTransaction transaction = null;
 
-            try
-            {
-                transaction = cnn.BeginTransaction(IsolationLevel.ReadCommitted);
-                command.Transaction = transaction;
+            //try
+            //{
+            //    transaction = cnn.BeginTransaction(IsolationLevel.ReadCommitted);
+            //    command.Transaction = transaction;
 
-                int tid = GenId("T_Patients_Doc", "TID");
+            //    int tid = GenId("T_Patients_Doc", "TID");
 
-                strinsert = "insert into T_Patients_Doc values(" + tid.ToString() + ",'" + PID + "'," + textKind_ID + ",:Patients_Doc," + belongToSys_ID + "," + sickKind_ID + ",'" + textName + "')";
+            //    strinsert = "insert into T_Patients_Doc values(" + tid.ToString() + ",'" + PID + "'," + textKind_ID + ",:Patients_Doc," + belongToSys_ID + "," + sickKind_ID + ",'" + textName + "')";
 
-                //OracleParameter[] xmlPars = new OracleParameter[1];
-                //xmlPars[0] = new OracleParameter();
-                //xmlPars[0].ParameterName = "Patients_Doc";
-                //xmlPars[0].Value = xmlDoc.OuterXml;
-                //xmlPars[0].OracleType = OracleType.Clob;
-                //xmlPars[0].Direction = ParameterDirection.Input;
+            //    //OracleParameter[] xmlPars = new OracleParameter[1];
+            //    //xmlPars[0] = new OracleParameter();
+            //    //xmlPars[0].ParameterName = "Patients_Doc";
+            //    //xmlPars[0].Value = xmlDoc.OuterXml;
+            //    //xmlPars[0].OracleType = OracleType.Clob;
+            //    //xmlPars[0].Direction = ParameterDirection.Input;
 
-                OracleParameter xmlParDoc = new OracleParameter();
-                xmlParDoc.ParameterName = "Patients_Doc";
-                xmlParDoc.Value = xmlDoc;
-                xmlParDoc.OracleType = OracleType.Clob;
+            //    OracleParameter xmlParDoc = new OracleParameter();
+            //    xmlParDoc.ParameterName = "Patients_Doc";
+            //    xmlParDoc.Value = xmlDoc;
+            //    xmlParDoc.OracleType = OracleType.Clob;
 
-                command.Parameters.Add(xmlParDoc);
+            //    command.Parameters.Add(xmlParDoc);
 
-                command.CommandText = strinsert;
+            //    command.CommandText = strinsert;
 
-                command.ExecuteNonQuery();
+            //    command.ExecuteNonQuery();
 
-                string msg = InsertLableModel(tid, xmlDoc); //===========插入标签模板与结构化
+            //    string msg = InsertLableModel(tid, xmlDoc); //===========插入标签模板与结构化
 
-                //message = ExecuteSQLWithParams(strinsert, xmlPars);//------------插入文书模板
+            //    //message = ExecuteSQLWithParams(strinsert, xmlPars);//------------插入文书模板
 
 
-                if (msg == null)
-                {
-                    transaction.Rollback();                   
-                    return null;
-                }
-                transaction.Commit();
+            //    if (msg == null)
+            //    {
+            //        transaction.Rollback();                   
+            //        return null;
+            //    }
+            //    transaction.Commit();
 
-                //NClose();
+            //    //NClose();
 
-                return "成功";
+            //    return "成功";
 
-            }
-            catch (Exception ex)
-            {
-                transaction.Rollback();
-                return "数据库异常！----------------" + ex.ToString();
-            }
-            finally
-            {
-                cnn.Close();
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    transaction.Rollback();
+            //    return "数据库异常！----------------" + ex.ToString();
+            //}
+            //finally
+            //{
+            //    cnn.Close();
+            //}
+            return "";
 
         }
 
@@ -864,81 +514,82 @@ namespace DataOperater
         /// <returns></returns>       
         public string InsertLableModel(int tid, string xmlDoc)
         {
-            XmlDocument Doc = new XmlDocument();
-            Doc.LoadXml(xmlDoc);
-            XmlElement xmlElement = Doc.DocumentElement;
-            string insertLable = "";
-            int message = 0;
-            try
-            {
-                foreach (XmlNode bodyNode in xmlElement.ChildNodes)
-                {
-                    if (bodyNode.Name == "body")
-                    {
-                        if (bodyNode.HasChildNodes)
-                        {   //int i = 1;                        
-                            foreach (XmlNode divNode in bodyNode.ChildNodes)
-                            {
-                                if (divNode.Name == "div")
-                                {
-                                    //i++;
-                                    //string divModel = divNode.InnerText;
-                                    string divTitle = "";
-                                    for (int i = 0; i < divNode.Attributes.Count; i++)
-                                    {
-                                        if (divNode.Attributes[i].ToString().Trim() == "title")
-                                            divTitle = divNode.Attributes["title"].Value;
-                                    }
+            //XmlDocument Doc = new XmlDocument();
+            //Doc.LoadXml(xmlDoc);
+            //XmlElement xmlElement = Doc.DocumentElement;
+            //string insertLable = "";
+            //int message = 0;
+            //try
+            //{
+            //    foreach (XmlNode bodyNode in xmlElement.ChildNodes)
+            //    {
+            //        if (bodyNode.Name == "body")
+            //        {
+            //            if (bodyNode.HasChildNodes)
+            //            {   //int i = 1;                        
+            //                foreach (XmlNode divNode in bodyNode.ChildNodes)
+            //                {
+            //                    if (divNode.Name == "div")
+            //                    {
+            //                        //i++;
+            //                        //string divModel = divNode.InnerText;
+            //                        string divTitle = "";
+            //                        for (int i = 0; i < divNode.Attributes.Count; i++)
+            //                        {
+            //                            if (divNode.Attributes[i].ToString().Trim() == "title")
+            //                                divTitle = divNode.Attributes["title"].Value;
+            //                        }
 
-                                    if (divTitle.Trim() == "")
-                                        divTitle = "文本域";
-                                    int id = GenId("t_model_lable", "LID");
-                                    //插入标签模块
-                                    insertLable = "insert into t_model_lable(LID,TID,LABLEKIND,LABLE_MODEL)values(" + id + "," + tid + ",'" + divTitle + "',:divModel)";
+            //                        if (divTitle.Trim() == "")
+            //                            divTitle = "文本域";
+            //                        int id = GenId("t_model_lable", "LID");
+            //                        //插入标签模块
+            //                        insertLable = "insert into t_model_lable(LID,TID,LABLEKIND,LABLE_MODEL)values(" + id + "," + tid + ",'" + divTitle + "',:divModel)";
 
-                                    OrclParameter[] xmlPars = new OrclParameter[1];
-                                    xmlPars[0] = new OrclParameter();
-                                    xmlPars[0].ParameterName = "divModel";
-                                    xmlPars[0].Value = divNode.OuterXml;
-                                    xmlPars[0].DBType = OracleType.Clob;
-                                    //xmlPars[0].Direction = ParameterDirection.Input;
-                                    message = ExecuteSQLWithParams(insertLable, xmlPars);
+            //                        OracleParameter[] xmlPars = new OracleParameter[1];
+            //                        xmlPars[0] = new OracleParameter();
+            //                        xmlPars[0].ParameterName = "divModel";
+            //                        xmlPars[0].Value = divNode.OuterXml;
+            //                        xmlPars[0].OracleType = OracleType.Clob;
+            //                        //xmlPars[0].Direction = ParameterDirection.Input;
+            //                        message = ExecuteSQLWithParams_MySql(insertLable, xmlPars);
 
-                                    foreach (XmlNode selectNode in divNode.ChildNodes)
-                                    {
-                                        if (selectNode.Name == "select")
-                                        {
-                                            string selName = selectNode.Attributes["name"].Value;
-                                            string selValue = selectNode.Attributes["value"].Value;
-                                            string sid = GenId("t_struct", "sid").ToString();
-                                            ////插入结构化
-                                            string insertStruct = "insert into t_struct values(" + sid + "," + id + ",'" + selName + "','" + selValue + "'," + tid + ")";
-                                            message = ExecuteSQL(insertStruct);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+            //                        foreach (XmlNode selectNode in divNode.ChildNodes)
+            //                        {
+            //                            if (selectNode.Name == "select")
+            //                            {
+            //                                string selName = selectNode.Attributes["name"].Value;
+            //                                string selValue = selectNode.Attributes["value"].Value;
+            //                                string sid = GenId("t_struct", "sid").ToString();
+            //                                ////插入结构化
+            //                                string insertStruct = "insert into t_struct values(" + sid + "," + id + ",'" + selName + "','" + selValue + "'," + tid + ")";
+            //                                message = ExecuteSQL(insertStruct);
+            //                            }
+            //                        }
+            //                    }
+            //                }
+            //            }
+            //        }
+            //    }
 
-                if (message != 0)
-                {
-                    return "成功！";
-                }
-                else
-                {
-                    return "失败！";
-                }
-            }
-            catch (Exception ex)
-            {
-                return "数据库异常！----------------" + ex.ToString();
-            }
-            finally
-            {
-                //NClose();
-            }
+            //    if (message != 0)
+            //    {
+            //        return "成功！";
+            //    }
+            //    else
+            //    {
+            //        return "失败！";
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    return "数据库异常！----------------" + ex.ToString();
+            //}
+            //finally
+            //{
+            //    //NClose();
+            //}
+            return "";
         }
 
 
@@ -950,55 +601,56 @@ namespace DataOperater
         /// <returns></returns>       
         public string InsertLableContent(int tid, string xmlDoc)
         {
-            XmlDocument doc = new XmlDocument();
-            doc.LoadXml(xmlDoc);
-            XmlElement xmlElement = doc.DocumentElement;
-            string insertLable = "";
-            int message = 0;
-            try
-            {
-                foreach (XmlNode bodyNode in xmlElement.ChildNodes)
-                {
-                    if (bodyNode.Name == "body")
-                    {
-                        if (bodyNode.HasChildNodes)
-                        {   
-                            //string divModel = divNode.InnerText;
-                            string divTitle = "test";
-                            //if (divNode.Name == "div")
-                            //  divTitle = divNode.Attributes["title"].Value;
-                            int id = GenId("T_TempPlate_Cont", "ID");
-                            //插入标签模块
-                            insertLable = "insert into T_TempPlate_Cont(ID,TID,LableName,Content)values(" + id + "," + tid + ",'" + divTitle + "',:divContent)";
-                            OrclParameter[] xmlPars = new OrclParameter[1];
-                            xmlPars[0] = new OrclParameter();
-                            xmlPars[0].ParameterName = "divContent";
-                            //xmlPars[0].Value = divNode.OuterXml;
-                            xmlPars[0].Value = bodyNode.InnerXml;
-                            xmlPars[0].DBType = OracleType.Clob;
-                            //xmlPars[0].Direction = ParameterDirection.Input;
-                            message = ExecuteSQLWithParams(insertLable, xmlPars);
-                        }
-                    }
-                }
+            //XmlDocument doc = new XmlDocument();
+            //doc.LoadXml(xmlDoc);
+            //XmlElement xmlElement = doc.DocumentElement;
+            //string insertLable = "";
+            //int message = 0;
+            //try
+            //{
+            //    foreach (XmlNode bodyNode in xmlElement.ChildNodes)
+            //    {
+            //        if (bodyNode.Name == "body")
+            //        {
+            //            if (bodyNode.HasChildNodes)
+            //            {   
+            //                //string divModel = divNode.InnerText;
+            //                string divTitle = "test";
+            //                //if (divNode.Name == "div")
+            //                //  divTitle = divNode.Attributes["title"].Value;
+            //                int id = GenId("T_TempPlate_Cont", "ID");
+            //                //插入标签模块
+            //                insertLable = "insert into T_TempPlate_Cont(ID,TID,LableName,Content)values(" + id + "," + tid + ",'" + divTitle + "',:divContent)";
+            //                OracleParameter[] xmlPars = new OracleParameter[1];
+            //                xmlPars[0] = new OracleParameter();
+            //                xmlPars[0].ParameterName = "divContent";
+            //                //xmlPars[0].Value = divNode.OuterXml;
+            //                xmlPars[0].Value = bodyNode.InnerXml;
+            //                xmlPars[0].OracleType = OracleType.Clob;
+            //                //xmlPars[0].Direction = ParameterDirection.Input;
+            //                message = ExecuteSQLWithParams(insertLable, xmlPars);
+            //            }
+            //        }
+            //    }
 
-                if (message != 0)
-                {
-                    return "成功！";
-                }
-                else
-                {
-                    return "失败！";
-                }
-            }
-            catch (Exception ex)
-            {
-                return "数据库异常！----------------" + ex.ToString();
-            }
-            finally
-            {
-                //NClose();
-            }
+            //    if (message != 0)
+            //    {
+            //        return "成功！";
+            //    }
+            //    else
+            //    {
+            //        return "失败！";
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    return "数据库异常！----------------" + ex.ToString();
+            //}
+            //finally
+            //{
+            //    //NClose();
+            //}
+            return "";
         }
 
         /// <summary>
@@ -1011,9 +663,9 @@ namespace DataOperater
         {
             try
             {
-                if (ReadSqlVal("select count(" + Idname + ") from " + tablename + "", 0, Idname) != "0")
+                if (ReadSqlVal_MySql("select count(" + Idname + ") from " + tablename + "", 0, Idname) != "0")
                 {
-                    string val = ReadSqlVal("select max(" + Idname + ") as " + Idname + " from " + tablename + "", 0, Idname);
+                    string val = ReadSqlVal_MySql("select max(" + Idname + ") as " + Idname + " from " + tablename + "", 0, Idname);
                     if (val.Trim() != "")
                         return Convert.ToInt32(val) + 1;
                     else
@@ -1345,7 +997,7 @@ namespace DataOperater
                         strBuilder.Append(@"<Skip operatercreater='0' />");
                     }
 
-                    sickarea = ReadSqlVal("select sick_area_name from T_PATIENTS_DOC where TID=" + patient_Docs[i].Id + "", 0, "sick_area_name");
+                    sickarea = ReadSqlVal_MySql("select sick_area_name from T_PATIENTS_DOC where TID=" + patient_Docs[i].Id + "", 0, "sick_area_name");
 
                     strBuilder.Append(ChildXml.GetElementsByTagName("body")[0].InnerXml);//文书内容
                     strBuilder.Append(@"<split textId='" + patient_Docs[i].Id + "' section_name = '" + patient_Docs[i].Section_name +
@@ -1399,7 +1051,7 @@ namespace DataOperater
                                           " where patient_id='" + patient_id + "'  and  textkind_id!=134" +    //textkind_id=134术前讨论
                                           " and parentid=" + textid + "  and submitted='Y' order by doc_name";
             }
-            DataSet ds = GetDataSet(sql);
+            DataSet ds = GetDataSet_MySql(sql);
             InPatient_Doc[] patient_Docs = null;
             //string[,] arrs = null;
             if (ds != null)
@@ -1418,7 +1070,7 @@ namespace DataOperater
                         if (tid != Convert.ToInt32(dt.Rows[i]["tid"].ToString()))
                         {
                             patient_Docs[i] = new InPatient_Doc();
-                            patient_Docs[i].Patients_doc = ReadSqlVal("select * from T_PATIENT_DOC_COLB where tid=" + dt.Rows[i]["tid"].ToString() + "", 0, "CONTENT");                            
+                            patient_Docs[i].Patients_doc = ReadSqlVal_MySql("select * from T_PATIENT_DOC_COLB where tid=" + dt.Rows[i]["tid"].ToString() + "", 0, "CONTENT");                            
                             patient_Docs[i].Id = Convert.ToInt32(dt.Rows[i]["tid"].ToString());
                             patient_Docs[i].Textkind_id = Convert.ToInt32(dt.Rows[i]["textkind_id"].ToString());
                             patient_Docs[i].Createid = dt.Rows[i]["createid"].ToString();

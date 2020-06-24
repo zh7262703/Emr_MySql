@@ -23,7 +23,7 @@ using System.Reflection;
 using System.Diagnostics;
 using System.Net;
 using Base_Function.BASE_COMMON;
-using Bifrost.WebReference;
+
 using Moran.Partogram;
 using MoranEditor.GUI;
 using Base_Function.TEMPERATURES;
@@ -100,14 +100,14 @@ namespace Base_Function.BLL_MANAGEMENT
         /// </summary>
         public void AddFinishNode()
         {
-            Bifrost.WebReference.Class_Table[] tablesqls = new Bifrost.WebReference.Class_Table[4];
-            tablesqls[0] = new Bifrost.WebReference.Class_Table();
+            Class_Table[] tablesqls = new Class_Table[4];
+            tablesqls[0] = new Class_Table();
 
             tablesqls[0].Sql = "select id from t_text where parentid in(103,525)";    //所有归类于病程的小节点
 
             tablesqls[0].Tablename = "textbcs";
 
-            tablesqls[1] = new Bifrost.WebReference.Class_Table();
+            tablesqls[1] = new Class_Table();
 
             tablesqls[1].Sql = "select a.tid,a.pid,a.textkind_id,a.belongtosys_id,a.sickkind_id,m.user_name, a.textname," +
                                          "a.doc_name,a.patient_Id,a.ishighersign,a.havehighersign,a.havedoctorsign,a.submitted,a.createId,a.highersignuserid," +
@@ -117,15 +117,15 @@ namespace Base_Function.BLL_MANAGEMENT
 
             tablesqls[1].Tablename = "patientdocs";
 
-            //tablesqls[2] = new Bifrost.WebReference.Class_Table();
+            //tablesqls[2] = new Class_Table();
             //tablesqls[2].Sql = "select * from cover_info t where t.patient_id ='" + currentPatient.Id + "'";    //所有归类于病程的小节点
             //tablesqls[2].Tablename = "caseFirst";
 
-            tablesqls[2] = new Bifrost.WebReference.Class_Table();
+            tablesqls[2] = new Class_Table();
             tablesqls[2].Sql = "select * from t_care_doc t where t.inpatient_id ='" + currentPatient.Id + "'";    //所有归类于病程的小节点
             tablesqls[2].Tablename = "careDoc";
 
-            tablesqls[3] = new Bifrost.WebReference.Class_Table();
+            tablesqls[3] = new Class_Table();
             tablesqls[3].Sql = "select * from t_temperature_info t where t.patient_id ='" + currentPatient.Id + "'";    //所有归类于病程的小节点
             tablesqls[3].Tablename = "temperatureDoc";
 

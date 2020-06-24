@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Bifrost;
+using MySql.Data.MySqlClient;
 
 namespace Base_Function.BLL_MANAGEMENT.SICKFILE
 {
@@ -81,66 +82,66 @@ namespace Base_Function.BLL_MANAGEMENT.SICKFILE
                 backID = backID.Substring(0, backID.Length - 1);
                 string eTime = this.labEnveloptime.Text;//申请时间 
 
-                Bifrost.WebReference.OracleParameter p_num = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter p_num = new MySqlDBParameter();
                 p_num.Value = num;
                 p_num.ParameterName = "num";
-                p_num.OracleType = Bifrost.WebReference.OracleType.VarChar;
+                p_num.DBType = MySqlDbType.VarChar;
 
-                Bifrost.WebReference.OracleParameter p_count = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter p_count = new MySqlDBParameter();
                 p_count.Value = countnum;
                 p_count.ParameterName = "countnum";
-                p_count.OracleType = Bifrost.WebReference.OracleType.Number;
+                p_count.DBType = MySqlDbType.Decimal;
 
-                Bifrost.WebReference.OracleParameter p_remark = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter p_remark = new MySqlDBParameter();
                 p_remark.Value = remark;
                 p_remark.ParameterName = "remark";
-                p_remark.OracleType = Bifrost.WebReference.OracleType.VarChar;
+                p_remark.DBType = MySqlDbType.VarChar;
 
-                Bifrost.WebReference.OracleParameter p_eName = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter p_eName = new MySqlDBParameter();
                 p_eName.Value = eName;
                 p_eName.ParameterName = "eName";
-                p_eName.OracleType = Bifrost.WebReference.OracleType.VarChar;
+                p_eName.DBType = MySqlDbType.VarChar;
 
 
-                Bifrost.WebReference.OracleParameter p_backDocdor = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter p_backDocdor = new MySqlDBParameter();
                 p_backDocdor.Value = backDocdor;
                 p_backDocdor.ParameterName = "backDocdor";
-                p_backDocdor.OracleType = Bifrost.WebReference.OracleType.VarChar;
+                p_backDocdor.DBType = MySqlDbType.VarChar;
 
                 //申请人的ID
-                Bifrost.WebReference.OracleParameter p_shenqingName = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter p_shenqingName = new MySqlDBParameter();
                 p_shenqingName.Value = shenqingName;
                 p_shenqingName.ParameterName = "shenqingName";
-                p_shenqingName.OracleType = Bifrost.WebReference.OracleType.VarChar;
+                p_shenqingName.DBType = MySqlDbType.VarChar;
 
 
                 //退回操作人ID
-                Bifrost.WebReference.OracleParameter p_backID = new Bifrost.WebReference.OracleParameter();
+                MySqlDBParameter p_backID = new MySqlDBParameter();
                 p_backID.Value = backID;
                 p_backID.ParameterName = "backID";
-                p_backID.OracleType = Bifrost.WebReference.OracleType.VarChar;
+                p_backID.DBType = MySqlDbType.VarChar;
 
                 ////退回操作人姓名
-                //Bifrost.WebReference.OracleParameter p_backDocdo = new Bifrost.WebReference.OracleParameter();
+                //MySqlDBParameter p_backDocdo = new MySqlDBParameter();
                 //p_backDocdor.Value = backDocdor;
                 //p_backDocdor.ParameterName = "backDocdor";
-                //p_backDocdor.OracleType = Bifrost.WebReference.OracleType.VarChar;
+                //p_backDocdor.DBType = MySqlDbType.VarChar;
 
                 //if (App.UserAccount.CurrentSelectRole.Section_Id == "")
                 //{
                 //    //退回状态
-                //    Bifrost.WebReference.OracleParameter p_backDocd = new Bifrost.WebReference.OracleParameter();
+                //    MySqlDBParameter p_backDocd = new MySqlDBParameter();
                 //    p_backDocdor.Value = backDocdor;
                 //    p_backDocdor.ParameterName = "backDocdor";
-                //    p_backDocdor.OracleType = Bifrost.WebReference.OracleType.VarChar;
+                //    p_backDocdor.DBType = MySqlDbType.VarChar;
                 //}
 
-                //Bifrost.WebReference.OracleParameter p_eTime = new Bifrost.WebReference.OracleParameter();
+                //MySqlDBParameter p_eTime = new MySqlDBParameter();
                 //p_remark.Value = remak;
                 //p_remark.ParameterName = "eTime";
-                //p_remark.OracleType = Bifrost.WebReference.OracleType.VarChar;
+                //p_remark.DBType = MySqlDbType.VarChar;
 
-                Bifrost.WebReference.OracleParameter[] parameters = new Bifrost.WebReference.OracleParameter[] { 
+                MySqlDBParameter[] parameters = new MySqlDBParameter[] { 
                     p_num,
                     p_count,
                     p_remark,

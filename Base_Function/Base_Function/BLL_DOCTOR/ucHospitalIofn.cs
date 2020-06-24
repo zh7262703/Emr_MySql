@@ -13,7 +13,7 @@ using Bifrost.HisInstance;
 using DevComponents.DotNetBar;
 using DevComponents.AdvTree;
 using DevComponents.DotNetBar.Controls;
-using Bifrost.WebReference;
+
 using Base_Function.BASE_COMMON;
 using Base_Function.BLL_DOCTOR;
 using Base_Function.BLL_DOCTOR.NApply_Medical_Record;

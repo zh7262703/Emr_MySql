@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
-using Bifrost.WebReference;
 using Bifrost;
 
 namespace Base_Function.BASE_COMMON

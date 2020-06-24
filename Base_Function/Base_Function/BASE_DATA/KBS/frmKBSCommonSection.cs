@@ -11,9 +11,10 @@ using Base_Function.MODEL;
 using Base_Function.BASE_COMMON;
 using TextEditor;
 using DevComponents.DotNetBar;
-using Bifrost.WebReference;
+
 using Base_Function.BASE_DATA.KBS;
 using System.Collections;
+using MySql.Data.MySqlClient;
 
 namespace Base_Function.BASE_DATA
 {
@@ -560,11 +561,11 @@ where t.temptype = 'S'";
 
                         //int id = App.GenId();
                         //string sql_clob = "insert into kbs_tempplate_cont(id,tid,CONTENT)values(" + id + "," + tid + ",:doc1)";
-                        //OracleParameter[] xmlPars = new OracleParameter[1];
-                        //xmlPars[0] = new OracleParameter();
+                        //MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                        //xmlPars[0] = new MySqlDBParameter();
                         //xmlPars[0].ParameterName = "doc1";
                         //xmlPars[0].Value = cont;
-                        //xmlPars[0].OracleType = OracleType.Clob;
+                        //xmlPars[0].DBType = MySqlDbType.Text;
                         //App.ExecuteSQL(sql_clob, xmlPars);
                     }
 
@@ -599,11 +600,11 @@ where t.temptype = 'S'";
                             {
                                 int id = App.GenId();
                                 string sql_clob = "insert into kbs_tempplate_cont(id,tid,CONTENT)values(" + id + "," + advTreeSmallTemplate.SelectedNode.Tag + ",:doc1)";
-                                OracleParameter[] xmlPars = new OracleParameter[1];
-                                xmlPars[0] = new OracleParameter();
+                                MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                                xmlPars[0] = new MySqlDBParameter();
                                 xmlPars[0].ParameterName = "doc1";
                                 xmlPars[0].Value = bodyNode.InnerXml;
-                                xmlPars[0].OracleType = OracleType.Clob;
+                                xmlPars[0].DBType = MySqlDbType.Text;
                                 message = App.ExecuteSQL(sql_clob, xmlPars);
                                 if (message > 0)
                                 {
@@ -617,11 +618,11 @@ where t.temptype = 'S'";
                             else
                             {
                                 String sql_clob = string.Format("update kbs_tempplate_cont set CONTENT=:doc1 where TID = '{0}'", advTreeSmallTemplate.SelectedNode.Tag);
-                                OracleParameter[] xmlPars = new OracleParameter[1];
-                                xmlPars[0] = new OracleParameter();
+                                MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                                xmlPars[0] = new MySqlDBParameter();
                                 xmlPars[0].ParameterName = "doc1";
                                 xmlPars[0].Value = bodyNode.InnerXml;
-                                xmlPars[0].OracleType = OracleType.Clob;
+                                xmlPars[0].DBType = MySqlDbType.Text;
                                 message = App.ExecuteSQL(sql_clob, xmlPars);
                                 if (message > 0)
                                 {

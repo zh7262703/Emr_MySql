@@ -18,10 +18,11 @@ using System.Xml;
 //using Bifrost_Nurse.DOCTOR_MANAGE.Message;
 using Base_Function.BLL_MSG_REMIND.MSG_ALL_REMINDS;
 using Base_Function.BLL_MEDICAL_RECORD_GRADE;
-using Bifrost.WebReference;
+
 using Base_Function.BLL_DOCTOR.HisInStance.LIS;
 using Base_Function.BLL_DOCTOR.HisInStance;
 using Base_Function.BLL_DOCTOR.HisInStance.Ò½Ööµ¥;
+using MySql.Data.MySqlClient;
 //using Bifrost.HisInstance;
 
 
@@ -1922,11 +1923,11 @@ namespace Base_Function.BLL_MEDICAL_RECORD_GRADE
                 frm.MyDoc.Modified = false;
 
                 String sql_clob = string.Format("update T_PATIENT_DOC_COLB set CONTENT=:doc1 where TID = '{0}'", frm.MyDoc.Us.Tid.ToString());
-                OracleParameter[] xmlPars = new OracleParameter[1];
-                xmlPars[0] = new OracleParameter();
+                MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                xmlPars[0] = new MySqlDBParameter();
                 xmlPars[0].ParameterName = "doc1";
                 xmlPars[0].Value = tempxmldoc.OuterXml;
-                xmlPars[0].OracleType = OracleType.Clob;
+                xmlPars[0].DBType = MySqlDbType.Text;
                 App.ExecuteSQL(sql_clob, xmlPars);
 
             }
@@ -2727,11 +2728,11 @@ namespace Base_Function.BLL_MEDICAL_RECORD_GRADE
                     //frm.MyDoc.ToXML(tempxmldoc2.DocumentElement);
                     //App.UpLoadFtpPatientDoc(tempxmldoc.OuterXml, Us.Tid.ToString() + ".xml", Us.InpatientInfo.Id.ToString());                   
                     //String sql_clob = string.Format("update T_PATIENT_DOC_COLB set CONTENT=:doc1 where TID = '{0}'", frm.MyDoc.Us.Tid.ToString());
-                    //OracleParameter[] xmlPars = new OracleParameter[1];
-                    //xmlPars[0] = new OracleParameter();
+                    //MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                    //xmlPars[0] = new MySqlDBParameter();
                     //xmlPars[0].ParameterName = "doc1";
                     //xmlPars[0].Value = tempxmldoc.OuterXml;
-                    //xmlPars[0].OracleType = OracleType.Clob;
+                    //xmlPars[0].DBType = MySqlDbType.Text;
                     //App.ExecuteSQL(sql_clob, xmlPars);
 
 
@@ -2808,11 +2809,11 @@ namespace Base_Function.BLL_MEDICAL_RECORD_GRADE
                         //frm.MyDoc.ToXML(tempxmldoc2.DocumentElement);
                         //App.UpLoadFtpPatientDoc(tempxmldoc.OuterXml, Us.Tid.ToString() + ".xml", Us.InpatientInfo.Id.ToString());                   
                         //String sql_clob = string.Format("update T_PATIENT_DOC_COLB set CONTENT=:doc1 where TID = '{0}'", frm.MyDoc.Us.Tid.ToString());
-                        //OracleParameter[] xmlPars = new OracleParameter[1];
-                        //xmlPars[0] = new OracleParameter();
+                        //MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                        //xmlPars[0] = new MySqlDBParameter();
                         //xmlPars[0].ParameterName = "doc1";
                         //xmlPars[0].Value = tempxmldoc.OuterXml;
-                        //xmlPars[0].OracleType = OracleType.Clob;
+                        //xmlPars[0].DBType = MySqlDbType.Text;
                         //App.ExecuteSQL(sql_clob, xmlPars);
 
 
@@ -2956,11 +2957,11 @@ namespace Base_Function.BLL_MEDICAL_RECORD_GRADE
                     //tempxmldoc2.LoadXml("<emrtextdoc/>");
                     //frm.MyDoc.ToXML(tempxmldoc2.DocumentElement);
                     //String sql_clob = string.Format("update T_PATIENT_DOC_COLB set CONTENT=:doc1 where TID = '{0}'", frm.MyDoc.Us.Tid.ToString());
-                    //OracleParameter[] xmlPars = new OracleParameter[1];
-                    //xmlPars[0] = new OracleParameter();
+                    //MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                    //xmlPars[0] = new MySqlDBParameter();
                     //xmlPars[0].ParameterName = "doc1";
                     //xmlPars[0].Value = tempxmldoc.OuterXml;
-                    //xmlPars[0].OracleType = OracleType.Clob;
+                    //xmlPars[0].DBType = MySqlDbType.Text;
                     //App.ExecuteSQL(sql_clob, xmlPars);
 
                 }

@@ -58,7 +58,7 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Base_App, Version=1.0.7413.32321, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Base_App, Version=1.0.7480.29525, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\EMR\Base_App.dll</HintPath>
     </Reference>
@@ -129,6 +129,10 @@
     <Reference Include="MoranEditor, Version=1.9.9.13, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\EMR\MoranEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=5.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\EMR\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="QualityControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

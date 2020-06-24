@@ -13,6 +13,7 @@ using System.IO;
 using System.Threading;
 using Base_Function.MODEL;
 using Base_Function.BASE_COMMON;
+using MySql.Data.MySqlClient;
 
 namespace Base_Function.TEMPLATE
 {
@@ -259,13 +260,13 @@ namespace Base_Function.TEMPLATE
                             if (bodyNode.HasChildNodes)
                             {   //int i = 1;           
                                 string updateLable = "update T_TempPlate_Cont set Content=:divContent where tid=" + current_id;
-                                Bifrost.WebReference.OracleParameter[] xmlPars = new Bifrost.WebReference.OracleParameter[1];
-                                xmlPars[0] = new Bifrost.WebReference.OracleParameter();
+                                MySqlDBParameter[] xmlPars = new MySqlDBParameter[1];
+                                xmlPars[0] = new MySqlDBParameter();
                                 xmlPars[0].ParameterName = "divContent";
                                 //xmlPars[0].Value = divNode.OuterXml;
                                 xmlPars[0].Value = bodyNode.InnerXml;
-                                xmlPars[0].OracleType = Bifrost.WebReference.OracleType.Clob;
-                                xmlPars[0].Direction = Bifrost.WebReference.ParameterDirection.Input;
+                                xmlPars[0].DBType = MySqlDbType.Text;
+                                xmlPars[0].Direction = ParameterDirection.Input;
                                 message = App.ExecuteSQL(updateLable, xmlPars);
                                 if (message > 0)
                                 {
